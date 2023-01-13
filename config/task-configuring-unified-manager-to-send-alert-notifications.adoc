@@ -1,0 +1,52 @@
+---
+permalink: config/task-configuring-unified-manager-to-send-alert-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以設定Unified Manager傳送通知、提醒您環境中的事件。在傳送通知之前、您必須先設定其他數個Unified Manager選項。 
+---
+= 設定Unified Manager以傳送警示通知
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定Unified Manager傳送通知、提醒您環境中的事件。在傳送通知之前、您必須先設定其他數個Unified Manager選項。
+
+
+
+== 開始之前
+
+您必須OnCommand 扮演「管理員角色」。
+
+
+
+== 關於這項工作
+
+部署Unified Manager並完成初始組態之後、您應該考慮設定環境、以觸發警示、並根據事件接收產生通知電子郵件或SNMP設陷。
+
+
+
+== 步驟
+
+. xref:task-configuring-event-notification-settings.adoc[設定事件通知設定]
++
+如果您想要在環境中發生特定事件時傳送警示通知、您必須設定一個SMTP伺服器、並提供電子郵件地址、以便傳送警示通知。如果您要使用SNMP設陷、可以選取該選項並提供必要資訊。
+
+. xref:task-enabling-remote-authentication.adoc[啟用遠端驗證]
++
+如果您想要遠端LDAP或Active Directory使用者存取Unified Manager執行個體並接收警示通知、則必須啟用遠端驗證。
+
+. xref:task-adding-authentication-servers.adoc[新增驗證伺服器]
++
+您可以新增驗證伺服器、讓驗證伺服器內的遠端使用者能夠存取Unified Manager。
+
+. xref:task-adding-users.adoc[新增使用者]
++
+您可以新增多種不同類型的本機或遠端使用者、並指派特定角色。建立警示時、您會指派使用者接收警示通知。
+
+. xref:task-adding-alerts.adoc[新增警示]
++
+新增電子郵件地址以傳送通知、新增使用者以接收通知、設定網路設定、以及設定環境所需的SMTP和SNMP選項之後、即可指派警示。
+
+

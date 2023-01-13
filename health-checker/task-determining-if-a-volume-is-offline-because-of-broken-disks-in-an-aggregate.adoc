@@ -1,0 +1,51 @@
+---
+permalink: health-checker/task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Unified Manager Web UI來確認或消除磁碟區離線的可能性、因為RAID磁碟問題已使其主機Aggregate離線。 
+---
+= 判斷磁碟區是否因為集合體中的磁碟毀損而離線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager Web UI來確認或消除磁碟區離線的可能性、因為RAID磁碟問題已使其主機Aggregate離線。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+若要判斷磁碟區離線狀況是否是由使託管Aggregate離線的RAID磁碟問題所造成、請執行下列動作：
+
+
+
+== 步驟
+
+. 找到並按一下「* Health / Volume * details（*健全狀況/磁碟區*詳細資料）」頁面* Related Devices*（*相關裝置*）窗格中Aggregate（集合）下方顯示的超
++
+「健全狀況/ Aggregate詳細資料」頁面會顯示託管Aggregate的線上或離線狀態。如果Aggregate狀態為「線上」、則RAID磁碟問題並不是磁碟區離線的原因。
+
+. 如果Aggregate狀態為離線、請按一下「*磁碟資訊*」、然後在「*磁碟資訊*」索引標籤的「*事件*」清單中尋找毀損的磁碟事件。
+. 若要進一步識別毀損的磁碟、請按一下「*相關裝置*」窗格中「叢集」下方顯示的超文字連結。
++
+此時會顯示健全狀況/叢集詳細資料頁面。
+
+. 按一下「*磁碟*」、然後在「*篩選器*」窗格中選取「*毀損*」、以列出所有處於中斷狀態的磁碟。
++
+如果處於中斷狀態的磁碟導致主機Aggregate的離線狀態、則Aggregate的名稱會顯示在「Impacted Aggregate（受影響的Aggregate）」欄中。
+
+
+
+
+
+== 完成後
+
+在確認磁碟區離線狀況是由毀損的RAID磁碟及其後的離線主機Aggregate所造成之後、請聯絡適當的管理員或操作員、手動更換毀損的磁碟、並將Aggregate重新連線。

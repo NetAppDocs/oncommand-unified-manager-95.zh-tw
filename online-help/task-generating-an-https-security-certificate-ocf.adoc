@@ -1,0 +1,70 @@
+---
+permalink: online-help/task-generating-an-https-security-certificate-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可能基於多種原因產生新的HTTPS安全性憑證、包括您想要使用不同的憑證授權單位簽署、或是目前的安全性憑證已過期。新憑證會取代現有的憑證。 
+---
+= 產生HTTPS安全性憑證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能基於多種原因產生新的HTTPS安全性憑證、包括您想要使用不同的憑證授權單位簽署、或是目前的安全性憑證已過期。新憑證會取代現有的憑證。
+
+
+
+== 開始之前
+
+您必須OnCommand 扮演「管理員角色」。
+
+
+
+== 關於這項工作
+
+如果您無法存取Unified Manager Web UI、可以使用維護主控台重新產生具有相同值的HTTPS憑證。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*設定*功能表中的* HTTPS憑證*。
+. 按一下*重新產生HTTPS憑證*。
++
+此時會顯示重新產生HTTPS憑證對話方塊。
+
+. 根據您要產生憑證的方式、選取下列其中一個選項：
++
+|===
+| 如果您想要... | 執行此動作... 
+
+
+ a| 
+以目前值重新產生憑證
+ a| 
+按一下*使用目前的憑證屬性重新產生*選項。
+
+
+
+ a| 
+使用不同的值產生憑證
+ a| 
+ Click the *Update the Current Certificate Attributes* option.
+如果您未輸入新值、「一般名稱」和「替代名稱」欄位會使用現有憑證的值。其他欄位不需要值、但如果您想要在憑證中填入這些值、您可以輸入城市、州和國家的值。
+
+[NOTE]
+====
+如果您要從憑證的替代名稱欄位中移除本機識別資訊、可以選取「排除本機識別資訊（例如localhost）」核取方塊。如果選中此複選框，則只有您在字段中輸入的內容才用於替代名稱字段。如果保留空白、則產生的憑證將完全沒有替代名稱欄位。
+
+====
+|===
+. 按一下「*是*」以重新產生憑證。
+. 重新啟動Unified Manager伺服器、使新的憑證生效。
+
+
+
+
+== 完成後
+
+檢視HTTPS憑證來驗證新的憑證資訊。

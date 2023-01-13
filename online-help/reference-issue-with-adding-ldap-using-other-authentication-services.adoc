@@ -1,0 +1,37 @@
+---
+permalink: online-help/reference-issue-with-adding-ldap-using-other-authentication-services.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 使用其他驗證服務新增LDAP時出現問題
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *問題*
++
+當您選取「其他」做為驗證服務時、使用者和群組ObjectClass會保留先前選取範本的值。如果LDAP伺服器未使用相同的值、則作業可能會失敗。
+
+* *原因*
++
+OpenLDAP未正確設定使用者。
+
+* *修正行動*
++
+您可以使用下列其中一種因應措施、手動修正此問題。
+
++
+如果您的LDAP使用者物件類別和群組物件類別分別為使用者和群組、請執行下列步驟：
+
++
+.. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*設定*>*驗證*。
+.. 在*驗證服務*下拉式功能表中、選取* Active Directory *、然後選取*其他*。
+.. 填寫文字欄位。如果您的LDAP使用者物件類別和群組物件類別分別為posixAccount和posixGroup、請執行下列步驟：
+.. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*設定*>*驗證*。
+.. 在*驗證服務*下拉式功能表中、選取* OpenLDAP*、然後選取*其他*。
+.. 填寫文字欄位。如果前兩個因應措施不適用、請致電 `option-set` API、然後設定 `auth.ldap.userObjectClass` 和 `auth.ldap.groupObjectClass` 選項。
+
+
+

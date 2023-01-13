@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-event-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 事件會通知您環境中的任何問題。您可以使用「事件」目錄頁面和「事件詳細資料」頁面來監控所有事件。您可以使用通知設定選項對話方塊來設定通知。您可以使用「組態/管理事件」頁面來停用或啟用事件。 
+---
+= 事件視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件會通知您環境中的任何問題。您可以使用「事件」目錄頁面和「事件詳細資料」頁面來監控所有事件。您可以使用通知設定選項對話方塊來設定通知。您可以使用「組態/管理事件」頁面來停用或啟用事件。

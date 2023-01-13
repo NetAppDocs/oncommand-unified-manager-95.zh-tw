@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-performance-incident-analysis-for-a-metrocluster-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Unified Manager來分析MetroCluster 效能事件、以利進行VMware組態設定。您可以識別事件所涉及的工作負載、並檢閱建議的解決行動。 
+---
+= 效能事件分析MetroCluster 、以利進行效能分析
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager來分析MetroCluster 效能事件、以利進行VMware組態設定。您可以識別事件所涉及的工作負載、並檢閱建議的解決行動。
+
+由於叢集之間的交換器連結（ISL）過度使用、或是連結健全狀況問題、所以可能會發生效能事件。MetroClusterUnified Manager MetroCluster 會獨立監控各個採用VMware組態的叢集、而不考慮合作夥伴叢集上的效能事件。
+
+同時、來自兩個MetroCluster 叢集的效能事件也會顯示在Unified Manager儀表板/總覽頁面上。您也可以檢視Unified Manager的「健全狀況」頁面、以檢查每個叢集的健全狀況並檢視其關係。

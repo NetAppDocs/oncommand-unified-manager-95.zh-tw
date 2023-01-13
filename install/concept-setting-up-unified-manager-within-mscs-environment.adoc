@@ -1,0 +1,18 @@
+---
+permalink: install/concept-setting-up-unified-manager-within-mscs-environment.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用容錯移轉叢集來設定Unified Manager的高可用度。高可用度設定提供容錯移轉功能。 
+---
+= 在容錯移轉叢集環境中設定Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用容錯移轉叢集來設定Unified Manager的高可用度。高可用度設定提供容錯移轉功能。
+
+在此設定中、只有一個節點擁有所有的叢集資源。當某個節點當機或任何已設定的服務無法上線時、容錯移轉叢集服務會辨識此事件、並立即將控制權傳輸至另一個節點。設定中的第二個節點會變成作用中、並開始提供服務。容錯移轉程序是自動的、您不需要執行任何動作。
+
+使用Unified Manager伺服器設定的容錯移轉叢集由兩個節點組成、每個節點執行相同版本的Unified Manager伺服器。所有Unified Manager伺服器資料都必須設定為可從共享資料磁碟存取。

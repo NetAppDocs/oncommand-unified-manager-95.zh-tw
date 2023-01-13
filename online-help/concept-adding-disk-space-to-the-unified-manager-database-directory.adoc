@@ -1,0 +1,23 @@
+---
+permalink: online-help/concept-adding-disk-space-to-the-unified-manager-database-directory.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager資料庫目錄包含ONTAP 從VMware系統收集到的所有健全狀況和效能資料。在某些情況下、您可能需要增加資料庫目錄的大小。 
+---
+= 將磁碟空間新增至Unified Manager資料庫目錄
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager資料庫目錄包含ONTAP 從VMware系統收集到的所有健全狀況和效能資料。在某些情況下、您可能需要增加資料庫目錄的大小。
+
+例如、如果Unified Manager從大量叢集收集資料、而每個叢集都有許多節點、則資料庫目錄可能會滿。當資料庫目錄已滿90%時、您將會收到警告事件、而當目錄已滿95%時、您將會收到重大事件。
+
+[NOTE]
+====
+在目錄達到95%滿量後、不會從叢集收集其他資料。
+
+====
+新增容量至資料目錄所需的步驟各不相同、取決於Unified Manager是在VMware ESXi伺服器、Red Hat或CentOS Linux伺服器、還是在Microsoft Windows伺服器上執行。

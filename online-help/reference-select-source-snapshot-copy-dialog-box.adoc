@@ -1,0 +1,180 @@
+---
+permalink: online-help/reference-select-source-snapshot-copy-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「選取來源Snapshot複本」對話方塊來選取特定的Snapshot複本、以便在保護關係之間傳輸資料、或是選取預設行為、視您正在初始化、更新或重新同步關係、以及關係是SnapMirror或SnapVault SnapMirror而定。 
+---
+= 選取來源Snapshot複本對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「選取來源Snapshot複本」對話方塊來選取特定的Snapshot複本、以便在保護關係之間傳輸資料、或是選取預設行為、視您正在初始化、更新或重新同步關係、以及關係是SnapMirror或SnapVault SnapMirror而定。
+
+
+
+== 預設
+
+可讓您選取預設行為、以判斷哪個Snapshot複本用於初始化、更新及重新同步SnapVault 針對SnapMirror和SnapMirror關係進行傳輸。
+
+如果您執行SnapVault 的是「無法轉送」、則每項作業的預設行為如下：
+
+|===
+| 營運 | 來源為讀取/寫入時的預設SnapVault 功能 | 來源為資料保護（DP）時的預設SnapVault 功能 
+
+
+ a| 
+初始化
+ a| 
+建立新的Snapshot複本並進行傳輸。
+ a| 
+傳輸上次匯出的Snapshot複本。
+
+
+
+ a| 
+更新
+ a| 
+僅傳輸原則中指定的標記Snapshot複本。
+ a| 
+傳輸上次匯出的Snapshot複本。
+
+
+
+ a| 
+重新同步
+ a| 
+傳輸在最新的通用Snapshot複本之後建立的所有標記Snapshot複本。
+ a| 
+傳輸最新標記的Snapshot複本。
+
+|===
+如果您要執行SnapMirror傳輸、每項作業的預設行為如下：
+
+|===
+| 營運 | 預設SnapMirror行為 | SnapMirror與SnapMirror串聯的關係是SnapMirror中的第二跳時、預設SnapMirror行為 
+
+
+ a| 
+初始化
+ a| 
+建立新的Snapshot複本並傳輸該複本、以及在新Snapshot複本之前建立的所有Snapshot複本。
+ a| 
+從來源傳輸所有Snapshot複本。
+
+
+
+ a| 
+更新
+ a| 
+建立新的Snapshot複本並傳輸該複本、以及在新Snapshot複本之前建立的所有Snapshot複本。
+ a| 
+傳輸所有Snapshot複本。
+
+
+
+ a| 
+重新同步
+ a| 
+建立新的Snapshot複本、然後從來源傳輸所有Snapshot複本。
+ a| 
+將所有Snapshot複本從次要磁碟區傳輸到第三個磁碟區、並在建立最新的通用Snapshot複本之後刪除任何新增的資料。
+
+|===
+
+
+== 現有Snapshot複本
+
+可讓您從清單中選取現有的Snapshot複本（如果該作業允許選取Snapshot複本）。
+
+* * Snapshot複製*
++
+顯示現有的Snapshot複本、您可從中選取以進行傳輸。
+
+* *建立日期*
++
+顯示建立Snapshot複本的日期與時間。快照複本會從最新到最新、最新的列在清單頂端。
+
+
+
+如果您執行SnapVault 的是無法傳輸、而想要選取現有的Snapshot複本、以便從來源傳輸到目的地、則每項作業的行為如下：
+
+|===
+| 營運 | 指定Snapshot複本時的行為SnapVault | 在串聯中指定Snapshot複本時的行為SnapVault 
+
+
+ a| 
+初始化
+ a| 
+傳輸指定的Snapshot複本。
+ a| 
+資料保護磁碟區不支援來源Snapshot複本選擇。
+
+
+
+ a| 
+更新
+ a| 
+傳輸指定的Snapshot複本。
+ a| 
+資料保護磁碟區不支援來源Snapshot複本選擇。
+
+
+
+ a| 
+重新同步
+ a| 
+傳輸所選的Snapshot複本。
+ a| 
+資料保護磁碟區不支援來源Snapshot複本選擇。
+
+|===
+如果您正在執行SnapMirror傳輸、且想要選取現有的Snapshot複本、以便從來源傳輸到目的地、則每項作業的行為如下：
+
+|===
+| 營運 | SnapMirror在指定Snapshot複本時的行為 | SnapMirror在串聯中指定Snapshot複本時的行為 
+
+
+ a| 
+初始化
+ a| 
+將來源上的所有Snapshot複本傳輸至指定的Snapshot複本。
+ a| 
+資料保護磁碟區不支援來源Snapshot複本選擇。
+
+
+
+ a| 
+更新
+ a| 
+將來源上的所有Snapshot複本傳輸至指定的Snapshot複本。
+ a| 
+資料保護磁碟區不支援來源Snapshot複本選擇。
+
+
+
+ a| 
+重新同步
+ a| 
+從來源傳輸所有Snapshot複本、直到選取的Snapshot複本、然後在建立最新的通用Snapshot複本之後刪除任何新增的資料。
+ a| 
+資料保護磁碟區不支援來源Snapshot複本選擇。
+
+|===
+
+
+== 命令按鈕
+
+命令按鈕可讓您執行下列工作：
+
+* *提交*
++
+提交您的選擇並關閉「選取來源Snapshot複本」對話方塊。
+
+* *取消*
++
+捨棄您的選擇並關閉「選取來源Snapshot複本」對話方塊。
+
+

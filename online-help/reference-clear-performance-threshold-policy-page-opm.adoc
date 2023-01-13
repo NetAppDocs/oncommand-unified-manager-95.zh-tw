@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-clear-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「清除臨界值原則」頁面、從一或多個儲存物件移除或清除效能臨界值原則。 
+---
+= 清除效能臨界值原則頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「清除臨界值原則」頁面、從一或多個儲存物件移除或清除效能臨界值原則。
+
+原則清單只會填入所選物件中使用的原則。
+
+您可以選取要從儲存物件移除的原則、然後按一下*清除原則*。

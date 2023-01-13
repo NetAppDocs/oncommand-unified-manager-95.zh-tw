@@ -1,0 +1,87 @@
+---
+permalink: online-help/concept-what-event-management-system-events-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 事件管理系統（EMS）會從ONTAP 各個部分收集事件資料、並提供事件轉送機制。這些不實事件可在Unified Manager中報告為EMS事件。ONTAP集中化的監控與管理功能可根據這些EMS事件、簡化關鍵EMS事件與警示通知的組態設定。 
+---
+= 什麼是事件管理系統事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件管理系統（EMS）會從ONTAP 各個部分收集事件資料、並提供事件轉送機制。這些不實事件可在Unified Manager中報告為EMS事件。ONTAP集中化的監控與管理功能可根據這些EMS事件、簡化關鍵EMS事件與警示通知的組態設定。
+
+當您將叢集新增至Unified Manager時、Unified Manager位址會新增為叢集的通知目的地。一旦叢集中發生事件、就會立即報告EMS事件。
+
+在Unified Manager中接收EMS事件的方法有兩種：
+
+* 系統會自動報告特定數量的重要EMS事件。
+* 您可以訂閱以接收個別的EMS事件。
+
+
+Unified Manager產生的EMS事件會根據事件產生的方法而不同地回報：
+
+|===
+| 功能 | 自動EMS訊息 | 訂閱的EMS訊息 
+
+
+ a| 
+可用的EMS事件
+ a| 
+EMS事件的子集
+ a| 
+所有EMS事件
+
+
+
+ a| 
+觸發時的EMS訊息名稱
+ a| 
+Unified Manager事件名稱（從EMS事件名稱轉換）
+ a| 
+非特定格式為「收到錯誤EMS」。詳細訊息提供實際EMS事件的點標記格式
+
+
+
+ a| 
+已接收訊息
+ a| 
+一旦發現叢集
+ a| 
+將每個必要的EMS事件新增至Unified Manager之後、以及在接下來的15分鐘輪詢週期之後
+
+
+
+ a| 
+事件生命週期
+ a| 
+與其他Unified Manager事件相同：新的、已確認的、已解決的和已過時的狀態
+ a| 
+在建立事件15分鐘後重新整理叢集之後、EMS事件便會過時
+
+
+
+ a| 
+擷取Unified Manager停機期間的事件
+ a| 
+是的、當系統啟動時、它會與每個叢集通訊、以取得遺失的事件
+ a| 
+否
+
+
+
+ a| 
+活動詳細資料
+ a| 
+建議的修正行動會直接從ONTAP 功能性資料匯入、以提供一致的解決方案
+ a| 
+「事件詳細資料」頁面未提供修正行動
+
+|===
+[NOTE]
+====
+有些新的自動EMS事件是資訊事件、表示先前的事件已解決。例如FlexGroup 、「'支援 空間狀態All OK'」資訊事件表示「FlexGroup 『支援對象有空間問題』」錯誤事件已解決。資訊事件無法使用與其他事件嚴重性類型相同的事件生命週期來管理、但如果同一個磁碟區收到另一個「「速度問題」錯誤事件、則會自動淘汰該事件。
+
+====

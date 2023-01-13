@@ -1,0 +1,27 @@
+---
+permalink: performance-checker/concept-unified-manager-performance-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager會從執行ONTAP VMware軟體的系統收集並分析效能統計資料。它使用動態效能臨界值和使用者定義的效能臨界值、來監控許多叢集元件上的各種效能計數器。 
+---
+= Unified Manager效能監控功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager會從執行ONTAP VMware軟體的系統收集並分析效能統計資料。它使用動態效能臨界值和使用者定義的效能臨界值、來監控許多叢集元件上的各種效能計數器。
+
+高回應時間（延遲）表示儲存物件（例如磁碟區）的執行速度比正常慢。此問題也表示使用Volume的用戶端應用程式效能降低。Unified Manager可識別效能問題所在的儲存元件、並提供您可採取的建議行動清單、以解決效能問題。
+
+Unified Manager具備下列功能：
+
+* 從執行ONTAP VMware軟體的系統監控及分析工作負載效能統計資料。
+* 追蹤叢集、節點、集合體、連接埠、SVM、磁碟區、LUN、NVMe命名空間和LIF。
+* 顯示詳細的圖表、可顯示一段時間內的工作負載活動繪圖、包括IOPS（作業）、Mbps（處理量）、延遲（回應時間）、使用率、 效能容量與快取比率。
+* 可讓您建立使用者定義的效能臨界值原則、以便在臨界值超出時觸發事件並傳送電子郵件警示。
+* 使用系統定義的臨界值和動態效能臨界值來瞭解您的工作負載活動、以識別並警示您效能問題。
+* 清楚識別爭用的叢集元件。
+* 識別過度使用叢集元件的工作負載、以及其效能受活動增加影響的工作負載。
+

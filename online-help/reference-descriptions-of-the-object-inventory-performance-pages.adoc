@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「效能」目錄頁來查看每個可用儲存物件的效能資訊摘要、例如叢集、集合體、磁碟區等。您可以連結至效能物件詳細資料頁面、以檢視特定物件的詳細資訊。 
+---
+= 效能詳細目錄頁面的說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「效能」目錄頁來查看每個可用儲存物件的效能資訊摘要、例如叢集、集合體、磁碟區等。您可以連結至效能物件詳細資料頁面、以檢視特定物件的詳細資訊。

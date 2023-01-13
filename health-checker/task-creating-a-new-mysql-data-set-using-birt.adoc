@@ -1,0 +1,43 @@
+---
+permalink: health-checker/task-creating-a-new-mysql-data-set-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 建立資料來源之後、您必須建立MySQL資料集、以建立報告的輸出結果。您也可以在建立資料集之後編輯輸出類型。 
+---
+= 使用BIRT建立新的MySQL資料集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+建立資料來源之後、您必須建立MySQL資料集、以建立報告的輸出結果。您也可以在建立資料集之後編輯輸出類型。
+
+
+
+== 開始之前
+
+您必須已使用BIRT建立了一個jdbc資料來源。
+
+您必須已下載並安裝MySQL Connector/J
+
+您必須在Unified Manager中建立具有報告架構角色的資料庫使用者。
+
+
+
+== 步驟
+
+. 從* ECLIPSE*選取工作區。
+. 選擇*資料總管*>*資料集*>*新資料集*。
+. 在「*新資料集*」對話方塊中、選取先前建立的資料來源、資料集類型及資料集名稱、然後按一下「*下一步*」。
+. 使用可用項目定義SQL查詢文字、或手動輸入查詢、然後按一下*完成*。
+. 按一下「*預覽結果*」確認SQL查詢、然後按一下「*確定*」。
+. 在「*編輯資料集*」對話方塊中、視需要定義輸出欄、然後按一下「*確定*」。
+. 將項目拖曳至新建立的報告。
+
+
+
+
+== 完成後
+
+現在您應該將新建立的報告匯入Unified Manager。

@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-what-the-suggested-actions-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: 「事件詳細資料」頁面的「建議動作」區段提供事件的可能原因、並建議幾項行動、以便您自行解決事件。建議的動作是根據已違反的事件類型或臨界值類型而自訂。 
+---
+= 顯示「建議動作」區段的內容
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「事件詳細資料」頁面的「建議動作」區段提供事件的可能原因、並建議幾項行動、以便您自行解決事件。建議的動作是根據已違反的事件類型或臨界值類型而自訂。
+
+此區域僅會針對某些類型的事件顯示。
+
+在某些情況下、頁面上會提供*說明*連結、以參考許多建議行動的其他資訊、包括執行特定行動的指示。部分行動可能涉及使用Unified Manager、OnCommand 《列舉系統管理程式》、OnCommand Workflow Automation 《列舉》、ONTAP 《列舉CLI命令》或這些工具的組合。
+
+本說明主題也提供一些連結。
+
+您應該將此處建議的行動視為解決此事件的指引。您解決此事件所採取的行動、應以您環境的內容為基礎。

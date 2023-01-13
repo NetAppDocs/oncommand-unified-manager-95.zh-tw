@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-deleting-values-from-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 當自訂註釋的值不再套用時、您可以刪除與該值相關的值。 
+---
+= 從註釋刪除值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當自訂註釋的值不再套用時、您可以刪除與該值相關的值。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 註釋值不得與任何註釋規則或群組規則相關聯。
+
+
+
+
+== 關於這項工作
+
+您無法從預先定義的註釋刪除值。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左管理功能表中的*註釋*。
+. 在「*註釋*」標籤的註釋清單中、選取您要從中刪除值的註釋。
+. 在「*註釋*」標籤的「*值*」區域中、選取您要刪除的值、然後按一下「*刪除*」。
+. 在*警告*對話方塊中、按一下*是*。
++
+此值將會刪除、且不會再顯示在所選註釋的值清單中。
+
+

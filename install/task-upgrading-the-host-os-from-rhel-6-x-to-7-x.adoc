@@ -1,0 +1,68 @@
+---
+permalink: install/task-upgrading-the-host-os-from-rhel-6-x-to-7-x.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您先前在Red Hat Enterprise Linux 6.x系統上安裝Unified Manager、現在需要升級至Red Hat Enterprise Linux 7.x、則必須遵循本主題所列的其中一個程序。在這兩種情況下、您都必須在Red Hat Enterprise Linux 6.x系統上建立Unified Manager備份、然後將備份還原至Red Hat Enterprise Linux 7.x系統。 
+---
+= 將主機作業系統從Red Hat Enterprise Linux 6.x升級至7.x
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您先前在Red Hat Enterprise Linux 6.x系統上安裝Unified Manager、現在需要升級至Red Hat Enterprise Linux 7.x、則必須遵循本主題所列的其中一個程序。在這兩種情況下、您都必須在Red Hat Enterprise Linux 6.x系統上建立Unified Manager備份、然後將備份還原至Red Hat Enterprise Linux 7.x系統。
+
+
+
+== 關於這項工作
+
+下列兩個選項的差異在於：在一種情況下、您要在新的RHEL 7.x伺服器上執行Unified Manager還原、而在另一種情況下、您要在同一部伺服器上執行還原作業。
+
+由於此工作需要在Red Hat Enterprise Linux 6.x系統上建立Unified Manager備份、因此只有在準備好完成整個升級程序、Unified Manager才能離線最短時間時、才應建立備份。在Red Hat Enterprise Linux 6.x系統關閉期間、以及新的Red Hat Enterprise Linux 7.x啟動之前、Unified Manager UI中會出現所收集資料的落差。
+
+如需檢閱備份與還原程序的詳細指示、請參閱_Unified Manager線上說明_。
+
+*使用新的伺服器升級主機作業系統*
+
+如果您的備用系統可以安裝RHEL 7.x軟體、以便在RHEL 6.x系統仍可用的情況下、在該系統上執行Unified Manager還原、請遵循下列步驟。
+
+. 使用Red Hat Enterprise Linux 7.x軟體安裝及設定新伺服器。
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Red Hat軟體與安裝需求]
+
+. 在Red Hat Enterprise Linux 7.x系統上、安裝與現有Red Hat Enterprise Linux 6.x系統相同版本的Unified Manager軟體。
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[在Red Hat Enterprise Linux上安裝Unified Manager]
+
++
+安裝完成時、請勿啟動UI或設定任何叢集、使用者或驗證設定。備份檔案會在還原程序期間填入此資訊。
+
+. 在Red Hat Enterprise Linux 6.x系統上、從Web UI的管理功能表建立Unified Manager備份、然後將備份檔案複製到外部位置。
+. 在Red Hat Enterprise Linux 6.x系統上、關閉Unified Manager。
+. 在Red Hat Enterprise Linux 7.x系統上、將備份檔案從外部位置複製到 `/data/ocum-backup/`然後輸入下列命令、從備份檔案還原Unified Manager資料庫：``um backup restore -f /opt/netapp/data/ocum-backup/<backup_file_name>``
+. 在支援的網頁瀏覽器中輸入IP位址或URL、以啟動Unified Manager網路UI、然後登入系統。
+
+
+驗證系統是否正常運作之後、您就可以從Red Hat Enterprise Linux 6.x系統移除Unified Manager。
+
+*升級同一部伺服器上的主機作業系統*
+
+如果您沒有可安裝RHEL 7.x軟體的備用系統、請遵循下列步驟。
+
+. 從Web UI的「管理」功能表中、建立Unified Manager備份、然後將備份檔案複製到外部位置。
+. 從系統中移除Red Hat Enterprise Linux 6.x映像、然後完全抹除系統。
+. 在同一個系統上安裝及設定Red Hat Enterprise Linux 7.x軟體。
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Red Hat軟體與安裝需求]
+
+. 在Red Hat Enterprise Linux 7.x系統上、安裝與Red Hat Enterprise Linux 6.x系統相同版本的Unified Manager軟體。
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[在Red Hat Enterprise Linux上安裝Unified Manager]
+
++
+安裝完成時、請勿啟動UI或設定任何叢集、使用者或驗證設定。備份檔案會在還原程序期間填入此資訊。
+
+. 將備份檔案從外部位置複製到 `/data/ocum-backup/`然後輸入下列命令、從備份檔案還原Unified Manager資料庫：``um backup restore -f /opt/netapp/data/ocum-backup/<backup_file_name>``
+. 在支援的網頁瀏覽器中輸入IP位址或URL、以啟動Unified Manager網路UI、然後登入系統。
+

@@ -1,0 +1,45 @@
+---
+permalink: install/task-upgrading-mysql-on-windows-ocum.html 
+sidebar: sidebar 
+keywords: OnCommand Unified Manager 
+summary: 您可以在安裝Unified Manager的Windows伺服器上升級至較新版本的MySQL、以取得安全性弱點的修正程式。 
+---
+= 升級Windows上的MySQL
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在安裝Unified Manager的Windows伺服器上升級至較新版本的MySQL、以取得安全性弱點的修正程式。
+
+
+
+== 開始之前
+
+* 您必須擁有安裝Unified Manager的系統的Windows管理員權限。
+* 您必須擁有MySQL root使用者的密碼。
+
+
+
+
+== 步驟
+
+. 以管理使用者身分登入Unified Manager主機。
+. 將適當版本的MySQL下載到目標系統。
+. 使用Windows服務主控台停止下列Unified Manager服務：
++
+** NetApp OCIE併購單位（Ocia-au）
+** NetApp OnCommand 解決方案伺服器（Oncommandsvc）
+** MySQL
+
+
+. 按一下 `.msi` 套件以啟動MySQL升級、並依照畫面上的指示完成升級。
+. 使用Windows服務主控台啟動Unified Manager服務：
++
+** MySQL
+** NetApp OnCommand 解決方案伺服器（Oncommandsvc）
+** NetApp OCIE併購單位（Ocia-au）
+
+
+

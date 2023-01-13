@@ -1,0 +1,97 @@
+---
+permalink: install/task-installing-unified-manager-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Windows上安裝Unified Manager、以監控及疑難排解資料儲存容量、可用度、效能及保護問題。 
+---
+= 在Windows系統上安裝Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Windows上安裝Unified Manager、以監控及疑難排解資料儲存容量、可用度、效能及保護問題。
+
+
+
+== 開始之前
+
+* 您打算安裝Unified Manager的系統必須符合系統和軟體需求。
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[硬體系統需求]
+
++
+xref:reference-windows-software-and-installation-requirements.adoc[Windows軟體與安裝需求]
+
++
+[NOTE]
+====
+從Unified Manager 9.5開始、Unified Manager安裝套件中就會提供OpenJDK、並會自動安裝。不支援從Unified Manager 9.5開始使用Oracle Java。
+
+====
+* 您必須擁有Windows系統管理員權限。
+* 您必須擁有支援的網頁瀏覽器。
+* Unified Manager維護使用者密碼必須介於8到20個字元之間、且必須包含大寫字母或大小寫字母、數字和特殊字元。
+* 維護使用者或MySQL root使用者的密碼字串中不允許使用下列特殊字元：「'、%、=&<>|^\/（）[]；
++
+允許使用下列特殊字元：~！@#$*-？。：+｛｝
+
+
+
+
+
+== 步驟
+
+. 使用預設的本機系統管理員帳戶登入Windows。
+. 登入NetApp 支援網站 到這個功能、找到「Download（下載）」頁面、以便在Windows平台上安裝Unified Manager。
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["NetApp下載：軟體"]
+
+. 將Unified Manager Windows安裝檔案從NetApp 支援網站 功能區下載到Windows系統的目標目錄。
+. 瀏覽至安裝檔案所在的目錄。
+. 按一下滑鼠右鍵並執行Unified Manager安裝程式執行檔 (`.exe`）以系統管理員身分建立檔案。
++
+Unified Manager會偵測遺失或預先安裝的協力廠商套件、並列出這些套件。如果系統中未安裝所需的協力廠商套件、Unified Manager會在安裝過程中安裝這些套件。
+
+. 單擊 * 下一步 * 。
+. 輸入使用者名稱和密碼以建立維護使用者。
+. 在*資料庫連線*精靈中、輸入MySQL根密碼。
+. 按一下「*變更*」以指定Unified Manager安裝目錄和MySQL資料目錄的新位置。
++
+如果您未變更安裝目錄、Unified Manager會安裝在預設安裝目錄中。
+
+. 單擊 * 下一步 * 。
+. 在「*準備安裝Shield *」精靈中、按一下「*安裝*」。
+. 安裝完成後、按一下*「Finish」（完成）*。
+
+
+
+
+== 結果
+
+安裝會建立多個目錄：
+
+* 安裝目錄
++
+這是您在安裝期間指定的Unified Manager根目錄。範例： `C:\Program Files\NetApp\`
+
+* MySQL資料目錄
++
+這是您在安裝期間指定的MySQL資料庫儲存目錄。範例： `C:\ProgramData\MySQL\MySQLServerData\`
+
+* Java目錄
++
+這是安裝OpenJDK的目錄。範例： `C:\Program Files\NetApp\JDK\`
+
+* Unified Manager應用程式資料目錄（appDataDir)
++
+這是儲存所有應用程式產生資料的目錄。這包括記錄、支援套裝組合、備份及所有其他額外資料。範例： `C:\ProgramData\NetApp\OnCommandAppData\`
+
+
+
+
+
+== 完成後
+
+您可以存取Web UI來執行Unified Manager的初始設定、如所述 link:../config/concept-configuring-unified-manager.html["設定Unified Manager"]。

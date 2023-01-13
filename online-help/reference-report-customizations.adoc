@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以根據儲存與使用率容量、事件、叢集庫存、NFS匯出或SVM庫存、自訂各種Unified Manager報告。。 
+---
+= 報告自訂
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根據儲存與使用率容量、事件、叢集庫存、NFS匯出或SVM庫存、自訂各種Unified Manager報告。。

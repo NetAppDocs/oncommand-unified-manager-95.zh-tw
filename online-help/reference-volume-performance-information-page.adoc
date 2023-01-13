@@ -1,0 +1,81 @@
+---
+permalink: online-help/reference-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用此頁面可檢視磁碟區的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。本頁的標題取決於您是要檢視FlexVol 某個視覺功能區或FlexGroup 是一個視覺功能區。 
+---
+= 效能/ Volume或效能/ FlexGroup資訊頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用此頁面可檢視磁碟區的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。本頁的標題取決於您是要檢視FlexVol 某個視覺功能區或FlexGroup 是一個視覺功能區。
+
+
+
+== Volume屬性
+
+* *類型*
++
+磁碟區類型：讀寫（RW）或資料保護（DP）。
+
+* *風格*
++
+Volume的風格：FlexVol 不只是功能性、更FlexGroup 是功能性。
+
++
+[NOTE]
+====
+Unified Manager的效能頁面不支援無限磁碟區。
+
+====
+* *叢集*
++
+此等冊集區或冊的叢集名稱FlexVol FlexGroup 。您可以按一下名稱、在「Performance / Cluster Explorer（效能/叢集資源管理器）」頁面中顯示叢集詳細資料。
+
+* *集合體*
++
+此FlexVol 等流通量所在的集合體名稱、或此FlexGroup 流通量所在的集合體數量。
+
++
+若為FlexVol 「支援區域」、您可以按一下名稱、在「效能/集合體資源管理器」頁面中顯示集合體詳細資料。若為FlexGroup 「流通量」、您可以在FlexGroup 「效能/集合體庫存」頁面中、按一下數字來顯示此「流通量」中使用的集合體。
+
+* *儲存虛擬機器*
++
+本《SVM FlexVol 》或FlexGroup 《SVM》所屬的SVM名稱。您可以按一下名稱、在「Performance（效能）/SVM Explorer（SVM檔案總管）」頁面中顯示SVM詳細資料。
+
+* *分層政策*
++
+在磁碟區上設定的分層原則。只有在將磁碟區部署在FabricPool 一個不含支援的集合體上時、該原則才會生效。可用的原則包括：
+
++
+** 無。此磁碟區的資料永遠保留在效能層。
+** 僅適用於Snapshot。只有Snapshot資料會自動移至雲端層。所有其他資料都會保留在效能層級上。
+** 備份：在資料保護磁碟區上、所有傳輸的使用者資料都會從雲端層開始、但稍後的用戶端讀取可能會導致熱資料移至效能層。
+** 自動。當VMware判斷資料是「熱」或「冷」時、此磁碟區上的資料會自動在效能層與雲端層之間移動ONTAP 。
+
+
+* * RAID類型*
++
+此磁碟區所在之集合體的效能層所使用的備援類型。可能的類型：
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
++
+[NOTE]
+====
+由於組成磁碟區可以位於不同RAID類型的集合體上、因此顯示「不適用」的值FlexGroup 。
+
+====
+* *容量（可用/總計）*
++
+磁碟區上可用的總儲存容量（以GB為單位）、以及目前可用的儲存容量。
+
+

@@ -1,0 +1,70 @@
+---
+permalink: install/task-uninstalling-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「程式和功能」精靈、或從命令列介面執行無人值守解除安裝、從Windows解除安裝Unified Manager。 
+---
+= 從Windows解除安裝Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+您可以使用「程式和功能」精靈、或從命令列介面執行無人值守解除安裝、從Windows解除安裝Unified Manager。
+
+
+
+== 開始之前
+
+* 您必須擁有Windows系統管理員權限。
+* 在解除安裝軟體之前、必須先從Unified Manager伺服器移除所有叢集（資料來源）。
+* Unified Manager伺服器不得與外部資料供應商（例如Graphite）有作用中的連線。
++
+如果是、您必須使用Unified Manager維護主控台刪除連線。
+
+
+
+
+
+== 步驟
+
+. 安裝在高可用度設定中時、請先移除HA服務群組資源並刪除HA服務群組、然後再從兩個節點解除安裝Unified Manager。
+. 請選擇下列其中一個選項來解除安裝Unified Manager：
++
+|===
+| 若要從解除安裝Unified Manager ... | 然後... 
+
+
+ a| 
+程式與功能精靈
+ a| 
+.. 瀏覽至*控制台*>*程式與功能*。
+.. 選取OnCommand 「NetApp統一化管理程式」、然後按一下「*解除安裝*」。
+
+
+
+
+ a| 
+命令列
+ a| 
+.. 使用系統管理員權限登入Windows命令列。
+.. 瀏覽OnCommand 至《The行程指南》中的「版本資訊」目錄、然後執行下列命令： `+msiexec /x {A78760DB-7EC0-4305-97DB-E4A89CDFF4E1} /qn /l*v %systemdrive%\UmUnInstall.log+`
+
+
+|===
++
+如果伺服器上已啟用使用者帳戶控制（UAC-）、且您以網域使用者身分登入、則必須使用命令列解除安裝方法。
+
++
+Unified Manager已從您的系統中解除安裝。
+
+. 解除安裝下列未在Unified Manager解除安裝期間移除的協力廠商套件和資料：
++
+** 第三方套件：JRE、MySQL、Microsoft Visual C&#43；&#43；2015可轉散發套件及7Zip
+** 由Unified Manager產生的MySQL應用程式資料
+** 應用程式記錄和應用程式資料目錄的內容
+
+
+

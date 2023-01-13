@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-deployment-process.html 
+sidebar: sidebar 
+keywords:  
+summary: 部署工作流程會說明您在使用Unified Manager之前必須執行的工作。 
+---
+= VMware部署程序總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+部署工作流程會說明您在使用Unified Manager之前必須執行的工作。
+
+image::../media/deployment-sequence-oc-6-0.gif[部署順序相關文件6 0]

@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-resource-pool-inventory.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「保護/資源池」頁面來檢視資源池庫存、以及監控每個資源池的剩餘容量。 
+---
+= 檢視資源池資源清冊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「保護/資源池」頁面來檢視資源池庫存、以及監控每個資源池的剩餘容量。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下* Protection（保護）***資源池*。
++
+此時會顯示資源池資源清冊。
+
+

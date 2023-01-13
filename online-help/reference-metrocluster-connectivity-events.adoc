@@ -1,0 +1,198 @@
+---
+permalink: online-help/reference-metrocluster-connectivity-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 連線事件可讓您瞭解叢集元件之間的連線、MetroCluster 以及叢集之間的連線能力、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 連接事件MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+連線事件可讓您瞭解叢集元件之間的連線、MetroCluster 以及叢集之間的連線能力、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+所有交換器間連結中斷（ocumEvtMetroClusterAllISLBetweenSwitchesDown）
+ a| 
+事件
+ a| 
+交換器間連線MetroCluster
+ a| 
+關鍵
+
+
+
+ a| 
+所有鏈接MetroCluster 均可下移（ocumEvtMetroClusterAllLinksBetweenPartnersDown）
+ a| 
+事件
+ a| 
+彼此的關係MetroCluster
+ a| 
+關鍵
+
+
+
+ a| 
+FC-SAS橋接至儲存堆疊連結中斷（ocumEvtBriggeSasPortDown）
+ a| 
+事件
+ a| 
+鏈路橋接堆疊連線MetroCluster
+ a| 
+關鍵
+
+
+
+ a| 
+交換組態（ocumEvtMetroClusterDRStatus影響MetroCluster ）
+ a| 
+風險
+ a| 
+彼此的關係MetroCluster
+ a| 
+警告
+
+
+
+ a| 
+部分切換組態（ocumEvtMetroClusterDRStatus PartiallyImpActy）MetroCluster
+ a| 
+風險
+ a| 
+彼此的關係MetroCluster
+ a| 
+錯誤
+
+
+
+ a| 
+影響的災難恢復功能（ocumEvtMetroClusterDRStatus影響）MetroCluster
+ a| 
+風險
+ a| 
+彼此的關係MetroCluster
+ a| 
+關鍵
+
+
+
+ a| 
+無法透過對等網路連線至合作夥伴（ocumEvtMetroClusterPartnersNotReachableOverPeeringNetwork）MetroCluster
+ a| 
+事件
+ a| 
+彼此的關係MetroCluster
+ a| 
+關鍵
+
+
+
+ a| 
+節點對FC交換器所有FC-VI互連連結中斷（ocumEvtMccNodeSwitchFcviLinksDown）
+ a| 
+事件
+ a| 
+連接至節點交換器MetroCluster
+ a| 
+關鍵
+
+
+
+ a| 
+節點對FC交換器一或多個FC-Initiator連結關閉（ocumEvtMccNodeSwitchFCLinksOneOrMoreDown）
+ a| 
+風險
+ a| 
+連接至節點交換器MetroCluster
+ a| 
+警告
+
+
+
+ a| 
+節點對FC交換器所有FC-Initiator連結關閉（ocumEvtMccNodeSwitchFCLinksDown）
+ a| 
+事件
+ a| 
+連接至節點交換器MetroCluster
+ a| 
+關鍵
+
+
+
+ a| 
+切換至FC-SAS橋接器FC連結中斷（ocumEvtMccSwitchBriggeFCLinksDown）
+ a| 
+事件
+ a| 
+交換器橋接器連線MetroCluster
+ a| 
+關鍵
+
+
+
+ a| 
+節點間所有FC VI互連連結中斷（ocumEvtMccInterNodeLinksDown）
+ a| 
+事件
+ a| 
+節點間連線
+ a| 
+關鍵
+
+
+
+ a| 
+節點間一或多個FC VI互連連結中斷（ocumEvtMccInterNodeLinksOneOrMoreDown）
+ a| 
+風險
+ a| 
+節點間連線
+ a| 
+警告
+
+
+
+ a| 
+節點對橋接連結中斷（ocumEvtMccNodeBriggeLinksDown）
+ a| 
+事件
+ a| 
+節點橋接器連線
+ a| 
+關鍵
+
+
+
+ a| 
+節點對儲存堆疊所有SAS連結關閉（ocumEvtMccNodeStackLinksDown）
+ a| 
+事件
+ a| 
+節點堆疊連線
+ a| 
+關鍵
+
+
+
+ a| 
+節點對儲存堆疊一或多個SAS連結關閉（ocumEvtMccNodeStackLinksOneOrMoreDown）
+ a| 
+風險
+ a| 
+節點堆疊連線
+ a| 
+警告
+
+|===

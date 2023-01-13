@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-downloading-an-https-certificate-signing-request-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以下載目前HTTPS安全性憑證的認證要求、以便將檔案提供給憑證授權單位進行簽署。CA簽署的憑證有助於預防攔截式攻擊、並提供比自我簽署憑證更好的安全保護。 
+---
+= 正在下載HTTPS憑證簽署要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以下載目前HTTPS安全性憑證的認證要求、以便將檔案提供給憑證授權單位進行簽署。CA簽署的憑證有助於預防攔截式攻擊、並提供比自我簽署憑證更好的安全保護。
+
+
+
+== 開始之前
+
+您必須OnCommand 扮演「管理員角色」。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*設定*功能表中的* HTTPS憑證*。
+. 按一下*下載HTTPS憑證簽署要求*。
+. 儲存 `<hostname>.csr` 檔案：
+
+
+
+
+== 完成後
+
+您可以將檔案提供給「憑證授權單位」進行簽署、然後安裝簽署的憑證。

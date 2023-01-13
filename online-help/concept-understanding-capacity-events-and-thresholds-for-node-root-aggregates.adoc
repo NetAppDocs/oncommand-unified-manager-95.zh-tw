@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-understanding-capacity-events-and-thresholds-for-node-root-aggregates.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Unified Manager監控節點根Aggregate。最佳實務做法是在根Aggregate中以粗體配置根磁碟區、以避免節點停止運作。 
+---
+= 瞭解節點根集合體的事件和臨界值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager監控節點根Aggregate。最佳實務做法是在根Aggregate中以粗體配置根磁碟區、以避免節點停止運作。
+
+根據預設、不會針對根集合體產生容量和效能事件。此外、Unified Manager使用的臨界值不適用於節點根集合體。只有技術支援代表可以修改要產生這些事件的設定。當技術支援代表修改設定時、容量臨界值會套用至節點根Aggregate。
+
+您可以採取適當的行動、以避免節點停止、只要使用OnCommand 「系統管理程式」或ONTAP 「系統資訊」CLI即可。

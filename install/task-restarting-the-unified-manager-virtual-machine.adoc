@@ -1,0 +1,40 @@
+---
+permalink: install/task-restarting-the-unified-manager-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從維護主控台重新啟動Unified Manager虛擬機器（VM）。您必須在產生新的安全性憑證之後、或是VM發生問題時、重新啟動VM。 
+---
+= 重新啟動Unified Manager虛擬機器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從維護主控台重新啟動Unified Manager虛擬機器（VM）。您必須在產生新的安全性憑證之後、或是VM發生問題時、重新啟動VM。
+
+
+
+== 開始之前
+
+* 虛擬應用裝置必須開啟電源。
+* 您必須以維護使用者身分登入Unified Manager維護主控台。
+
+
+
+
+== 關於這項工作
+
+您也可以使用VMware *重新啟動客戶*選項、從vSphere重新啟動虛擬機器。
+
+
+
+== 步驟
+
+. 在維護主控台中、選取*系統組態*>*重新開機虛擬機器*。
+. 從瀏覽器啟動Unified Manager圖形化使用者介面（GUI）、然後登入。
+
+
+*相關資訊*
+
+https://www.vmware.com/support/developer/PowerCLI/PowerCLI41/html/Restart-VMGuest.html["VMware vSphere PowerCLI Cmdlet參考資料：RESTL-VMGuest"]

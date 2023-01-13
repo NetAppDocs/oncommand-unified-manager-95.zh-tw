@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-network-interface-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「Performance（效能）/LIF Explorer（LIF檔案總管）」頁面提供叢集內所有生命體的詳細效能總覽。 
+---
+= 效能/LIF檔案總管頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Performance（效能）/LIF Explorer（LIF檔案總管）」頁面提供叢集內所有生命體的詳細效能總覽。
+
+「Performance / LIF Explorer」頁面可讓您追蹤及比較特定時段內的LIF效能、協助您疑難排解及微調LIF效能。
+
+使用「檢視與比較」功能、您可以將此LIF的效能與下列項目進行比較：
+
+* 位於同一個連接埠的其他LIF
+* 相同SVM上的其他LIF
+* LIF所在的連接埠
+* LIF所在的SVM
+
+
+「Performance（效能）/LIF Explorer（LIF檔案總管）」頁面可讓您：
+
+* 檢視臨界值相關問題及其詳細資料
+* 追蹤並比較LIF效能資料
+* 調查並疑難排解臨界值相關問題
+* 調查並疑難排解效能問題
+

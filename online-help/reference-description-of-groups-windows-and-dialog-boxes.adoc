@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-groups-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「管理/群組」頁面來檢視及管理所有群組。您也可以從「群組規則」索引標籤和「群組動作」索引標籤、為儲存物件設定群組規則和動作。 
+---
+= 群組視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「管理/群組」頁面來檢視及管理所有群組。您也可以從「群組規則」索引標籤和「群組動作」索引標籤、為儲存物件設定群組規則和動作。

@@ -1,0 +1,33 @@
+---
+permalink: online-help/reference-flash-card-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Flash卡事件可讓您瞭解資料中心節點上安裝的Flash卡狀態、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= Flash卡事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Flash卡事件可讓您瞭解資料中心節點上安裝的Flash卡狀態、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+Flash卡離線（ocumEvtFlashCards離線）
+ a| 
+事件
+ a| 
+節點
+ a| 
+關鍵
+
+|===

@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以顯示叢集中所有連接埠的相關資訊。您可以檢視網路連接埠角色（叢集、資料或節點管理）、連結狀態、最大傳輸單元（MTU）、速度設定和作業狀態、以及連接埠的介面群組等資訊（如果適用）。 
+---
+= 使用CLI識別忙碌LIF的最佳節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以顯示叢集中所有連接埠的相關資訊。您可以檢視網路連接埠角色（叢集、資料或節點管理）、連結狀態、最大傳輸單元（MTU）、速度設定和作業狀態、以及連接埠的介面群組（如果適用）等資訊。
+
+
+
+== 步驟
+
+. 若要顯示連接埠資訊、請輸入下列命令： `network port show`
++
+下列範例顯示有關具有資料角色且位於叢集中的網路連接埠的資訊：
+
++
+[listing]
+----
+cluster1::> network port show  -role data -link up
+                                   Auto-Negot Duplex      Speed (Mbps)
+Node Port Role         Link  MTU   Admin/Oper Admin/Oper  Admin/Oper
+---- ---- -----        ----  ----  ---------- ----------  ----------
+node1
+     e0M  data         up    1500  true/true  full/full   auto/100
+     e0b  data         up    1500  true/true  full/full   auto/1000
+
+node2
+     e0b  data         up    1500  true/true  full/full   auto/1000
+----
+. 檢查與來源主連接埠和主節點位於同一個網路中的目的地連接埠。
++
+例如、目的地主連接埠和主節點應位於適用的相同VLAN上。
+
+. 若要識別最不忙碌的連接埠、請選擇連線數目最少的資料連接埠。
+

@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-viewing-the-list-of-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視所選磁碟區的Snapshot複本清單。您可以使用Snapshot複本清單來計算刪除一或多個Snapshot複本時可回收的磁碟空間量、並可視需要刪除Snapshot複本。 
+---
+= 檢視Snapshot複本清單
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視所選磁碟區的Snapshot複本清單。您可以使用Snapshot複本清單來計算刪除一或多個Snapshot複本時可回收的磁碟空間量、並可視需要刪除Snapshot複本。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+* 包含Snapshot複本的磁碟區必須處於線上狀態。
+
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下*健全狀況*>*磁碟區*。
+. 在「*健全狀況/磁碟區*」目錄頁面中、選取包含您要檢視之Snapshot複本的磁碟區。
+. 在「*健全狀況/磁碟區*」詳細資料頁面中、按一下「*容量*」索引標籤。
+. 在「*容量*」標籤的「*詳細資料*」窗格中、於「其他詳細資料」區段中、按一下「* Snapshot copies *」旁邊的連結。
++
+Snapshot複本數量是顯示Snapshot複本清單的連結。
+
+

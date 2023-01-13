@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-viewing-the-details-of-svms-with-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「健全狀況/儲存虛擬機器」資源清冊頁面、檢視Unified Manager監控的無限Volume儲存虛擬機器（SVMs）的詳細資訊。您可以檢視容量、組態及資料原則等詳細資料、以及與Infinite Volume相關的規則。 
+---
+= 檢視具有無限Volume的SVM詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「健全狀況/儲存虛擬機器」目錄頁面、檢視Unified Manager監控的無限Volume之儲存虛擬機器（SVM）的詳細資訊。您可以檢視容量、組態及資料原則等詳細資料、以及與Infinite Volume相關的規則。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+* 包含SVM with Infinite Volume的叢集必須新增至Unified Manager資料庫。
+
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下「*健全狀況*」>「* SVMS*」。
+. 在「*健全狀況/儲存虛擬機器*」目錄頁面中、使用*允許的Volume類型*中的欄篩選器來列出監控的無限Volume。
+. 按一下SVM名稱、即可檢視具有Infinite Volume的SVM完整詳細資料。
+

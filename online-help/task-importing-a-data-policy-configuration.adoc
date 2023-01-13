@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-importing-a-data-policy-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從檔案匯入資料原則組態、修改資料原則、然後在SVM中以Infinite Volume啟動變更。例如、發生災難時、您可以將已定義的資料原則匯入次要原則、並視需要修改原則。 
+---
+= 匯入資料原則組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從檔案匯入資料原則組態、修改資料原則、然後在SVM中以Infinite Volume啟動變更。例如、發生災難時、您可以將已定義的資料原則匯入次要原則、並視需要修改原則。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+匯入資料原則組態時、現有的規則會遭到覆寫。
+
+資料原則索引標籤只會針對具有無限Volume的SVM顯示。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下「*健全狀況*」>「* SVMS*」。
+. 在*健全狀況/儲存虛擬機器*目錄頁面中、選取適當的SVM。
+. 按一下*資料原則*。
++
+隨即顯示所選SVM with Infinite Volume資料原則中的規則清單。
+
+. 按一下*匯入*。
+. 在*匯入資料原則*對話方塊中、提供資料原則檔案的絕對路徑、以指定您要匯入的資料原則。
+. 按一下*匯入*。
+. 按一下「*啟動*」以啟動SVM中匯入的規則。
+

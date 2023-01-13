@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立報告、以監控各種容量與使用率的磁碟區相關資訊。例如、您可以建立報告來顯示已使用的磁碟區、總容量、每日成長率及Snapshot複製容量、協助您判斷磁碟區是否空間不足、或是過度使用或未充分利用。 
+---
+= Volume容量與使用率報告自訂項目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立報告、以監控各種容量與使用率的磁碟區相關資訊。例如、您可以建立報告來顯示已使用的磁碟區、總容量、每日成長率及Snapshot複製容量、協助您判斷磁碟區是否空間不足、或是過度使用或未充分利用。

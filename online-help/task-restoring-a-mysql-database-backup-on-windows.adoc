@@ -1,0 +1,56 @@
+---
+permalink: online-help/task-restoring-a-mysql-database-backup-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 在資料遺失或資料毀損的情況下、您可以使用還原功能、將Unified Manager還原至先前的穩定狀態、同時將遺失降至最低。您可以使用還原命令、將Unified Manager資料庫還原至本機Windows系統或遠端Windows系統。 
+---
+= 在Windows上還原資料庫備份
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在資料遺失或資料毀損的情況下、您可以使用還原功能、將Unified Manager還原至先前的穩定狀態、同時將遺失降至最低。您可以使用還原命令、將Unified Manager資料庫還原至本機Windows系統或遠端Windows系統。
+
+
+
+== 開始之前
+
+* 您必須在伺服器上安裝Unified Manager。
+* 您必須擁有Windows系統管理員權限。
+* 您必須將Unified Manager備份檔案和資料庫儲存庫目錄的內容複製到要執行還原作業的系統。
++
+建議您將備份檔案複製到預設目錄 `\ProgramData\NetApp\OnCommandAppData\ocum\backup`。資料庫儲存庫檔案必須複製到 `\database_dumps_repo` 下的子目錄 `\backup` 目錄。
+
+* 備份檔案必須為 `.7z` 類型。
+
+
+
+
+== 關於這項工作
+
+還原功能是針對平台和版本而設計。您只能在相同版本的Unified Manager上還原Unified Manager備份、而且只能在Windows平台上還原Windows備份。
+
+[TIP]
+====
+如果資料夾名稱包含空格、您必須在雙引號中包含備份檔案的絕對路徑或相對路徑。
+
+====
+
+
+== 步驟
+
+. 如果您要在新伺服器上執行還原、安裝Unified Manager之後、安裝完成後、不會啟動UI或設定任何叢集、使用者或驗證設定。備份檔案會在還原程序期間填入此資訊。
+. 以系統管理員身分登入Unified Manager主控台： `um cli login -u maint_username`
+. 在命令提示字元中、還原備份： `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f \ProgramData\NetApp\OnCommandAppData\ocum\backup\UM_9.4.N151118.2300_backup_windows_02-20-2018-02-51.7z`
+
+
+
+
+
+== 完成後
+
+還原作業完成後、您可以登入Unified Manager。

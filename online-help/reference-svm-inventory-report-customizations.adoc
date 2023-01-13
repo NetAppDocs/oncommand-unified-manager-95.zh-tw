@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-svm-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立SVM庫存報告來分析磁碟區資訊、並檢視整體健全狀況和儲存可用度。例如、您可以建立報告來顯示已達到最大磁碟區數的SVM、以及分析已停止的SVM。 
+---
+= SVM Inventory報告自訂項目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立SVM庫存報告來分析磁碟區資訊、並檢視整體健全狀況和儲存可用度。例如、您可以建立報告來顯示已達到最大磁碟區數的SVM、以及分析已停止的SVM。

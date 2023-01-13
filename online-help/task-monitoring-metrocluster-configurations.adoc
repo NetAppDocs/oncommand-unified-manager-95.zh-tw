@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以監控MetroCluster 使用您的功能性組態的連線問題。詳細資料包括叢集內的元件狀態和連線能力、以及MetroCluster 叢集間的連線狀態（以供參考組態設定）。 
+---
+= 監控MetroCluster 功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以監控MetroCluster 使用您的功能性組態的連線問題。詳細資料包括叢集內的元件狀態和連線能力、以及MetroCluster 叢集間的連線狀態（以供參考組態設定）。
+
+
+
+== 開始之前
+
+* 必須將本地叢集和遠端叢集的MetroCluster 支援功能新增至OnCommand 《支援統一化管理程式（NetApp Unified Manager）」。
+* 您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+
+== 關於這項工作
+
+您可以使用「健全狀況/叢集詳細資料」頁面中顯示的資訊來修正任何連線問題。例如、如果叢集中節點與交換器之間的連線中斷、則會顯示下列圖示：
+
+image::../media/node-switch-connectivity.gif[節點交換器連線能力]
+
+如果將指標移到圖示上、您可以檢視所產生事件的詳細資訊。
+
+Unified Manager會使用系統健全狀況警示來監控MetroCluster 元件的狀態、以及在功能性方面的連線能力。
+
+僅當叢集使用的是一個還原組態時、才會顯示「還原連線」索引標籤。MetroCluster MetroCluster
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下* Health *>* Clusters*。
++
+隨即顯示所有受監控叢集的清單。
+
+. 從*健全狀況/叢集*目錄頁面、按一下您要檢視MetroCluster 其完整組態詳細資料的叢集名稱。
+. 在「*健全狀況/叢集*」詳細資料頁面中、按一下「* MetroCluster 」「連線能力*」索引標籤。
++
+畫面上會在對應的叢集物件區域中顯示此組態的拓撲MetroCluster 。
+
+
+
+
+
+== 完成後
+
+如果MetroCluster 發現在您的資訊功能組態中有連線問題、您必須登入System Manager或存取ONTAP 該CLI來解決問題。

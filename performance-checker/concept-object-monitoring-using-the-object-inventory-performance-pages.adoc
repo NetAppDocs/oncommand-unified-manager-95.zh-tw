@@ -1,0 +1,18 @@
+---
+permalink: performance-checker/concept-object-monitoring-using-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 「效能」物件詳細目錄頁面可讓您根據特定效能計數器的值或效能事件來監控物件效能。這項功能非常實用、因為識別具有效能事件的物件可讓您調查叢集效能問題的原因。 
+---
+= 使用效能物件資源清冊頁面進行物件監控
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「效能」物件詳細目錄頁面可讓您根據特定效能計數器的值或效能事件來監控物件效能。這項功能非常實用、因為識別具有效能事件的物件可讓您調查叢集效能問題的原因。
+
+「效能」物件詳細目錄頁面會顯示所有叢集中所有物件的相關計數器、相關物件及效能臨界值原則。這些頁面也可讓您將效能臨界值原則套用至物件。您可以根據任何欄來排序頁面、也可以搜尋所有物件名稱或資料。
+
+您可以將這些頁面中的資料匯出成以逗號分隔的值 (`.csv`）使用*匯出*按鈕建立檔案、然後使用匯出的資料建立報告。

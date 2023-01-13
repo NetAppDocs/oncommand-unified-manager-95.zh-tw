@@ -1,0 +1,33 @@
+---
+permalink: online-help/concept-storage-virtual-machine-and-resource-pool-requirements-to-support-storage-services.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您觀察到儲存服務專屬的SVM關聯和資源集區需求、您可以更好地確保合作夥伴應用程式的一致性： 例如、當您在Unified Manager中建立SVM關聯並建立資源集區、以支援合作夥伴應用程式所提供之儲存服務中的保護拓撲。 
+---
+= 支援儲存服務的SVM和資源池需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您觀察到儲存服務專屬的SVM關聯和資源集區需求、您可以更好地確保合作夥伴應用程式的一致性： 例如、當您在Unified Manager中建立SVM關聯並建立資源集區、以支援合作夥伴應用程式所提供之儲存服務中的保護拓撲。
+
+部分應用程式與Unified Manager伺服器合作、提供可在SnapVault 二線或三線位置的來源磁碟區與保護磁碟區之間自動設定及執行SnapMirror或SnapMirror備份保護的服務。若要支援這些保護儲存服務、您必須使用Unified Manager來設定必要的SVM關聯和資源集區。
+
+若要支援儲存服務的單一躍點或串聯保護、包括從SnapMirror來源SnapVault 或SnapMirror主磁碟區複寫到位於SnapVault 二線或三線位置的目的地SnapMirror或備份磁碟區、請遵守下列要求：
+
+* SVM關聯必須在包含SnapMirror來源或SnapVault SnapMirror主磁碟區的SVM與次要磁碟區或第三個磁碟區所在的任何SVM之間進行設定。
++
+** 例如、若要支援來源Volume Vol_A位於SVM_1上的保護拓撲、而SnapMirror次要目的地Volume Vol_B位於SVM_2上、 而第三SnapVault 個靜態備份Volume Vol_ C位於SVM_3上、您必須使用Unified Manager Web UI來設定SVM_1和SVM_2之間的SnapMirror關聯、以及SnapVault SVM_1和SVM_3之間的靜態備份關聯。
++
+在此範例中SnapVault 、不需要也不使用SVM_2和SVM_3之間的任何SnapMirror關聯或不相關的資料。
+
+** 若要支援來源Volume Vol_A和SnapMirror目的地Volume Vol_B位於SVM_1上的保護拓撲、您必須在SVM_1和SVM_1之間設定SnapMirror關聯。
+
+
+* 資源集區必須包含相關SVM可用的叢集集合體資源。
++
+您可以透過Unified Manager Web UI設定資源集區、然後透過合作夥伴應用程式指派儲存服務次要目標和第三目標節點。
+
+

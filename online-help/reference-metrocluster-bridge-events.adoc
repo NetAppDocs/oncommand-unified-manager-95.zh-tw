@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-metrocluster-bridge-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 透過「橋樑」事件、您可以獲得橋樑狀態的相關資訊、以便監控可能的問題。MetroCluster事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 資訊橋事件MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過「橋樑」事件、您可以獲得橋樑狀態的相關資訊、以便監控可能的問題。MetroCluster事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+無法連線的橋接器（ocumEvtBridgeUnreachable）
+ a| 
+事件
+ a| 
+橋接器MetroCluster
+ a| 
+關鍵
+
+
+
+ a| 
+橋接器溫度異常（ocumEvtBridgeTemperatureAbnormal）
+ a| 
+事件
+ a| 
+橋接器MetroCluster
+ a| 
+關鍵
+
+|===

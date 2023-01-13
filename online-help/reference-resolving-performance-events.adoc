@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-resolving-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用建議的動作、自行嘗試解決效能事件。前三項建議一律會顯示、第四項建議下的行動則是針對所顯示的事件類型而定。 
+---
+= 解決效能事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用建議的動作、自行嘗試解決效能事件。前三項建議一律會顯示、第四項建議下的行動則是針對所顯示的事件類型而定。
+
+*協助我執行此作業*連結提供每項建議行動的其他資訊、包括執行特定行動的指示。部分行動可能涉及使用Unified Manager、OnCommand 《列舉系統管理程式》、OnCommand Workflow Automation 《列舉》、ONTAP 《列舉CLI命令》或這些工具的組合。

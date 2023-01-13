@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-metrocluster-configuration-verification.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以確保正確設定VMware組態、以避免MetroCluster 在鏡射工作負載上發生效能問題MetroCluster 。您也可以變更組態或升級軟體或硬體元件、以改善工作負載效能。 
+---
+= 驗證組態MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以確保正確設定VMware組態、以避免MetroCluster 在鏡射工作負載上發生效能問題MetroCluster 。您也可以變更組態或升級軟體或硬體元件、以改善工作負載效能。
+
+《_版安裝與組態指南_》提供設定支援以支援各種組態的叢集的說明、包括光纖通道（FC）交換器、纜線和交換器間連結（ISL）MetroCluster MetroCluster 。此外、它也能協助您設定MetroCluster 支援功能、讓本機和遠端叢集能夠與鏡射Volume資料通訊。
+
+您可以將MetroCluster 您的不完整組態與《_ MetroCluster 版安裝與組態指南》_的要求進行比較、以判斷MetroCluster 變更或升級您的不完整組態中的元件、是否能改善工作負載效能。此比較可協助您回答下列問題：
+
+* 控制器是否適合您的工作負載？
+* 您是否需要將ISL套裝組合升級至更大的頻寬、才能處理更多處理量？
+* 您是否可以調整交換器上的緩衝區對緩衝區點數（英國廣播公司）來增加頻寬？
+* 如果您的工作負載對固態磁碟機（SSD）儲存設備的寫入處理量很高、您是否需要升級FC至SAS橋接器以因應處理量？
+
+
+如需更換或升級MetroCluster 等元件的相關資訊、請參閱《_ MetroCluster 》服務指南_。

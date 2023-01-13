@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-user-access-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 根據RBAC設定、您可以從「管理/使用者」頁面新增使用者、並指派適當的角色給這些使用者、以便存取及監控叢集。 
+---
+= 使用者存取視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根據RBAC設定、您可以從「管理/使用者」頁面新增使用者、並指派適當的角色給這些使用者、以便存取及監控叢集。

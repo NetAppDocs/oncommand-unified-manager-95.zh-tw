@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-what-objects-and-metrics-can-be-used-in-combination-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 只有部分效能計數器可以搭配使用於組合原則中。當指定主要和次要效能計數器時、兩個效能計數器在產生事件之前都必須超過其最大限制。 
+---
+= 哪些物件和計數器可用於組合臨界值原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+只有部分效能計數器可以搭配使用於組合原則中。當指定主要和次要效能計數器時、兩個效能計數器在產生事件之前都必須超過其最大限制。
+
+|===
+| 主儲存物件和計數器 | 二線儲存物件和計數器 
+
+
+ a| 
+Volume延遲
+ a| 
+Volume IOPS
+
+
+
+ a| 
+Volume Mbps
+ a| 
+Aggregate使用率
+
+
+
+ a| 
+使用的Aggregate效能容量
+ a| 
+節點使用率
+
+
+
+ a| 
+使用的節點效能容量
+ a| 
+使用的節點效能容量-接管
+
+
+
+ a| 
+LUN延遲
+ a| 
+LUN IOPS
+
+
+
+ a| 
+LUN MBps
+ a| 
+Aggregate使用率
+
+
+
+ a| 
+使用的Aggregate效能容量
+ a| 
+節點使用率
+
+
+
+ a| 
+使用的節點效能容量
+ a| 
+使用的節點效能容量-接管
+
+|===
+[NOTE]
+====
+將Volume組合原則套用至FlexGroup 某個不FlexVol 適用於某個故障的現象Volume時、只有「Volume IOPS」和「Volume MBps」屬性可被選取為次要計數器。如果臨界值原則包含其中一個節點或Aggregate屬性、則該原則將不會套用至FlexGroup 該磁碟區、您將會收到說明此案例的錯誤訊息。這是因為FlexGroup 可存在於多個節點或Aggregate上的不只一個而已。
+
+====

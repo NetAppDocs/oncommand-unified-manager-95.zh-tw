@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-service-processor-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 服務處理器事件可提供您有關處理器狀態的資訊、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 服務處理器事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+服務處理器事件可提供您有關處理器狀態的資訊、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+未設定服務處理器（ocumEvtServiceProcessorNotConfiged）
+ a| 
+風險
+ a| 
+節點
+ a| 
+警告
+
+
+
+ a| 
+服務處理器離線（ocumEvtService處理器 離線）
+ a| 
+風險
+ a| 
+節點
+ a| 
+錯誤
+
+|===

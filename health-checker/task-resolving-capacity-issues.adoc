@@ -1,0 +1,47 @@
+---
+permalink: health-checker/task-resolving-capacity-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 此工作流程為您提供解決容量問題的範例。在此案例中、您是管理員或操作員、可以存取Unified Manager儀表板/總覽頁面、查看是否有任何受監控的儲存物件發生容量問題。您發現有容量風險的磁碟區、您想要判斷問題的可能原因及解決方法。 
+---
+= 解決容量問題
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流程為您提供解決容量問題的範例。在此案例中、您是系統管理員或操作員、可以存取「Unified Manager儀表板/總覽」頁面、查看是否有任何受監控的儲存物件發生容量問題。您發現有容量風險的磁碟區、您想要判斷問題的可能原因及解決方法。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+在「儀表板/總覽」頁面上、您會查看「未解決的事件和風險」區域、並在「SVM Volume Capacity at Risk」（SVM Volume容量風險）下的「Capacity」（容量）窗格中看到「Volume Space Full」（磁碟區空間已滿）錯誤事件。
+
+
+
+== 步驟
+
+. 在「*儀表板/總覽*」頁面的「*未解決的事件與風險*」區域中、按一下「*容量*」窗格中的Volume Space完整錯誤事件名稱。
++
+此時會顯示錯誤的「事件詳細資料」頁面。
+
+. 從*事件*詳細資料頁面、您可以執行下列一或多項工作：
++
+** 檢閱「原因」欄位中的錯誤訊息、然後按一下「建議的補救行動」下方的建議、以檢閱可能的修正說明。 xref:task-performing-suggested-remedial-actions-for-a-full-volume.adoc[針對完整Volume執行建議的補救行動]
+** 按一下「來源」欄位中的物件名稱（在此情況下為Volume）、即可取得物件的詳細資料。 xref:reference-health-volume-details-page.adoc[Volume詳細資料頁面]
+** 尋找可能已新增的關於此活動的附註。 xref:task-adding-and-reviewing-notes-about-an-event.adoc[新增及檢閱與事件相關的附註]
+** 在活動中新增附註。 xref:task-adding-and-reviewing-notes-about-an-event.adoc[新增及檢閱與事件相關的附註]
+** 將事件指派給其他使用者。 xref:task-assigning-events-to-specific-users.adoc[指派事件]
+** 認可活動。 xref:task-acknowledging-and-resolving-events.adoc[確認並解決事件]
+** 將事件標示為已解決。 xref:task-acknowledging-and-resolving-events.adoc[確認並解決事件]
+
+
+

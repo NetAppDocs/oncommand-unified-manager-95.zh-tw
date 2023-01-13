@@ -1,0 +1,40 @@
+---
+permalink: online-help/reference-edit-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 「編輯附註」對話方塊可讓您變更現有附註的說明。 
+---
+= 編輯註釋對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「編輯附註」對話方塊可讓您變更現有附註的說明。
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+* *註釋名稱*
++
+顯示註釋的名稱。此欄位無法編輯。
+
+* *說明*
++
+提供註釋的有意義說明。當您想要變更註釋的目前說明時、可以編輯此欄位。
+
+
+
+
+
+== 命令按鈕
+
+* *儲存並關閉*
++
+儲存註釋說明變更並關閉對話方塊。
+
+* *取消*
++
+關閉「編輯附註」對話方塊、而不儲存變更。
+
+

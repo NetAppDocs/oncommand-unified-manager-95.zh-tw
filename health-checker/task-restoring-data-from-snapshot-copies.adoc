@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-restoring-data-from-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您因為災難或目錄或檔案被意外刪除而遺失資料時、您可以使用Unified Manager從Snapshot複本中尋找及還原資料。 
+---
+= 從Snapshot複本還原資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您因為災難或目錄或檔案被意外刪除而遺失資料時、您可以使用Unified Manager從Snapshot複本中尋找及還原資料。
+
+
+
+== 關於這項工作
+
+您可以從Unified Manager Web UI的兩個位置還原資料。
+
+
+
+== 步驟
+
+. 使用下列其中一項工作來還原資料：
++
+** xref:task-restoring-data-using-the-health-volume-details-page.adoc[從「Health（健全狀況）/ Volume（磁碟區）」詳細資料頁面還原資料]。
+** xref:task-restoring-data-using-the-health-volumes-page.adoc[從「健全狀況/磁碟區」頁面還原資料]。
+
+
+

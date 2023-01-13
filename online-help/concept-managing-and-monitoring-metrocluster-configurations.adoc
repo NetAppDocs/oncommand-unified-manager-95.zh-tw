@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager Web UI中MetroCluster 的支援功能可監控所有的支援功能、讓您檢查MetroCluster 自己的故障情況、瞭解哪些連線問題。提早發現連線問題、讓您MetroCluster 能夠有效管理您的支援功能。 
+---
+= 管理及監控MetroCluster 功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager Web UI中MetroCluster 的支援功能可監控所有的支援功能、讓您檢查MetroCluster 自己的故障情況、瞭解哪些連線問題。提早發現連線問題、讓您MetroCluster 能夠有效管理您的支援功能。

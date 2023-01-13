@@ -1,0 +1,28 @@
+---
+permalink: online-help/task-removing-workflow-automation.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您不想再使用Workflow Automation時、可以從OnCommand Workflow Automation Unified Manager移除此功能的功能。 
+---
+= 從OnCommand Workflow Automation Unified Manager移除此功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您不想再使用Workflow Automation時、可以從OnCommand Workflow Automation Unified Manager移除此功能的功能。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左設定功能表中的* Workflow Automation*。
+. 在「*設定/工作流程自動化*」頁面中、按一下「*移除設定*」。
+

@@ -1,0 +1,548 @@
+---
+permalink: config/reference-ems-events-that-are-added-automatically-to-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用Unified Manager 9.4或更新版本軟體時、下列ONTAP 各項功能可自動新增至Unified Manager。在Unified Manager監控的任何叢集上觸發時、都會產生這些事件。 
+---
+= 自動新增至Unified Manager的EMS事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用Unified Manager 9.4或更新版本軟體時、下列ONTAP 各項功能可自動新增至Unified Manager。在Unified Manager監控的任何叢集上觸發時、都會產生這些事件。
+
+當監控執行ONTAP 不含更新版本的軟體的叢集時、可以使用下列EMS事件：
+
+|===
+| Unified Manager事件名稱 | EMS事件名稱 | 受影響的資源 | 嚴重性ONTAP 
+
+
+ a| 
+物件存放區存取遭拒、無法進行Aggregate重新配置
+ a| 
+arl.netra.ca.check.failed
+ a| 
+Aggregate
+ a| 
+錯誤
+
+
+
+ a| 
+在儲存容錯移轉期間、物件存放區存取遭拒、無法進行集合移轉
+ a| 
+gb.netra.ca.check.failed
+ a| 
+Aggregate
+ a| 
+錯誤
+
+
+
+ a| 
+幾乎已滿FabricPool
+ a| 
+棒極了
+ a| 
+叢集
+ a| 
+錯誤
+
+
+
+ a| 
+NVMe寬限期已開始
+ a| 
+nvmf.graceperiod.start
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+NVMe寬限期有效
+ a| 
+nvmf.graceperiod.active
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+NVMe寬限期已過期
+ a| 
+nvmf.graceperiod.expired
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+LUN已毀損
+ a| 
+lun.destroy
+ a| 
+LUN
+ a| 
+資訊
+
+
+
+ a| 
+Cloud AWS MetaDataConnFail
+ a| 
+Cloud：aws.metadata ConnFail
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+Cloud AWS IAMCredsExpired
+ a| 
+Cloud：AWs.iamCredsExpired
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+Cloud AWS IAMCreds無效
+ a| 
+Cloud：AWs.iamCreds無效
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+Cloud AWS IAMCredsNotFound
+ a| 
+Cloud：AWs.iamCredsNotFound
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+Cloud AWS IAMCredsNotinitialized
+ a| 
+Cloud：AWs.iamNotinitialized
+ a| 
+節點
+ a| 
+資訊
+
+
+
+ a| 
+Cloud AWS IAM勞力 無效
+ a| 
+Cloud：AWs.iam勞力 無效
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+Cloud AWS IAM勞力 諾富特
+ a| 
+Cloud、AWs.iam勞力 士
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+可解析的對象儲存區主機
+ a| 
+不可解析的objstore.host.unresolvable
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+Objstore InterClusterLifDown
+ a| 
+objstore.interclusterlifDown
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+要求不符的物件存放區簽名
+ a| 
+ROSC認證不符
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+NFSv4集區之一已耗盡
+ a| 
+Nbles.nfsV4PoolEx
+ a| 
+節點
+ a| 
+關鍵
+
+
+
+ a| 
+QoS監控記憶體已達上限
+ a| 
+QoS.監 控記憶體上限
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+QoS監控記憶體已減少
+ a| 
+qos.監 控記憶體。已減除
+ a| 
+節點
+ a| 
+資訊
+
+
+
+ a| 
+NVMeNS銷毀
+ a| 
+NVMeNS.destroy
+ a| 
+命名空間
+ a| 
+資訊
+
+
+
+ a| 
+NVMeNS線上
+ a| 
+NVMeNs.offline
+ a| 
+命名空間
+ a| 
+資訊
+
+
+
+ a| 
+NVMeNS離線
+ a| 
+NVMeNs.online
+ a| 
+命名空間
+ a| 
+資訊
+
+
+
+ a| 
+NVMeNS空間不足
+ a| 
+NVMeNs.Out.o.space.
+ a| 
+命名空間
+ a| 
+警告
+
+
+
+ a| 
+同步複寫不同步
+ a| 
+SMS.STATUS.Out.o.sync
+ a| 
+SnapMirror關係
+ a| 
+警告
+
+
+
+ a| 
+同步複寫已還原
+ a| 
+sms.status.in.sync
+ a| 
+SnapMirror關係
+ a| 
+資訊
+
+
+
+ a| 
+同步複寫自動重新同步失敗
+ a| 
+SMS.resSync。嘗試失敗
+ a| 
+SnapMirror關係
+ a| 
+錯誤
+
+
+
+ a| 
+許多CIFS連線
+ a| 
+Nbles.scifsManyAuds
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+超過CIFS連線上限
+ a| 
+Nbles.scifsMaxOpenSameFile
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+超過每位使用者的CIFS連線數量上限
+ a| 
+Nbless.ifsMaxSessPerusrConn
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+CIFS NetBios名稱衝突
+ a| 
+Nbles.scifsNbNameConflict
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+嘗試連線不存在的CIFS共用
+ a| 
+Nbles.CifsNoPrivate共享
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+CIFS陰影複製作業失敗
+ a| 
+CIFs.ShadowCopy.f失敗
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+AV伺服器發現病毒
+ a| 
+Nblan.vscanVirusDetected
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+無AV伺服器連線可進行病毒掃描
+ a| 
+Nbles.vscannNoScannerConn
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+未登錄AV伺服器
+ a| 
+Nblan.vscannNoRegdScanner.
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+無回應的AV伺服器連線
+ a| 
+Nblan.vscannConnInactive
+ a| 
+SVM
+ a| 
+資訊
+
+
+
+ a| 
+AV伺服器太忙、無法接受新的掃描要求
+ a| 
+Nblan.vscannConnBack血壓
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+未獲授權的使用者嘗試使用AV伺服器
+ a| 
+Nblad.vscandUserPrivate存取
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+包含空間問題的要素FlexGroup
+ a| 
+flexgroup.soites.se.me.space.Issues
+ a| 
+Volume
+ a| 
+錯誤
+
+
+
+ a| 
+所有資訊均正常FlexGroup
+ a| 
+flexgroup.soites.space.STATUS.all.ok
+ a| 
+Volume
+ a| 
+資訊
+
+
+
+ a| 
+包含inode問題FlexGroup
+ a| 
+flexgroup.constituents.have.inodes.issues
+ a| 
+Volume
+ a| 
+錯誤
+
+
+
+ a| 
+不確定的成分inode狀態FlexGroup
+ a| 
+flexgroup.constituents.inodes.status.all.ok
+ a| 
+Volume
+ a| 
+資訊
+
+
+
+ a| 
+Volume邏輯空間幾乎已滿
+ a| 
+監控.vol.NearFull
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+Volume邏輯空間已滿
+ a| 
+監控.vol.full
+ a| 
+Volume
+ a| 
+錯誤
+
+
+
+ a| 
+Volume邏輯空間正常
+ a| 
+監控.vol.one.ok
+ a| 
+Volume
+ a| 
+資訊
+
+
+
+ a| 
+無法自動調整規模WAFL
+ a| 
+wafl.vol.autoSize.fail
+ a| 
+Volume
+ a| 
+錯誤
+
+
+
+ a| 
+完成了自動調整規模WAFL
+ a| 
+wafl.vol.autoSize.done
+ a| 
+Volume
+ a| 
+資訊
+
+|===

@@ -1,0 +1,69 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-storage-failover-interconnect-links-down.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您顯示儲存容錯移轉相關事件的「事件詳細資料」頁面時、您可以檢閱頁面摘要資訊、以判斷事件的急迫性、問題的可能原因、以及問題的可能解決方法。 
+---
+= 針對儲存容錯移轉互連連結執行修正行動
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您顯示儲存容錯移轉相關事件的「事件詳細資料」頁面時、您可以檢閱頁面摘要資訊、以判斷事件的急迫性、問題的可能原因、以及問題的可能解決方法。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+在此範例案例中、「事件詳細資料」頁面上提供的事件摘要包含下列關於儲存容錯移轉互連連結中斷情況的資訊：
+
+[listing]
+----
+Event: Storage Failover Interconnect One or More Links Down
+
+Summary
+
+Severity: Warning
+State: New
+Impact Level: Risk
+Impact Area: Availability
+Source: aardvark
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: At least one storage failover interconnected link
+       between the nodes aardvark and bonobo is down.
+       RDMA interconnect is up (Link0 up, Link1 down)
+----
+範例事件資訊指出HA配對節點Aardvark和bonobo之間的儲存容錯移轉互連連結Link1已關閉、但Apple與Boy之間的Link0仍為作用中狀態。因為有一個連結處於作用中狀態、所以遠端動態記憶體存取（RDMA）仍可運作、儲存容錯移轉工作仍可成功。
+
+不過、為了確保不會同時停用連結故障和儲存容錯移轉保護、您決定進一步診斷Link1停機的原因。
+
+
+
+== 步驟
+
+. 在「*事件*詳細資料」頁面中、您可以按一下「來源」欄位中所指定事件的連結、以取得可能與儲存容錯移轉互連連結中斷情況相關的其他事件詳細資料。
++
+在此範例中、事件的來源是名稱為aardvark的節點。按一下該節點名稱、即可在健全狀況/叢集詳細資料頁面的節點索引標籤上、顯示受影響的HA配對、aardvark和bonobo的HA詳細資料、並顯示最近在受影響的HA配對上發生的其他事件。
+
+. 請參閱* HA詳細資料*、以瞭解更多有關活動的資訊。
++
+在此範例中、相關資訊會顯示在「事件」表格中。下表顯示「Torage Failover Connection One or More Link Down」（容錯移轉連線一或多個連結中斷）事件、事件產生時間、以及此事件產生來源的節點。
+
+
+
+
+
+== 完成後
+
+使用HA詳細資料中的節點位置資訊、要求或親自完成受影響HA配對節點上儲存容錯移轉問題的實體檢查與修復。

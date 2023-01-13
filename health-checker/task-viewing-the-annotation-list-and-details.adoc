@@ -1,0 +1,22 @@
+---
+permalink: health-checker/task-viewing-the-annotation-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視動態與叢集、磁碟區和儲存虛擬機器（SVMs）相關聯的註釋清單。您也可以檢視詳細資料、例如說明、建立者、建立日期、值、規則、 以及與附註相關的物件。 
+---
+= 檢視附註清單和詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視動態與叢集、磁碟區和儲存虛擬機器（SVM）相關聯的註釋清單。您也可以檢視詳細資料、例如說明、建立者、建立日期、值、規則、 以及與附註相關的物件。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左管理功能表中的*註釋*。
+. 在*註釋*標籤中、按一下註釋名稱以檢視相關詳細資料。
+

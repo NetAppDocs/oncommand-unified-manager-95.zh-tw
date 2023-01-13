@@ -1,0 +1,54 @@
+---
+permalink: health-checker/concept-unified-manager-health-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager建置於伺服器基礎架構之上、可提供擴充性、支援能力、以及增強的監控與通知功能。Unified Manager支援監控執行ONTAP 不支援的系統。 
+---
+= Unified Manager健全狀況監控功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager建置於伺服器基礎架構之上、可提供擴充性、支援能力、以及增強的監控與通知功能。Unified Manager支援監控執行ONTAP 不支援的系統。
+
+Unified Manager具備下列功能：
+
+* 探索、監控及通知使用ONTAP 下列功能安裝的系統：
++
+** 實體物件：節點、磁碟、磁碟櫃、SFO配對、連接埠、 和Flash Cache
+** 邏輯物件：叢集、儲存虛擬機器（SVM）、集合體、磁碟區、LUN、命名空間、qtree、lifs、Snapshot複本、交會路徑、NFS匯出、CIFS共用、使用者與群組配額、以及啟動器群組
+** 傳輸協定：CIFS、NFS、FC、iSCSI、NVMe、 和FCoE
+** 儲存效率：SSD集合體、Flash Pool Aggregate、FabricPool 資訊區集合體、重複資料刪除技術及壓縮技術
+** 保護：SnapMirror關係（同步和非同步）和SnapVault 不完善的關係
+
+
+* 檢視叢集探索與監控狀態
+* 零件組態：檢視及監控叢集元件的組態、交換器和橋接器、問題及連線狀態MetroCluster MetroCluster
+* 增強的警示、事件和臨界值基礎架構
+* LDAP、LDAPS、SAML驗證及本機使用者支援
+* RBAC（適用於預先定義的角色集）
+* 支援套裝組合AutoSupport
+* 增強的儀表板可顯示環境的容量、可用度、保護和效能健全狀況
+* Volume可移動互通性、磁碟區移動歷程記錄、以及交會路徑變更歷程記錄
+* 影響範圍區域、以圖形方式顯示受影響事件的資源、例如部分故障磁碟、MetroCluster 不含集合體鏡射降級、MetroCluster 以及事件後留下的不含支援的備用磁碟
+* 可能的影響區域、顯示MetroCluster 各種不實事件的影響
+* 「建議修正行動」區域顯示可執行的行動、以因應某些故障磁碟、MetroCluster 「鏡像降級」的集合體鏡射、MetroCluster 以及「事件後留下的備用磁碟」等事件
+* 可能受影響區域的資源、顯示可能會影響磁碟區離線事件、Volume受限事件、以及Thin東西隨需配置Volume Space發生風險事件等事件的資源
+* 支援SVM：
++
+** 資料量FlexVol
+** 資料量FlexGroup
+** 無限Volume
+
+
+* 支援監控節點根磁碟區
+* 強化的Snapshot複本監控功能、包括運算可回收空間及刪除Snapshot複本
+* 儲存物件的註釋
+* 報告儲存物件資訊的建立與管理、例如實體與邏輯容量、使用率、空間節約及相關事件
+* 整合OnCommand Workflow Automation 了功能以執行工作流程
++
+Storage Automation Store包含NetApp認證的自動化儲存工作流程套件、是專為OnCommand Workflow Automation 搭配使用而開發的。您可以下載套件、然後將其匯入WFA以執行。自動化工作流程可從下列網址取得 link:https://automationstore.netapp.com["儲存自動化儲存區"]
+
+

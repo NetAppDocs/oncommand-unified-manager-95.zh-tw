@@ -1,0 +1,86 @@
+---
+permalink: online-help/reference-svm-storage-class-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM儲存類別事件可讓您取得儲存類別狀態的相關資訊、以便監控潛在問題。SVM儲存類別僅存在於具有Infinite Volume的SVM中。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= SVM儲存類別事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM儲存類別事件可讓您取得儲存類別狀態的相關資訊、以便監控潛在問題。SVM儲存類別僅存在於具有Infinite Volume的SVM中。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+下列SVM儲存類別事件僅適用於具有Infinite Volume的SVM。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+SVM儲存類別無法使用（ocumEvtVserverStorageClassNotAvailable）
+ a| 
+事件
+ a| 
+儲存類別
+ a| 
+關鍵
+
+
+
+ a| 
+部分可用的SVM儲存類別（ocumEvtVserverStorageClass PartiallyAvailable）
+ a| 
+風險
+ a| 
+儲存類別
+ a| 
+錯誤
+
+|===
+
+
+== 影響領域：容量
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+SVM儲存類空間幾乎已滿（ocumEvtVserverStorageClass NearlyFull）
+ a| 
+風險
+ a| 
+儲存類別
+ a| 
+警告
+
+
+
+ a| 
+SVM儲存類別空間已滿（ocumEvtVserverStorageClass全滿）
+ a| 
+風險
+ a| 
+儲存類別
+ a| 
+錯誤
+
+
+
+ a| 
+已超過SVM儲存類別Snapshot使用限制（ocumEvtVserverStorageClass SnapshotUsageExceded）
+ a| 
+風險
+ a| 
+儲存類別
+ a| 
+警告
+
+|===

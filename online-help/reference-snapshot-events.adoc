@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-snapshot-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Snapshot事件提供快照狀態的相關資訊、可讓您監控快照是否有潛在問題。這些事件會依影響區域分組、包括事件名稱、陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= Snapshot事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snapshot事件提供快照狀態的相關資訊、可讓您監控快照是否有潛在問題。這些事件會依影響區域分組、包括事件名稱、陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+已停用Snapshot自動刪除（不適用）
+ a| 
+活動
+ a| 
+Volume
+ a| 
+資訊
+
+
+
+ a| 
+已啟用Snapshot自動刪除（不適用）
+ a| 
+活動
+ a| 
+Volume
+ a| 
+資訊
+
+
+
+ a| 
+Snapshot自動刪除組態已修改（不適用）
+ a| 
+活動
+ a| 
+Volume
+ a| 
+資訊
+
+|===

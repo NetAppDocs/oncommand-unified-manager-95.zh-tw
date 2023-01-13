@@ -1,0 +1,42 @@
+---
+permalink: health-checker/task-retrieving-the-support-bundle-using-a-windows-client.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您是Windows使用者、可以下載並安裝工具、從Unified Manager伺服器擷取支援服務組合。您可以將支援服務組合寄送給技術支援部門、以便更詳細地診斷問題。FileZilla或Winscp是您可以使用的工具範例。 
+---
+= 使用Windows用戶端擷取支援服務組合
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您是Windows使用者、可以下載並安裝工具、從Unified Manager伺服器擷取支援服務組合。您可以將支援服務組合寄送給技術支援部門、以便更詳細地診斷問題。FileZilla或Winscp是您可以使用的工具範例。
+
+
+
+== 開始之前
+
+您必須是維護使用者才能執行此工作。
+
+您必須使用支援scp或SFTP的工具。
+
+
+
+== 步驟
+
+. 下載並安裝工具以擷取支援服務組合。
+. 開啟工具。
+. 透過SFTP連線至Unified Manager管理伺服器。
++
+工具會顯示的內容 `/support` 目錄、您可以檢視所有現有的支援服務組合。
+
+. 選取您要複製之支援服務組合的目的地目錄。
+. 選取您要複製的支援服務組合、然後使用工具將檔案從Unified Manager伺服器複製到本機系統。
+
+
+*相關資訊*
+
+https://filezilla-project.org/["Filezilla - https://filezilla-project.org/"]
+
+http://winscp.net["WinSCP - http://winscp.net"]

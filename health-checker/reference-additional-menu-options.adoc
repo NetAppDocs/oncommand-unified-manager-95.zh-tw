@@ -1,0 +1,54 @@
+---
+permalink: health-checker/reference-additional-menu-options.html 
+sidebar: sidebar 
+keywords:  
+summary: 下列功能表選項可讓您在Unified Manager伺服器上執行各種管理工作。 
+---
+= 其他功能表選項
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+下列功能表選項可讓您在Unified Manager伺服器上執行各種管理工作。
+
+以下是可用的功能表選項：
+
+* *重設伺服器憑證*
++
+重新產生HTTPS伺服器憑證。
+
++
+您可以按一下*、在Unified Manager GUI中重新產生伺服器憑證image:../media/clusterpage-settings-icon.gif[""]*>* HTTPS憑證*>*重新產生HTTPS憑證*。
+
+* *停用SAML驗證*
++
+停用SAML驗證、使身分識別供應商（IDP）不再為存取Unified Manager GUI的使用者提供登入驗證。當IDP伺服器或SAML組態問題阻礙使用者存取Unified Manager GUI時、通常會使用此主控台選項。
+
+* *外部資料提供者*
++
+提供將Unified Manager連線至外部資料供應商的選項。建立連線之後、效能資料會傳送至外部伺服器、讓儲存效能專家能夠使用協力廠商軟體來記錄效能指標。畫面會顯示下列選項：
+
++
+** *顯示伺服器組態*-顯示外部資料提供者目前的連線和組態設定。
+** *新增/修改伺服器連線*-可讓您輸入外部資料提供者的新連線設定、或是變更現有的設定。
+** *修改伺服器組態*-可讓您輸入外部資料提供者的新組態設定、或是變更現有的設定。
+** *刪除伺服器連線*-刪除與外部資料提供者的連線。
++
+刪除連線後、Unified Manager會失去與外部伺服器的連線。
+
+
+
+* *效能輪詢時間間隔組態*
++
+提供選項、可設定Unified Manager從叢集收集效能統計資料的頻率。預設的收集時間間隔為五分鐘。
+
++
+如果發現大型叢集的集合未準時完成、您可以將此時間間隔變更為十或十五分鐘。
+
+* *退出*
++
+結束維護主控台功能表。
+
+

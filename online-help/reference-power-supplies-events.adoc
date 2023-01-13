@@ -1,0 +1,33 @@
+---
+permalink: online-help/reference-power-supplies-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 電源供應器事件可提供硬體狀態的相關資訊、讓您監控是否有潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 電源供應器事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+電源供應器事件可提供硬體狀態的相關資訊、讓您監控是否有潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+一或多個故障電源供應器（ocumEvtPowerSupplyOneOrMore故障）
+ a| 
+事件
+ a| 
+節點
+ a| 
+關鍵
+
+|===

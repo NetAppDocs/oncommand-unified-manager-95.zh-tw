@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-creating-storage-virtual-machine-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: Create Storage Virtual Machine Associations（建立儲存虛擬機器關聯）精靈可讓合作夥伴保護應用程式將來源儲存虛擬機器（SVM）與目的地SVM建立關聯、以搭配SnapMirror和SnapVault 物件關係使用。合作夥伴應用程式在初始配置目的地磁碟區時、會使用這些關聯來決定要選擇哪些資源。 
+---
+= 建立SVM關聯
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Create Storage Virtual Machine Associations」（建立儲存虛擬機器關聯）精靈可讓合作夥伴保護應用程式將來源儲存虛擬機器（SVM）與目的地SVM建立關聯、以便與SnapMirror和SnapVault 物件關聯。合作夥伴應用程式在初始配置目的地磁碟區時、會使用這些關聯來決定要選擇哪些資源。
+
+
+
+== 開始之前
+
+* 您正在關聯的SVM必須已經存在。
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+
+== 關於這項工作
+
+對於任何來源SVM和關係類型、您只能在每個目的地叢集上選擇一個目的地SVM。
+
+使用刪除和建立功能變更關聯只會影響未來的資源配置作業。它不會移動現有的目的地磁碟區。
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下* Protection（保護）*** SVM Association*。
+. 在「* Protection / Storage Virtual Machine Association*」（*保護/儲存虛擬機器關聯*）頁面中、按一下「* Create *」
++
+隨即啟動「Create Storage Virtual Machine Associations」（建立儲存虛擬機器關聯）精靈。
+
+. 選取下列其中一個來源：
++
+** *任何*
++
+若要在任一主要SVM來源與一或多個目的地SVM之間建立關聯、請選擇此選項。這表示目前需要保護的所有現有SVM、以及未來建立的任何SVM、都會與指定的目的地SVM相關聯。例如、您可能希望不同位置的多個不同來源的應用程式、在同一個位置備份到一個或多個目的地SVM。
+
+** *單一*
++
+若要選取與一或多個目的地SVM相關聯的特定來源SVM、請選擇此選項。例如、如果您要提供儲存服務給許多資料必須彼此分開的用戶端、請選擇此選項、將特定SVM來源關聯至僅指派給該用戶端的特定SVM目的地。
+
+** *無（外部）*
++
+若要在來源SVM和目的地SVM的外部彈性Volume之間建立關聯、請選擇此選項。
+
+
+
+. 選取您要建立的一種或兩種保護關係類型：
++
+** * SnapMirror *
+** *《*》SnapVault
+
+
+. 單擊 * 下一步 * 。
+. 選取一個或多個SVM保護目的地。
+. 單擊*完成*。
+

@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 當不再需要群組規則時、您可以從OnCommand 支援整合管理程式刪除群組規則。 
+---
+= 刪除群組規則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當不再需要群組規則時、您可以從OnCommand 支援整合管理程式刪除群組規則。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+刪除群組規則時、相關的儲存物件將會從群組中移除。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*管理*>*群組*。
+. 在*群組規則*索引標籤中、選取您要刪除的群組規則、然後按一下*刪除*。
+. 在*警告*對話方塊中、按一下*是*確認刪除。
+

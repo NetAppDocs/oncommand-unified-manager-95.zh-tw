@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-viewing-the-list-of-monitored-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「組態/叢集資料來源」頁面來檢視叢集的詳細目錄。您可以檢視叢集的詳細資料、例如其名稱或IP位址和通訊狀態。 
+---
+= 檢視受監控叢集的清單
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「組態/叢集資料來源」頁面來檢視叢集的詳細目錄。您可以檢視叢集的詳細資料、例如其名稱或IP位址和通訊狀態。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+叢集清單會依集合狀態嚴重性層級欄排序。您可以按一下欄標題、依不同欄位排序叢集。
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下*組態*>*叢集資料來源*。
+

@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-volume-transfer-rate-historical-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Volume Transfer Rate（歷史）報告可讓您分析每日傳輸的資料磁碟區數量。報告也提供每日Volume傳輸的詳細資料、以及完成傳輸作業所需的時間。 
+---
+= Volume Transfer速率（歷史）報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume Transfer Rate（歷史）（Volume Transfer Rate（歷史））報告可讓您分析每日傳輸的資料Volume量。報告也提供每日Volume傳輸的詳細資料、以及完成傳輸作業所需的時間。
+
+Volume Transfer Rate（歷史）（Volume Transfer速率（歷史））報告會以兩種格式顯示：
+
+* Volume Transfer傳輸率長條圖
+* Volume Transfer Rate（Volume傳輸率）表格檢視
+
+
+
+
+== Volume Transfer傳輸率長條圖
+
+將總傳輸大小與小時數繪圖、以顯示Volume傳輸率詳細資料。您也可以檢視每日傳輸資料量的詳細資料。
+
+
+
+== Volume Transfer Rate（Volume傳輸率）表格檢視
+
+* *傳輸總大小（GB）*
++
+以GB為單位顯示磁碟區傳輸的總大小。
+
+* *天*
++
+顯示初始化Volume傳輸的日期。
+
+* *結束時間*
++
+顯示磁碟區傳輸結束時間及日期。
+
+

@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-configuring-conditions-for-group-rules.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 您可以設定一或多個條件、在Unified Manager中建立套用至儲存物件的群組規則。符合群組規則的儲存物件會合併成一個群組。 
+---
+= 設定群組規則的條件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定一或多個條件、在Unified Manager中建立套用至儲存物件的群組規則。符合群組規則的儲存物件會合併成一個群組。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*管理*>*群組*。
+. 按一下「 * 新增 * 」。
+. 在「*新增群組規則*」對話方塊中、從運算元清單中選取一個運算元。
+. 選取條件的運算子。
+. 輸入所需的值、或從可用清單中選取一個值。
+. 按一下「 * 新增 * 」。
+
+
+
+
+== 設定群組規則條件的範例
+
+請考量SVM物件類型的條件、其中物件名稱包含「shvm_data」。
+
+請在「新增群組規則」對話方塊中執行下列步驟、以設定條件：
+
+. 輸入群組規則的名稱。
+. 選取「SVM」物件類型。
+. 從群組清單中選取群組。
+. 在*條件*欄位中、選取*物件名稱*作為運算元。
+. 選擇* contain*作為運算子。
+. 輸入的值為 `svm_data`。
+. 按一下「 * 新增 * 」。
+

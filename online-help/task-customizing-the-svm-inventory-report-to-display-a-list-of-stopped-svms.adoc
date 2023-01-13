@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-stopped-svms.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂SVM庫存報告、以顯示已停止的SVM清單。報告會根據SVM的狀態來篩選其狀態。 
+---
+= 自訂SVM庫存報告以顯示已停止的SVM清單
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂SVM庫存報告、以顯示已停止的SVM清單。報告會根據SVM的狀態來篩選其狀態。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要依狀態篩選SVM、請按一下「*狀態*」欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*清單中、選取*等於*。
+. 按一下*選取值*、然後選取*停止*。
+. 按一下「*確定*」。
+

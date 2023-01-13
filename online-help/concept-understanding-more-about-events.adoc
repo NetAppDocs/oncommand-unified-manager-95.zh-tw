@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 瞭解事件的概念有助於有效管理叢集和叢集物件、並適當定義警示。 
+---
+= 深入瞭解事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解事件的概念有助於有效管理叢集和叢集物件、並適當定義警示。

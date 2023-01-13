@@ -1,0 +1,204 @@
+---
+permalink: install/reference-protocol-and-port-requirements.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 使用瀏覽器、API用戶端或SSH時、Unified Manager UI和API必須能夠存取所需的連接埠。必要的連接埠和傳輸協定可在Unified Manager伺服器與託管儲存系統、伺服器和其他元件之間進行通訊。 
+---
+= 傳輸協定與連接埠需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用瀏覽器、API用戶端或SSH時、Unified Manager UI和API必須能夠存取所需的連接埠。必要的連接埠和傳輸協定可在Unified Manager伺服器與託管儲存系統、伺服器和其他元件之間進行通訊。
+
+
+
+== 連線至Unified Manager伺服器
+
+連線至Unified Manager Web UI時、您不需要指定連接埠號碼、因為一律會使用預設連接埠。例如、由於Unified Manager一律在預設連接埠上執行、因此您可以輸入 `\https://<host>` 而非 `\https://<host>:443`。無法變更預設的連接埠號碼。
+
+Unified Manager伺服器使用特定的傳輸協定來存取下列介面：
+
+|===
+| 介面 | 傳輸協定 | 連接埠 | 說明 
+
+
+ a| 
+Unified Manager Web UI
+ a| 
+HTTP
+ a| 
+80
+ a| 
+用於存取Unified Manager Web UI；自動重新導向至安全連接埠443。
+
+
+
+ a| 
+Unified Manager Web UI和使用API的程式
+ a| 
+HTTPS
+ a| 
+443..
+ a| 
+用於安全存取Unified Manager Web UI或撥打API呼叫、API呼叫只能使用HTTPS進行。
+
+
+
+ a| 
+維護主控台
+ a| 
+SSE/SFTP
+ a| 
+22
+ a| 
+用於存取維護主控台及擷取支援套裝組合。
+
+
+
+ a| 
+Linux命令列
+ a| 
+SSE/SFTP
+ a| 
+22
+ a| 
+用於存取Red Hat Enterprise Linux或CentOS命令列、並擷取支援套件組合。
+
+
+
+ a| 
+MySQL資料庫
+ a| 
+MySQL
+ a| 
+3306.
+ a| 
+用於啟用OnCommand Workflow Automation 對OnCommand Unified Manager的支援功能、以利進行支援。
+
+
+
+ a| 
+系統記錄
+ a| 
+UDP
+ a| 
+514
+ a| 
+用於存取ONTAP 來自於整個系統的訂閱型EMS訊息、並根據訊息建立事件。
+
+
+
+ a| 
+休息
+ a| 
+HTTPS
+ a| 
+9443
+ a| 
+用於從通過驗證ONTAP 的可靠功能系統存取即時REST API型EMS事件。
+
+|===
+
+
+== 從Unified Manager伺服器連線
+
+您必須將防火牆設定為開啟連接埠、以便在Unified Manager伺服器與託管儲存系統、伺服器及其他元件之間進行通訊。如果連接埠未開啟、則通訊會失敗。
+
+視您的環境而定、您可以選擇修改Unified Manager伺服器用來連線至特定目的地的連接埠和傳輸協定。
+
+Unified Manager伺服器會使用下列傳輸協定和連接埠連線至託管儲存系統、伺服器和其他元件：
+
+|===
+| 目的地 | 傳輸協定 | 連接埠 | 說明 
+
+
+ a| 
+儲存系統
+ a| 
+HTTPS
+ a| 
+443/TCP
+ a| 
+用於監控和管理儲存系統。
+
+
+
+ a| 
+儲存系統
+ a| 
+NDMP
+ a| 
+1000/TCP
+ a| 
+用於特定的Snapshot還原作業。
+
+
+
+ a| 
+伺服器AutoSupport
+ a| 
+HTTPS
+ a| 
+443..
+ a| 
+用於傳送AutoSupport 資訊。需要網際網路存取才能執行此功能。
+
+
+
+ a| 
+驗證伺服器
+ a| 
+LDAP
+ a| 
+389
+ a| 
+用於發出驗證要求、以及使用者和群組查詢要求。
+
+
+
+ a| 
+LDAPS
+ a| 
+636
+ a| 
+用於安全的LDAP通訊。
+ a| 
+郵件伺服器
+
+
+
+ a| 
+SMTP
+ a| 
+25
+ a| 
+用於傳送警示通知電子郵件。
+ a| 
+SNMP設陷傳送者
+
+
+
+ a| 
+SNMPv1或v3
+ a| 
+162/udp
+ a| 
+用於傳送警示通知SNMP設陷。
+ a| 
+外部資料提供者伺服器
+
+
+
+ a| 
+TCP
+ a| 
+2003年
+ a| 
+用於傳送效能資料給外部資料供應商、例如Graphite。
+ a| 
+NTP伺服器
+
+|===

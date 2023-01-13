@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-protection-relationships-window-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視及管理與保護相關的詳細資料、例如資源集區、SVM關聯及保護工作。您可以使用適當的「組態/健全狀況臨界值」頁面來設定集合體、磁碟區和關係的全域健全狀況臨界值。 
+---
+= 保護關係視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視及管理與保護相關的詳細資料、例如資源集區、SVM關聯及保護工作。您可以使用適當的「組態/健全狀況臨界值」頁面來設定集合體、磁碟區和關係的全域健全狀況臨界值。

@@ -1,0 +1,36 @@
+---
+permalink: performance-checker/concept-cluster-configuration-changes-detected-by-unified-manager.html 
+sidebar: sidebar 
+keywords: Performance Manager 
+summary: Unified Manager會監控叢集的組態變更、以協助您判斷變更是否可能導致或促成效能事件。Performance Explorer頁面會顯示變更事件圖示（\）、指出偵測到變更的日期和時間。 
+---
+= Unified Manager偵測到組態變更
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager會監控叢集的組態變更、以協助您判斷變更是否可能導致或促成效能事件。Performance Explorer頁面會顯示變更事件圖示（image:../media/opm-change-icon.gif["變更事件圖示"]）以指出偵測到變更的日期和時間。
+
+您可以檢閱「效能總管」頁面和「效能/磁碟區詳細資料」頁面中的效能圖表、查看變更事件是否會影響所選叢集物件的效能。如果在效能事件發生的時間或時間內偵測到變更、則變更可能導致問題發生、進而觸發事件警示。
+
+Unified Manager可偵測下列變更事件、這些事件被歸類為資訊事件：
+
+* 磁碟區會在Aggregate之間移動。
++
+Unified Manager可偵測移動進行中、完成或失敗的時間。如果Unified Manager在磁碟區移動期間停機、當它備份時、就會偵測到磁碟區移動、並顯示其變更事件。
+
+* 包含一或多個受監控工作負載的QoS原則群組處理量（Mbps或IOPS）限制會有所變更。
++
+變更原則群組限制可能導致延遲（回應時間）間歇性尖峰、也可能觸發原則群組的事件。延遲會逐漸恢復正常、而尖峰所造成的任何事件都會過時。
+
+* HA配對中的節點接管或恢復其合作夥伴節點的儲存設備。
++
+Unified Manager可偵測接管、部分接管或恢復作業何時完成。如果接管作業是由受恐慌的節點所造成、Unified Manager將無法偵測到事件。
+
+* 已成功完成還原升級或還原作業。ONTAP
++
+此時會顯示舊版和新版本。
+
+

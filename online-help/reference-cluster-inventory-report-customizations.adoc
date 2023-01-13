@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂庫存報告、以監控叢集元件上的資源不足。例如、您可以自訂報告來監控資訊、例如即將達到SVM數上限的叢集、執行舊版ONTAP 的更新節點、以及達到最大磁碟限制的節點。 
+---
+= 叢集庫存報告自訂功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂庫存報告、以監控叢集元件上的資源不足。例如、您可以自訂報告來監控資訊、例如即將達到SVM數上限的叢集、執行舊版ONTAP 的更新節點、以及達到最大磁碟限制的節點。

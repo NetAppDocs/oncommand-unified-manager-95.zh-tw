@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-certain-special-characters-do-not-work-with-reporting-search.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 某些特殊字元無法用於報告搜尋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *問題*
++
+在報告中搜尋時使用特殊字元%和_、會導致作業失敗。
+
+* *修正行動*
++
+如果您搜尋的字串包含%或_、則應在指定字元之前使用雙反斜槓。
+
++
+例如、若要尋找包含S_10的字串、您應該輸入S\_10。
+
+

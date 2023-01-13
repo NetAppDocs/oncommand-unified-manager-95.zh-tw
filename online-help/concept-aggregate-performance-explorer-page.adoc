@@ -1,0 +1,38 @@
+---
+permalink: online-help/concept-aggregate-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「效能/集合體資源管理器」頁面提供叢集中所有集合體的詳細效能總覽。 
+---
+= 效能/ Aggregate Explorer頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「效能/集合體資源管理器」頁面提供叢集中所有集合體的詳細效能總覽。
+
+「效能/集合體資源管理器」頁面可讓您追蹤及比較特定時段內的集合體效能、協助疑難排解及微調集合體的效能。
+
+[NOTE]
+====
+根Aggregate不會顯示在此頁面上。
+
+====
+使用「檢視與比較」功能、您可以將此Aggregate的效能與以下項目進行比較：
+
+* 相同節點上的其他集合體
+* 相同叢集上的其他集合體
+* 集合體所在的節點
+* 叢集上使用此Aggregate的所有節點
+* 駐留在此集合體上的磁碟區
+
+
+「效能/ Aggregate Explorer」頁面可讓您：
+
+* 檢視臨界值相關問題及其詳細資料
+* 追蹤並比較Aggregate效能資料
+* 調查並疑難排解臨界值相關問題
+* 調查並疑難排解效能問題
+

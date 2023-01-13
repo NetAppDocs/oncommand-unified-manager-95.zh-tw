@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-deleting-users-or-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從管理伺服器資料庫刪除一或多位使用者、以防止特定使用者存取Unified Manager。您也可以刪除群組、讓群組中的所有使用者都無法再存取管理伺服器。 
+---
+= 刪除使用者或群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從管理伺服器資料庫刪除一或多位使用者、以防止特定使用者存取Unified Manager。您也可以刪除群組、讓群組中的所有使用者都無法再存取管理伺服器。
+
+
+
+== 開始之前
+
+* 刪除遠端群組時、您必須重新指派指派給遠端群組使用者的事件。
++
+如果您要刪除本機使用者或遠端使用者、則指派給這些使用者的事件會自動取消指派。
+
+* 您必須OnCommand 扮演「管理員角色」。
+
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左管理功能表中的*使用者*。
+. 在「*管理/使用者*」頁面中、選取您要刪除的使用者或群組、然後按一下「*刪除*」。
+. 按一下「*是*」確認刪除。
+

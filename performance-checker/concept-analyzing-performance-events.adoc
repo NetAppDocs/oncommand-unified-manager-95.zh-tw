@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-analyzing-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以分析效能事件、以識別偵測到的時間、是否為作用中的（新的或已確認的）或已過時、所涉及的工作負載和叢集元件、以及自行解決事件的選項。 
+---
+= 分析效能事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以分析效能事件、以識別偵測到的時間、是否為使用中（新的或已確認的）或已過時、所涉及的工作負載和叢集元件、以及自行解決事件的選項。

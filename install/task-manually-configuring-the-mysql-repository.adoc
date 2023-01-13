@@ -1,0 +1,33 @@
+---
+permalink: install/task-manually-configuring-the-mysql-repository.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 如果您安裝Unified Manager的系統無法存取MySQL Community Edition儲存庫、則必須手動下載並設定儲存庫、才能成功安裝。 
+---
+= 手動設定MySQL儲存庫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您安裝Unified Manager的系統無法存取MySQL Community Edition儲存庫、則必須手動下載並設定儲存庫、才能成功安裝。
+
+
+
+== 關於這項工作
+
+MySQL儲存庫可讓您存取系統上必須安裝的必要MySQL軟體。
+
+[NOTE]
+====
+如果系統沒有網際網路連線、此工作將會失敗。如果您安裝Unified Manager的系統無法存取網際網路、請參閱MySQL文件。
+
+====
+
+
+== 步驟
+
+. 下載適合您安裝的MySQL儲存庫： `+wget http://repo.mysql.com/yum/mysql-5.7-community/el/7/x86_64/mysql57-community-release-el7-7.noarch.rpm+`
+. 設定MySQL儲存庫： `yum install mysql57-community-release-el7-7.noarch.rpm`
+

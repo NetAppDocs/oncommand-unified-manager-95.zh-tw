@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-deleting-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您想要防止Unified Manager伺服器與驗證伺服器通訊、可以刪除驗證伺服器。例如、如果您想要變更管理伺服器正在通訊的驗證伺服器、您可以刪除驗證伺服器並新增驗證伺服器。 
+---
+= 刪除驗證伺服器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您想要防止Unified Manager伺服器與驗證伺服器通訊、可以刪除驗證伺服器。例如、如果您想要變更管理伺服器正在通訊的驗證伺服器、您可以刪除驗證伺服器並新增驗證伺服器。
+
+
+
+== 開始之前
+
+您必須OnCommand 扮演「管理員角色」。
+
+
+
+== 關於這項工作
+
+刪除驗證伺服器時、驗證伺服器的遠端使用者或群組將無法再存取Unified Manager。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左設定功能表中的*驗證*。
+. 在「*設定/驗證*」頁面中、選取您要刪除的一或多個驗證伺服器、然後按一下「*刪除*」。
+. 按一下*是*以確認刪除要求。
++
+如果啟用*使用安全連線*選項、則與驗證伺服器相關的憑證會連同驗證伺服器一起刪除。
+
+

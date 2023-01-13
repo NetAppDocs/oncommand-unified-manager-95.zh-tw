@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-creating-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在資料原則中新增規則、以決定寫入「無限Volume」的資料放置位置。您可以使用Unified Manager中定義的規則範本來建立規則、或是建立自訂規則。 
+---
+= 建立規則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在資料原則中新增規則、以決定寫入「無限Volume」的資料放置位置。您可以使用Unified Manager中定義的規則範本來建立規則、或是建立自訂規則。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 含有具有儲存類別的無限Volume SVM的叢集必須新增至Unified Manager資料庫。
+

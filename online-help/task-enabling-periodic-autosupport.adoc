@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-enabling-periodic-autosupport.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以選擇將特定的預先定義訊息自動傳送至技術支援、以確保環境正常運作、並協助您維護環境的完整性。 
+---
+= 實現定期AutoSupport 更新
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以選擇將特定的預先定義訊息自動傳送至技術支援、以確保環境正常運作、並協助您維護環境的完整性。
+
+
+
+== 開始之前
+
+您必須以維護使用者的身分登入。
+
+
+
+== 關於這項工作
+
+您必須啟動AutoSupport VMware才能獲得NetApp Active IQ 功能的好處。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按AutoSupport 一下*設定*功能表中的*
+. 選取「*啟用週期AutoSupport 性的更新*」核取方塊。
+. 如有需要、請定義HTTP Proxy伺服器的名稱、連接埠和驗證資訊。
+. 按一下「 * 儲存 * 」。
+

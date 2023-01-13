@@ -1,0 +1,16 @@
+---
+permalink: config/concept-overview-of-the-configuration-sequence.html 
+sidebar: sidebar 
+keywords:  
+summary: 組態工作流程會說明您在使用Unified Manager之前必須執行的工作。 
+---
+= 組態順序總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+組態工作流程會說明您在使用Unified Manager之前必須執行的工作。
+
+image::../media/post-install-flow.gif[安裝後流程]

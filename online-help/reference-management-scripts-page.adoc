@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-management-scripts-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「管理/指令碼」頁面可讓您將自訂指令碼新增至Unified Manager。您可以將這些指令碼與警示建立關聯、以便自動重新設定儲存物件。 
+---
+= 「管理/指令碼」頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「管理/指令碼」頁面可讓您將自訂指令碼新增至Unified Manager。您可以將這些指令碼與警示建立關聯、以便自動重新設定儲存物件。
+
+「管理/指令碼」頁面可讓您從Unified Manager新增或刪除指令碼。
+
+
+
+== 命令按鈕
+
+* *新增*
++
+顯示「新增指令碼」對話方塊、可讓您新增指令碼。
+
+* *刪除*
++
+刪除選取的指令碼。
+
+
+
+
+
+== 清單檢視
+
+清單檢視會以表格格式顯示您新增至Unified Manager的指令碼。
+
+* *名稱*
++
+顯示指令碼的名稱。
+
+* *說明*
++
+顯示指令碼的說明。
+
+

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-an-infinite-volume-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volume是可擴充的單一Volume、可儲存多達20億個檔案和數十PB的資料。 
+---
+= 什麼是無限Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volume是可擴充的單一Volume、可儲存多達20億個檔案和數十PB的資料。
+
+有了Infinite Volume、您就能在一個大型邏輯實體中管理數PB的資料、用戶端就能從單一交會路徑擷取整個Volume的數PB資料。
+
+Infinite Volume使用多個節點上多個集合體的儲存設備。您可以從小的Infinite Volume開始、在其集合體中新增更多磁碟、或是提供更多集合體以供使用、藉此在不中斷營運的情況下擴充磁碟區。

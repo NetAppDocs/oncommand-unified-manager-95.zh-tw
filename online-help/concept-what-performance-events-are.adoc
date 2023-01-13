@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-performance-events-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 效能事件是與叢集上的工作負載效能有關的事件。它們可協助您以緩慢的回應時間來識別工作負載。搭配同時發生的健全狀況事件、您可以判斷可能造成或促成回應時間緩慢的問題。 
+---
+= 什麼是效能事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+效能事件是與叢集上的工作負載效能有關的事件。它們可協助您以緩慢的回應時間來識別工作負載。搭配同時發生的健全狀況事件、您可以判斷可能造成或促成回應時間緩慢的問題。
+
+當Unified Manager偵測到同一個叢集元件發生多個相同事件情況時、它會將所有事件視為單一事件、而非個別事件。

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-report-sharing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「共用」選項、透過電子郵件與一或多位使用者共用報告。 
+---
+= 什麼是報告共用
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用* Share（分享）*選項、透過電子郵件與一或多位使用者共用報告。
+
+您必須先儲存報告再進行分享、以確保顯示您最近對報告所做的變更。
+
+您可以使用任何想要的格式共用報告。「*分享*」選項可協助您立即透過電子郵件分享報告、即使是無法存取Unified Manager但擁有有效電子郵件地址的人員。

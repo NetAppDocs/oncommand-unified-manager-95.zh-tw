@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-rate-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Volume Transfer Rate（歷史）報告、以根據磁碟區的總傳輸大小來檢視磁碟區傳輸詳細資料。您也可以檢視一週中特定日期的Volume Transfers。 
+---
+= Volume Transfer速率（歷史）報告自訂項目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「Volume Transfer Rate（歷史）（Volume Transfer速率（歷史））」報告、以根據Volume的總傳輸大小來檢視Volume傳輸詳細資料。您也可以檢視一週中特定日期的Volume Transfers。

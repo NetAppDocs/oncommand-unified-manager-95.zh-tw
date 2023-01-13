@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-previewing-changes-to-your-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: 在將資料原則中的變更提交至具有無限Volume的SVM進行啟動之前、您應該先預覽資料原則中對規則所做的任何變更。 
+---
+= 預覽資料原則的變更
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在將資料原則中的變更提交至具有無限Volume的SVM進行啟動之前、您應該先預覽資料原則中對規則所做的任何變更。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+資料原則索引標籤僅適用於具有無限Volume的SVM。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下「*健全狀況*」>「* SVMS*」。
+. 在*健全狀況/儲存虛擬機器*目錄頁面中、選取適當的SVM。
+. 按一下*資料原則*。
++
+隨即顯示所選SVM with Infinite Volume資料原則中的規則清單。
+
+. 視需要修改資料原則。
++
+資料原則修改可包括建立新規則、編輯現有規則、刪除現有規則或重新排序規則。
+
+. 按一下「*啟動*」。
+. 在* Data Policy Configuration（資料原則組態的變更摘要）*視窗中、預覽資料原則的變更、然後按一下* Activate*（啟動*）、以在SVM中啟用「Infinite Volume（無限Volume）」的資料原則變更。
+

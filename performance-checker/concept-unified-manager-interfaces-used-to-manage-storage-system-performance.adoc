@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 有兩種使用者介面OnCommand 、可用來監控及疑難排解資料儲存效能問題：網路使用者介面和維護主控台。 
+---
+= Unified Manager介面、用於管理儲存系統效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+有兩種使用者介面OnCommand 、可用來監控及疑難排解資料儲存效能問題：網路使用者介面和維護主控台。
+
+
+
+== Unified Manager Web UI
+
+Unified Manager Web UI可讓系統管理員監控及疑難排解與效能相關的儲存系統問題。
+
+本節說明系統管理員可遵循的一些常見工作流程、以疑難排解Unified Manager Web UI中顯示的儲存效能問題。
+
+
+
+== 維護主控台
+
+維護主控台可讓系統管理員監控、診斷及解決作業系統問題、版本升級問題、使用者存取問題、以及與Unified Manager伺服器本身相關的網路問題。如果Unified Manager Web UI無法使用、則維護主控台是唯一存取Unified Manager的方式。
+
+本節提供存取維護主控台的指示、以及如何使用它來解決Unified Manager伺服器運作的相關問題。

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-user-access.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立角色並指派功能、以控制使用者對所選叢集物件的存取。您可以識別擁有所需功能的使用者、以存取叢集內的選定物件。只有這些使用者可以存取、以管理叢集物件。 
+---
+= 管理使用者存取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立角色並指派功能、以控制使用者對所選叢集物件的存取。您可以識別擁有所需功能的使用者、以存取叢集內的選定物件。只有這些使用者可以存取、以管理叢集物件。

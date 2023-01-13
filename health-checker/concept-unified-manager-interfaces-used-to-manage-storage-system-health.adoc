@@ -1,0 +1,32 @@
+---
+permalink: health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html 
+sidebar: sidebar 
+keywords:  
+summary: 本節提供OnCommand 有關使用者介面的資訊、這些介面可協助您疑難排解資料儲存容量、可用度和保護問題。這兩個UI是Unified Manager Web UI和維護主控台。 
+---
+= Unified Manager介面、用於管理儲存系統健全狀況
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本節提供OnCommand 有關使用者介面的資訊、這些介面可協助您疑難排解資料儲存容量、可用度和保護問題。這兩個UI是Unified Manager Web UI和維護主控台。
+
+如果您想要使用Unified Manager的保護功能、也必須安裝及設定OnCommand Workflow Automation WFA。
+
+
+
+== Unified Manager Web UI
+
+Unified Manager Web UI可讓系統管理員監控及疑難排解與資料儲存容量、可用度及保護相關的叢集問題。
+
+本節說明系統管理員可遵循的一些常見工作流程、以疑難排解Unified Manager Web UI中顯示的儲存容量、資料可用度或保護問題。
+
+
+
+== 維護主控台
+
+維護主控台可讓系統管理員監控、診斷及解決作業系統問題、版本升級問題、使用者存取問題、以及與Unified Manager伺服器本身相關的網路問題。如果Unified Manager Web UI無法使用、則維護主控台是唯一存取Unified Manager的方式。
+
+本節提供存取維護主控台的指示、以及如何使用它來解決Unified Manager伺服器運作的相關問題。

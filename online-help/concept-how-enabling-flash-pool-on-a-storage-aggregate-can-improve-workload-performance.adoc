@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-how-enabling-flash-pool-on-a-storage-aggregate-can-improve-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Aggregate上啟用Flash Pool功能、藉此改善工作負載效能。Flash Pool是整合HDD和SSD的集合體。HDD用於主儲存設備、SSD提供高效能的讀寫快取、可大幅提升Aggregate效能。 
+---
+= 如何在儲存Aggregate上啟用Flash Pool、才能提升工作負載效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Aggregate上啟用Flash Pool功能、藉此改善工作負載效能。Flash Pool是整合HDD和SSD的集合體。HDD用於主儲存設備、SSD提供高效能的讀寫快取、可大幅提升Aggregate效能。
+
+在Unified Manager中、「事件詳細資料」頁面會顯示爭用的Aggregate名稱。您可以使用OnCommand 「支援對象」或ONTAP 「支援對象」命令來查看是否已針對集合體啟用Flash Pool。如果您已安裝SSD、可以使用命令列介面來啟用SSD。如果您已安裝SSD、可以在Aggregate上執行下列命令、查看是否已啟用Flash Pool： `cluster::> storage aggregate show -aggregate aggr_name -field hybrid-enabled`
+
+在此命令中、 `aggr_name` 為Aggregate的名稱、例如爭用的Aggregate。
+
+如需Flash Pool及其使用需求的詳細資訊、請參閱_叢集Data ONTAP 式實體儲存管理指南_。

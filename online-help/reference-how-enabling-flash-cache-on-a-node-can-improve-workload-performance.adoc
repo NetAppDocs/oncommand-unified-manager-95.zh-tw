@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-how-enabling-flash-cache-on-a-node-can-improve-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在叢集中的每個節點上啟用Flash Cache™智慧型資料快取、藉此改善工作負載效能。 
+---
+= 在節點上啟用Flash Cache可如何改善工作負載效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在叢集中的每個節點上啟用Flash Cache™智慧型資料快取、藉此改善工作負載效能。
+
+Flash Cache模組或效能加速模組PCIe型記憶體模組、可發揮智慧型外部讀取快取的功能、將隨機讀取密集工作負載的效能最佳化。此硬體可搭配WAFL 使用、搭配ONTAP 使用的不含外部快取的軟體元件。
+
+在Unified Manager的「事件詳細資料」頁面上、代表爭用中集合體的叢集元件圖示會反白顯示為紅色。圖示下方的括弧中是可識別Aggregate的Aggregate名稱。您可以在集合體所在的節點上啟用Flash Cache。
+
+您可以使用OnCommand 「支援系統管理程式」或ONTAP 「支援功能」命令來查看是否已安裝或啟用Flash Cache、如果尚未啟用、也可以啟用Flash Cache。下列命令會指出是否已在特定節點上啟用Flash Cache： `cluster::> run local options flexscale.enable`
+
+如需Flash Cache及其使用需求的詳細資訊、請參閱下列技術報告：
+
+http://www.netapp.com/us/media/tr-3832.pdf["技術報告3832：Flash Cache最佳實務做法指南"]

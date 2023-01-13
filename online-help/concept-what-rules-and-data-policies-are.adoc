@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-what-rules-and-data-policies-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 規則決定檔案（資料）在具有無限Volume的儲存虛擬機器（SVM）中的位置。這類規則的集合稱為資料原則。 
+---
+= 什麼是規則和資料原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_規則_決定檔案（資料）放置於具有Infinite Volume的儲存虛擬機器（SVM）中。這類規則的集合稱為_data policy_.
+
+* *規則*
++
+規則主要包含一組預先定義的條件和資訊、可決定將檔案放在Infinite Volume中的位置。當檔案放入Infinite Volume時、該檔案的屬性會與規則清單相符。如果屬性符合規則、則該規則的放置資訊會決定放置檔案的儲存類別。如果屬性與規則清單中的任何規則不符、則會使用資料原則中的預設規則來決定檔案的放置位置。
+
++
+例如、如果您有規則「將所有類型為.mp3的檔案放入銅級儲存類別中」、則寫入Infinite Volume的所有.mp3檔案都會放入銅級儲存類別中。
+
+* *資料政策*
++
+資料原則是規則清單。每個具有Infinite Volume的SVM都有自己的資料原則。每個新增至「無限Volume」的檔案、都會與其資料原則的規則進行比較、以決定放置該檔案的位置。資料原則可讓您根據檔案屬性來篩選傳入檔案、並將這些檔案置於適當的儲存類別中。
+
+

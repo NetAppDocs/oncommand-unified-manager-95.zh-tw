@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-expanding-the-counter-charts-pane.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以展開「計數器圖表」窗格、使圖表變大、更易讀取。 
+---
+= 展開「計數器圖表」窗格
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以展開「計數器圖表」窗格、使圖表變大、更易讀取。
+
+
+
+== 關於這項工作
+
+定義比較物件和計數器時間範圍之後、您可以檢視較大的「計數器圖表」窗格。您可以使用Performance Explorer視窗中央的*按鈕來展開窗格。
+
+
+
+== 步驟
+
+. 展開或縮小* Counter圖表*窗格。
++
+|===
+| 至... | 執行此動作... 
+
+
+ a| 
+展開「計數器圖表」窗格以符合頁面寬度
+ a| 
+按一下「*」按鈕
+
+
+
+ a| 
+將「計數器圖表」窗格縮小到頁面右半部分
+ a| 
+按一下「*>*」按鈕
+
+|===
+

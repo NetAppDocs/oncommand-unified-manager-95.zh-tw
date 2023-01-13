@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-creating-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager可讓您建立保護關係、監控及疑難排解儲存在託管叢集上之資料的鏡射保護與備份資料庫保護、以及在資料遭到覆寫或遺失時還原資料。 
+---
+= 建立、監控及疑難排解保護關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager可讓您建立保護關係、監控及疑難排解儲存在託管叢集上之資料的鏡射保護與備份資料庫保護、以及在資料遭到覆寫或遺失時還原資料。

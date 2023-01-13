@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-quiescing-a-protection-relationship-from-the-volume-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 在「保護/磁碟區關係」頁面中、您可以靜止保護關係、暫時避免資料傳輸發生。當您想要為包含資料庫的SnapMirror目的地Volume建立Snapshot複本時、您可能會靜止一種關係、並希望在Snapshot複製作業期間確保其內容穩定。 
+---
+= 從「保護/磁碟區關係」頁面靜止保護關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在「保護/磁碟區關係」頁面中、您可以靜止保護關係、暫時避免資料傳輸發生。當您想要為包含資料庫的SnapMirror目的地Volume建立Snapshot複本時、您可能會靜止一種關係、並希望在Snapshot複製作業期間確保其內容穩定。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須設定Workflow Automation。
+
+
+
+
+== 關於這項工作
+
+下列執行個體不會顯示「靜止」動作：
+
+* 如果RBAC設定不允許此動作、例如、您只有操作員權限
+* 當Volume ID未知時、例如、當您有叢集間關係、但尚未探索到目的地叢集時
+* 當您尚未配對Workflow Automation和Unified Manager時
+
+
+
+
+== 步驟
+
+. 若要停止一或多個保護關係的傳輸、請從「*保護/磁碟區關係*」頁面選取一或多個磁碟區、然後在工具列上按一下「*靜止*」。
++
+隨即顯示「靜止」對話方塊。
+
+. 按一下 * 繼續 * 。
++
+靜止工作的狀態會顯示在「健全狀況/磁碟區」詳細資料頁面頂端、以及工作詳細資料的連結。
+
+. 按一下*檢視詳細資料*連結、前往*保護/工作*詳細資料頁面、以取得更多詳細資料和工作進度。
+. 按一下瀏覽器上的*上一頁*箭頭、即可返回*保護/磁碟區關係*頁面。
++
+當所有工作工作工作順利完成時、靜止工作即告完成。
+
+

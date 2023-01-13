@@ -1,0 +1,75 @@
+---
+permalink: install/task-setting-up-unified-manager-server-with-vcs-using-configuration-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用組態指令碼來設定Unified Manager搭配Veritas Cluster Server（VCS）。 
+---
+= 使用組態指令碼設定Unified Manager與VCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用組態指令碼來設定Unified Manager搭配Veritas Cluster Server（VCS）。
+
+
+
+== 開始之前
+
+* Unified Manager必須安裝在VCS設定中的兩個節點上。
+* XML：libxml模組必須與Perl搭售、VCS指令碼才能運作。
+* 您必須建立大小足以容納來源Unified Manager資料的共享LUN。
+* 您必須指定指令碼的絕對掛載路徑才能運作。
++
+如果您在掛載路徑內建立資料夾、指令碼將無法運作。
+
+* 您必須已下載 `ha_setup.pl` 指令碼 `/opt/netapp/ocum/scripts`。
+
+
+
+
+== 關於這項工作
+
+在VCS設定中、虛擬IP介面和掛載點為作用中的節點是第一個節點。另一個節點是第二個節點。
+
+
+
+== 步驟
+
+. 登入叢集的第一個節點。
++
+在高可用度設定中、您必須停止第二個節點上的所有Unified Manager服務。
+
+. 新增VCS安裝目錄 `/opt/VRTSvcs/bin` 至路徑環境變數。
+. 如果您要設定現有的Unified Manager設定、請建立Unified Manager備份並產生支援服務組合。
+. 執行 `ha_setup.pl` 指令碼： `perl ha_setup.pl --first -t vcs -g group_name -e eth_name -i cluster_ip -m net_mask -n fully_qualified_cluster_name -f mount_path -v volume_group -d disk_group -l install_dir -u user_name -p password`
++
+`perl \ha_setup.pl --first -t vcs -g umgroup -e eth0 -i 10.11.12.13 -m 255.255.255.0 -n cluster.eng.company.com -f /mnt/ocumdb -v ocumdb_SdHv -d ocumdb_SdDg -l /opt/netapp/ -u admin -p wx17yz`
+
+. 使用Veritas Operations Manager網路主控台或VCS叢集管理程式來驗證是否已建立容錯移轉群組、以及是否已將Unified Manager伺服器服務、掛載點、虛擬IP、網路介面卡（NIC）和Volume群組新增至叢集群組。
+. 手動將Unified Manager服務群組移至次要節點、並確認叢集容錯移轉正常運作。
+. 確認VCS已切換至叢集的第二個節點。
++
+您必須驗證叢集第二個節點上的資料掛載、虛擬IP、磁碟區群組和NIC是否處於線上狀態。
+
+. 使用Veritas Operations Manager停止Unified Manager。
+. 執行 `perl ha_setup.pl --join -t vcs -f``mount_path` 在叢集的第二個節點上執行命令、以便Unified Manager伺服器資料指向LUN。
+. 確認Unified Manager伺服器服務已在叢集的第二個節點上正常啟動。
+. 執行組態指令碼以取得全域IP位址之後、重新產生Unified Manager憑證。
++
+.. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*設定*功能表中的* HTTPS憑證*。
+.. 按一下*重新產生HTTPS憑證*。
+
+
++
+重新產生的憑證僅提供叢集IP位址、而非完整網域名稱（FQDN）。您必須使用全域IP位址來設定Unified Manager以實現高可用度。
+
+. 使用下列項目存取Unified Manager UI： `\https://<FQDN of Global IP>`
+
+
+
+
+== 完成後
+
+設定高可用度後、您必須建立共用的備份位置。若要包含容錯移轉前後所建立的備份、則需要共用位置。高可用度設定中的兩個節點都必須能夠存取共用位置。

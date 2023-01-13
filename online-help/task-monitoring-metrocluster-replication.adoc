@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-monitoring-metrocluster-replication.html 
+sidebar: sidebar 
+keywords: MetroCluster Replication,Mirroring 
+summary: 鏡射資料時、您可以監控及診斷邏輯連線的整體健全狀況。您可以識別中斷叢集元件鏡射（例如集合體、節點和儲存虛擬機器）的問題或任何風險。 
+---
+= 監控MetroCluster 功能複寫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+鏡射資料時、您可以監控及診斷邏輯連線的整體健全狀況。您可以識別中斷叢集元件鏡射（例如集合體、節點和儲存虛擬機器）的問題或任何風險。
+
+
+
+== 開始之前
+
+必須在Unified Manager中新增本地和遠端MetroCluster 叢集的不二項功能
+
+
+
+== 關於這項工作
+
+您可以使用「健全狀況/叢集詳細資料」頁面中顯示的資訊來修正任何複寫問題。
+
+如果將指標移到圖示上、您可以檢視所產生事件的詳細資訊。
+
+Unified Manager會使用系統健全狀況警示來監控MetroCluster 元件的狀態、以及在功能性方面的連線能力。
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下* Health *>* Clusters*。
++
+隨即顯示受監控叢集的清單。
+
+. 在「*健全狀況/叢集*」目錄頁面中、按一下您要檢視MetroCluster 其「還原複寫」詳細資料的叢集名稱、然後按一下「* MetroCluster 還原複寫*」索引標籤。
++
+要複寫之版本資訊的拓撲MetroCluster 會顯示在對應叢集物件區域的本機站台上、並顯示有關正在鏡射資料之遠端站台的資訊。
+
+
+
+
+
+== 完成後
+
+如果MetroCluster 發現在您的支援功能組態中有鏡射問題、您必須登入System Manager或存取ONTAP 該CLI來解決問題。

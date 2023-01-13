@@ -1,0 +1,28 @@
+---
+permalink: health-checker/concept-how-group-actions-work-on-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 群組動作是針對群組中的所有儲存物件執行的作業。例如、您可以設定Volume臨界值群組動作、同時變更群組中所有Volume的Volume臨界值。 
+---
+= 群組動作在儲存物件上的運作方式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+群組動作是針對群組中的所有儲存物件執行的作業。例如、您可以設定Volume臨界值群組動作、同時變更群組中所有Volume的Volume臨界值。
+
+群組支援獨特的群組動作類型。您只能有一個磁碟區健全狀況臨界值群組動作類型的群組。不過、您可以為同一個群組設定不同類型的群組動作（如果有）。群組動作的排名決定了將動作套用至儲存物件的順序。儲存物件的詳細資料頁面會提供哪些群組動作會套用至儲存物件的相關資訊。
+
+
+
+== 獨特群組動作範例
+
+請考慮屬於群組G1和G2的Volume A、並針對這些群組設定下列Volume健全狀況臨界值群組動作：
+
+* `Change_capacity_threshold` 將排名為1的動作分組、以設定磁碟區的容量
+* `Change_snapshot_copies` 第2級的群組動作、用於設定磁碟區的Snapshot複本
+
+
+。 `Change_capacity_threshold` 群組動作一律優先於 `Change_snapshot_copies` 群組動作、並套用至磁碟區A當Unified Manager完成一個監控週期時、會根據重新評估Volume A的健全狀況臨界值相關事件 `Change_capacity_threshold` 群組動作。您無法為G1或G2群組設定其他Volume臨界值類型的群組動作。

@@ -1,0 +1,36 @@
+---
+permalink: config/task-restarting-the-unified-manager-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從Unified Manager的維護主控台重新啟動虛擬機器。您必須在產生新的安全性憑證之後重新啟動、或是虛擬機器發生問題時重新啟動。 
+---
+= 重新啟動Unified Manager虛擬機器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從Unified Manager的維護主控台重新啟動虛擬機器。您必須在產生新的安全性憑證之後重新啟動、或是虛擬機器發生問題時重新啟動。
+
+
+
+== 開始之前
+
+虛擬應用裝置已開啟電源。
+
+您會以維護使用者的身分登入維護主控台。
+
+
+
+== 關於這項工作
+
+您也可以使用「**重新啟動來賓*」選項、從vSphere重新啟動虛擬機器。如需詳細資訊、請參閱VMware文件。
+
+
+
+== 步驟
+
+. 存取維護主控台。
+. 選擇*系統組態*>*重新開機虛擬機器*。
+

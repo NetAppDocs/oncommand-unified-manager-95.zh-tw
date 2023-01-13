@@ -1,0 +1,56 @@
+---
+permalink: performance-checker/task-logging-in-to-the-gui.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用支援的網頁瀏覽器登入Unified Manager UI。 
+---
+= 登入UI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用支援的網頁瀏覽器登入Unified Manager UI。
+
+
+
+== 開始之前
+
+* 網頁瀏覽器必須符合最低需求。
++
+請參閱互通性對照表、網址為 http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"] 以取得支援的瀏覽器版本完整清單。
+
+* 您必須擁有Unified Manager伺服器的IP位址或URL。
+
+
+
+
+== 關於這項工作
+
+您會在24小時無活動後自動登出工作階段。
+
+
+
+== 步驟
+
+. 在網頁瀏覽器中輸入URL、其中 `URL` 是Unified Manager伺服器的IP位址或完整網域名稱（FQDN）：
++
+** 對於IPV4： `+https://URL/+`
+** 對於IPv6： `https://[URL]/`如果伺服器使用自我簽署的數位憑證、瀏覽器可能會顯示警告、指出該憑證不受信任。您可以確認繼續存取的風險、或是安裝憑證授權單位（CA）簽署的數位憑證來進行伺服器驗證。
+
+
+. 在登入畫面中、輸入您的使用者名稱和密碼。
++
+如果使用SAML驗證來保護登入Unified Manager使用者介面、您將在身分識別供應商（IDP）登入頁面輸入認證資料、而非在Unified Manager登入頁面輸入認證資料。
+
++
+隨即顯示「儀表板/總覽」頁面。
+
++
+[NOTE]
+====
+如果Unified Manager伺服器尚未初始化、則會出現新的瀏覽器視窗、顯示「第一次使用體驗」精靈。您必須輸入要傳送電子郵件警示的初始電子郵件收件者、處理電子郵件通訊的SMTP伺服器、AutoSupport 以及是否啟用「支援」、將Unified Manager安裝的相關資訊傳送給技術支援部門。您完成此資訊之後、Unified Manager使用者介面即會出現。
+
+====
+

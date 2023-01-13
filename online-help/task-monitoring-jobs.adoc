@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-monitoring-jobs.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「保護/工作」頁面來監控工作狀態、以及檢視儲存服務類型、狀態、提交時間和完成時間等工作內容、以判斷工作是否已成功完成。 
+---
+= 監控工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「保護/工作」頁面來監控工作狀態、以及檢視儲存服務類型、狀態、提交時間和完成時間等工作內容、以判斷工作是否已成功完成。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下* Protection（保護）*>* Jobs*。
++
+隨即顯示「Protection / Jobs（保護/工作）」頁面。
+
+. 檢視*狀態*欄、以判斷目前執行的工作狀態。
+. 按一下工作名稱以檢視該特定工作的詳細資料。
++
+隨即顯示「Protection /工作詳細資料」頁面。
+
+

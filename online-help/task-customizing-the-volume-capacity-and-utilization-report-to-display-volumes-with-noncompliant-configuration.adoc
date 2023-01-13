@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Volume容量與使用率報告、以顯示不符合公司原則的磁碟區。例如、如果您必須在所有磁碟區上啟用重複資料刪除功能、您可以建立一份報告、列出停用重複資料刪除功能的所有磁碟區。 
+---
+= 自訂Volume容量與使用率報告、以顯示具有不相容組態的磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂Volume容量與使用率報告、以顯示不符合公司原則的磁碟區。例如、如果您必須在所有磁碟區上啟用重複資料刪除功能、您可以建立一份報告、列出停用重複資料刪除功能的所有磁碟區。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要移除SVM、叢集或Volume的分組、請執行下列步驟：
++
+.. 按一下需要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 隱藏除叢集、儲存虛擬機器、磁碟區、重複資料刪除和重複資料刪除空間節約（GB）欄以外的所有欄位：
++
+.. 按一下欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 從功能表中選取*欄*>*隱藏欄*。
+
+
+. 若要篩選停用重複資料刪除的磁碟區、請按一下「*重複資料刪除*」欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*清單中、選取*等於*。
+. 按一下「*選取值*」、然後選取「*停用*」。
+. 按一下「*確定*」。
+. 若要根據重複資料刪除空間節約量來排序磁碟區、請按一下*重複資料刪除空間節約量（GB）*欄、然後按一下 image:../media/sort-desc.gif[""] 圖示。
+

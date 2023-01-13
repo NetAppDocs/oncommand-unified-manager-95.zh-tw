@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-backup-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從Unified Manager的備份頁面檢視備份清單。您可以檢視本頁所列備份的備份名稱、大小和建立時間。您可以從「資料庫備份設定」頁面修改資料庫備份設定。 
+---
+= 備份視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從Unified Manager的備份頁面檢視備份清單。您可以檢視本頁所列備份的備份名稱、大小和建立時間。您可以從「資料庫備份設定」頁面修改資料庫備份設定。

@@ -1,0 +1,104 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Volume RelationsInventory報告可讓您分析叢集中的儲存設備詳細資料、瞭解磁碟區所需的保護程度、以及根據故障來源、模式和排程來篩選磁碟區詳細資料。 
+---
+= Volume關係詳細目錄報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume RelationsInventory報告可讓您分析叢集中的儲存設備詳細資料、瞭解磁碟區所需的保護程度、以及根據故障來源、模式和排程來篩選磁碟區詳細資料。
+
+Volume Relationships Inventory報告會以兩種格式顯示：
+
+* SnapMirror關係圓形圖和SnapVault 彼此之間的關係圓形圖
+* Volume Relationships Inventory報告表格檢視
+
+
+
+
+== SnapMirror和SnapVault 圓形圖
+
+顯示儲存系統中存在的磁碟區關係組態詳細資料。
+
+
+
+== Volume關係庫存表格式檢視
+
+* *關係健全*
++
+顯示叢集的關係健全狀況。
+
+* *關係狀態*
++
+顯示SnapMirror關係的鏡射狀態。
+
+* *傳輸狀態*
++
+顯示SnapMirror關係的狀態。
+
+* *延遲狀態*
++
+顯示Volume的延遲狀態。
+
+* *來源叢集*
++
+顯示SnapMirror關係的來源叢集名稱。
+
+* *來源SVM*
++
+顯示SnapMirror關係的來源儲存虛擬機器（SVM）名稱。
+
+* *來源Volume *
++
+顯示SnapMirror關係的來源Volume名稱。
+
+* *目的地叢集*
++
+顯示SnapMirror關係的目的地叢集名稱。
+
+* *目的地SVM*
++
+顯示SnapMirror關係的目的地儲存虛擬機器（SVM）名稱。
+
+* *目的地Volume *
++
+顯示SnapMirror關係的目的地Volume名稱。
+
+* *關係類型*
++
+顯示任何關係類型、包括SnapMirror或SnapVault SnapMirror。
+
+* *上次成功更新時間*
++
+顯示上次成功SnapMirror或SnapVault 不穩定作業的時間。
+
+* *上次傳輸持續時間（小時）*
++
+顯示上次資料傳輸完成所需的時間。
+
+* *上次傳輸大小（MB）*
++
+顯示上次資料傳輸的大小（以位元組為單位）。
+
+* *上次傳輸結束時間*
++
+顯示上次成功完成SnapMirror或SnapVault SnapMirror作業的時間。
+
+* *不健康的理由*
++
+關係處於不良狀態的原因。
+
+* *延遲時間（小時）*
++
+顯示鏡射上的資料延遲到來源之後的時間量。
+
+* *版本彈性複寫*
++
+顯示Yes（是）、Yes（是）及Backup（備份）選項、或None（無）。
+
+

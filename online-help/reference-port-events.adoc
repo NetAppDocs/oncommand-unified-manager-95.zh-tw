@@ -1,0 +1,128 @@
+---
+permalink: online-help/reference-port-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 連接埠事件可提供叢集連接埠的相關狀態、讓您監控連接埠上的變更或問題、例如連接埠是否關閉。 
+---
+= 連接埠事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+連接埠事件可提供叢集連接埠的相關狀態、讓您監控連接埠上的變更或問題、例如連接埠是否關閉。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+連接埠狀態關閉（ocumEvtPortStatusDown）
+ a| 
+事件
+ a| 
+節點
+ a| 
+關鍵
+
+|===
+
+
+== 影響領域：效能
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+網路連接埠Mbps臨界臨界值已違反（ocumNetwork PortMbps意外 事件）
+ a| 
+事件
+ a| 
+連接埠
+ a| 
+關鍵
+
+
+
+ a| 
+網路連接埠Mbps違反警告臨界值（ocumNetworkPortMbpsWarning）
+ a| 
+風險
+ a| 
+連接埠
+ a| 
+警告
+
+
+
+ a| 
+違反FCP連接埠Mbps臨界值（ocumFcpPortMbps意外 事件）
+ a| 
+事件
+ a| 
+連接埠
+ a| 
+關鍵
+
+
+
+ a| 
+FCP連接埠Mbps違反警告臨界值（ocumFcpPortMbpsWarnings）
+ a| 
+風險
+ a| 
+連接埠
+ a| 
+警告
+
+
+
+ a| 
+網路連接埠使用率臨界臨界值已違反（ocumNetworkPortUtilization意外）
+ a| 
+事件
+ a| 
+連接埠
+ a| 
+關鍵
+
+
+
+ a| 
+網路連接埠使用率警告臨界值已超出（ocumNetworkPortUtilizationWarnings）
+ a| 
+風險
+ a| 
+連接埠
+ a| 
+警告
+
+
+
+ a| 
+違反FCP連接埠使用率臨界臨界值（ocumFcpPortUtilizationIncident）
+ a| 
+事件
+ a| 
+連接埠
+ a| 
+關鍵
+
+
+
+ a| 
+違反FCP連接埠使用率警告臨界值（ocumFcpPortUtilizationWarnings）
+ a| 
+風險
+ a| 
+連接埠
+ a| 
+警告
+
+|===

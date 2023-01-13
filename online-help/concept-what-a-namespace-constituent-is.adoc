@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-a-namespace-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 每個Infinite Volume都有一個命名空間組成要素、可將目錄資訊和檔案名稱對應至檔案在Infinite Volume中的實體資料位置。 
+---
+= 什麼是命名空間的組成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每個Infinite Volume都有單一命名空間組成、可將目錄資訊和檔案名稱對應至無限Volume內檔案的實體資料位置。
+
+用戶端不知道命名空間的組成成分、也不直接與它互動。命名空間構成部分是Infinite Volume的內部元件。

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 瞭解配額概念有助於有效管理使用者配額和使用者群組配額。 
+---
+= 深入瞭解配額
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解配額概念有助於有效管理使用者配額和使用者群組配額。

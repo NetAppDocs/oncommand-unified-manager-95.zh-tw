@@ -1,0 +1,145 @@
+---
+section: install
+title: 安裝Unified Manager
+entries:
+- title: 介紹統一化管理程式OnCommand
+  url: "/install/concept-introduction-to-unified-manager.html"
+  entries:
+  - title: Unified Manager伺服器的功能
+    url: "/install/concept-what-the-unified-manager-server-does.html"
+  - title: 安裝順序總覽
+    url: "/install/concept-overview-of-the-installation-sequence-um.html"
+- title: 安裝Unified Manager的需求
+  url: "/install/concept-requirements-for-installing-unified-manager.html"
+  entries:
+  - title: 虛擬基礎架構與硬體系統需求
+    url: "/install/concept-virtual-infrastructure-or-hardware-system-requirements.html"
+  - title: VMware軟體與安裝需求
+    url: "/install/reference-vmware-software-and-installation-requirements.html"
+  - title: Red Hat Enterprise Linux與CentOS軟體與安裝需求
+    url: "/install/reference-red-hat-and-centos-software-and-installation-requirements.html"
+  - title: Windows軟體與安裝需求
+    url: "/install/reference-windows-software-and-installation-requirements.html"
+  - title: 支援的瀏覽器
+    url: "/install/concept-browser-and-platform-requirements.html"
+  - title: 傳輸協定與連接埠需求
+    url: "/install/reference-protocol-and-port-requirements.html"
+  - title: 完成工作表
+    url: "/install/reference-completing-the-worksheet-um.html"
+- title: 在VMware vSphere上安裝、升級及移除Unified Manager軟體
+  url: "/install/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html"
+  entries:
+  - title: VMware部署程序總覽
+    url: "/install/concept-overview-of-the-deployment-process.html"
+  - title: 部署Unified Manager
+    url: "/install/task-deploying-unified-manager-vapp.html"
+    entries:
+    - title: 下載Unified Manager OVA檔案
+      url: "/install/task-downloading-the-unified-manager-ova-file.html"
+    - title: 部署Unified Manager虛擬應用裝置
+      url: "/install/task-deploying-the-unified-manager-virtual-appliance-vapp.html"
+  - title: 升級VMware上的Unified Manager
+    url: "/install/task-upgrading-unified-manager-vapp.html"
+    entries:
+    - title: 下載Unified Manager ISO映像
+      url: "/install/task-downloading-the-unified-manager-iso-image-vapp.html"
+    - title: 升級Unified Manager虛擬應用裝置
+      url: "/install/task-upgrading-the-unified-manager-virtual-appliance-vapp.html"
+  - title: 重新啟動Unified Manager虛擬機器
+    url: "/install/task-restarting-the-unified-manager-virtual-machine.html"
+  - title: 從VMware移除Unified Manager
+    url: "/install/task-removing-unified-manager-vapp.html"
+- title: 在Red Hat或CentOS上安裝、升級及移除Unified Manager軟體
+  url: "/install/concept-install-upgrade-and-remove-unified-manager-software.html"
+  entries:
+  - title: Red Hat或CentOS上的安裝程序總覽
+    url: "/install/concept-overview-of-the-installation-process-on-red-hat.html"
+  - title: 設定所需的軟體儲存庫
+    url: "/install/concept-setting-up-required-software-repositories-um.html"
+    entries:
+    - title: 手動設定Epel儲存庫
+      url: "/install/task-manually-configuring-the-epel-repository.html"
+    - title: 手動設定MySQL儲存庫
+      url: "/install/task-manually-configuring-the-mysql-repository.html"
+  - title: 在NFS或CIFS共用區上掛載 /opp/netapp 或 /opp/NetApp/data 的SELinux需求
+    url: "/install/task-selinux-requirements-for-mounting-opt-netapp-or-opt-netapp-data-on-an-nfs-or-cifs-share.html"
+  - title: 在Red Hat Enterprise Linux或CentOS上安裝Unified Manager
+    url: "/install/concept-installing-unified-manager-on-rhel-or-centos.html"
+    entries:
+    - title: 在安裝之前建立自訂使用者主目錄和umadmin密碼
+      url: "/install/task-creating-a-custom-user-home-directory-and-umadmin-user-prior-to-installation.html"
+    - title: 下載適用於Red Hat Enterprise Linux或CentOS的Unified Manager
+      url: "/install/task-downloading-unified-manager.html"
+    - title: 在Red Hat Enterprise Linux或CentOS上安裝Unified Manager
+      url: "/install/task-installing-unified-manager-linux.html"
+    - title: 在Unified Manager安裝期間建立的使用者
+      url: "/install/reference-users-created-in-unified-manager.html"
+    - title: 變更jboss密碼
+      url: "/install/task-changing-the-jboss-password.html"
+  - title: 設定Unified Manager以實現高可用度
+    url: "/install/concept-setting-up-unified-manager-for-high-availability-rhel.html"
+    entries:
+    - title: VCS中的Unified Manager需求
+      url: "/install/concept-requirements-for-unified-manager-in-vcs.html"
+    - title: 在VCS上安裝Unified Manager
+      url: "/install/task-installing-the-unified-manager-in-vcs-um.html"
+    - title: 使用組態指令碼設定Unified Manager與VCS
+      url: "/install/task-setting-up-unified-manager-server-with-vcs-using-configuration-scripts.html"
+    - title: 適用於VCS組態的Unified Manager服務資源
+      url: "/install/concept-unified-manager-service-resources-for-vcs-configuration.html"
+    - title: 更新現有的Unified Manager設定以獲得高可用度
+      url: "/install/task-configuring-existing-unified-manager-setup-to-high-availability.html"
+  - title: 升級Red Hat Enterprise Linux或CentOS上的Unified Manager
+    url: "/install/concept-upgrading-unified-manager-on-rhel-or-centos.html"
+    entries:
+    - title: 升級Red Hat Enterprise Linux或CentOS上的Unified Manager
+      url: "/install/task-upgrading-unified-manager.html"
+    - title: 將主機作業系統從Red Hat Enterprise Linux 6.x升級至7.x
+      url: "/install/task-upgrading-the-host-os-from-rhel-6-x-to-7-x.html"
+  - title: 升級Linux上的協力廠商產品
+    url: "/install/concept-upgrading-third-party-products-on-linux-um.html"
+    entries:
+    - title: 升級Linux上的JRE
+      url: "/install/task-upgrading-openjdk-on-linux-ocum.html"
+    - title: 升級Linux上的MySQL
+      url: "/install/task-upgrading-mysql-on-linux.html"
+  - title: 在Red Hat Enterprise Linux或CentOS中重新啟動Unified Manager
+    url: "/install/task-restarting-unified-manager.html"
+  - title: 從Red Hat Enterprise Linux或CentOS主機移除Unified Manager
+    url: "/install/task-removing-unified-manager.html"
+  - title: 移除自訂umadmin使用者和維護群組
+    url: "/install/task-removing-custom-umadmin-user-and-maintenance-group.html"
+- title: 在Windows上安裝、升級及移除Unified Manager軟體
+  url: "/install/concept-installing-upgrading-and-removing-unified-manager-software.html"
+  entries:
+  - title: Windows安裝程序總覽
+    url: "/install/concept-overview-of-the-installation-process-on-windows.html"
+  - title: 在Windows上安裝Unified Manager
+    url: "/install/concept-installing-unified-manager-win.html"
+    entries:
+    - title: 在Windows系統上安裝Unified Manager
+      url: "/install/task-installing-unified-manager-on-windows.html"
+    - title: 在Windows上執行Unified Manager無人值守安裝
+      url: "/install/task-unattended-installation-of-unified-manager.html"
+  - title: 在容錯移轉叢集環境中設定Unified Manager
+    url: "/install/concept-setting-up-unified-manager-within-mscs-environment.html"
+    entries:
+    - title: 容錯移轉叢集環境中的Unified Manager需求
+      url: "/install/concept-requirements-and-limitations-for-unified-manager-in-mscs.html"
+    - title: 在MSCS上安裝Unified Manager
+      url: "/install/task-installing-unified-manager-in-mscs.html"
+    - title: 使用組態指令碼設定Unified Manager伺服器搭配使用MSCS
+      url: "/install/task-configuring-unified-manager-server-using-configuration-scripts-mscs.html"
+  - title: 升級Windows上的Unified Manager
+    url: "/install/task-upgrading-to-unified-manager-on-microsoft-windows.html"
+  - title: 在Windows上升級協力廠商產品
+    url: "/install/concept-upgrading-third-party-products-on-windows-um.html"
+    entries:
+    - title: 升級Windows上的JRE
+      url: "/install/task-upgrading-openjdk-on-windows-ocum.html"
+    - title: 升級Windows上的MySQL
+      url: "/install/task-upgrading-mysql-on-windows-ocum.html"
+  - title: 在Windows上重新啟動Unified Manager
+    url: "/install/task-restarting-unified-manager-win.html"
+  - title: 從Windows解除安裝Unified Manager
+    url: "/install/task-uninstalling-unified-manager-win.html"

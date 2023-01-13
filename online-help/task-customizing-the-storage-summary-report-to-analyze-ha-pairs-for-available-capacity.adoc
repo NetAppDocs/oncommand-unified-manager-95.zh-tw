@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-analyze-ha-pairs-for-available-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「儲存摘要」報告、以顯示具有容量的可用HA配對、以便配置新的磁碟區和LUN。報告會依減少未使用的集合體容量的順序、顯示HA配對。 
+---
+= 自訂「儲存摘要」報告、以分析HA配對的可用容量、以配置新的磁碟區和LUN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「儲存摘要」報告、以顯示具有容量的可用HA配對、以便配置新的磁碟區和LUN。報告會依減少未使用的集合體容量的順序、顯示HA配對。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要移除依叢集分組、請執行下列步驟：
++
+.. 按一下需要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 若要將HA配對與可用容量進行排序、請按一下* Aggregate Unused Capacity（TB）*（* Aggregate Unused Capacity（TB）*）欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+. 選擇*篩選器*>*頂端/底端N*。
+. 在*上/下N*對話方塊中、從*篩選*欄位中選取*上N*、然後在文字欄位中輸入值。
+. 按一下「*確定*」。
+

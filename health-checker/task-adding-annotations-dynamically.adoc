@@ -1,0 +1,34 @@
+---
+permalink: health-checker/task-adding-annotations-dynamically.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您建立自訂附註時、Unified Manager會使用規則、將叢集、儲存虛擬機器（SVMs）和磁碟區與附註動態關聯。這些規則會自動將註釋指派給儲存物件。 
+---
+= 動態新增附註
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您建立自訂附註時、Unified Manager會使用規則、將叢集、儲存虛擬機器（SVM）和磁碟區與附註動態關聯。這些規則會自動將註釋指派給儲存物件。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左管理功能表中的*註釋*。
+. 在*註釋*頁面中、按一下*新增註釋*。
+. 在「*新增註釋*」對話方塊中、輸入註釋的名稱和說明。
++
+您也可以在建立註釋時、將值新增至註釋。
+
+. 選用：在「*註釋值*」區段中、按一下「*新增*」、將值新增至註釋。
+. 按一下*儲存並關閉*。
+

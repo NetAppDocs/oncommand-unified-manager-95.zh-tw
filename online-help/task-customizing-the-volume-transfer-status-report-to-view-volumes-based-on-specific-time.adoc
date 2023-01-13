@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-based-on-specific-time.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Volume Transfer Status（歷史）報告、以在特定時間間隔檢視Volume詳細資料。 
+---
+= 自訂Volume Transfer Status（歷史）（Volume Transfer Status（歷史））報告、以在特定時間間隔檢視Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂Volume Transfer Status（歷史）（Volume Transfer Status（歷史））報告、以特定時間間隔檢視Volume詳細資料。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 移除依叢集分組：
++
+.. 按一下您要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 若要在特定時間間隔檢視磁碟區詳細資料、請按一下*開始時間*欄、然後按一下 image:../media/click-to-filter.gif[""] 圖示。
+. 在「*篩選*」對話方塊中、按一下「*選取值*」、然後從下拉式清單中選取特定的日期和時間。
++
+隨即顯示所選時間範圍的Volume詳細資料。
+
+

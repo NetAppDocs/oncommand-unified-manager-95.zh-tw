@@ -1,0 +1,52 @@
+---
+permalink: online-help/reference-nvme-namespace-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用「命名空間資訊」頁面可檢視命名空間的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。 
+---
+= 命名空間資訊頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用「命名空間資訊」頁面可檢視命名空間的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。
+
+
+
+== 命名空間屬性
+
+* *叢集*
++
+命名空間所屬的叢集名稱。您可以按一下名稱、在「Performance / Cluster Explorer（效能/叢集資源管理器）」頁面中顯示叢集詳細資料。
+
+* *容量（可用/總計）*
++
+命名空間的總儲存容量、以及目前可用的儲存容量。
+
+* *節點*
++
+命名空間所在節點的名稱。您可以按一下名稱、在「Performance / Node Explorer（效能/節點資源管理器）」頁面中顯示節點詳細資料。
+
+* *路徑*
++
+命名空間的完整路徑、例如 `/vol/vol1/namespace1`。
+
+* *州*
++
+命名空間的狀態。有效狀態可以是線上、離線、nvfail和空間錯誤。
+
+* *子系統*
++
+命名空間的子系統。
+
+* *儲存虛擬機器*
++
+命名空間所屬的SVM名稱。您可以按一下名稱、在「Performance（效能）/SVM Explorer（SVM檔案總管）」頁面中顯示SVM詳細資料。
+
+* * Volume *
++
+命名空間所屬的磁碟區名稱。您可以按一下名稱、在「Performance / Volume Explorer（效能/ Volume檔案總管）」頁面中顯示磁碟區詳細資料。
+
+

@@ -1,0 +1,285 @@
+---
+permalink: online-help/reference-health-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 「健全狀況/集合體」目錄頁面會顯示所監控之集合體的相關資訊、並可讓您檢視及修改臨界值設定。 
+---
+= 健全狀況/彙總庫存頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「健全狀況/集合體」目錄頁面會顯示所監控之集合體的相關資訊、並可讓您檢視及修改臨界值設定。
+
+
+
+== 命令按鈕
+
+* *編輯臨界值*
++
+顯示「編輯Aggregate臨界值」對話方塊、可讓您編輯一或多個集合體的臨界值設定。
+
+* *匯出*
++
+可讓您將所有受監控之Aggregate的詳細資料匯出為以逗號分隔的值 (`.csv`）檔案。
+
+
+
+
+
+== Aggregate清單
+
+以表格格式顯示所有探索到之集合體的內容。您可以使用欄篩選來自訂顯示的資料：
+
+* *狀態*
++
+Aggregate的目前狀態。狀態可以是「Critical」（重大）（image:../media/sev-critical-um60.png["事件嚴重性的圖示–嚴重"]）、錯誤（image:../media/sev-error-um60.png["事件嚴重性圖示–錯誤"]）、警告（image:../media/sev-warning-um60.png["事件嚴重性圖示–警告"]）或正常（image:../media/sev-normal-um60.png["事件嚴重性圖示–正常"]）。
+
++
+您可以將指標移到狀態上、以檢視有關為Aggregate產生之事件的詳細資訊。
+
++
+如果Aggregate的狀態是由單一事件決定、您可以檢視事件名稱、觸發事件的時間和日期、指派事件的系統管理員名稱、以及事件原因等資訊。您可以按一下「*檢視詳細資料*」按鈕來檢視有關事件的詳細資訊。
+
++
+如果Aggregate的狀態是由相同嚴重性的多個事件所決定、則前三個事件會顯示事件名稱、觸發事件的時間和日期、以及指派事件的系統管理員名稱等資訊。您可以按一下事件名稱來檢視每個事件的詳細資料。您也可以按一下「*檢視所有事件*」連結來檢視產生的事件清單。
+
+* * Aggregate *
++
+Aggregate的名稱。
+
++
+您可以將指標移到Aggregate上、以檢視上一次產生的事件、包含Aggregate、RAID類型、Snapshot保留、Snapshot複本及在Aggregate中配置空間的節點等資訊。您也可以檢視目前進行中的Volume Move作業數量。
+
+* *州*
++
+Aggregate的目前狀態：
+
++
+** 離線
++
+不允許讀取或寫入存取。
+
+** 線上
++
+允許對託管在此Aggregate上的磁碟區進行讀寫存取。
+
+** 受限
++
+允許執行有限的作業、例如同位元檢查重建、但不允許存取資料。
+
+** 建立
++
+正在建立Aggregate。
+
+** 摧毀
++
+Aggregate正在銷毀。
+
+** 失敗
++
+無法將Aggregate上線。
+
+** 凍結
++
+Aggregate（暫時）無法處理要求。
+
+** 不一致
++
+Aggregate已標記為毀損；請聯絡技術支援部門。
+
+** 鐵受限
++
+無法在Aggregate上執行診斷工具。
+
+** 安裝
++
+正在掛載Aggregate。
+
+** 部分
++
+已為該集合體找到至少一個磁碟、但缺少兩個以上的磁碟。
+
+** 靜止不動
++
+Aggregate會靜止。
+
+** 靜止
++
+Aggregate正在靜止。
+
+** 已還原
++
+完成Aggregate的還原作業。
+
+** 卸載
++
+Aggregate已離線。
+
+** 卸載
++
+Aggregate正在離線。
+
+** 不明
++
+指定已探索到集合體、但Unified Manager伺服器尚未擷取集合體資訊。
+
+
+
+* *節點*
++
+包含Aggregate的儲存控制器名稱。
+
+* *鏡射狀態*
++
+Aggregate的鏡射狀態：
+
++
+** 鏡射
++
+會鏡射Aggregate plex資料。
+
+** 鏡射降級
++
+無法鏡射Aggregate plex資料。
+
+** 鏡射重新同步
++
+正在鏡射Aggregate plex資料。
+
+** 失敗
++
+Aggregate plex資料鏡射失敗。
+
+** 無效組態
++
+建立Aggregate之前的初始狀態。
+
+** 未初始化
++
+正在建立Aggregate。
+
+** 無鏡射
++
+此Aggregate不會鏡射。
+
+** CP計數檢查進行中
++
+Aggregate已被同化、Unified Manager正在驗證該plexes的CP數是否類似。
+
+** 利波
++
+Aggregate標籤有問題。這個系統可識別集合體、但無法準確地吸收集合體ONTAP 。
+
+** 需要CP數檢查
++
+雖然會將Aggregate同化、但兩個plexes上的CP數尚未驗證為類似的。
+
+
+
++
+當Aggregate處於mirror重新同步狀態時、也會顯示重新同步百分比。
+
+* *正在轉換*
++
+Aggregate是否已完成轉換。
+
+* *類型*
++
+Aggregate類型：
+
++
+** HDD
+** 混合式
++
+結合HDD和SSD、但尚未啟用Flash Pool。
+
+** 混合式（Flash Pool）
++
+結合HDD和SSD、並已啟用Flash Pool。
+
+** SSD
+** SSD（FabricPool 僅限部分）
++
+結合SSD與雲端層
+
+** VMDisk（SDS）
++
+虛擬機器內的虛擬磁碟
+
+** VMDisk（FabricPool VMware）
++
+結合虛擬磁碟與雲端層
+
+** LUN（FlexArray 鏡像）對於標準磁碟和SSD磁碟、當受監控的儲存系統執行ONTAP 版本早於8.3時、此欄位為空白。
+
+
+* *《類型*》SnapLock
++
+Aggregate SnapLock 功能。可能的值包括「法規遵循」、「企業」、「非SnapLock」。
+
+* *已用資料容量*
++
+用於集合體中資料的空間量。
+
+* *已用資料%*
++
+用於集合體中資料的空間百分比。
+
+* *可用的資料容量*
++
+集合體中資料的可用空間量。
+
+* *可用資料%*
++
+集合體中資料可用空間的百分比。
+
+* *總資料容量*
++
+集合體的總資料大小。
+
+* *承諾容量*
++
+集合體中所有磁碟區的已認可總空間。
+
++
+如果在位於集合體上的磁碟區上啟用「自動擴充」、則提交的容量是根據自動擴充所設定的最大磁碟區大小、而非根據原始磁碟區大小。對於VMware整合、此值僅與本機或效能層級的容量有關FabricPool 。此值不會反映雲端層的可用空間量。
+
+* *空間節約*
++
+儲存效率比是根據用於儲存資料的總邏輯空間、以及儲存資料所需的總實體空間、而不使用ONTAP 任何儲存效率技術。
+
++
+此欄位僅會在受監控的儲存系統執行ONTAP 版本為9.0或更新版本時填入、且僅適用於非根集合體。
+
+* * RAID類型*
++
+RAID組態類型：
+
++
+** RAID 0：所有RAID群組均為RAID 0類型。
+** RAID 4：所有RAID群組均為RAID 4類型。
+** RAID-DP：所有RAID群組均為RAID-DP類型。
+** 支援：所有RAID群組均為類型不支援。RAID-TEC RAID-TEC
+** 混合式RAID：該集合體包含不同RAID類型（RAID 0、RAID 4、RAID-DP及RAID-TEC 支援）的RAID群組。
+
+
+* *使用的雲端層空間*
++
+雲端層所使用的空間量；如果Aggregate是FabricPool 個不二的集合體。
+
+
+
+
+
+== 篩選窗格
+
+可讓您設定篩選條件、以自訂資訊在Aggregate清單中的顯示方式。您可以選取與「狀態」欄相關的篩選條件。
+
+[NOTE]
+====
+「篩選」窗格中指定的篩選條件、會覆寫集合體清單中針對欄所指定的篩選條件。
+
+====

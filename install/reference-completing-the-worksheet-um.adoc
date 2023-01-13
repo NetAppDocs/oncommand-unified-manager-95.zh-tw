@@ -1,0 +1,222 @@
+---
+permalink: install/reference-completing-the-worksheet-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 在安裝及設定Unified Manager之前、您應該隨時取得有關環境的特定資訊。您可以將資訊記錄在工作表中。 
+---
+= 完成工作表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安裝及設定Unified Manager之前、您應該隨時取得有關環境的特定資訊。您可以將資訊記錄在工作表中。
+
+
+
+== Unified Manager安裝資訊
+
+安裝Unified Manager所需的詳細資料。
+
+|===
+| 部署軟體的系統 | 您的價值 
+
+
+ a| 
+ESXi伺服器IP位址（僅限VMware）
+ a| 
+
+
+
+ a| 
+主機完整網域名稱
+ a| 
+
+
+
+ a| 
+主機IP位址
+ a| 
+
+
+
+ a| 
+網路遮罩
+ a| 
+
+
+
+ a| 
+閘道 IP 位址
+ a| 
+
+
+
+ a| 
+主要DNS位址
+ a| 
+
+
+
+ a| 
+次要DNS位址
+ a| 
+
+
+
+ a| 
+搜尋網域
+ a| 
+
+
+
+ a| 
+維護使用者名稱
+ a| 
+
+
+
+ a| 
+維護使用者密碼
+ a| 
+
+|===
+
+
+== Unified Manager組態資訊
+
+安裝後設定Unified Manager的詳細資料。根據您的組態、部分值為選用值。
+
+|===
+| 設定 | 您的價值 
+
+
+ a| 
+維護使用者電子郵件地址
+ a| 
+
+
+
+ a| 
+NTP伺服器（僅限VMware）
+ a| 
+
+
+
+ a| 
+SMTP伺服器主機名稱或IP位址
+ a| 
+
+
+
+ a| 
+SMTP使用者名稱
+ a| 
+
+
+
+ a| 
+SMTP密碼
+ a| 
+
+
+
+ a| 
+SMTP連接埠
+ a| 
+25（預設值）
+
+
+
+ a| 
+傳送警示通知的電子郵件
+ a| 
+
+
+
+ a| 
+驗證伺服器主機名稱或IP位址
+ a| 
+
+
+
+ a| 
+Active Directory系統管理員名稱或LDAP繫結辨別名稱
+ a| 
+
+
+
+ a| 
+Active Directory密碼或LDAP連結密碼
+ a| 
+
+
+
+ a| 
+驗證伺服器基礎辨別名稱
+ a| 
+
+
+
+ a| 
+身分識別供應商（IDP）URL
+ a| 
+
+
+
+ a| 
+身分識別供應商（IDP）中繼資料
+ a| 
+
+
+
+ a| 
+SNMP設陷目的地主機IP位址
+ a| 
+
+
+
+ a| 
+SNMP連接埠
+ a| 
+
+|===
+
+
+== 叢集資訊
+
+您將使用Unified Manager管理的儲存系統詳細資料。
+
+|===
+| 第1叢集、共N個 | 您的價值 
+
+
+ a| 
+主機名稱或叢集管理IP位址
+ a| 
+
+
+
+ a| 
+系統管理員使用者名稱ONTAP
+
+[NOTE]
+====
+系統管理員必須已被指派「admin」角色。
+
+==== a| 
+
+
+
+ a| 
+管理員密碼ONTAP
+ a| 
+
+
+
+ a| 
+傳輸協定（HTTP或HTTPS）
+ a| 
+
+|===

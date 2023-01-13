@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-installation-process-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 安裝工作流程會說明您在使用Unified Manager之前必須執行的工作。 
+---
+= Windows安裝程序總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝工作流程會說明您在使用Unified Manager之前必須執行的工作。
+
+image::../media/install-flow-on-windows.gif[在Windows上安裝流程]

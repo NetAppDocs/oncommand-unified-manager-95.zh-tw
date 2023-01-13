@@ -1,0 +1,54 @@
+---
+permalink: config/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: 有時候、您可能想要變更已安裝Unified Manager的Red Hat Enterprise Linux或CentOS機器的主機名稱。例如、您可能想要重新命名主機、以便在列出Linux機器時、更輕鬆地依類型、工作群組或受監控的叢集群組識別Unified Manager伺服器。 
+---
+= 變更Linux系統上的Unified Manager主機名稱
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+有時候、您可能想要變更已安裝Unified Manager的Red Hat Enterprise Linux或CentOS機器的主機名稱。例如、您可能想要重新命名主機、以便在列出Linux機器時、更輕鬆地依類型、工作群組或受監控的叢集群組識別Unified Manager伺服器。
+
+
+
+== 開始之前
+
+您必須擁有root使用者存取安裝Unified Manager的Linux系統。
+
+
+
+== 關於這項工作
+
+您可以使用主機名稱（或主機IP位址）存取Unified Manager Web UI。如果您在部署期間為網路設定了靜態IP位址、則表示您已為網路主機指定名稱。如果使用DHCP設定網路、則主機名稱應取自DNS伺服器。
+
+無論主機名稱的指派方式為何、如果您變更主機名稱並打算使用新的主機名稱來存取Unified Manager Web UI、則必須產生新的安全性憑證。
+
+如果您使用伺服器的IP位址而非主機名稱來存取Web UI、則如果變更主機名稱、就不需要產生新的憑證。不過、更新憑證是最佳實務做法、以便憑證中的主機名稱與實際主機名稱相符。新的憑證在Linux機器重新啟動之前不會生效。
+
+如果您在Unified Manager中變更主機名稱、則必須手動更新OnCommand Workflow Automation BIOS（WFA）中的主機名稱。在WFA中不會自動更新主機名稱。
+
+
+
+== 步驟
+
+. 以root使用者身分登入您要修改的Unified Manager系統。
+. 依照所示順序輸入下列命令、停止Unified Manager軟體及相關的MySQL軟體：
+. 使用Linux變更主機名稱 `hostnamectl` 命令： `hostnamectl set-hostname new_FQDN`
++
+`hostnamectl set-hostname nuhost.corp.widget.com`
+
+. 重新產生伺服器的HTTPS憑證：``/opt/netapp/essentials/bin/cert.sh create``
+. 重新啟動網路服務： `service network restart`
+. 重新啟動服務之後、請確認新的主機名稱是否能夠ping通自己： `ping new_hostname`
++
+`ping nuhost`
+
++
+此命令應傳回先前針對原始主機名稱所設定的相同IP位址。
+
+. 完成並驗證主機名稱變更後、請依照所示順序輸入下列命令、重新啟動Unified Manager：
+

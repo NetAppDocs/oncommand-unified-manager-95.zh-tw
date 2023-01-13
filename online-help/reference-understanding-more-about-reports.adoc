@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-understanding-more-about-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用選項來執行、刪除、匯出及匯入報告。您也可以建立自訂報告並儲存自訂報告。您可以執行其他作業、例如篩選、排序、分組及格式化。 
+---
+= 深入瞭解報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用選項來執行、刪除、匯出及匯入報告。您也可以建立自訂報告並儲存自訂報告。您可以執行其他作業、例如篩選、排序、分組及格式化。

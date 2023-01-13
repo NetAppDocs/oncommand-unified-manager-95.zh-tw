@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以ONTAP 使用Unified Manager來監控、新增、編輯及移除叢集、以管理這些叢集。 
+---
+= 管理叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以ONTAP 使用Unified Manager來監控、新增、編輯及移除叢集、以管理這些叢集。

@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-add-disks-and-perform-aggregate-layout-reconstruction.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將磁碟新增至Aggregate、以增加儲存容量和該Aggregate的效能。新增磁碟之後、您只會在重建集合體之後看到效能提升。 
+---
+= 新增磁碟並執行Aggregate配置重建
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將磁碟新增至Aggregate、以增加儲存容量和該Aggregate的效能。新增磁碟之後、您只會在重建集合體之後看到效能提升。
+
+當您在「事件詳細資料」頁面上收到系統定義的臨界值事件時、事件說明文字會列出發生問題的彙總名稱。您可以新增磁碟並在此集合體上重建資料。
+
+您新增至集合體的磁碟必須已存在於叢集中。如果叢集沒有可用的額外磁碟、您可能需要聯絡管理員或購買更多磁碟。您可以使用OnCommand 「效益分析系統管理程式」或ONTAP 「效益分析」命令、將磁碟新增至集合體。
+
+http://www.netapp.com/us/media/tr-3838.pdf["技術報告3838：儲存子系統組態指南"]

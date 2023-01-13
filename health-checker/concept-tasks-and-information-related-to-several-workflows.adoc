@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-tasks-and-information-related-to-several-workflows.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager中的許多工作流程都有一些工作和參考文字、可協助您瞭解並完成工作流程、包括新增和檢閱事件的相關附註、指派事件、確認和解決事件、以及磁碟區、儲存虛擬機器（SVMs）、集合體、等等。 
+---
+= 與多個工作流程相關的工作與資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager中的許多工作流程都有一些工作和參考文字、可協助您瞭解並完成工作流程、包括新增和檢閱事件的相關附註、指派事件、確認和解決事件、以及磁碟區、儲存虛擬機器（SVM）、集合體、 等等。

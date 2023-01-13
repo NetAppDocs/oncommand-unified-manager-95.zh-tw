@@ -1,0 +1,357 @@
+---
+permalink: online-help/reference-lun-events.html 
+sidebar: sidebar 
+keywords:  
+summary: LUN事件可提供LUN狀態的相關資訊、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= LUN事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LUN事件可提供LUN狀態的相關資訊、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+星號（*）表示已轉換為Unified Manager事件的EMS事件。
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+LUN離線（ocumEvtLunOffline）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+LUN毀損*
+ a| 
+活動
+ a| 
+LUN
+ a| 
+資訊
+
+
+
+ a| 
+存取LUN的單一作用中路徑（ocumEvtLunSingleActivePath）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+無存取LUN的作用中路徑（ocumEvtLunNotReachable）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+沒有最佳化的存取LUN路徑（ocumEvtLunOptimizedPathInactive）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+無法從HA合作夥伴存取LUN（ocumEvtLunPathInactive）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+|===
+
+
+== 影響領域：容量
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+LUN Snapshot複製空間不足（ocumEvtLunSnapshotNotPossible）
+ a| 
+風險
+ a| 
+Volume
+ a| 
+警告
+
+|===
+
+
+== 影響領域：效能
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+違反LUN IOPS臨界值（ocumLunIopsIncident）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+違反LUN IOPS警告臨界值（ocumlunIopsWarnings）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+違反LUN Mbps臨界值（ocumLunMbps突 發事件）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+違反LUN Mbps警告臨界值（ocumLunMbpsWarning）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+違反LUN延遲毫秒/營運關鍵臨界值（ocumlunlatency事件）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+違反LUN延遲毫秒/作業警告臨界值（ocumlunlatency警告）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+違反LUN延遲和IOPS臨界臨界值（ocumLunLatency IopsIncident）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+違反LUN延遲和IOPS警告臨界值（ocumLunLatency IopsWarning）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+違反LUN延遲和Mbps臨界臨界值（ocumLunLatedencyMbps突 發事件）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+違反LUN延遲和Mbps警告臨界值（ocumLunLatedencyMbpsWarning）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN延遲和Aggregate Perf。已用容量臨界值已突破（ocumLunLated/ Aggregate Perf電容 已用事件）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+LUN延遲和Aggregate Perf。已用容量已超過警告臨界值（ocumLunLated/ Aggregate Perf電容 已用警告）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+違反LUN延遲和彙總使用率臨界臨界值（ocumLunLatency Aggreggregate公用程式事件）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+違反LUN延遲和Aggregate使用率警告臨界值（ocumLunLatency Aggregate公用程式警告）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN延遲和節點效能已用容量重大臨界值已突破（ocumLunLatedityNodePerf電容 已用事件）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+LUN延遲和節點效能已用容量已超過警告臨界值（ocumLunLated/節點效能使用警告）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN延遲和節點效能已用容量-違反接管臨界值（ocumLunLated/ Aggregate Perf電容 使用接管事件）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+LUN延遲和節點效能使用容量-超過接管警告臨界值（ocumLunLated/ Aggregate Perf電容 使用接管警告）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+違反LUN延遲和節點使用率臨界臨界臨界值（ocumLunLatency節點公用程式事件）
+ a| 
+事件
+ a| 
+LUN
+ a| 
+關鍵
+
+
+
+ a| 
+違反LUN延遲和節點使用率警告臨界值（ocumLunLatency節點公用程式警告）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+違反QoS LUN最大IOPS警告臨界值（ocumQoslunMaxIopsWarnings）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+違反QoS LUN最大Mbps警告臨界值（ocumQoslunMaxMbpsWarnings）
+ a| 
+風險
+ a| 
+LUN
+ a| 
+警告
+
+|===

@@ -1,0 +1,32 @@
+---
+permalink: performance-checker/task-viewing-volume-and-lun-latency-charts-to-verify-performance-guarantee.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視已訂閱「效能保證」方案的磁碟區和LUN、確認延遲時間未超過您保證的層級。 
+---
+= 檢視磁碟區和LUN延遲圖表、以驗證效能保證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視已訂閱「效能保證」方案的磁碟區和LUN、以驗證延遲是否未超過您保證的層級。
+
+
+
+== 關於這項工作
+
+延遲效能保證是每個作業的毫秒值、不應超過此值。這是以每小時平均為基準、而非預設的五分鐘效能收集期間。
+
+
+
+== 步驟
+
+. 在「*效能磁碟區*」或「*效能LUN*」目錄頁面中、選取您感興趣的磁碟區或LUN。
+. 在所選磁碟區或LUN的「*效能檔案總管*」頁面中、從「*檢視統計資料」選擇器中選擇「*每小時平均*」。
++
+「延遲」圖表中的橫條線會顯示較為順暢的一條線、因為五分鐘的集合會被每小時平均所取代。
+
+. 如果在效能保證之下的同一個集合體上有其他磁碟區、您可以新增這些磁碟區、以在同一個圖表中檢視其延遲值。
+

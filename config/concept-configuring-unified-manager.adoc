@@ -1,0 +1,16 @@
+---
+permalink: config/concept-configuring-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 安裝Unified Manager之後、您必須完成初始設定（也稱為「第一次使用體驗精靈」）、才能存取網路UI。然後您可以執行其他組態工作、例如新增叢集、設定遠端驗證、新增使用者及新增警示。 
+---
+= 設定Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝Unified Manager之後、您必須完成初始設定（也稱為第一次體驗精靈）、才能存取Web UI。然後您可以執行其他組態工作、例如新增叢集、設定遠端驗證、新增使用者及新增警示。
+
+完成Unified Manager執行個體的初始設定時、需要執行本手冊中所述的部分程序。其他程序是建議的組態設定、有助於在新執行個體上設定、或是在您開始定期監控ONTAP 您的不二系統之前、先瞭解這些設定。

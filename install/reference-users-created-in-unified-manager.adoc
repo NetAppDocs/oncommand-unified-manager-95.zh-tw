@@ -1,0 +1,36 @@
+---
+permalink: install/reference-users-created-in-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您在Red Hat Enterprise Linux或CentOS上安裝Unified Manager時、Unified Manager和協力廠商公用程式會建立下列使用者：umadmin、jboss和mySQL。 
+---
+= 在Unified Manager安裝期間建立的使用者
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您在Red Hat Enterprise Linux或CentOS上安裝Unified Manager時、Unified Manager和協力廠商公用程式會建立下列使用者：umadmin、jboss和mySQL。
+
+* * umadmin*
++
+第一次登入Unified Manager。此使用者被指派「OnCommand 管理員」使用者角色、並設定為「維護使用者」類型。此使用者是由Unified Manager所建立。
+
+* * jboss*
++
+用於執行與jboss公用程式相關的Unified Manager服務。此使用者是由Unified Manager所建立。
+
+* * mysql*
++
+用於執行Unified Manager的MySQL資料庫查詢。此使用者是由MySQL協力廠商公用程式所建立。
+
+
+
+除了這些使用者之外、Unified Manager也會建立對應的群組：維護、Jboss和mySQL。維護和jboss群組是由Unified Manager所建立、而mySQL群組則是由協力廠商公用程式所建立。
+
+[NOTE]
+====
+如果您在安裝Unified Manager之前建立自訂主目錄並定義自己的umadmin使用者密碼、則安裝程式不會重新建立維護群組或umadmin使用者。
+
+====

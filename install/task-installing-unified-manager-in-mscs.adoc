@@ -1,0 +1,49 @@
+---
+permalink: install/task-installing-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要設定高可用度、您必須在兩個Microsoft Cluster Server（MSCS\）叢集節點上安裝Unified Manager。 
+---
+= 在MSCS上安裝Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要設定高可用度、您必須在兩個Microsoft叢集伺服器（MSCS）叢集節點上安裝Unified Manager。
+
+
+
+== 步驟
+
+. 以網域使用者身分登入叢集的兩個節點。
+. 選擇下列其中一個選項、即可設定高可用度：
++
+|===
+| 如果您想要... | 然後執行此動作... 
+
+
+ a| 
+在現有的Unified Manager安裝上設定高可用度
+ a| 
+新增另一部伺服器以與現有伺服器配對：
+
+.. 將現有的Unified Manager伺服器升級至最新的軟體版本。
+.. 建立現有Unified Manager安裝的備份、並將備份儲存至掛載的LUN。
+.. 在第二個節點上安裝Unified Manager。
++
+xref:task-installing-unified-manager-on-windows.adoc[在Windows系統上安裝Unified Manager]
+
+.. 將現有Unified Manager安裝的備份還原至第二個節點。
+
+
+
+
+ a| 
+在新的Unified Manager安裝上設定高可用度
+ a| 
+在兩個節點上安裝Unified Manager。 xref:task-installing-unified-manager-on-windows.adoc[在Windows系統上安裝Unified Manager]
+
+|===
+

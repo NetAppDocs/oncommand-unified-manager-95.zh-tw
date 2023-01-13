@@ -1,0 +1,59 @@
+---
+permalink: health-checker/reference-aggregate-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: Aggregate Favorite卡可讓您檢視標記為「我的最愛」之Aggregate的容量和效能詳細資料。 
+---
+= Aggregate收藏卡
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aggregate Favorite卡可讓您檢視標記為「我的最愛」之Aggregate的容量和效能詳細資料。
+
+
+
+== Aggregate屬性
+
+Aggregate Favorite卡會顯示下列Aggregate屬性：
+
+* * Aggregate健全狀況*
++
+表示Aggregate健全狀況的圖示。可能的值包括「正常」、「警告」、「錯誤」和「重大」。
+
+* * Aggregate name*
++
+Aggregate的名稱。
+
++
+將游標放在Aggregate名稱上、以檢視集合體所屬的叢集名稱。
+
+* *容量*
++
+集合體上可用空間的百分比、以及總計滿之前的預估天數。
+
++
+請注意FabricPool 、針對VMware整合、此資訊僅反映本機效能層的容量。按一下容量方塊、即可在健全狀況/ Aggregate詳細資料頁面上檢視詳細資訊。
+
+* *效能*
++
+Aggregate的效能詳細資料。
+
++
+** * IOPS *
++
+過去72小時內每秒I/O作業的平均數量。
+
+** *處理量*
++
+過去72小時的平均處理量（以Mbps為單位）。
+
+** * 延遲 *
++
+作業所需的平均回應時間（毫秒）。
+
+
+
+

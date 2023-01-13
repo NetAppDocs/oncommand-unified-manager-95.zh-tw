@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-happens-when-wfa-is-reinstalled-or-upgraded.html 
+sidebar: sidebar 
+keywords:  
+summary: 重新安裝OnCommand Workflow Automation 或升級版的功能之前、您必須先移除OnCommand Workflow Automation 與整合管理程式之間的連線、並確保OnCommand Workflow Automation 所有目前執行中或排程的工作都已停止。 
+---
+= 重新安裝或升級時會發生什麼情況OnCommand Workflow Automation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+重新安裝OnCommand Workflow Automation 或升級版的功能之前、您必須先移除OnCommand Workflow Automation 與整合管理程式之間的連線、並確保OnCommand Workflow Automation 所有目前執行中或排程的工作都已停止。
+
+您也必須手動從OnCommand Workflow Automation 功能表中刪除Unified Manager。
+
+重新安裝或升級OnCommand Workflow Automation 完整套功能之後、您必須重新設定與Unified Manager的連線。

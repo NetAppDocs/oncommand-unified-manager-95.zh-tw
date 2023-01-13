@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-cluster-management.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視及管理叢集、包括新增、編輯、重新探索及移除叢集、從單一頁面。 
+---
+= 資料來源管理的頁面說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視及管理叢集、包括新增、編輯、重新探索及移除叢集、從單一頁面。

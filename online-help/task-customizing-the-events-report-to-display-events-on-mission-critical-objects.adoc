@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-on-mission-critical-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂事件報告、以顯示依任務關鍵型資料優先順序篩選的事件。 
+---
+= 自訂事件報告以顯示任務關鍵型物件上的事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂事件報告、以顯示依任務關鍵型資料優先順序篩選的事件。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要篩選具有關鍵任務資料優先順序的事件、請按一下「*資料優先順序*」欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*清單中、選取*等於*。
+. 按一下*選取值*、然後選取*關鍵任務*。
+. 按一下「*確定*」。
+

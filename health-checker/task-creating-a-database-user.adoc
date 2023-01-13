@@ -1,0 +1,56 @@
+---
+permalink: health-checker/task-creating-a-database-user.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要支援Workflow Automation與Unified Manager之間的連線、或是存取資料庫檢視、您必須先在Unified Manager Web UI中建立具有整合架構或報告架構角色的資料庫使用者。 
+---
+= 建立資料庫使用者
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要支援Workflow Automation與Unified Manager之間的連線、或是存取資料庫檢視、您必須先在Unified Manager Web UI中建立具有整合架構或報告架構角色的資料庫使用者。
+
+
+
+== 開始之前
+
+您必須OnCommand 扮演「管理員角色」。
+
+
+
+== 關於這項工作
+
+資料庫使用者可與Workflow Automation整合、並存取報告特定的資料庫檢視。資料庫使用者無法存取Unified Manager Web UI或維護主控台、因此無法執行API呼叫。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*管理*>*使用者*。
+. 在「*管理/使用者*」頁面中、按一下「*新增*」。
+. 在「*新增使用者*」對話方塊的「*類型*」下拉式清單中、選取「*資料庫使用者*」。
+. 輸入資料庫使用者的名稱和密碼。
+. 在*角色*下拉式清單中、選取適當的角色。
++
+|===
+| 如果您... | 請選擇此角色 
+
+
+ a| 
+將Unified Manager與Workflow Automation連線
+ a| 
+整合架構
+
+
+
+ a| 
+存取報告和其他資料庫檢視
+ a| 
+報告架構
+
+|===
+. 按一下「 * 新增 * 」。
+

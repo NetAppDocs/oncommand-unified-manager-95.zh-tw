@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-definitions-of-user-roles.html 
+sidebar: sidebar 
+keywords:  
+summary: 維護使用者或OnCommand 管理員會指派角色給每位使用者。每個角色都包含特定權限。您可以在Unified Manager中執行的活動範圍取決於您被指派的角色、以及該角色所包含的權限。 
+---
+= 使用者角色定義
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+維護使用者或OnCommand 管理員會指派角色給每位使用者。每個角色都包含特定權限。您可以在Unified Manager中執行的活動範圍取決於您被指派的角色、以及該角色所包含的權限。
+
+Unified Manager包含下列預先定義的使用者角色：
+
+* *營運者*
++
+檢視由Unified Manager收集的儲存系統資訊和其他資料、包括歷史記錄和容量趨勢。此角色可讓儲存操作員檢視、指派、認可、解決及新增事件的備註。
+
+* *儲存管理員*
++
+在Unified Manager中設定儲存管理作業。此角色可讓儲存管理員設定臨界值、並建立警示及其他儲存管理專屬的選項與原則。
+
+* *《管理員*》OnCommand
++
+設定與儲存管理無關的設定。此角色可管理使用者、安全性憑證、資料庫存取及管理選項、包括驗證、 SMTP,網路和AutoSupport
+
++
+[NOTE]
+====
+當Unified Manager安裝在Linux系統上時、具有OnCommand 此功能的初始使用者會自動命名為「umadmin」。
+
+====
+* *整合架構*
++
+此角色可讓您以唯讀方式存取Unified Manager資料庫檢視、以整合Unified Manager OnCommand Workflow Automation 與WFA（WFA）。
+
+* *報告架構*
++
+此角色可讓您直接從Unified Manager資料庫、以唯讀方式存取報告和其他資料庫檢視。可檢視的資料庫包括：
+
++
+** NetApp_mode_view
+** NetApp_Performance
+** 奧克姆
+** ocum_report
+** ocum_report_BIRT
+** OPM
+** scalemonitor
+
+
+

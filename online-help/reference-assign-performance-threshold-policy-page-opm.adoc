@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-assign-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「指派臨界值原則」頁面、將效能臨界值原則指派給一或多個儲存物件。 
+---
+= 「指派效能臨界值原則」頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「指派臨界值原則」頁面、將效能臨界值原則指派給一或多個儲存物件。
+
+原則清單只會填入對儲存物件類型有效的原則。
+
+選取要套用至物件的原則、然後按一下*套用原則*。
+
+在某些情況下、當您嘗試套用原則時、可能會傳回錯誤訊息：
+
+* 當套用使用效能使用容量計數器的原則至ONTAP 未隨附於或更新版本的軟體的節點或Aggregate時。
++
+9.0版之前的版本不支援效能容量計數器ONTAP 。
+
+* 將組合原則套用FlexGroup 到一個包含節點或Aggregate物件的二個計數器時。
++
+由於可在多個節點和集合體之間散佈整個過程、因此不允許執行此作業FlexGroup 。
+
+

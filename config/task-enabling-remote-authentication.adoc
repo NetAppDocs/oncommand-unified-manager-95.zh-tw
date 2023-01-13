@@ -1,0 +1,85 @@
+---
+permalink: config/task-enabling-remote-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以啟用遠端驗證、讓Unified Manager伺服器能夠與驗證伺服器通訊。驗證伺服器的使用者可以存取Unified Manager圖形介面、以管理儲存物件和資料。 
+---
+= 啟用遠端驗證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以啟用遠端驗證、讓Unified Manager伺服器能夠與驗證伺服器通訊。驗證伺服器的使用者可以存取Unified Manager圖形介面、以管理儲存物件和資料。
+
+
+
+== 開始之前
+
+您必須OnCommand 扮演「管理員角色」。
+
+[NOTE]
+====
+Unified Manager伺服器必須直接連線至驗證伺服器。您必須停用任何本機LDAP用戶端、例如SSSD（系統安全服務精靈）或NSLCD（名稱服務LDAP快取精靈）。
+
+====
+
+
+== 關於這項工作
+
+您可以使用Open LDAP或Active Directory來啟用遠端驗證。如果停用遠端驗證、遠端使用者將無法存取Unified Manager。
+
+LDAP和LDAPS（安全LDAP）支援遠端驗證。Unified Manager使用389作為非安全通訊的預設連接埠、而使用636作為安全通訊的預設連接埠。
+
+[NOTE]
+====
+用於驗證使用者的憑證必須符合X．509格式。
+
+====
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左設定功能表中的*驗證*。
+. 在*設定/驗證*頁面中、選取*啟用遠端驗證*。
+. 在*驗證服務*欄位中、選取服務類型並設定驗證服務。
++
+|===
+| 對於驗證類型... | 輸入下列資訊... 
+
+
+ a| 
+Active Directory
+ a| 
+** 驗證伺服器管理員名稱的格式如下：
++
+*** `domainname`**`username`
+*** `username`@`domainname`
+*** `Bind Distinguished Name` （使用適當的LDAP表示法）
+
+
+** 系統管理員密碼
+** 基礎辨別名稱（使用適當的LDAP表示法）
+
+
+
+
+ a| 
+開啟LDAP
+ a| 
+** 連結辨別名稱（以適當的LDAP表示法）
+** 連結密碼
+** 基礎辨別名稱
+
+
+|===
++
+如果Active Directory使用者的驗證需要很長時間或逾時、驗證伺服器可能需要很長時間才能回應。停用Unified Manager中的巢狀群組支援、可能會縮短驗證時間。
+
++
+如果您為驗證伺服器選取「使用安全連線」選項、Unified Manager就會使用安全通訊端層（SSL）傳輸協定與驗證伺服器通訊。
+
+. 新增驗證伺服器、並測試驗證。
+. 按一下*儲存並關閉*。
+

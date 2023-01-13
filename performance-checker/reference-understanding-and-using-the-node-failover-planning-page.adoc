@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/reference-understanding-and-using-the-node-failover-planning-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「效能/節點容錯移轉規劃」頁面會在節點的高可用度（HA）合作夥伴節點故障時、預估對節點的效能影響。Unified Manager會根據HA配對中節點的歷史效能來進行預估。 
+---
+= 瞭解及使用「節點容錯移轉規劃」頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Performance / Node Failover Planning」（效能/節點容錯移轉規劃）頁面會在節點的高可用度（HA）合作夥伴節點故障時、預估對節點的效能影響。Unified Manager會根據HA配對中節點的歷史效能來進行預估。
+
+評估容錯移轉的效能影響有助於規劃下列案例：
+
+* 如果容錯移轉持續將接管節點的預估效能降至無法接受的層級、您可以考慮採取修正行動、以降低容錯移轉所造成的效能影響。
+* 在開始手動容錯移轉以執行硬體維護工作之前、您可以預估容錯移轉如何影響接管節點的效能、以決定執行工作的最佳時間。
+

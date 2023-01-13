@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-monitoring-cluster-performance-from-the-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「效能叢集登陸」頁面會顯示所選叢集的高效能狀態、該叢集正由Unified Manager執行個體監控。此頁面可讓您評估特定叢集的整體效能、並快速記下、找出或指派任何已識別的叢集特定事件來解決。 
+---
+= 從效能叢集登陸頁面監控叢集效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「效能叢集登陸」頁面會顯示所選叢集的高效能狀態、該叢集正由Unified Manager執行個體監控。此頁面可讓您評估特定叢集的整體效能、並快速記下、找出或指派任何已識別的叢集特定事件來解決。

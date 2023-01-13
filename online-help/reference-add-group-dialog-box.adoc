@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-add-group-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 「新增群組」對話方塊可讓您建立群組、以根據群組規則來納入叢集、磁碟區和SVM。 
+---
+= 新增群組對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「新增群組」對話方塊可讓您建立群組、以根據群組規則來納入叢集、磁碟區和SVM。
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+* *名稱*
++
+指定群組名稱。您必須輸入群組的唯一名稱。
+
+* *說明*
++
+指定有意義的群組說明。
+
+
+
+
+
+== 命令按鈕
+
+命令按鈕可讓您新增或取消建立新群組。
+
+* *新增*
++
+建立新群組。
+
+* *取消*
++
+關閉「新增群組」對話方塊、而不儲存變更。
+
+

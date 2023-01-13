@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-qtree-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立自訂報告、以分析系統qtree的容量和使用率。例如、您可以建立報告來排序qtree、以判斷是否有任何超出磁碟或檔案軟體限制的事件。 
+---
+= qtree容量與使用率報告自訂項目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立自訂報告、以分析系統qtree的容量和使用率。例如、您可以建立報告來排序qtree、以判斷是否有任何超出磁碟或檔案軟體限制的事件。

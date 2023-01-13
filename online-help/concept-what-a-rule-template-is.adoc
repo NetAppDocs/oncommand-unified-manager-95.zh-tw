@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-a-rule-template-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 規則範本是預先定義的範本、可用於在資料原則中建立規則。規則範本可讓您根據擁有者、檔案類型和目錄路徑等三種類別來建立規則。 
+---
+= 什麼是規則範本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+規則範本是預先定義的範本、可用於在資料原則中建立規則。規則範本可讓您根據擁有者、檔案類型和目錄路徑等三種類別來建立規則。
+
+
+
+== 檔案類型的規則範本範例
+
+規則範本「將所有具有指定副檔名的檔案放在適當的儲存類別中」、會將寫入您指定儲存類別中Infinite Volume的所有.mp3檔案放置在其中。

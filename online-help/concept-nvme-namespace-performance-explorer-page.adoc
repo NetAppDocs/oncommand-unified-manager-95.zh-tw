@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-nvme-namespace-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「命名空間總管」頁面提供叢集內所有命名空間效能的詳細總覽。 
+---
+= 命名空間資源管理器頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「命名空間總管」頁面提供叢集內所有命名空間效能的詳細總覽。
+
+「命名空間總管」頁面可讓您追蹤及比較特定時段內的命名空間效能、協助您疑難排解及微調命名空間的效能。
+
+使用「檢視與比較」功能、您可以將此命名空間的效能與以下項目進行比較：
+
+* 命名空間所在的磁碟區
+* 位於相同磁碟區的其他命名空間
+* 相同SVM上的其他命名空間
+
+
+「命名空間總管」頁面可讓您：
+
+* 檢視臨界值相關問題及其詳細資料
+* 追蹤並比較命名空間效能資料
+* 調查並疑難排解臨界值相關問題
+* 調查並疑難排解效能問題
+* 啟動System Manager以變更命名空間的組態
++
+如果您以OnCommand 「管理員」或「儲存管理員」角色登入Unified Manager、並使用ONTAP 「9.5或更新版本」、則可使用「*組態命名空間*」按鈕。
+
+

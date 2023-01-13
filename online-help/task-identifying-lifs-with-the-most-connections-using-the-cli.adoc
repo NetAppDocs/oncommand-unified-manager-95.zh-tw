@@ -1,0 +1,99 @@
+---
+permalink: online-help/task-identifying-lifs-with-the-most-connections-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果資料LIF的負載或處理量很大、您可能會想要移轉該資料。若要決定是否要移轉LIF、您可以在生命週期上顯示負載、連接埠上的連線數目、處理量及節點上的CPU週期。 
+---
+= 使用CLI識別最多連線的LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果資料LIF的負載或處理量很大、您可能會想要移轉該資料。若要決定是否要移轉LIF、您可以在生命週期上顯示負載、連接埠上的連線數目、處理量及節點上的CPU週期。
+
+
+
+== 步驟
+
+. 以叢集管理員的身分存取CLI。
+. 輸入下列命令、將權限等級設為進階： `set -privilege advanced`
++
+如需在進階模式下使用CLI的詳細資訊、請參閱_System Administration Reference。
+
+. 若要找出每個LIF的權重、請輸入下列命令： `network interface lif-weights show`
++
+忙碌的LIF是重量最低的產品。
+
+. 若要尋找節點上的作用中連線、請輸入下列命令： `network connections active show-clients`
++
+記下各節點的最高用戶端數。
+
++
+[listing]
+----
+cluster1::> network connections active show-clients
+Node    Client IP Address     Count
+------  -----------------     ------
+node1   192.0.2.253               12
+        192.0.2.252                9
+        192.0.2.251               12
+
+node2   192.0.2.250               12
+        192.0.2.252                9
+        192.0.2.253                9
+
+node3   customer.example.com       2
+        customer.example.net       2
+        customer.example.org       2
+----
+. 若要在節點和SVM上尋找LIF的作用中連線、請輸入下列命令： `network connections active show-lifs`
++
+請注意每個LIF的用戶端數量最高。
+
++
+[listing]
+----
+cluster1::> network connections active show-lifs
+Node      Vserver Name  Interface Name  Count
+--------  ------------  --------------- ------
+node1
+          vs1           clus1              30
+
+node2
+          vs2           clus1              30
+
+node3
+          vs3           lif1                2
+          vs4           clus1              30
+----
+. 檢查共享同一個主連接埠和主節點的lifs、以識別最多連線的lifs。
+. 若要選擇最佳的資料連接埠、請輸入下列命令： `statistics show -object port`
++
+統計資料命令提供乙太網路連接埠的處理量和頻寬資訊。每一列都會提供個別的獨特資訊計數器。Value是自計數器上次清除以來的物件類型值（自ONTAP 上次啟動時起）。
+
++
+[listing]
+----
+cluster1::> statistics show -object port
+Object: port
+Instance: e0a
+Start-time: 10/11/2013 13:51:41
+End-time: 10/11/2013 13:51:41
+Node: node1
+
+    Counter                                           Value
+    -------------------------------------------------------
+    recv-data                                            0B
+    recv-packets                                         0
+    recv-mcasts                                          0
+    recv-errors                                          0
+    recv-dropped                                         0
+    sent-data                                            0B
+    sent-packets                                         0
+    sent-mcasts                                          0
+    sent-errors                                          0
+    collisions                                           0
+----
+

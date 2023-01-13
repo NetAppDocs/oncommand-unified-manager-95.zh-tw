@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-setup-autosupport-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「設定/ AutoSupport」頁面可讓您檢視AutoSupport 功能描述、啟用定期AutoSupport 的功能、或傳送隨需AutoSupport 的功能性資訊。 
+---
+= 「設定/自動支援」頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「設定/ AutoSupport」頁面可讓您檢視AutoSupport 功能描述、啟用定期AutoSupport 的功能、或傳送隨需AutoSupport 的功能性資訊。
+
+
+
+== 資訊領域
+
+* *系統ID*
++
+顯示此Unified Manager伺服器的系統ID。
+
+
+
+
+
+== 週期AutoSupport 性區塊
+
+可讓您定期向技術支援部門發出特定的預先定義訊息、以進行問題診斷和解決問題。
+
+* *啟用定期AutoSupport 更新*
++
+表示您想要啟用定期AutoSupport 的功能。
+
+
+
+
+
+== 隨需AutoSupport 功能區
+
+您可以產生隨需訊息、並傳送給技術支援人員、指定的電子郵件收件者、或兩者：
+
+* *傳送至技術支援*
++
+表示您想要針對發生的任何問題、傳送隨需訊息給技術支援人員。
+
+* *傳送至電子郵件收件者*
++
+表示您想要針對發生的任何問題、傳送隨選訊息給指定的收件者。
+
+* *產生並傳送AutoSupport 此功能*
++
+針對發生的任何問題、產生並傳送隨需訊息給技術支援人員、指定的電子郵件收件者或兩者。
+
+
+
+
+
+== HTTP Proxy區域
+
+如果AutoSupport 您的環境無法直接從Unified Manager伺服器存取、您可以指定一個Proxy來提供網際網路存取、以便傳送支援的支援內容。
+
+* *使用HTTP代理*
++
+核取此方塊以識別用作HTTP Proxy的伺服器。
+
++
+輸入Proxy伺服器的主機名稱或IP位址、以及用於連線至伺服器的連接埠號碼。
+
+* *使用驗證*
++
+如果您需要提供驗證資訊來存取用作HTTP Proxy的伺服器、請勾選此方塊。
+
++
+輸入使用HTTP Proxy驗證所需的使用者名稱和密碼。
+
+
+
+[NOTE]
+====
+不支援僅提供基本驗證的HTTP Proxy。
+
+====

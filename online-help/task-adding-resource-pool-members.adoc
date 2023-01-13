@@ -1,0 +1,46 @@
+---
+permalink: online-help/task-adding-resource-pool-members.html 
+sidebar: sidebar 
+keywords:  
+summary: 資源池由多個成員集合體組成。您可以將集合體新增至現有資源集區、以增加次要Volume資源配置的可用空間量。 
+---
+= 新增資源池成員
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資源池由多個成員集合體組成。您可以將集合體新增至現有資源集區、以增加次要Volume資源配置的可用空間量。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+您一次最多可以新增200個集合體至資源池。「Aggregate」對話方塊中顯示的Aggregate不屬於任何其他資源集區。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下* Protection（保護）***資源池*。
+. 從*資源池*清單中選取資源池。
++
+資源池成員會顯示在資源池清單下方的區域中。
+
+. 在資源池成員區域中、按一下*新增*。
++
+此時會顯示Aggregate對話方塊。
+
+. 選取一或多個集合體。
+. 按一下「 * 新增 * 」。
++
+對話方塊隨即關閉、集合體會顯示在所選資源池的成員清單中。
+
+

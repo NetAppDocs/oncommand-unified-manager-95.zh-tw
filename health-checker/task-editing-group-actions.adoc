@@ -1,0 +1,30 @@
+---
+permalink: health-checker/task-editing-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以編輯在Unified Manager中設定的群組動作參數、例如群組動作名稱、說明、相關群組名稱、以及動作類型的參數。 
+---
+= 編輯群組動作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以編輯在Unified Manager中設定的群組動作參數、例如群組動作名稱、說明、相關群組名稱、以及動作類型的參數。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*管理*>*群組*。
+. 在*群組動作*索引標籤中、選取您要編輯的群組動作、然後按一下*編輯*。
+. 在*編輯群組動作*對話方塊中、視需要變更群組動作名稱、說明、相關群組名稱及動作類型參數。
+. 按一下「 * 儲存 * 」。
+

@@ -1,0 +1,60 @@
+---
+permalink: online-help/task-adding-annotations-manually-to-individual-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以手動為所選的Volume、叢集和SVM加上註釋、而不需使用註釋規則。您可以為單一儲存物件或多個儲存物件加上註釋、並為註釋指定所需的名稱值配對組合。 
+---
+= 手動新增附註至個別儲存物件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以手動為所選的Volume、叢集和SVM加上註釋、而不需使用註釋規則。您可以為單一儲存物件或多個儲存物件加上註釋、並為註釋指定所需的名稱值配對組合。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 瀏覽至您要加上註釋的儲存物件：
++
+|===
+| 若要新增附註至... | 執行此動作... 
+
+
+ a| 
+叢集
+ a| 
+.. 按一下「* Health *>* Clusters*」。
+.. 選取一或多個叢集。
+
+
+
+
+ a| 
+磁碟區
+ a| 
+.. 按一下* Health *>* Volumes *。
+.. 選取一或多個磁碟區。
+
+
+
+
+ a| 
+SVM
+ a| 
+.. 按一下「* Health *>* SVMS*」。
+.. 選取一或多個SVM。
+
+
+|===
+. 按一下* Annotate*並選取名稱-值配對。
+. 按一下「 * 套用 * 」。
+

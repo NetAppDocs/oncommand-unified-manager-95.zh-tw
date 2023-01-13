@@ -1,0 +1,29 @@
+---
+permalink: online-help/concept-backup-and-restore-on-virtual-appliance.html 
+sidebar: sidebar 
+keywords:  
+summary: 安裝在虛擬應用裝置上的Unified Manager備份與還原模式、是擷取及還原完整虛擬應用程式的映像。 
+---
+= 虛擬應用裝置備份與還原程序總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝在虛擬應用裝置上的Unified Manager備份與還原模式、是擷取及還原完整虛擬應用程式的映像。
+
+由於虛擬應用裝置上的Unified Manager備份作業無法將備份檔案移出vApp、因此您可以執行下列工作來完成虛擬應用裝置的備份：
+
+. 關閉虛擬機器電源、並取得Unified Manager虛擬應用裝置的VMware快照。
+. 在資料存放區上建立NetApp Snapshot複本、以擷取VMware快照。
++
+如果資料存放區不是裝載在執行ONTAP VMware vCenter軟體的系統上、請遵循儲存設備廠商的準則來建立VMware快照的備份。
+
+. 將NetApp Snapshot複本（或等效快照）複寫到替代儲存設備。
+. 刪除VMware快照。
+
+
+您應該使用這些工作來實作備份排程、以確保Unified Manager虛擬應用裝置在發生問題時受到保護。
+
+若要還原VM、您可以使用所建立的VMware快照、將VM還原至備份時間點狀態。

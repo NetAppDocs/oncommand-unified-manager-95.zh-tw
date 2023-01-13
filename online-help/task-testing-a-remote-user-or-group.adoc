@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-testing-a-remote-user-or-group.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用驗證伺服器所指定的驗證設定、驗證遠端使用者或遠端群組是否能夠存取Unified Manager伺服器。 
+---
+= 測試遠端使用者或遠端群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用驗證伺服器所指定的驗證設定、驗證遠端使用者或遠端群組是否能夠存取Unified Manager伺服器。
+
+
+
+== 開始之前
+
+* 您必須啟用遠端驗證、並設定驗證設定、Unified Manager伺服器才能驗證遠端使用者或遠端群組。
+* 您必須OnCommand 扮演「管理員角色」。
+
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左管理功能表中的*使用者*。
+. 在「*管理/使用者*」頁面中、選取您要驗證的遠端使用者或遠端群組、然後按一下「*測試*」。
+

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-the-default-rule-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 預設規則是儲存虛擬機器（SVM）的資料原則中含有無限Volume的規則。當現有規則中的任何條件都與寫入的資料不相符時、可用來判斷寫入「無限Volume」的資料位置。 
+---
+= 預設規則為何
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+預設規則是儲存虛擬機器（SVM）的資料原則中含有無限Volume的規則。當現有規則中的任何條件都與寫入的資料不相符時、可用來判斷寫入「無限Volume」的資料位置。
+
+預設規則永遠是資料原則中的最後一個規則、無法重新排序。例如、請考慮具有三個規則的資料原則。Rule 1會將所有.pdf檔案置於_High Performance _Storage類別中。Rule 2會將系統管理員擁有的所有檔案和以*。xls結尾的檔案名稱、放在_歸 檔_組成_儲存類別中。第三條規則是_Low_Performance儲存類別的預設規則。
+
+當系統管理員未擁有的一組*。jpg檔案寫入Infinite Volume時、預設規則會用於將這些.jpg檔案放入_Low_Performance儲存類別。不使用規則1和規則2、因為寫入的資料與這些規則不符。

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-authentication-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從「設定/驗證」頁面啟用LDAP驗證。 
+---
+= 驗證視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從「設定/驗證」頁面啟用LDAP驗證。

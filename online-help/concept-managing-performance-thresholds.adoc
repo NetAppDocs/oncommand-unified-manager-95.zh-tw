@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-managing-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 效能臨界值原則可讓您決定Unified Manager產生事件的時間點、以便通知系統管理員可能影響工作負載效能的問題。這些臨界值原則稱為使用者定義的效能臨界值。 
+---
+= 管理使用者定義的效能臨界值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+效能臨界值原則可讓您決定Unified Manager產生事件的時間點、以便通知系統管理員可能影響工作負載效能的問題。這些臨界值原則稱為_使用者定義_效能臨界值。
+
+此版本支援使用者定義、系統定義和動態效能臨界值。透過動態且系統定義的效能臨界值、Unified Manager會分析工作負載活動、以判斷適當的臨界值。透過使用者定義的臨界值、您可以定義許多效能計數器和許多儲存物件的高效能限制。
+
+[NOTE]
+====
+系統定義的效能臨界值和動態效能臨界值是由Unified Manager設定、無法設定。如果您從任何系統定義的效能臨界值原則收到不必要的事件、可以從「組態/管理事件」頁面停用個別原則。
+
+====

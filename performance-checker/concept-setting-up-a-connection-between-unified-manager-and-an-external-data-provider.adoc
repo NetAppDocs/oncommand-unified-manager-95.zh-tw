@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-setting-up-a-connection-between-unified-manager-and-an-external-data-provider.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager伺服器與外部資料供應商之間的連線可讓您將叢集效能資料傳送至外部伺服器、以便儲存管理員使用協力廠商軟體來記錄效能指標。 
+---
+= 設定Unified Manager伺服器與外部資料供應商之間的連線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager伺服器與外部資料供應商之間的連線可讓您將叢集效能資料傳送至外部伺服器、以便儲存管理員使用協力廠商軟體來記錄效能指標。
+
+Unified Manager伺服器與外部資料供應商之間的連線是透過維護主控台中標示為「外部資料供應商」的功能表選項來建立。

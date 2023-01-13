@@ -1,0 +1,81 @@
+---
+permalink: health-checker/task-migrating-a-unified-manager-virtual-appliance-to-a-rhel-or-centos-system.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 如果您想要變更執行Unified Manager的主機作業系統、可以將Unified Manager資料庫備份從虛擬應用裝置還原至Red Hat Enterprise Linux或CentOS Linux系統。 
+---
+= 將Unified Manager虛擬應用裝置移轉至Linux系統
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您想要變更執行Unified Manager的主機作業系統、可以將Unified Manager資料庫備份從虛擬應用裝置還原至Red Hat Enterprise Linux或CentOS Linux系統。
+
+
+
+== 開始之前
+
+* 在虛擬應用裝置上：
++
+** 您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色、才能建立備份。
+** 您必須知道Unified Manager維護使用者的名稱、才能進行還原作業。
+
+
+* 在Linux系統上：
++
+** 您必須依照安裝指南中的指示、在RHEL或CentOS伺服器上安裝Unified Manager。
+** 此伺服器上的Unified Manager版本必須與使用備份檔案的虛擬應用裝置版本相同。
+** 安裝後、請勿啟動UI或在Linux系統上設定任何叢集、使用者或驗證設定。備份檔案會在還原程序期間填入此資訊。
+** 您必須擁有Linux主機的root使用者認證資料。
+
+
+
+
+
+
+== 關於這項工作
+
+這些步驟說明如何在虛擬應用裝置上建立備份檔案、將備份檔案複製到Red Hat Enterprise Linux或CentOS系統、然後將資料庫備份還原到新系統。
+
+
+
+== 步驟
+
+. 在虛擬應用裝置的工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*管理*>*資料庫備份*。
+. 在「*管理/資料庫備份*」頁面中、按一下「*動作*」>「*資料庫備份設定*」。
+. 將備份路徑變更為 `/jail/support`。
+. 在「*排程頻率*」區段中、選取「*啟用*」核取方塊、選取「*每日*」、然後輸入超過目前時間數分鐘的時間、以便很快建立備份。
+. 按一下*儲存並關閉*。
+. 請等待數小時、以便產生備份。
++
+完整備份可能超過1 GB、需要三到四小時才能完成。
+
+. 以root使用者身分登入安裝Unified Manager的Linux主機、然後從複製備份檔案 `/support` 在使用scp的虛擬應用裝置上.`root@<rhel_server>:/# scp -r admin@<vapp_server_ip_address>:/support/* .`
++
+`root@ocum_rhel-21:/# scp -r admin@10.10.10.10:/support/* .`
+
++
+請確定您已複製 `.7z` 備份檔案及所有 `.7z` 中的儲存庫檔案 `/database-dumps-repo` 子目錄。
+
+. 在命令提示字元中、還原備份： `um backup restore -f /<backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /UM_9.4.N151113.1348_backup_unix_02-12-2018-04-16.7z`
+
+. 還原作業完成後、請登入Unified Manager Web UI。
+
+
+
+
+== 完成後
+
+您應該執行下列工作：
+
+* 產生新的HTTPS安全性憑證、然後重新啟動Unified Manager伺服器。
+* 將Linux系統的備份路徑變更為預設設定 (`/data/ocum-backup`）、或選擇新路徑、因為沒有 `/jail/support` Linux系統上的路徑。
+* 如果使用WFA、請重新設定Workflow Automation連線的兩端。
+* 如果您使用SAML、請重新設定SAML驗證設定。
+
+
+在您確認Linux系統上的所有功能都正常運作之後、您可以關閉Unified Manager虛擬應用裝置並將其移除。

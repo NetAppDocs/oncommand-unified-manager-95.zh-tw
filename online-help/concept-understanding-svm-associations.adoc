@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-understanding-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 儲存虛擬機器（SVM）關聯是指從來源SVM到目的地SVM的對應、合作夥伴應用程式會使用這些對應來選擇資源和次要Volume資源配置。 
+---
+= 瞭解SVM關聯
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儲存虛擬機器（SVM）關聯是從來源SVM到目的地SVM的對應、合作夥伴應用程式會使用這些對應來選擇資源和次要Volume資源配置。
+
+無論目的地SVM是次要目的地還是第三目的地、來源SVM和目的地SVM之間都會建立關聯。您無法使用次要目的地SVM作為來源、來建立與第三目的地SVM的關聯。
+
+您可以使用三種方式建立SVM的關聯：
+
+* 關聯任何SVM
++
+您可以在任一主要來源SVM與一或多個目的地SVM之間建立關聯。這表示目前需要保護的所有現有SVM、以及未來建立的任何SVM、都會與指定的目的地SVM相關聯。例如、您可能想要將不同位置的多個不同來源的應用程式備份到同一個位置的一或多個目的地SVM。
+
+* 建立特定SVM的關聯
++
+您可以在特定來源SVM與一或多個特定目的地SVM之間建立關聯。例如、如果您要為許多資料必須彼此分開的用戶端提供儲存服務、您可以選擇此選項、將特定來源SVM與僅指派給該用戶端的特定目的地SVM建立關聯。
+
+* 與外部SVM建立關聯
++
+您可以在來源SVM和目的地SVM的外部彈性Volume之間建立關聯。
+
+

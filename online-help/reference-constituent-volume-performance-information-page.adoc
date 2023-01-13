@@ -1,0 +1,70 @@
+---
+permalink: online-help/reference-constituent-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用「效能/組成磁碟區資訊」頁面可檢視FlexGroup 包含整個物件磁碟區的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。 
+---
+= 效能/組成Volume資訊頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用「效能/組成磁碟區資訊」頁面可檢視FlexGroup 包含整個物件磁碟區的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。
+
+
+
+== 組成Volume屬性
+
+* *類型*
++
+成分類型：讀寫（RW）或資料保護（DP）。
+
+* *風格*
++
+Volume的風格；這是FlexGroup 一個包含一個聲音量的組成部分。
+
+* *叢集*
++
+此FlexGroup 等組成磁碟區所屬的叢集名稱。您可以按一下名稱、在「Performance / Cluster Explorer（效能/叢集資源管理器）」頁面中顯示叢集詳細資料。
+
+* * Aggregate *
++
+此FlexGroup 等組成磁碟區所在的集合體名稱。您可以按一下名稱、在「Performance / Aggregate Explorer」頁面中顯示Aggregate詳細資料。
+
+* *《*》FlexGroup
++
+此成分所屬的部分名稱FlexGroup 。您可以按一下名稱、在FlexGroup 「Performance / FlexGroup Explorer（效能/ FlexGroup檔案總管）」頁面中顯示「IsfVolume」詳細資料。
+
+* *儲存虛擬機器*
++
+此等不完整磁碟區所屬的SVM名稱FlexGroup 。您可以按一下名稱、在「Performance（效能）/SVM Explorer（SVM檔案總管）」頁面中顯示SVM詳細資料。
+
+* *分層政策*
++
+在磁碟區上設定的分層原則。只有在將磁碟區部署在FabricPool 一個不含支援的集合體上時、該原則才會生效。可用的原則包括：
+
++
+** 無。此磁碟區的資料永遠保留在效能層。
+** 僅適用於Snapshot。只有Snapshot資料會自動移至雲端層。所有其他資料都會保留在效能層級上。
+** 備份：在資料保護磁碟區上、所有傳輸的使用者資料都會從雲端層開始、但稍後的用戶端讀取可能會導致熱資料移至效能層。
+** 自動。當VMware判斷資料是「熱」或「冷」時、此磁碟區上的資料會自動在效能層與雲端層之間移動ONTAP 。
+
+
+* * RAID類型*
++
+此組成所在的集合體上使用的備援類型。可能的類型：
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
+* *容量（可用/總計）*
++
+組成單位可用的總儲存容量、以GB為單位、以及目前可用的儲存容量。
+
+

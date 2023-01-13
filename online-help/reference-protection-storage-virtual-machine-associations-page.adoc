@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-protection-storage-virtual-machine-associations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「Protection / Storage Virtual Machine Associations」（保護/儲存虛擬機器關聯）頁面可讓您檢視來源和目的地SVM之間的現有SVM關聯、並建立新的SVM關聯、供合作夥伴應用程式使用、以建立SnapMirror SnapVault 和S廳 關係。 
+---
+= 保護/儲存虛擬機器關聯頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Protection / Storage Virtual Machine Associations」（保護/儲存虛擬機器關聯）頁面可讓您檢視來源和目的地SVM之間的現有SVM關聯、並建立新的SVM關聯、供合作夥伴應用程式使用、以建立SnapMirror SnapVault 和S廳 關係。
+
+
+
+== 命令按鈕
+
+命令按鈕可讓您執行下列工作：
+
+* *建立*
++
+開啟「建立儲存虛擬機器關聯」精靈。
+
+* *刪除*
++
+可讓您刪除選取的SVM關聯。
+
+
+
+
+
+== 儲存虛擬機器（SVM）關聯清單
+
+儲存虛擬機器關聯清單會在表格中顯示已建立的來源和目的地SVM關聯、以及每個關聯所允許的保護關係類型。
+
+* *來源儲存虛擬機器*
++
+顯示來源SVM的名稱。
+
+* *來源叢集*
++
+顯示來源叢集的名稱。
+
+* *目的地儲存虛擬機器*
++
+顯示目的地SVM的名稱。
+
+* *目的地叢集*
++
+顯示目的地叢集的名稱。
+
+* *類型*
++
+顯示保護關係的類型。關係類型為SnapMirror或SnapVault 是SnapMirror。
+
+

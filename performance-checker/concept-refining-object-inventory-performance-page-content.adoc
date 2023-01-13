@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-refining-object-inventory-performance-page-content.html 
+sidebar: sidebar 
+keywords:  
+summary: 效能物件的詳細目錄頁面包含可協助您精簡物件詳細目錄資料內容的工具、可讓您快速輕鬆地找到特定資料。 
+---
+= 精簡效能詳細目錄頁面內容
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+效能物件的詳細目錄頁面包含可協助您精簡物件詳細目錄資料內容的工具、可讓您快速輕鬆地找到特定資料。
+
+效能物件詳細目錄頁面中包含的資訊可能很廣泛、通常會跨越多個頁面。這類全方位資料非常適合監控、追蹤及改善效能、但是尋找特定資料需要工具、才能快速找到您要尋找的資料。因此、效能物件詳細目錄頁面包含搜尋、排序及篩選功能。此外、搜尋與篩選功能也能一起運作、進一步縮小結果範圍。

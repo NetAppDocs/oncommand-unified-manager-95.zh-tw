@@ -1,0 +1,45 @@
+---
+permalink: health-checker/task-resolving-a-flashcard-offline-condition.html 
+sidebar: sidebar 
+keywords:  
+summary: 此工作流程提供一個範例、說明如何解決Flash卡離線的問題。在此案例中、您是監控儀表板的管理員或操作員、可檢查可用度問題。您會看到Flash卡離線狀態、並想要判斷問題的可能原因及解決方法。 
+---
+= 解決Flash卡的離線狀況
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流程提供一個範例、說明如何解決Flash卡離線的問題。在此案例中、您是監控儀表板的管理員或操作員、可檢查可用度問題。您會看到Flash卡離線狀態、並想要判斷問題的可能原因及解決方法。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+Unified Manager儀表板/總覽頁面的可用度區域中顯示的事件資訊和連結、可監控受監控叢集上資料儲存資源的整體可用度、讓您診斷可能影響該可用度的特定事件。
+
+在此案例中、「儀表板/總覽」頁面會在「可用度事件」區段中顯示「離線」事件快閃卡」。如果Flash卡離線、儲存資料的可用度會受到影響、因為安裝該卡的叢集節點效能會受損。您可以執行下列步驟來本地化及識別潛在問題：
+
+
+
+== 步驟
+
+. 在「*未解決的事件與風險*」區段的「*可用度*」面板中、按一下「離線Flash Card」所顯示的超文字連結。
++
+此時會顯示可用度事件的「事件詳細資料」頁面。
+
+. 在「*事件*詳細資料」頁面上、您可以檢閱「原因」欄位中顯示的資訊、並執行下列一或多項工作：
++
+** 將事件指派給系統管理員。 xref:task-assigning-events-to-specific-users.adoc[指派事件]
+** 按一下事件來源（在此情況下為離線Flash卡所在的叢集節點）、以取得該節點的詳細資訊。 xref:task-performing-corrective-action-for-a-flashcard-offline.adoc[針對Flash卡離線執行修正行動]
+** 認可活動。 xref:task-acknowledging-and-resolving-events.adoc[確認並解決事件]
+
+
+

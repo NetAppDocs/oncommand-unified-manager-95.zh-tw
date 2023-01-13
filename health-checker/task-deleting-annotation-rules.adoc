@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 當不再需要規則時、您可以從OnCommand 統一化管理器刪除註釋規則。 
+---
+= 刪除註釋規則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當不再需要規則時、您可以從OnCommand 統一化管理器刪除註釋規則。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+當您刪除註釋規則時、註釋會取消關聯、並從儲存物件中移除。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左管理功能表中的*註釋*。
+. 在*註釋規則*索引標籤中、選取您要刪除的註釋規則、然後按一下*刪除*。
+. 在*警告*對話方塊中、按一下*是*以確認刪除。
+

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-data-constituents-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 在無限Volume中、資料會儲存在多個獨立的資料成分中。資料成分只會儲存檔案中的資料，而非檔案名稱。 
+---
+= 什麼是資料成分
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在無限Volume中、資料會儲存在多個獨立的資料成分中。資料成分只會儲存檔案中的資料、而非檔案名稱。
+
+用戶端不知道資料成分。當用戶端從Infinite Volume要求檔案時、節點會從資料成分擷取檔案資料、並將檔案傳回用戶端。
+
+每個Infinite Volume通常包含數十個資料成分。例如、包含10億個檔案的6PB Infinite Volume可能有60個資料成分位於來自6個節點的集合體上。

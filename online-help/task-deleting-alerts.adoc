@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-deleting-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以刪除不再需要的警示。例如、您可以刪除某個特定資源在Unified Manager不再監控該資源時所建立的警示。 
+---
+= 刪除警示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以刪除不再需要的警示。例如、您可以刪除某個特定資源在Unified Manager不再監控該資源時所建立的警示。
+
+
+
+== 開始之前
+
+您必須OnCommand 扮演「管理員角色」。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下*組態*>*警示*。
+. 在*組態/警示*頁面上、選取您要刪除的警示、然後按一下*刪除*。
+. 按一下*是*以確認刪除要求。
+

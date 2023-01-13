@@ -1,0 +1,41 @@
+---
+permalink: install/task-removing-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以藉由銷毀安裝Unified Manager軟體的虛擬應用裝置來解除安裝Unified Manager。 
+---
+= 從VMware移除Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以藉由銷毀安裝Unified Manager軟體的虛擬應用裝置來解除安裝Unified Manager。
+
+
+
+== 開始之前
+
+* 您必須擁有用於存取VMware vCenter Server和vSphere Web Client（vSphere 6.5版）或vSphere Client（vSphere 5.5或6.0版）的認證資料。
+* Unified Manager伺服器不得與外部資料供應商有作用中的連線。
++
+如果有作用中的連線、您必須使用Unified Manager維護主控台刪除連線。
+
+* Unified Manager伺服器不得與Workflow Automation伺服器有作用中的連線。
++
+如果有作用中的連線、您必須使用管理功能表刪除連線。
+
+* 刪除虛擬機器（VM）之前、必須先從Unified Manager伺服器移除所有叢集（資料來源）。
+
+
+
+
+== 步驟
+
+. 使用Unified Manager維護主控台、確認Unified Manager伺服器沒有與外部資料供應商的作用中連線。
+. 在vSphere Client中、按一下*首頁*>*詳細目錄*>*虛擬機器與範本*。
+. 選取您要銷毀的VM、然後按一下* Summary（摘要）*索引標籤。
+. 如果VM正在執行、請按一下* Power *>*關閉Guest *。
+. 在您要銷毀的VM上按一下滑鼠右鍵、然後按一下*從磁碟刪除*。
+

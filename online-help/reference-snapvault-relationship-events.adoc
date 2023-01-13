@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-snapvault-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 關於彼此的關係事件、可提供有關彼此之間關係狀態的資訊、讓您監控是否有潛在問題。SnapVault SnapVault事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 關聯事件SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+關於彼此的關係事件、可提供有關彼此之間關係狀態的資訊、讓您監控是否有潛在問題。SnapVault SnapVault事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：保護
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+非同步資料庫不良（ocumEvtSnapVaultRelationshipUnhealy）
+ a| 
+風險
+ a| 
+SnapMirror關係
+ a| 
+警告
+
+
+
+ a| 
+非同步資料庫中斷（ocumEvtSnapVaultRelationshipStateBrokenoff）
+ a| 
+風險
+ a| 
+SnapMirror關係
+ a| 
+錯誤
+
+
+
+ a| 
+非同步資料庫初始化失敗（ocumEvtSnapVaultRelationshipInitializeFailed）
+ a| 
+風險
+ a| 
+SnapMirror關係
+ a| 
+錯誤
+
+
+
+ a| 
+非同步資料庫更新失敗（ocumEvtSnapVaultRelationshipUpdate失敗）
+ a| 
+風險
+ a| 
+SnapMirror關係
+ a| 
+錯誤
+
+
+
+ a| 
+非同步資料庫延遲錯誤（ocumEvtSnapVaultRelationshipLag錯誤）
+ a| 
+風險
+ a| 
+SnapMirror關係
+ a| 
+錯誤
+
+
+
+ a| 
+非同步資料庫延遲警告（ocumEvtSnapVaultRelationshipLag警告）
+ a| 
+風險
+ a| 
+SnapMirror關係
+ a| 
+警告
+
+
+
+ a| 
+非同步資料庫重新同步失敗（ocumEvtSnapvaultRelationshipResynFailed）
+ a| 
+風險
+ a| 
+SnapMirror關係
+ a| 
+錯誤
+
+|===

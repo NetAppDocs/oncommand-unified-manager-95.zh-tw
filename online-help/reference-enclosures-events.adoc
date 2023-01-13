@@ -1,0 +1,101 @@
+---
+permalink: online-help/reference-enclosures-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 機箱事件可讓您瞭解資料中心內磁碟櫃機櫃的狀態、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 機箱事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+機箱事件可讓您瞭解資料中心內磁碟櫃機櫃的狀態、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+磁碟機架風扇故障（ocumEvtShelfFan故障）
+ a| 
+事件
+ a| 
+儲存櫃
+ a| 
+關鍵
+
+
+
+ a| 
+磁碟櫃電源供應器故障（ocumEvtShelfPowerSupply故障）
+ a| 
+事件
+ a| 
+儲存櫃
+ a| 
+關鍵
+
+
+
+ a| 
+未設定磁碟櫃多重路徑（ocumDiskShelfConnectivityNotInMultiPath）
+
+此事件不適用於：
+
+* 採用不一樣組態的叢集MetroCluster
+* 下列平台：FAS2554、FAS2552、FAS2520和FAS2240
+
+ a| 
+風險
+ a| 
+節點
+ a| 
+警告
+
+
+
+ a| 
+磁碟機架路徑故障（ocumDiskShelfConnectivityPath故障）
+ a| 
+風險
+ a| 
+儲存櫃
+ a| 
+警告
+
+|===
+
+
+== 影響領域：組態
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+探索到磁碟櫃（不適用）
+ a| 
+活動
+ a| 
+節點
+ a| 
+資訊
+
+
+
+ a| 
+移除磁碟櫃（不適用）
+ a| 
+活動
+ a| 
+節點
+ a| 
+資訊
+
+|===

@@ -1,0 +1,59 @@
+---
+permalink: performance-checker/concept-understanding-the-um-recommendations-to-tier-data-to-the-cloud.html 
+sidebar: sidebar 
+keywords:  
+summary: 「效能/磁碟區」目錄頁面會顯示與儲存在非作用中磁碟區（Cold）上的使用者資料大小相關的資訊。在某些情況下、Unified Manager會將非作用中的資料分層至StorageGRID 啟用FabricPool的Aggregate的雲端層（雲端供應商或簡稱「支援者」）、以識別出某些可帶來效益的磁碟區。 
+---
+= 瞭解Unified Manager將資料分層至雲端的建議
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Performance / Volumes（效能/磁碟區）」目錄頁面會顯示與儲存在非作用中（冷）磁碟區上的使用者資料大小相關的資訊。在某些情況下、Unified Manager會將非作用中的資料分層至StorageGRID 啟用FabricPool的Aggregate的雲端層（雲端供應商或簡稱「支援者」）、以找出某些可帶來效益的磁碟區。
+
+[NOTE]
+====
+由於介紹的是功能不全的功能、所以如果您使用9.2版之前的版本的版本、Unified Manager建議您將資料分層、就需要升級您的功能不全的軟體。FabricPool ONTAP ONTAP ONTAP此外 `auto` 分層原則是在ONTAP 《支援》9.4中推出、因此如果建議使用 `auto` 分層原則、您必須升級ONTAP 至更新版本的物件。
+
+====
+「效能/磁碟區」目錄頁面上的下列三個欄位、提供您如何將非使用中資料移至雲端層、以改善儲存系統的磁碟使用率、並節省效能層的空間。
+
+* *分層政策*
++
+分層原則可決定磁碟區上的資料是否仍保留在效能層、或是將部分資料從效能層移至雲端層。
+
++
+此欄位中的值表示在磁碟區上設定的分層原則、即使該磁碟區目前不在FabricPool 一個不可用的集合體上。分層原則只有在磁碟區位於FabricPool 某個不含集合體的情況下才會生效。
+
+* *冷資料*
++
+Cold資料會顯示儲存在非作用中（Cold）磁碟區上的使用者資料大小。
+
++
+僅ONTAP 當使用不含更新版本的軟體時、才會顯示此值、因為此值需要部署Volume的集合體具有 `inactive data reporting` 參數設為 `enabled`以及已達到最低的冷卻天數臨界值（適用於使用的磁碟區） `snapshot-only` 或 `auto` 分層原則）。否則該值會列為「N/A」。
+
+* *雲端推薦*
++
+在擷取磁碟區上資料活動的相關資訊足夠之後、Unified Manager可能會判斷不需要採取任何行動、或是將非作用中資料分層至雲端層、以節省效能層的空間。
+
+
+
+[NOTE]
+====
+Cold Data欄位每15分鐘更新一次、但在磁碟區執行Cold資料分析時、Cloud Recommendation欄位會每7天更新一次。因此、各欄位之間的冷資料量可能會有所不同。Cloud Recommendation（雲端建議）欄位會顯示執行分析的日期。
+
+====
+啟用「非作用中資料報告」時、Cold Data欄位會顯示非作用中資料的確切數量。如果沒有非作用中的資料報告功能、Unified Manager會使用效能統計資料來判斷磁碟區上的資料是否處於非作用中狀態。在這種情況下、非作用中資料的數量不會顯示在Cold Data欄位中、但當您將游標移到* Tier *一詞上方以檢視雲端建議時、就會顯示該資料。
+
+您會看到的雲端建議包括：
+
+* *學習*。收集的資料不足、無法提出建議。
+* *層級*。分析發現磁碟區包含非作用中（Cold）資料、您應該設定磁碟區、將該資料移至雲端層。在某些情況下、這可能需要先將磁碟區移至啟用FabricPool的Aggregate。在其他情況下、如果磁碟區已經在FabricPool 一個不全的集合體上、您只需變更分層原則即可。
+* *無行動*。磁碟區的非作用中資料量可能很少、磁碟區已設定FabricPool 為位在某個資訊區上的「自動」分層原則、或磁碟區是資料保護磁碟區。此值也會在Volume離線或在MetroCluster 使用於功能齊全的功能時顯示。
+
+
+若要移動磁碟區、或變更磁碟區分層原則或Aggregate非作用中資料報告設定、請使用OnCommand 下列工具之一：《系統管理程式》、ONTAP 《系統資訊管理系統指令》、或是這些工具的組合。
+
+如果您以OnCommand 「管理員」或「儲存管理員」角色登入Unified Manager、則當您將游標移到「*層級*」一詞上時、「*組態Volume *」連結可在雲端建議中使用。按一下此按鈕可在System Manager中開啟「Volumes（磁碟區）」頁面、以進行建議的變更。

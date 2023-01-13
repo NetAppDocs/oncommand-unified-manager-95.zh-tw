@@ -1,0 +1,51 @@
+---
+permalink: health-checker/task-adding-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Unified Manager中新增指令碼、並將指令碼與警示建立關聯。這些指令碼會在產生警示時自動執行、並可讓您取得產生事件之儲存物件的相關資訊。 
+---
+= 新增指令碼
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Unified Manager中新增指令碼、並將指令碼與警示建立關聯。這些指令碼會在產生警示時自動執行、並可讓您取得產生事件之儲存物件的相關資訊。
+
+
+
+== 開始之前
+
+* 您必須已建立並儲存要新增至Unified Manager伺服器的指令碼。
+* 指令碼支援的檔案格式包括Perl、Shell、PowerShell和 `.bat` 檔案：
++
+** 對於Perl指令碼、Perl必須安裝在Unified Manager伺服器上。如果Perl是在Unified Manager之後安裝、您必須重新啟動Unified Manager伺服器。
+** 對於PowerShell指令碼、必須在伺服器上設定適當的PowerShell執行原則、才能執行指令碼。
+
+
++
+[NOTE]
+====
+如果指令碼建立記錄檔來追蹤警示指令碼進度、您必須確保不會在Unified Manager安裝資料夾的任何位置建立記錄檔。
+
+====
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+
+== 關於這項工作
+
+您可以上傳自訂指令碼、並收集警示的事件詳細資料。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左管理功能表中的*指令碼*。
+. 在「*管理/指令碼*」頁面中、按一下「*新增*」。
+. 在*新增指令碼*對話方塊中、按一下*瀏覽*以選取指令碼檔案。
+. 輸入所選指令碼的說明。
+. 按一下「 * 新增 * 」。
+

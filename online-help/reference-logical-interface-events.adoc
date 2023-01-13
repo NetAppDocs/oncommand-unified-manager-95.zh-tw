@@ -1,0 +1,146 @@
+---
+permalink: online-help/reference-logical-interface-events.html 
+sidebar: sidebar 
+keywords:  
+summary: LIF事件提供有關您生命期狀態的資訊、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 邏輯介面（LIF）事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LIF事件提供有關您生命期狀態的資訊、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+LIF狀態關閉（ocumEvtLifusDown）
+ a| 
+風險
+ a| 
+介面
+ a| 
+錯誤
+
+
+
+ a| 
+無法進行LIF容錯移轉（ocumEvtLiferfoverNotPossible）
+ a| 
+風險
+ a| 
+介面
+ a| 
+警告
+
+
+
+ a| 
+LIF不在主連接埠（ocumEvtLifNotAtHomePort）
+ a| 
+風險
+ a| 
+介面
+ a| 
+警告
+
+|===
+
+
+== 影響領域：組態
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+未設定LIF路由（不適用）
+ a| 
+活動
+ a| 
+介面
+ a| 
+資訊
+
+|===
+
+
+== 影響領域：效能
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+網路LIF Mbps臨界臨界值已違反（ocumNetwork Libps突 發事件）
+ a| 
+事件
+ a| 
+介面
+ a| 
+關鍵
+
+
+
+ a| 
+網路LIF Mbps違反警告臨界值（ocumNetwork LibpsWarnings）
+ a| 
+風險
+ a| 
+介面
+ a| 
+警告
+
+
+
+ a| 
+FCP LIF Mbps重大臨界值已違反（ocumFcpLifMbps突 發事件）
+ a| 
+事件
+ a| 
+介面
+ a| 
+關鍵
+
+
+
+ a| 
+FCP LIF Mbps違反警告臨界值（ocumFcpLFFMpps警告）
+ a| 
+風險
+ a| 
+介面
+ a| 
+警告
+
+
+
+ a| 
+已違反NVMf FCP LIF Mbps臨界臨界值（ocumNvmfFCLFFMbps突 發事件）
+ a| 
+事件
+ a| 
+介面
+ a| 
+關鍵
+
+
+
+ a| 
+已違反NVMf FCP LIF Mbps警告臨界值（ocumNvmfFCLFFMbpsWarnings）
+ a| 
+風險
+ a| 
+介面
+ a| 
+警告
+
+|===

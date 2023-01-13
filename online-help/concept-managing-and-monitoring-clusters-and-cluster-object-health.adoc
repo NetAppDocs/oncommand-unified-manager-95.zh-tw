@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-clusters-and-cluster-object-health.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager使用定期API查詢和資料收集引擎、從叢集收集資料。將叢集新增至Unified Manager資料庫後、即可監控及管理這些叢集、以避免任何可用度和容量風險。 
+---
+= 管理及監控叢集與叢集物件健全狀況
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager使用定期API查詢和資料收集引擎、從叢集收集資料。將叢集新增至Unified Manager資料庫後、即可監控及管理這些叢集、以避免任何可用度和容量風險。

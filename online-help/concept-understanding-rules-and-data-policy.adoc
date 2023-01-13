@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-rules-and-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: 瞭解有關規則和資料原則的概念、有助於有效管理Infinite Volume。 
+---
+= 瞭解規則與資料原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解有關規則和資料原則的概念、有助於有效管理Infinite Volume。

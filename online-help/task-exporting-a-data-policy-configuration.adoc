@@ -1,0 +1,46 @@
+---
+permalink: online-help/task-exporting-a-data-policy-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將資料原則組態從Unified Manager匯出至檔案。例如、在您進行必要的備份之後、一旦發生災難、您就可以從主要裝置匯出資料原則組態。 
+---
+= 匯出資料原則組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將資料原則組態從Unified Manager匯出至檔案。例如、在您進行必要的備份之後、一旦發生災難、您就可以從主要裝置匯出資料原則組態。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+執行此工作時所使用的「資料原則」索引標籤、僅會針對具有無限Volume的SVM顯示。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下「*健全狀況*」>「* SVMS*」。
+. 在*健全狀況/儲存虛擬機器*目錄頁面中、選取適當的SVM。
+. 按一下*資料原則*。
++
+隨即顯示所選SVM with Infinite Volume資料原則中的規則清單。
+
+. 按一下*匯出*。
+. 在瀏覽器專屬對話方塊中、指定資料原則組態必須匯出的位置。
+
+
+
+
+== 結果
+
+資料原則組態會匯出為指定位置的Json檔案。

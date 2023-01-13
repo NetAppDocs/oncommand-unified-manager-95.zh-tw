@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-script-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 「管理/指令碼」頁面可讓您將指令碼新增至Unified Manager。 
+---
+= 指令碼視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「管理/指令碼」頁面可讓您將指令碼新增至Unified Manager。

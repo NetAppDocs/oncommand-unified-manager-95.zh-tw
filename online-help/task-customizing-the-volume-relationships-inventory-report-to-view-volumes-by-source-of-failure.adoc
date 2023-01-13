@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-by-source-of-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「Volume RelationsInventory」（磁碟區關係資源清冊）報告、以檢視依故障來源分組的磁碟區。 
+---
+= 自訂Volume RelationsInventory（磁碟區關係詳細目錄）報告、以檢視依故障來源分組的磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「Volume RelationsInventory」（磁碟區關係資源清冊）報告、以檢視依故障來源分組的磁碟區。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 選取*關係健全狀況*欄。
+. 若要檢視不良磁碟區的磁碟區詳細資料、請按一下「* bad *」欄旁的-符號。
+. 若要檢視好容量的Volume詳細資料、請按一下「*優點*」欄旁的-符號。
+

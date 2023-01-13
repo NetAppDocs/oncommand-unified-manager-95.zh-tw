@@ -1,0 +1,16 @@
+---
+permalink: install/concept-upgrading-third-party-products-on-windows-um.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 安裝在Windows系統上的Unified Manager可以升級第三方產品、例如JRE和MySQL。 
+---
+= 在Windows上升級協力廠商產品
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝在Windows系統上的Unified Manager可以升級第三方產品、例如JRE和MySQL。
+
+開發這些協力廠商產品的公司會定期報告安全性弱點。您可以依照自己的排程升級至此軟體的較新版本。

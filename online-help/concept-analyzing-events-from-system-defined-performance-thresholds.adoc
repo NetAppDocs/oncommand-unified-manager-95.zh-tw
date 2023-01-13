@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-analyzing-events-from-system-defined-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 由系統定義的效能臨界值所產生的事件、表示某個儲存物件的效能計數器或效能計數器集已超過系統定義原則的臨界值。這表示儲存物件（例如Aggregate或節點）發生效能問題。 
+---
+= 從系統定義的效能臨界值分析事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+由系統定義的效能臨界值所產生的事件、表示某個儲存物件的效能計數器或效能計數器集已超過系統定義原則的臨界值。這表示儲存物件（例如Aggregate或節點）發生效能問題。
+
+您可以使用「事件詳細資料」頁面來分析效能事件、並視需要採取修正行動、將效能恢復正常。
+
+[NOTE]
+====
+系統定義的臨界值原則無法在Cloud Volumes ONTAP 功能不全的系統上啟用。ONTAP ONTAP Select
+
+====

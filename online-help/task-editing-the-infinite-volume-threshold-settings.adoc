@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-the-infinite-volume-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您需要解決Infinite Volume儲存空間中的任何問題時、可以根據組織的需求、編輯Infinite Volume容量的臨界值設定。當超過臨界值時、就會產生事件、如果您已設定此類事件的警示、就會收到通知。 
+---
+= 編輯「無限Volume」臨界值設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您需要解決Infinite Volume儲存空間中的任何問題時、可以根據組織的需求、編輯Infinite Volume容量的臨界值設定。當超過臨界值時、就會產生事件、如果您已設定此類事件的警示、就會收到通知。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下「*健全狀況*」>「* SVMS*」。
+. 在*健全狀況/儲存虛擬機器*目錄頁面中、選取具有無限Volume的SVM。
+. 在「*健全狀況/儲存虛擬機器*」詳細資料頁面中、按一下「*動作*」>「*編輯臨界值*」。
+. 在「*編輯具有無限Volume臨界值的SVM *」對話方塊中、視需要修改臨界值。
+. 按一下*儲存並關閉*。
+

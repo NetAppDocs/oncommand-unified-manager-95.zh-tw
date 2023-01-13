@@ -1,0 +1,42 @@
+---
+permalink: performance-checker/task-viewing-svm-iops-traffic-by-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「Performance（效能）/SVM Explorer（SVM檔案總管）」頁面來檢視SVM的詳細IOPS資訊。IOPS（IOPS）-總計數器圖表顯示SVM上的IOPS總使用量、而IOPS（IOPS）-明細計數器圖表則有助於判斷讀取、寫入及其他IOPS對SVM的影響。 
+---
+= 依傳輸協定檢視SVM IOPS流量
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Performance（效能）/SVM Explorer（SVM檔案總管）」頁面來檢視SVM的詳細IOPS資訊。IOPS（IOPS）-總計數器圖表顯示SVM上的IOPS總使用量、而IOPS（IOPS）-明細計數器圖表則有助於判斷讀取、寫入及其他IOPS對SVM的影響。
+
+
+
+== 關於這項工作
+
+此外、「IOPS -傳輸協定」圖表會詳細比較SVM上使用的每個傳輸協定的IOPS流量。提供下列通訊協定：
+
+* CIFS
+* NFS
+* FCP
+* iSCSI
+* NVMe
+
+
+
+
+== 步驟
+
+. 在所選SVM的「*效能/SVM檔案總管*」頁面中、從IOPS圖表中、從下拉式功能表中選取*傳輸協定*。
++
+隨即顯示IOPS -傳輸協定圖表。
+
+. 若要檢視較大版本的圖表、請選取*縮放檢視*。
++
+隨即顯示IOPS進階傳輸協定比較表。您可以取消選取或選取來限制比較 image:../media/eye-icon.gif[""] 與傳輸協定相關。
+
+. 若要檢視特定值、請將游標移至任一圖表的圖表區域、以查看快顯視窗。
+

@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-disabling-saml-authentication-from-the-maintenance-console-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 當無法存取Unified Manager GUI時、您可能需要從維護主控台停用SAML驗證。如果設定錯誤或無法存取IDP、可能會發生這種情況。 
+---
+= 從維護主控台停用SAML驗證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當無法存取Unified Manager GUI時、您可能需要從維護主控台停用SAML驗證。如果設定錯誤或無法存取IDP、可能會發生這種情況。
+
+
+
+== 開始之前
+
+您必須以維護使用者的身分存取維護主控台。
+
+
+
+== 關於這項工作
+
+停用SAML驗證時、已設定的目錄服務供應商（例如Active Directory或LDAP）會執行登入驗證。除了設定的遠端使用者之外、本機使用者和維護使用者也能存取圖形化使用者介面。
+
+您也可以從UI的「設定/驗證」頁面停用SAML驗證。
+
+[NOTE]
+====
+停用SAML驗證後、Unified Manager會自動重新啟動。
+
+====
+
+
+== 步驟
+
+. 登入維護主控台。
+. 在*主功能表*中、輸入*停用SAML驗證*選項的編號。
++
+畫面會顯示訊息、確認您要停用SAML驗證並重新啟動Unified Manager。
+
+. 鍵入* y*、然後按Enter鍵、Unified Manager即會重新啟動。
+
+
+
+
+== 結果
+
+下次遠端使用者嘗試存取Unified Manager圖形化介面時、他們會在Unified Manager登入頁面輸入其認證資料、而非IDP登入頁面。
+
+
+
+== 完成後
+
+如有需要、請存取IDP並刪除Unified Manager伺服器URL和中繼資料。

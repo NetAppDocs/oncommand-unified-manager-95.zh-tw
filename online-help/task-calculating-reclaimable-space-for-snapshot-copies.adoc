@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-calculating-reclaimable-space-for-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果刪除一或多個Snapshot複本、您可以計算可回收的磁碟空間量。 
+---
+= 計算Snapshot複本的可回收空間
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果刪除一或多個Snapshot複本、您可以計算可回收的磁碟空間量。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+Volume必須處於線上狀態。
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下*健全狀況*>*磁碟區*。
+. 在「*健全狀況/磁碟區*」目錄頁面中、選取包含您要檢視之Snapshot複本的磁碟區。
++
+此時會顯示Snapshot複本清單。
+
+. 在「*健全狀況/磁碟區*」詳細資料頁面中、按一下「*容量*」索引標籤。
+. 在「*容量*」標籤的「*詳細資料*」窗格中、於「其他詳細資料」區段中、按一下「* Snapshot copies *」旁邊的連結。
++
+Snapshot複本數量是顯示Snapshot複本清單的連結。
+
+. 在「* Snapshot Copies *」（* Snapshot複本*）檢視中、選取您要計算可回收空間的Snapshot複本。
+. 按一下「*計算*」。
++
+隨即顯示磁碟區上的可回收空間（以百分比、KB、MB、GB等為單位）。
+
+. 若要重新計算可回收空間、請選取所需的Snapshot複本、然後按一下*重新計算*。
+

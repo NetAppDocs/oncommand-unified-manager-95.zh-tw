@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 利用NetApp統一化管理程式、您可以建立及管理報告、以便檢視與儲存物件相關之儲存物件和事件的容量、使用率及效能等自訂資訊OnCommand 。 
+---
+= 管理報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用NetApp統一化管理程式、您可以建立及管理報告、以便檢視與儲存物件相關之儲存物件和事件的容量、使用率及效能等自訂資訊OnCommand 。
+
+[NOTE]
+====
+在未來的版本中、從左導覽窗格的「報告」選項中、排程和產生報告的實作將會過時。您可以使用下列其他方法、從Unified Manager擷取健全狀況和效能資料：
+
+* 直接從GUI中的網格頁擷取資料
+* 使用開放式資料庫存取所有可用的物件
+* 執行Unified Manager REST API、傳回您有興趣檢閱的資訊
+
+
+====

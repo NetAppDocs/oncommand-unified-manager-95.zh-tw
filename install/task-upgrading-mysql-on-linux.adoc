@@ -1,0 +1,50 @@
+---
+permalink: install/task-upgrading-mysql-on-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在安裝Unified Manager的Linux伺服器上升級至較新版本的MySQL、以取得安全性弱點的修正程式。 
+---
+= 升級Linux上的MySQL
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在安裝Unified Manager的Linux伺服器上升級至較新版本的MySQL、以取得安全性弱點的修正程式。
+
+
+
+== 開始之前
+
+您必須擁有安裝Unified Manager的Linux系統的root權限。
+
+
+
+== 關於這項工作
+
+您只能升級到MySQL 5.7的次要更新，例如5.7.1到5.7.2。您無法升級至MySQL的主要版本、例如5.8版。
+
+
+
+== 步驟
+
+. 以root使用者身分登入Unified Manager主機。
+. 下載最新的MySQL社群伺服器 `.rpm` 目標系統上的套裝組合。
+. 將套件解壓縮到目標系統上的目錄。
+. 您將獲得多個 `.rpm` 在解包之後、套件會放在目錄中、但Unified Manager只需要下列rpm套件：
++
+** MySQL-community用戶端-5.7.x
+** MySQL-community - lips-5.7.x
+** MySQL-community伺服器-5.7.x
+** MySQL-社群- common - 5.7.x
+** MySQL-community - lips-compat - 5.7.x刪除所有其他項目 `.rpm` 套件：在rpm套裝組合中安裝所有套件不會造成任何問題。
+
+
+. 依照下列順序停止Unified Manager服務及相關的MySQL軟體：
+. 使用下列命令叫用MySQL升級： `yum install *.rpm`
++
+`*.rpm` 請參閱 `.rpm` 下載較新版本MySQL的目錄中的套件。
+
+. 依照下列順序啟動Unified Manager：
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以設定警示、在發生特定嚴重性類型的特定事件或事件時自動傳送通知。您也可以將警示與觸發警示時執行的指令碼建立關聯。 
+---
+= 管理警示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定警示、在發生特定嚴重性類型的特定事件或事件時自動傳送通知。您也可以將警示與觸發警示時執行的指令碼建立關聯。

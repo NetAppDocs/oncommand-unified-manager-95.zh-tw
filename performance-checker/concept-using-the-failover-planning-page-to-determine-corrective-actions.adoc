@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-using-the-failover-planning-page-to-determine-corrective-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 根據「效能/節點容錯移轉規劃」頁面所顯示的資訊、您可以採取行動、確保容錯移轉不會導致HA配對的效能降至可接受的層級以下。 
+---
+= 使用「節點容錯移轉規劃」頁面來判斷修正動作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根據「效能/節點容錯移轉規劃」頁面所顯示的資訊、您可以採取行動、確保容錯移轉不會導致HA配對的效能降至可接受的層級以下。
+
+例如、若要降低容錯移轉的預估效能影響、您可以將某些磁碟區或LUN從HA配對中的節點移至叢集中的其他節點。這樣做可確保主節點在容錯移轉後仍能繼續提供可接受的效能。

@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-alerts-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 事件持續發生時、Unified Manager只會在事件符合指定的篩選條件時發出警示。您可以選擇要產生警示的事件、例如超出空間臨界值或物件離線時。您也可以將警示與觸發警示時執行的指令碼建立關聯。 
+---
+= 什麼是警示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件持續發生時、Unified Manager只會在事件符合指定的篩選條件時發出警示。您可以選擇要產生警示的事件、例如、當超出空間臨界值或物件離線時。您也可以將警示與觸發警示時執行的指令碼建立關聯。
+
+篩選條件包括物件類別、名稱或事件嚴重性。

@@ -1,0 +1,60 @@
+---
+permalink: online-help/concept-volume-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 本頁提供叢集中磁碟區的詳細效能資訊。本頁的標題取決於您是要檢視FlexVol 某個視覺功能區或FlexGroup 是一個視覺功能區。 
+---
+= 「效能/磁碟區」或「效能/ FlexGroup資源管理器」頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本頁提供叢集中磁碟區的詳細效能資訊。本頁的標題取決於您是要檢視FlexVol 某個視覺功能區或FlexGroup 是一個視覺功能區。
+
+Volume或FlexGroup VMware資源管理器頁面可讓您在特定時間段內追蹤及比較Volume效能、協助您疑難排解及微調Volume效能。
+
+[NOTE]
+====
+根磁碟區不會顯示在此頁面上。
+
+====
+使用檢視與比較功能：
+
+* 對於VMware Volume、您可以將此Volume的效能與以下項目進行比較FlexVol ：
++
+** 相同集合體上的其他磁碟區
+** 此磁碟區所在的Aggregate
+** 此磁碟區所在的SVM
+** 此磁碟區上的LUN
+
+
+* 若為FlexGroup 本產品的支援量、您可以將FlexGroup 本產品的效能與下列項目進行比較：
++
+** 駐留在其上的集合體FlexGroup
+** 駐留在其上的SVM FlexGroup
+** 這是FlexGroup 整個過程的組成部份
+
+
+
+
+圖表中的統計資料會在每個收集期間之後更新、預設為每5分鐘更新一次。選取元中的「檢視統計資料」提供選項、可顯示前一小時的平均統計資料。此功能可讓您檢視支援NetApp「效能保證」方案的延遲圖表。
+
+「效能/ Volume Explorer」或「效能/ FlexGroup Explorer」頁面可讓您：
+
+* 檢視臨界值相關問題及其詳細資料
+* 追蹤並比較Volume效能資料
+* 調查並疑難排解臨界值相關問題
+* 調查並疑難排解效能問題
+* 啟動System Manager以變更磁碟區的組態
++
+如果您以OnCommand 「管理員」或「儲存管理員」角色登入Unified Manager、以及使用ONTAP 「支援9.5」或更新版本、則可使用「*組態Volume *」按鈕。
+
+
+
+[NOTE]
+====
+對於資料保護（DP）磁碟區、只會顯示使用者產生流量的計數器值。當叢集安裝ONTAP 8.3之前版本的支援功能時、不會顯示計數器值。
+
+====

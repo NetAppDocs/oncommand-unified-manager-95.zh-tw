@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-what-report-importing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Unified Manager的「匯入報告」選項匯入報告、並以名稱和簡短說明儲存匯入的報告。匯入報告之後、除了Unified Manager提供的標準報告之外、您也可以將自訂報告新增至環境。 
+---
+= 什麼是報告匯入
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager的* Import Report*選項匯入報告、並以名稱和簡短說明儲存匯入的報告。匯入報告之後、除了Unified Manager提供的標準報告之外、您也可以將自訂報告新增至環境。
+
+您可以匯入 `.rptdesign` 已建立的檔案。您可以執行、共用、排程及刪除匯入的報告。
+
+Unified Manager會將匯入報告記錄檔儲存在jboss.log、ocum-report.log及ocumserver-debug.log檔案中。
+
+[NOTE]
+====
+客戶支援部門無法協助您設計報告、但他們會協助您解決報告匯入作業期間所面臨的問題。
+
+====
+匯入報告功能包括下列支援：
+
+* 具有多個標題的報告、其中欄位範圍設定為1 (`colspan=1`）
+* 僅含圖表的報告
+* 僅含清單和網格的報告
+* 報告中使用的密碼必須使用「'base64'」格式編碼。使用其他編碼（例如「'JCE'」格式）的報告、會在匯入程序期間造成錯誤。
+* 包含資料集合的報告應在報告的表格資料中包含彙總的欄元素。
+
+
+下列案例支援文字、CSV和Excel格式的報告：
+
+* 表元素僅在中 `.rptdesign` 檔案
+* 只有一個標題列的表格
+
+
+[NOTE]
+====
+您無法匯入欄位範圍超過1的報告。如果文字、CSV或Excel格式的報告有多個標題列、則只會考慮第一個標題列、而忽略其餘的標題列。
+
+====

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-annotations-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從「管理/附註」頁面檢視及管理所有附註。您也可以從「附註規則」索引標籤為儲存物件設定附註規則。 
+---
+= 註釋視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從「管理/附註」頁面檢視及管理所有附註。您也可以從「附註規則」索引標籤為儲存物件設定附註規則。

@@ -1,0 +1,57 @@
+---
+permalink: qsg-vapp.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, VMWare QSG, vApp QSG, quick installation 
+summary: VMware vSphere平台上的Unified Manager快速入門指南。 
+---
+= VMware安裝的快速入門指示
+:allow-uri-read: 
+
+
+
+
+== 系統需求
+
+* 作業系統：VMware ESXi 5.5、6.0和6.5
+* RAM：12 GB
+* CPU：總共9572 MHz
+* 可用磁碟空間：5 GB（精簡配置）、152 GB（完整配置）
+
+
+如需詳細的系統需求、請參閱 link:install/reference-vmware-software-and-installation-requirements.html["VMware軟體與安裝需求"] 和 link:http://mysupport.netapp.com/matrix["互通性對照表"]。
+
+
+
+== 安裝OnCommand NetApp Unified Manager
+
+
+
+=== 下載安裝程式
+
+. 下載 `OnCommandUnifiedManager-9.5RC1.ovas` 安裝套件：
+. 將檔案儲存至vSphere Client可存取的本機目錄或網路目錄。
+
+
+
+
+=== 安裝Unified Manager
+
+Unified Manager安裝套件中不包含VMware Tools。您必須掛載CD-ROM或ISO映像、才能在Unified Manager安裝程序中安裝。
+
+. 在vSphere Client中、按一下*檔案>部署OVF範本*。
+. 找到OVA檔案、然後使用精靈在ESXi伺服器上部署虛擬應用裝置。
+. 在「Network Configuration」（網路組態）頁面的「Properties」（內容）索引標籤中、填入您要執行的安裝類型所需的欄位：
++
+** 對於靜態組態、請在所有欄位中輸入必填資訊（不需要次要DNS）。
+** 若為使用IPv4的DHCP、請將所有欄位保留空白。
+** 對於使用IPv6的DHCP、請勾選「啟用自動IPv6位址」方塊、並將所有其他欄位保留空白。
+
+
+. 開啟VM電源。
+. 按一下「主控台」索引標籤以檢視初始開機程序。
+. 依照提示在VM上安裝VMware Tools。
+. 設定時區。
+. 輸入Unified Manager維護使用者名稱和密碼。
+
+
+安裝結束時、會顯示連線至Unified Manager Web UI的資訊。

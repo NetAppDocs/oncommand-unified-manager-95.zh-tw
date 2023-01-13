@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-summary-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 「效能叢集摘要」頁面提供叢集的作用中事件、IOPS效能和Mbps效能摘要。此頁面也包含叢集中儲存物件的總數。 
+---
+= 效能叢集摘要頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「效能叢集摘要」頁面提供叢集的作用中事件、IOPS效能和Mbps效能摘要。此頁面也包含叢集中儲存物件的總數。

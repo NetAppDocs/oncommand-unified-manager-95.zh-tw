@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-maximum-number-of-files-an-infinite-volume-can-store.html 
+sidebar: sidebar 
+keywords:  
+summary: 在大多數情況下、Infinite Volume最多可容納20億個檔案。如果Infinite Volume相對較小、則其最大檔案數可能少於20億。 
+---
+= 無限Volume可儲存的檔案數目上限
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在大多數情況下、Infinite Volume最多可容納20億個檔案。如果Infinite Volume相對較小、則其最大檔案數可能少於20億。
+
+Infinite Volume可容納的檔案數目上限、取決於其命名空間組成的大小。如果命名空間組成為10 TB、則Infinite Volume可容納20億個檔案。如果命名空間成分小於10 TB、則Infinite Volume可按比例容納較少的檔案。
+
+命名空間組成的大小大致與Infinite Volume的大小成比例、取決於多種因素、例如命名空間組成的最大大小為10 TB、集合中保留命名空間組成的可用空間、以及SnapDiff設定。
+
+對於雙節點無限Volume或未啟用SnapDiff的多節點無限Volume、將無限Volume設為80 TB或更大的大小通常會建立10 TB的命名空間。
+
+檔案數不僅包括一般檔案、也包括目錄和符號連結等其他檔案系統結構。

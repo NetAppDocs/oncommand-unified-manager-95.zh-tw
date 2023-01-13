@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-cluster-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「效能/叢集資源管理器」頁面提供Unified Manager所管理之所有叢集的詳細效能總覽。 
+---
+= 效能/叢集資源管理器頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「效能/叢集資源管理器」頁面提供Unified Manager所管理之所有叢集的詳細效能總覽。
+
+「效能/叢集資源管理器」頁面可讓您追蹤叢集效能、並在特定期間比較叢集內的物件、以協助疑難排解及微調叢集效能。
+
+使用「檢視與比較」功能、您可以比較叢集的效能：
+
+* 此叢集上的節點
+* 此叢集的儲存虛擬機器（SVM）
+* 此叢集上的集合體
+
+
+「效能/叢集資源管理器」頁面可讓您：
+
+* 檢視臨界值相關問題及其詳細資料
+* 追蹤叢集效能資料
+* 調查並疑難排解臨界值相關問題
+* 調查並疑難排解效能問題
+

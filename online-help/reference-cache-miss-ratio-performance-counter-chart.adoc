@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-cache-miss-ratio-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance Explorer快取遺失比率計數器圖表顯示從磁碟傳回而非從快取傳回之用戶端應用程式的讀取要求百分比。 
+---
+= 快取遺失比率效能計數器圖表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance Explorer快取遺失比率計數器圖表顯示從磁碟傳回而非從快取傳回之用戶端應用程式的讀取要求百分比。
+
+當游標位於圖表區時、所顯示的快顯視窗會顯示特定時間的特定計數器值。
+
+圖表頁面底部會顯示所選時間範圍的最小、最大、平均及95百分位快取遺漏比率資訊。
+
+
+
+== 快取遺失比率-總計計數器圖表
+
+顯示從磁碟傳回而非從快取傳回的用戶端應用程式讀取要求百分比。
+
+此圖表選項僅適用於選取的物件為Volume時。
+
+
+
+== *縮放檢視*按鈕
+
+顯示計數器圖表資料的放大檢視。
+
+* 活動
++
+在圖表上方的時間列中、會指出發生的重大、警告和資訊事件。
+
+* 計數器
++
+左窗格中的計數器會顯示要顯示的計數器值。取消選取或選取 image:../media/eye-icon.gif[""] 與計數器相關的計數器會隱藏、並顯示圖表中的計數器資訊、有助於比較物件。
+
+

@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「Protection / Storage Virtual Machine Associations」（保護/儲存虛擬機器關聯）頁面來檢視現有的SVM關聯及其內容、並判斷是否需要其他SVM關聯。 
+---
+= 檢視SVM關聯
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Protection / Storage Virtual Machine Associations」（保護/儲存虛擬機器關聯）頁面來檢視現有的SVM關聯及其內容、並判斷是否需要其他SVM關聯。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下* Protection（保護）*** SVM Association*。
++
+隨即顯示SVM關聯及其內容清單。
+
+

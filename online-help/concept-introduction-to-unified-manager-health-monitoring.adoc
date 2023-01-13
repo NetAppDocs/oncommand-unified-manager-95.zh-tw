@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-introduction-to-unified-manager-health-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager可協助您透過ONTAP 集中化的使用者介面、監控許多執行此軟體的系統。Unified Manager伺服器基礎架構可提供擴充性、支援能力、以及增強的監控與通知功能。 
+---
+= 介紹統一化管理程式健全狀況監控OnCommand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager可協助您透過ONTAP 集中化的使用者介面、監控許多執行此軟體的系統。Unified Manager伺服器基礎架構可提供擴充性、支援能力、以及增強的監控與通知功能。
+
+Unified Manager的主要功能包括監控、警示、管理叢集的可用度與容量、管理保護功能、監控效能、設定及管理Infinite Volumes、為儲存物件加上註釋、以及整合診斷資料、並將其傳送給技術支援部門。
+
+您可以使用Unified Manager來監控叢集。當叢集發生問題時、Unified Manager會透過事件通知您此類問題的詳細資料。有些事件也會提供您補救行動、您可以採取行動來修正問題。您可以設定事件警示、以便在發生問題時透過電子郵件和SNMP設陷通知您。
+
+您可以使用Unified Manager將環境中的儲存物件與附註建立關聯、藉此管理這些物件。您可以建立自訂註釋、並透過規則動態關聯叢集、儲存虛擬機器（SVM）和磁碟區與註釋。
+
+您也可以使用容量和健全狀況圖表中針對個別叢集物件提供的資訊、來規劃叢集物件的儲存需求。

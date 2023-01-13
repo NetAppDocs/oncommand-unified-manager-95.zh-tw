@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-quota-limits-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用者配額限制是指Unified Manager伺服器用來評估使用者的空間使用量是否接近上限、或已達到使用者配額所設定的上限的值。如果軟體限制已超過或硬限制已達、Unified Manager伺服器會產生使用者配額事件。 
+---
+= 配額限制為何
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用者配額限制是Unified Manager伺服器用來評估使用者的空間使用量是否接近限制、或已達到使用者配額所設定的限制的值。如果軟體限制已超過或硬限制已達、Unified Manager伺服器會產生使用者配額事件。
+
+根據預設、Unified Manager伺服器會傳送通知電子郵件給已超過配額軟體限制或已達到配額硬限制、以及已設定使用者配額事件的使用者。此功能可讓管理員設定警示、通知指定的收件者發生使用者或使用者群組配額事件OnCommand 。
+
+您可以使用OnCommand 「系統管理程式」或ONTAP 「系統資訊管理系統」CLI來指定配額限制。

@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-view-capacity-by-cluster-models.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「儲存摘要」報告、以分析叢集的儲存容量和使用率、並檢視總原始容量中包含的集合體。 
+---
+= 自訂「儲存摘要」報告以依叢集模式檢視容量
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「儲存摘要」報告、以分析叢集的儲存容量和使用率、並檢視總原始容量中包含的集合體。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要依叢集移除群組、請執行下列步驟：
++
+.. 按一下需要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 若要依機型名稱分組報告、請執行下列步驟：
++
+.. 按一下「*模型*」欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*新增群組*。
+
+
+. 若要將Aggregate新增至總原始容量、請執行下列步驟：
++
+.. 按一下「*總原始容量*」欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇* Aggregation*。
+.. 在*集合體*對話方塊中、清除*表格層級*核取方塊、然後選取*群組層級*核取方塊。
+.. 如有需要、請在「*輸入標籤*」欄位中輸入標籤名稱。
+
+
+. 按一下「*確定*」。
+. 若要將Aggregate新增至報告中的其他欄、請重複步驟3和4。
+

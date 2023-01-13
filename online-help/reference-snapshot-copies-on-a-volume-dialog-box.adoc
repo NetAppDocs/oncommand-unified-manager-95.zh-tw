@@ -1,0 +1,69 @@
+---
+permalink: online-help/reference-snapshot-copies-on-a-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「Volume上的Snapshot複本」對話方塊來檢視Snapshot複本清單。您可以刪除Snapshot複本以節省或釋出磁碟空間、或是不再需要複本。您也可以計算刪除一或多個Snapshot複本時可回收的磁碟空間量。 
+---
+= Volume（Volume）對話方塊上的Snapshot複本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Volume上的Snapshot複本」對話方塊來檢視Snapshot複本清單。您可以刪除Snapshot複本以節省或釋出磁碟空間、或是不再需要複本。您也可以計算刪除一或多個Snapshot複本時可回收的磁碟空間量。
+
+
+
+== 清單檢視
+
+清單檢視會以表格格式顯示有關磁碟區上Snapshot複本的資訊。您可以使用欄篩選來自訂顯示的資料。
+
+* * Snapshot複製*
++
+顯示Snapshot複本的名稱。
+
+* *已用空間%*
++
+以百分比顯示磁碟區中Snapshot複本所使用的總空間。
+
+* *總大小*
++
+顯示Snapshot複本的總大小。
+
+* *建立時間*
++
+顯示建立Snapshot複本的時間戳記。
+
+* *相依性*
++
+顯示依賴Snapshot複本的應用程式。可能的值包括SnapMirror、SnapVault SnapMirror、效能不均、SnapLock 效能不均、傾印、LUN、Vclone和Busy。
+
+
+
+
+
+== 命令按鈕
+
+命令按鈕可讓您執行下列工作：
+
+* *計算*
++
+可讓您刪除一或多個Snapshot複本、以計算可回收的空間。
+
+* *刪除所選項目*
++
+刪除一或多個Snapshot複本。
+
+* *關閉*
++
+關閉Volume上的Snapshot複本對話方塊。
+
+* *重新計算*
++
+可讓您刪除選取的Snapshot複本、以計算可回收的空間。
+
++
+當您在選擇Snapshot複本時進行任何變更時、會啟用*重新計算*按鈕。
+
+

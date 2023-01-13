@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-rbac-is.html 
+sidebar: sidebar 
+keywords:  
+summary: RBAC（角色型存取控制）可讓您控制哪些使用者可以存取OnCommand 「支援整合式管理員」伺服器中的各種功能與資源。 
+---
+= 什麼是RBAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RBAC（角色型存取控制）可讓您控制哪些人可以存取OnCommand Erole Unified Manager伺服器中的各種功能和資源。

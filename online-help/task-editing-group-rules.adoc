@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-editing-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以編輯群組規則、以修改條件群組及條件群組中的條件、以便在特定群組中新增或移除儲存物件。 
+---
+= 編輯群組規則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以編輯群組規則、以修改條件群組及條件群組中的條件、以便在特定群組中新增或移除儲存物件。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*管理*>*群組*。
+. 在*群組規則*索引標籤中、選取您要編輯的群組規則、然後按一下*編輯*。
+. 在*編輯群組規則*對話方塊中、視需要變更群組規則名稱、相關群組名稱、條件群組和條件。
++
+[NOTE]
+====
+您無法變更群組規則的目標物件類型。
+
+====
+. 按一下「 * 儲存 * 」。
+

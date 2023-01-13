@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-what-happens-when-an-event-is-received.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager收到事件時、會顯示在「儀表板/總覽」頁面、「效能/叢集」頁面的「摘要」和「檔案總管」索引標籤、「事件」詳細目錄頁面、以及物件專屬的詳細目錄頁（例如「健全狀況/磁碟區」詳細目錄頁面）中。 
+---
+= 收到事件時會發生什麼事
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager收到事件時、會顯示在「儀表板/總覽」頁面、「效能/叢集」頁面的「摘要」和「檔案總管」索引標籤、「事件」詳細目錄頁面、以及物件專屬的詳細目錄頁面（例如「健全狀況/磁碟區」詳細目錄頁面）。
+
+當Unified Manager偵測到同一個叢集元件有多個持續發生相同事件的情況時、它會將所有發生事件視為單一事件、而非個別事件。事件持續時間會遞增、表示事件仍在作用中。
+
+視您在「組態/警示」頁面中設定的方式而定、您可以通知其他使用者這些事件。警示會啟動下列動作：
+
+* 您可以傳送一封關於此事件的電子郵件給所有Unified Manager管理員使用者。
+* 事件可傳送給其他電子郵件收件者。
+* SNMP設陷可傳送至設陷接收器。
+* 您可以執行自訂指令碼來執行動作。
+
+
+此工作流程如下圖所示。
+
+image::../media/um-perf-threshold-event-flow.gif[UM Perf臨界值事件流程]

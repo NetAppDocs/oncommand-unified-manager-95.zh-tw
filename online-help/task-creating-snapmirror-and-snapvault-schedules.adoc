@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-creating-snapmirror-and-snapvault-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立基本或進階的SnapMirror和SnapVault SnapMirror排程、以便在來源或主要磁碟區上自動傳輸資料保護資料、讓傳輸頻率更高或更低、視磁碟區上的資料變更頻率而定。 
+---
+= 建立SnapMirror和SnapVault 不需再複製的排程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立基本或進階的SnapMirror和SnapVault SnapMirror排程、以便在來源或主要磁碟區上自動傳輸資料保護資料、讓傳輸頻率更高或更低、視磁碟區上的資料變更頻率而定。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須已完成「設定保護」對話方塊中的「目的地資訊」區域。
+* 您必須設定Workflow Automation才能執行此工作。
+
+
+
+
+== 步驟
+
+. 在「*組態保護*」對話方塊的「* SnapMirror *」索引標籤或「* SnapVault S還原*」索引標籤中、按一下「*關係設定*」區域中的「*建立排程*」連結。
++
+此時會顯示Create Schedule（建立排程）對話方塊。
+
+. 在*排程名稱*欄位中、輸入您要指定給排程的名稱。
+. 選取下列其中一項：
++
+** *基礎*
++
+如果您要建立基本的時間間隔樣式排程、請選取此選項。
+
+** *進階*
++
+如果您要建立cron樣式的排程、請選取此選項。
+
+
+
+. 按一下「 * 建立 * 」。
++
+新排程會顯示在SnapMirror排程或SnapVault 更新排程下拉式清單中。
+
+

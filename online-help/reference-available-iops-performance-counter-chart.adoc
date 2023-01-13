@@ -1,0 +1,47 @@
+---
+permalink: online-help/reference-available-iops-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance Explorer可用IOPS計數器圖表顯示所選儲存物件上目前可用的每秒輸入/輸出作業數（可用）。 
+---
+= 可用的IOPS效能對照表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance Explorer的「可用IOPS」計數器圖表會顯示所選儲存物件上目前可用（可用）的每秒輸入/輸出作業數。
+
+當游標位於圖表區時、所顯示的快顯視窗會顯示特定時間的特定計數器值。
+
+此圖表選項僅適用於選取的物件為節點或Aggregate時。
+
+圖表頁面底部會顯示所選時間範圍所使用的最小、最大、平均及95百分位效能容量資訊。
+
+
+
+== 可用IOPS -總計計數器圖表
+
+顯示所選儲存物件上目前可用（可用）的每秒輸入/輸出作業數。此數值是Unified Manager計算出物件可執行的IOPS總計減去目前使用的IOPS的結果。
+
+[NOTE]
+====
+只有在叢集中的節點安裝ONTAP 有支援更新版本的軟體時、才能使用可用的IOPS資料。
+
+====
+
+
+== *縮放檢視*按鈕
+
+顯示計數器圖表資料的放大檢視。
+
+* 活動
++
+在圖表上方的時間列中、會指出發生的重大、警告和資訊事件。
+
+* 計數器
++
+左窗格中的計數器會顯示要顯示的計數器值。取消選取或選取 image:../media/eye-icon.gif[""] 與計數器相關的計數器會隱藏、並顯示圖表中的計數器資訊、有助於比較物件。
+
+

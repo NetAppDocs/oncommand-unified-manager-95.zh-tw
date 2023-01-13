@@ -1,0 +1,58 @@
+---
+permalink: online-help/task-checking-the-health-of-clusters-in-a-metrocluster-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Unified Manager來檢查叢集及其元件的運作健全狀況MetroCluster 、並採用一套功能性設定。如果叢集涉及Unified Manager偵測到的效能事件、健全狀況狀態可協助您判斷是否有硬體或軟體問題導致事件發生。 
+---
+= 檢查MetroCluster 叢集的健全狀況、以進行整體配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager來檢查叢集及其元件的運作健全狀況MetroCluster 、並採用一套功能性設定。如果叢集涉及Unified Manager偵測到的效能事件、健全狀況狀態可協助您判斷是否有硬體或軟體問題導致事件發生。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+* 您必須分析MetroCluster 一項效能事件以進行不完整的組態設定、並取得相關叢集的名稱。
+* 在不支援的組態中、兩個叢集MetroCluster 都必須由Unified Manager的同一個執行個體監控。
+
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下*事件*以顯示事件清單。
+. 在篩選面板中、選取MetroCluster 「*來源類型*」類別下的所有「資訊篩選器」。
+. 在某個事件旁、按一下叢集的名稱。MetroCluster
++
+「健全狀況/叢集」詳細目錄頁面隨即顯示、其中包含事件的詳細資訊。
+
++
+[NOTE]
+====
+如果未MetroCluster 顯示任何動態、您可以使用搜尋列來搜尋效能事件所涉及的叢集名稱。
+
+====
+. 選取* MetroCluster 《鏈接能力*》索引標籤、以顯示所選叢集與其合作夥伴叢集之間連線的健全狀況。
++
+image::../media/opm-um-mcc-connectivity-tab-png.gif[Unified Manager MetroCluster 的「連線能力」標籤]
+
++
+在此範例中、會顯示本機叢集及其合作夥伴叢集的名稱和元件。黃色或紅色圖示表示反白顯示元件的健全狀況事件。連線功能圖示代表叢集之間的連結。您可以將滑鼠游標指向圖示以顯示事件資訊、或按一下圖示以顯示事件。任一叢集上的健全狀況問題、可能已導致效能事件。
+
++
+Unified Manager會監控叢集之間連結的NVRAM元件。如果本機或合作夥伴叢集上的FC交換器圖示或連線圖示為紅色、則可能是因為連結健全狀況問題而導致效能事件。
+
+. 選擇* MetroCluster 《Replication》（*《複製》）*標籤。
++
+image::../media/opm-um-mcc-replication-tab-png.gif[Unified Manager MetroCluster 的「複製」索引標籤]
+
++
+在此範例中、如果本機或合作夥伴叢集上的NVRAM圖示為黃色或紅色、則NVRAM的健全狀況問題可能會導致效能事件。如果頁面上沒有紅色或黃色圖示、表示合作夥伴叢集上的效能問題可能導致效能事件。
+
+

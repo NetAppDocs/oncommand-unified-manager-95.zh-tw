@@ -1,0 +1,79 @@
+---
+permalink: install/task-configuring-unified-manager-server-using-configuration-scripts-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: 在兩個叢集節點上安裝Unified Manager之後、您可以使用組態指令碼來設定Unified Manager with Failover Cluster Manager。 
+---
+= 使用組態指令碼設定Unified Manager伺服器搭配使用MSCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在兩個叢集節點上安裝Unified Manager之後、您可以使用組態指令碼來設定Unified Manager with Failover Cluster Manager。
+
+
+
+== 開始之前
+
+您必須建立一個大小足以容納來源Unified Manager資料的共享LUN。
+
+
+
+== 步驟
+
+. 登入叢集的第一個節點。
+. 使用容錯移轉叢集管理員在Windows 2012或Windows 2016中建立角色：
++
+.. 啟動容錯移轉叢集管理程式。
+.. 按一下*角色*>*建立空白角色*、即可建立空白角色。
+.. 在「*角色*>*新增資源*>*更多資源*>* IP位址*」上按一下滑鼠右鍵、將全域IP位址新增至角色。
++
+[NOTE]
+====
+兩個節點都必須能夠ping通此IP位址、因為在設定高可用度後、Unified Manager會使用此IP位址啟動。
+
+====
+.. 在「*角色*>*新增儲存設備*」上按一下滑鼠右鍵、即可將資料磁碟新增至角色。
+
+
+. 執行 `ha_setup.pl` 第一個節點上的指令碼： `perl ha_setup.pl --first -t mscs -g group_name -i ip address -n fully_qualified_domain_cluster_name -f shared_location_path -k data_disk -u user_name -p password`
++
+`C:\Program Files\NetApp\ocum\bin>perl .\ha_setup.pl --first -t mscs -g umgroup -i "IP Address" -n spr38457002.eng.company.com -k "Cluster Disk 2" -f E:\ -u admin -p wx17yz`
+
++
+指令碼可從取得 `Install_Dir\NetApp\ocum\bin`。
+
++
+** 您可以取得的值 `-g`、 `-k`和 `-i` 使用的選項 `cluster res` 命令。
+** 。 `-n` 選項必須是可從兩個節點ping通之全域IP位址的FQDN。
+
+
+. 使用容錯移轉叢集管理程式Web主控台、確認Unified Manager伺服器服務、資料磁碟和叢集IP位址已新增至叢集群組。
+. 使用停止所有Unified Manager伺服器服務（MySQL、ocie和ocieau） `services.msc` 命令。
+. 在容錯移轉叢集管理員中、將服務群組切換至第二個節點。
+. 執行命令 `perl ha_setup.pl --join -t mscs -f``shared_location_path` 在叢集的第二個節點上、將Unified Manager伺服器資料指向LUN。
++
+`perl ha_setup.pl --join -t mscs -f E:\`
+
+. 使用容錯移轉叢集管理程式將所有Unified Manager服務上線。
+. 手動切換至Microsoft叢集伺服器的其他節點。
+. 確認Unified Manager伺服器服務已在叢集的其他節點上正常啟動。
+. 執行組態指令碼以取得全域IP位址之後、重新產生Unified Manager憑證。
++
+.. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*設定*功能表中的* HTTPS憑證*。
+.. 按一下*重新產生HTTPS憑證*。
+
+
++
+重新產生的憑證會提供叢集IP位址、而非完整網域名稱（FQDN）。您必須使用全域IP位址來設定Unified Manager以實現高可用度。
+
+. 使用下列項目存取Unified Manager UI： `https://<FQDN of Global IP>`
+
+
+
+
+== 完成後
+
+設定高可用度後、您必須建立共用的備份位置。在容錯移轉之前和之後、需要共用位置來包含備份。高可用度設定中的兩個節點都必須能夠存取共用位置。

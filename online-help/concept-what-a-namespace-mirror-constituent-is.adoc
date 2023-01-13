@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-a-namespace-mirror-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 命名空間鏡射組成是Infinite Volume中命名空間組成的難以處理的資料保護鏡射複本。命名空間鏡射組成部份執行兩個角色：它提供命名空間組成的資料保護、並支援SnapDiff以遞增方式備份Infinite Volume。 
+---
+= 什麼是命名空間鏡射的組成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+命名空間鏡射組成是Infinite Volume中命名空間組成的難以處理的資料保護鏡射複本。命名空間鏡射組成部份執行兩個角色：它提供命名空間組成的資料保護、並支援SnapDiff以遞增方式備份Infinite Volume。

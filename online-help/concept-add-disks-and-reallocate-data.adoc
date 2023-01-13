@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-add-disks-and-reallocate-data.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將磁碟新增至Aggregate、以增加儲存容量和該Aggregate的效能。新增磁碟之後、只有在新增的磁碟上重新分配資料之後、讀取效能才會有所改善。 
+---
+= 新增磁碟並重新分配資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將磁碟新增至Aggregate、以增加儲存容量和該Aggregate的效能。新增磁碟之後、只有在新增的磁碟上重新分配資料之後、讀取效能才會有所改善。
+
+當Unified Manager收到由動態臨界值或系統定義的效能臨界值所觸發的Aggregate事件時、您可以使用下列指示：
+
+* 當您收到動態臨界值事件時、在「事件詳細資料」頁面上、代表爭用中集合體的叢集元件圖示會反白顯示為紅色。
++
+圖示下方的括弧中是集合體的名稱、可識別可新增磁碟的集合體。
+
+* 當您收到系統定義的臨界值事件時、事件說明文字會在「事件詳細資料」頁面上、列出發生問題的彙總名稱。
++
+您可以新增磁碟並重新分配此Aggregate上的資料。
+
+
+
+您新增至集合體的磁碟必須已存在於叢集中。如果叢集沒有可用的額外磁碟、您可能需要聯絡管理員或購買更多磁碟。您可以使用OnCommand 「效益分析系統管理程式」或ONTAP 「效益分析」命令、將磁碟新增至集合體。
+
+[NOTE]
+====
+您應該只在使用HDD和Flash Pool Aggregate時重新分配資料。請勿重新分配SSD或FabricPool 資訊聚合上的資料。
+
+====

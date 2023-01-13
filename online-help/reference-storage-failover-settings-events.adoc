@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-storage-failover-settings-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 儲存容錯移轉（SFO）設定事件可提供您有關儲存容錯移轉是否已停用的資訊、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 儲存容錯移轉設定事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儲存容錯移轉（SFO）設定事件可讓您瞭解儲存容錯移轉是否已停用、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+儲存容錯移轉互連一或多個連結中斷（ocumEvtSfoInterconnectOneOrMoreLinksDown）
+ a| 
+風險
+ a| 
+節點
+ a| 
+警告
+
+
+
+ a| 
+停用儲存容錯移轉（ocumEvtSfoSettings已停用）
+ a| 
+風險
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+未設定儲存容錯移轉（ocumEvtSfoSettings NotConfiged）
+ a| 
+風險
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+儲存容錯移轉狀態-接管（ocumEvtSfoStateTakeover）
+ a| 
+風險
+ a| 
+節點
+ a| 
+警告
+
+
+
+ a| 
+儲存設備容錯移轉狀態-部分還原（ocumEvtSfoStatePartialGiveback）
+ a| 
+風險
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+儲存容錯移轉節點狀態為「當機」（ocumEvtSfoNodeStatusDown）
+ a| 
+風險
+ a| 
+節點
+ a| 
+錯誤
+
+
+
+ a| 
+無法進行儲存容錯移轉接管（ocumEvtSfoTakeoverNotPossible）
+ a| 
+風險
+ a| 
+節點
+ a| 
+錯誤
+
+|===

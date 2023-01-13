@@ -1,0 +1,157 @@
+---
+permalink: online-help/reference-volume-data-protection-configuration-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Volume Data Protection Configuration（Volume資料保護組態）報告可讓您檢視節點或叢集中使用的未受保護磁碟區和儲存虛擬機器（SVMs）。此資訊可讓您瞭解系統的資料保護風險、並可檢視系統中受保護磁碟區和未受保護磁碟區的詳細資料。 
+---
+= Volume Data Protection組態報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume Data Protection Configuration（Volume資料保護組態）報告可讓您檢視節點或叢集所使用的未受保護磁碟區和儲存虛擬機器（SVM）。此資訊可讓您瞭解系統的資料保護風險、並可檢視系統中受保護磁碟區和未受保護磁碟區的詳細資料。
+
+Volume Data Protection Configuration報告會以兩種格式顯示：
+
+* 受保護和未受保護的Volume圓形圖
+* 未受保護的Volume Data表格檢視
+
+
+
+
+== 受保護和未受保護的Volume圓形圖
+
+顯示系統中受保護磁碟區和未受保護磁碟區的相對百分比。
+
+
+
+== 未受保護的Volume Data表格檢視
+
+* *叢集*
++
+顯示叢集名稱。
+
+* *儲存虛擬機器*
++
+顯示包含磁碟區的儲存虛擬機器（SVM）名稱。
+
+* * Volume *
++
+顯示磁碟區名稱。
+
+* *總資料容量（GB）*
++
+以GB為單位顯示總資料容量（已使用及可用）。
+
+* *已用資料容量（GB）*
++
+顯示已使用的資料容量（單位：GB）。
+
+* *已用資料%*
++
+以百分比顯示已使用的資料容量。
+
+* *可用資料容量（GB）*
++
+顯示可用的資料容量（單位：GB）。
+
+* *可用資料%*
++
+以百分比顯示可用的資料容量。
+
+* * Snapshot保留已用容量（GB）*
++
+顯示Snapshot複本從Snapshot保留區使用的空間量（單位：GB）。
+
+* * Snapshot保留已使用%*
++
+以百分比顯示Snapshot保留區的Snapshot複本所使用的空間量。
+
+* * Snapshot保留可用容量（GB）*
++
+顯示可用於Snapshot複本的空間量（單位：GB）。
+
+* * Snapshot保留可用%*
++
+以百分比顯示Snapshot複本可用的空間量。
+
+* * Snapshot保留總容量（GB）*
++
+顯示集合體的快照保留總容量（單位：GB）。
+
+* *天滿*
++
+顯示總計達到完整容量之前的預估剩餘天數。
+
+* *空間完整臨界值%*
++
+顯示集合體已滿的百分比。
+
+* *空間接近完整臨界值%*
++
+顯示集合體幾乎已滿的百分比。
+
+* *每日成長率%*
++
+顯示每24小時在磁碟區內發生的成長率。
+
+* * inode總數*
++
+顯示Volume中的inode總數。
+
+* * inode使用率*
++
+指定磁碟區中使用的inode空間。
+
+* *配額已認可容量*
++
+顯示保留在磁碟區中的空間。
+
+* *配額過度使用容量（GB）*
++
+顯示系統產生「Volume Quota Over提交 事件」之前可以使用的空間量（單位為GB）。
+
+* * Snapshot自動刪除*
++
+顯示是否啟用或停用自動刪除Snapshot複本。
+
+* *重複資料刪除*
++
+顯示磁碟區是否啟用或停用重複資料刪除。
+
+* *重複資料刪除空間節約效益（GB）*
++
+顯示使用重複資料刪除技術儲存在磁碟區中的空間量（單位：GB）。
+
+* *壓縮*
++
+顯示磁碟區是否已啟用或停用壓縮。
+
+* *壓縮空間節約量（GB）*
++
+顯示使用壓縮（單位為GB）在磁碟區中儲存的空間量。
+
+* *精簡配置*
++
+顯示是否為選取的Volume設定空間保證。有效值為「是」和「否」
+
+* *自動擴充*
++
+顯示FlexVol 當空間不足時、是否會自動增加大小。
+
+* *空間保證*
++
+當Volume從Aggregate移除可用區塊時、會顯示FlexVol 「聲音區」設定控制項。
+
+* *州*
++
+顯示正在匯出的Volume狀態。
+
+* *《類型*》SnapLock
++
+指出該Volume是SnapLock 一個不含SnapLock的磁碟區、還是一個非SnapLock磁碟區。
+
+* *到期日*
+

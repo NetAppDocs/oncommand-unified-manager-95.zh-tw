@@ -1,0 +1,33 @@
+---
+permalink: online-help/reference-fans-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 「風扇」事件可提供資料中心節點上狀態風扇的相關資訊、讓您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 粉絲活動
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「風扇」事件可提供資料中心節點上狀態風扇的相關資訊、讓您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+一或多個故障風扇（ocumEvtFansOneOrMore故障）
+ a| 
+事件
+ a| 
+節點
+ a| 
+關鍵
+
+|===

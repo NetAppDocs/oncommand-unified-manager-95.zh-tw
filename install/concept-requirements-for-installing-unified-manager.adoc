@@ -1,0 +1,18 @@
+---
+permalink: install/concept-requirements-for-installing-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 在安裝Unified Manager之前、您必須先確定要安裝Unified Manager的伺服器符合特定的軟體、硬體、CPU和記憶體需求。 
+---
+= 安裝Unified Manager的需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安裝Unified Manager之前、您必須先確定要安裝Unified Manager的伺服器符合特定的軟體、硬體、CPU和記憶體需求。
+
+*相關資訊*
+
+http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"]

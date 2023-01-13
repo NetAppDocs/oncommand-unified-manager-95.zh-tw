@@ -1,0 +1,26 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以顯示叢集中所有連接埠的相關資訊。您可以檢視網路連接埠角色（叢集、資料或節點管理）、連結狀態、最大傳輸單元（MTU）、速度設定和作業狀態、以及連接埠的介面群組等資訊（如果適用）。 
+---
+= 使用OnCommand 《支援系統管理程式》找出忙碌LIF的最佳節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以顯示叢集中所有連接埠的相關資訊。您可以檢視網路連接埠角色（叢集、資料或節點管理）、連結狀態、最大傳輸單元（MTU）、速度設定和作業狀態、以及連接埠的介面群組（如果適用）等資訊。
+
+
+
+== 步驟
+
+. 開放OnCommand 式系統管理程式。
+. 在* Home-*（主頁*）選項卡中，雙擊儲存系統。
+. 在導覽窗格中、展開*節點*階層架構。
+. 若要尋找節點上的作用中連線、請在導覽窗格中選取節點的圖示。
+. 按一下節點的名稱連結、然後按一下「*組態*>*連接埠/介面卡*」。
+. 記下各節點的最高用戶端數。
+

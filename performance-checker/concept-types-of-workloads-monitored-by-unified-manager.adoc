@@ -1,0 +1,54 @@
+---
+permalink: performance-checker/concept-types-of-workloads-monitored-by-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Unified Manager監控兩種工作負載的效能：使用者定義和系統定義。 
+---
+= 由Unified Manager監控的工作負載類型
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager監控兩種工作負載的效能：使用者定義和系統定義。
+
+* *使用者定義的工作負載_*
++
+從應用程式到叢集的I/O處理量。這些程序涉及讀寫要求。使用者定義的工作負載是指使用者定義的某個需求量或一個需求量FlexGroup FlexVol 。
+
++
+[NOTE]
+====
+Unified Manager只會監控叢集上的工作負載活動。它不會監控應用程式、用戶端或應用程式與叢集之間的路徑。
+
+====
++
+如果某個工作負載符合下列一項或多項條件、Unified Manager將無法監控：
+
++
+** 它是唯讀模式的資料保護（DP）複本。（請注意、使用ONTAP 完更新版本的時、系統會監控DP磁碟區、以查看使用者產生的流量。）
+** 它是無限Volume。
+** 它是離線資料複製。
+** 這是MetroCluster 一個鏡射Volume、採用的是一個鏡射Volume。
+
+
+* *系統定義的工作負載_*
++
+與儲存效率、資料複寫及系統健全狀況有關的內部程序、包括：
+
++
+** 儲存效率、例如重複資料刪除
+** 磁碟健全狀況、包括RAID重建、磁碟清理等
+** 資料複寫、例如SnapMirror複本
+** 管理活動
+** 檔案系統健全狀況、包括各種WAFL 不同的活動
+** 檔案系統掃描程式、例如WAFL ：Sc資訊 掃描
+** 複本卸載、例如從VMware主機卸載儲存效率作業
+** 系統健全狀況、例如Volume移動、資料壓縮等
+** 未監控的磁碟區
+
+
+
+
+系統定義工作負載的效能資料僅會在這些工作負載所使用的叢集元件發生爭用時、才會顯示在GUI中。例如、您無法搜尋系統定義工作負載的名稱、以在GUI中檢視其效能資料。如果顯示多個相同類型的系統定義工作負載、則會在工作負載名稱後附加字母。此信僅供支援人員使用。

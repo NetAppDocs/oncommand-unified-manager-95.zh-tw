@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-managing-backup-and-restore-operations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立Unified Manager備份、並使用還原功能、在系統故障或資料遺失時、將備份還原至相同的（本機）系統或新的（遠端）系統。 
+---
+= 設定備份與還原作業
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立Unified Manager備份、並在系統故障或資料遺失時、使用還原功能將備份還原至相同（本機）系統或新（遠端）系統。

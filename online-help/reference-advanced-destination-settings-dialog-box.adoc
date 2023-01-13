@@ -1,0 +1,32 @@
+---
+permalink: online-help/reference-advanced-destination-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「進階目的地設定」對話方塊、在目的地Volume上啟用空間保證設定。您可以在來源上停用空間保證時、選取進階設定、但要在目的地上啟用。SnapMirror關係中的重複資料刪除、壓縮及自動擴充設定會從來源Volume繼承、無法變更。 
+---
+= 進階目的地設定對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「進階目的地設定」對話方塊、在目的地Volume上啟用空間保證設定。您可以在來源上停用空間保證時、選取進階設定、但要在目的地上啟用。SnapMirror關係中的重複資料刪除、壓縮及自動擴充設定會從來源Volume繼承、無法變更。
+
+
+
+== 空間保證
+
+確保在目的地磁碟區上配置足夠的空間、以確保資料傳輸永遠成功。空間保證設定可以是下列其中一項：
+
+* 檔案
++
+不提供檔案空間保證ONTAP 功能。
+
+* Volume
+* 無
+
+
+例如、您可能有一個200 GB的磁碟區、其中包含總計50 GB的檔案、但是這些檔案只能保留10 GB的資料。Volume保證會將200 GB分配給目的地Volume、無論來源上的內容為何。檔案保證會配置50 GB的空間、以確保目的地上的來源檔案保留足夠的空間；在此案例中選取*無*、表示目的地上只會配置10 GB空間給來源上的檔案資料實際使用空間。
+
+空間保證預設設為Volume。

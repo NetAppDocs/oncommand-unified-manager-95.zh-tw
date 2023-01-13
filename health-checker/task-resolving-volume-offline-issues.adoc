@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-resolving-volume-offline-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 此工作流程提供一個範例、說明您可以如何評估及解決Unified Manager可能在「儀表板/概觀」頁面的「可用度」區域中顯示的Volume離線事件。在此案例中、您是使用Unified Manager的管理員、可以疑難排解顯示在「儀表板/總覽」頁面上的一或多個Volume離線事件。 
+---
+= 解決Volume離線問題
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流程提供一個範例、說明您可以如何評估及解決Unified Manager可能在「儀表板/概觀」頁面的「可用度」區域中顯示的Volume離線事件。在此案例中、您是使用Unified Manager的管理員、可以疑難排解顯示在「儀表板/總覽」頁面上的一或多個Volume離線事件。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+磁碟區可能會離線報告、原因有幾個：
+
+* SVM管理員刻意將磁碟區離線。
+* 磁碟區的託管叢集節點當機、儲存設備容錯移轉至HA配對合作夥伴也失敗。
+* 由於裝載該SVM根Volume的節點已關閉、因此磁碟區的託管儲存虛擬機器（SVM）會停止。
+* 由於兩個RAID磁碟同時發生故障、因此磁碟區的託管Aggregate會關閉。
+
+
+您可以使用「儀表板/總覽」頁面和「健全狀況/叢集」、「健全狀況/ SVM」和「健全狀況/ Volume」詳細資料頁面、確認或消除其中一種或多種可能性。
+
+
+
+== 步驟
+
+. 在「*未解決的事件與風險*」區段的「*可用度*」面板中、按一下「Volume離線」事件所顯示的超文字連結。
++
+此時會顯示可用度事件的「事件詳細資料」頁面。
+
+. 在該頁面上、查看附註、以瞭解SVM管理員已將相關磁碟區離線的任何指示。
+. 在*事件*詳細資料頁面上、您可以檢閱下列一項或多項工作的資訊：
++
+** 請檢閱「原因」欄位中顯示的資訊、以取得可能的診斷指導。
++
+在此範例中、「原因」欄位中的資訊只會通知您磁碟區已離線。
+
+** 請查看「附註與更新」區域、以瞭解SVM管理員刻意將有問題的磁碟區離線的任何指示。
+** 按一下事件來源（在此案例中為離線報告的磁碟區）、即可取得該磁碟區的詳細資訊。 xref:task-performing-diagnotstic-actions-for-volume-offline-conditions.adoc[針對Volume離線狀況執行修正行動]
+** 將事件指派給系統管理員。 xref:task-assigning-events-to-specific-users.adoc[指派事件]
+** 確認事件、或在適當情況下將其標示為已解決。 xref:task-acknowledging-and-resolving-events.adoc[確認並解決事件]
+
+
+

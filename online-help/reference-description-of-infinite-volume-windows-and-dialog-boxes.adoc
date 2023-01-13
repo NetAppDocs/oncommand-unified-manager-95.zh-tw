@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-infinite-volume-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從各自的健全狀況/儲存虛擬機器詳細資料頁面、監控具有無限Volume的SVM。您可以從「建立規則」對話方塊來管理規則和資料原則。您也可以從「編輯儲存類別臨界值」對話方塊中修改儲存類別臨界值。 
+---
+= 無限Volume視窗與對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從各自的健全狀況/儲存虛擬機器詳細資料頁面、監控具有無限Volume的SVM。您可以從「建立規則」對話方塊來管理規則和資料原則。您也可以從「編輯儲存類別臨界值」對話方塊中修改儲存類別臨界值。

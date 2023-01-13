@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-analyzing-events-from-dynamic-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 從動態臨界值所產生的事件表示、與預期的回應時間範圍相比、工作負載的實際回應時間（延遲）太高或太低。您可以使用「事件詳細資料」頁面來分析效能事件、並視需要採取修正行動、將效能恢復正常。 
+---
+= 從動態效能臨界值分析事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+從動態臨界值所產生的事件表示、與預期的回應時間範圍相比、工作負載的實際回應時間（延遲）太高或太低。您可以使用「事件詳細資料」頁面來分析效能事件、並視需要採取修正行動、將效能恢復正常。
+
+[NOTE]
+====
+動態效能臨界值無法在Cloud Volumes ONTAP VMware、ONTAP 不支援VMware或ONTAP Select VMware系統上啟用。
+
+====

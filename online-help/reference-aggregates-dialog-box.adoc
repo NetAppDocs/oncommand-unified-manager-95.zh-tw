@@ -1,0 +1,160 @@
+---
+permalink: online-help/reference-aggregates-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「Aggregate」對話方塊來選取要新增至資源池的集合體。 
+---
+= Aggregate對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Aggregate」對話方塊來選取要新增至資源池的集合體。
+
+
+
+== 命令按鈕
+
+命令按鈕可讓您執行下列工作：
+
+* *新增*
++
+將選取的集合體新增至資源池。選取至少一個Aggregate之後、才會啟用「新增」按鈕。
+
+* *取消*
++
+捨棄變更、然後關閉Aggregate對話方塊。
+
+
+
+
+
+== Aggregate清單
+
+Aggregate清單會（以表格格式）顯示受監控之Aggregate的名稱和內容。
+
+* *狀態*
++
+顯示Volume的目前狀態。狀態可以是「Critical」（重大）（image:../media/sev-critical-um60.png[""]）、錯誤（image:../media/sev-error-um60.png[""]）、警告（image:../media/sev-warning-um60.png[""]）或正常（image:../media/sev-normal-um60.png[""]）。
+
++
+您可以將指標移到狀態上、以檢視更多有關為磁碟區產生之事件的資訊。
+
+* * Aggregate Name*
++
+顯示Aggregate的名稱。
+
+* *州*
++
+顯示Aggregate的目前狀態、可以是下列其中一項：
+
++
+** 離線
++
+不允許讀取或寫入存取。
+
+** 受限
++
+允許有限的作業（例如同位元檢查重建）、但不允許存取資料。
+
+** 線上
++
+允許對託管在此集合體上的磁碟區進行讀寫存取。
+
+** 建立
++
+正在建立Aggregate。
+
+** 摧毀
++
+Aggregate正在銷毀。
+
+** 失敗
++
+無法將Aggregate上線。
+
+** 凍結
++
+Aggregate（暫時）無法處理要求。
+
+** 不一致
++
+Aggregate已標記為毀損、您應聯絡技術支援部門。
+
+** 鐵受限
++
+無法在Aggregate上執行診斷工具。
+
+** 安裝
++
+Aggregate正在掛載。
+
+** 部分
++
+已為該集合體找到至少一個磁碟、但缺少兩個以上的磁碟。
+
+** 靜止
++
+Aggregate正在靜止。
+
+** 靜止不動
++
+Aggregate會靜止。
+
+** 已還原
++
+集合體還原完成。
+
+** 卸載
++
+Aggregate已離線。
+
+** 卸載
++
+Aggregate正在離線。
+
+** 不明
++
+雖然會探索Aggregate、但Unified Manager伺服器尚未擷取Aggregate資訊。
+
+
+
+* *叢集*
++
+顯示集合體所在叢集的名稱。
+
+* *節點*
++
+顯示包含Aggregate的儲存控制器名稱。
+
+* *總容量*
++
+顯示集合體的總資料大小（以MB、GB等為單位）。依預設、此欄為隱藏欄。
+
+* *承諾容量*
++
+顯示集合體中所有磁碟區所認可的總空間（以MB、GB等為單位）。依預設、此欄為隱藏欄。
+
+* *已用容量*
++
+顯示用於集合體的空間量（以MB、GB等為單位）。
+
+* *可用容量*
++
+顯示可用於集合體中資料的空間量（以MB、GB等為單位）。依預設、此欄為隱藏欄。
+
+* *可用的%*
++
+顯示集合體中資料可用空間的百分比。依預設、此欄為隱藏欄。
+
+* *已用%*
++
+顯示集合體中資料使用的空間百分比。
+
+* * RAID類型*
++
+顯示所選磁碟區的RAID類型。RAID類型可以是RAID0、RAID4、RAID-DP、RAID-TEC 支援或混合式RAID。
+
+

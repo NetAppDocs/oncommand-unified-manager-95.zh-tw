@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-what-the-maintenance-user-does.html 
+sidebar: sidebar 
+keywords:  
+summary: 維護使用者是在Red Hat Enterprise Linux或CentOS系統上安裝Unified Manager時建立。維護使用者名稱為「umadmin」使用者。維護使用者OnCommand 在網路UI中扮演「管理員角色」、使用者可以建立後續的使用者並指派角色。 
+---
+= 維護使用者的功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+維護使用者是在Red Hat Enterprise Linux或CentOS系統上安裝Unified Manager時建立。維護使用者名稱為「umadmin」使用者。維護使用者OnCommand 在網路UI中扮演「管理員角色」、使用者可以建立後續的使用者並指派角色。
+
+維護使用者或umadmin使用者也可以存取Unified Manager維護主控台。

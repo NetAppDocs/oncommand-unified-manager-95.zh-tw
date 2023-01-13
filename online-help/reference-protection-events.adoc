@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-protection-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 保護事件會告訴您工作是否失敗或已中止、以便您監控問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 保護事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+保護事件會告訴您工作是否失敗或已中止、以便您監控問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：保護
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+保護工作失敗（ocumEvtprotectionJobTaskFailed）
+ a| 
+事件
+ a| 
+Volume或儲存服務
+ a| 
+關鍵
+
+
+
+ a| 
+保護工作已中止（ocumEvtprotectionJobAborted）
+ a| 
+風險
+ a| 
+Volume或儲存服務
+ a| 
+警告
+
+|===

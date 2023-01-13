@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-viewing-unassigned-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視未指派的事件、然後將每個事件指派給可以解決這些事件的使用者。 
+---
+= 檢視未指派的事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視未指派的事件、然後將每個事件指派給可以解決這些事件的使用者。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下*事件*。
++
+依預設、「事件」目錄頁會顯示「新增」和「已確認」事件。
+
+. 從「*篩選器*」窗格中、選取「*指派對象*」區域中的「*未指派*篩選器」選項。
+

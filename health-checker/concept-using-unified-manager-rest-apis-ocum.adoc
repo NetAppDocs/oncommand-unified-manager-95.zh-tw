@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-using-unified-manager-rest-apis-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用REST API來檢視Unified Manager擷取的健全狀況、容量和效能資訊、以協助管理叢集。 
+---
+= 使用Unified Manager REST API
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用REST API來檢視Unified Manager擷取的健全狀況、容量和效能資訊、以協助管理叢集。

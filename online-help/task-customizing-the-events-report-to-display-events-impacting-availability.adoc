@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-impacting-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「事件」報告、以顯示根據最多事件分類並指派給管理員的事件。您可以依影響層級和管理員名稱來篩選報告。 
+---
+= 自訂事件報告以顯示影響可用度的事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「事件」報告、以顯示根據最多事件分類並指派給管理員的事件。您可以依影響層級和管理員名稱來篩選報告。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要篩選可用度事件、請按一下「*影響區域*」欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*下拉式清單中、選取*等於*。
+. 按一下*選取值*、然後選取*事件*。
+. 按一下「*確定*」。
+

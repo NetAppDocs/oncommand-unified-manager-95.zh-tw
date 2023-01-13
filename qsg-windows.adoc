@@ -1,0 +1,47 @@
+---
+permalink: qsg-windows.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, Windows QSG, quick installation, Windows installer 
+summary: Linux平台上的Unified Manager快速入門指南。 
+---
+= Windows安裝的快速入門指示
+:allow-uri-read: 
+
+
+
+
+== 系統需求
+
+* 作業系統：Microsoft Windows Server 2012、2012 R2和2016 64位元Standard和Datacenter版本
+* RAM：12 GB
+* CPU：總共9572 MHz
+* 可用磁碟空間：100 GB的磁碟空間用於安裝目錄、50 GB的磁碟空間用於MySQL資料目錄
+
+
+如需詳細的系統需求、請參閱 link:install/reference-windows-software-and-installation-requirements.html["Windows軟體與安裝需求"] 和 link:http://mysupport.netapp.com/matrix["互通性對照表"]。
+
+
+
+== 安裝OnCommand NetApp Unified Manager
+
+
+
+=== 下載安裝程式
+
+. 下載 `OnCommandUnifiedManager-9.5RC1.exes` 安裝套件：
+. 將安裝檔案複製到目標系統上的目錄。
+
+
+
+
+=== 安裝Unified Manager
+
+必須安裝Microsoft .NET 4.5.2或更新版本。Unified Manager會在安裝過程中安裝其他必要的協力廠商套件。如果您需要有關相依軟體套件的詳細資訊、請參閱 link:install/concept-installing-upgrading-and-removing-unified-manager-software.html["在Windows上安裝、升級及移除Unified Manager軟體"]。
+
+. 使用預設的本機系統管理員帳戶登入Windows。
+. 在您下載安裝檔案的目錄中、以系統管理員身分按一下滑鼠右鍵並執行Unified Manager執行檔（.exe）。
+. 出現提示時、輸入使用者名稱和密碼以建立Unified Manager維護使用者。
+. 在Database Connection（資料庫連線）精靈中、輸入MySQL根密碼。
+. 依照其餘的提示完成安裝。
+. 在安裝結束時按一下「*完成*」、即會顯示Unified Manager Web UI。
+

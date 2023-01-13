@@ -1,0 +1,38 @@
+---
+permalink: install/concept-requirements-and-limitations-for-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: 在容錯移轉叢集環境中安裝Unified Manager之前、您必須確保叢集節點已正確設定為支援Unified Manager。 
+---
+= 容錯移轉叢集環境中的Unified Manager需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在容錯移轉叢集環境中安裝Unified Manager之前、您必須確保叢集節點已正確設定為支援Unified Manager。
+
+您必須確保容錯移轉叢集組態符合下列需求：
+
+* 兩個叢集節點都必須執行相同版本的Microsoft Windows Server。
+* 必須在兩個叢集節點上使用相同路徑安裝相同版本的Unified Manager。
+* 必須在兩個節點上安裝並啟用容錯移轉叢集。
++
+請參閱Microsoft文件以取得相關指示。
+
+* 您必須使用光纖通道交換網路或iSCSI型儲存設備、將共享資料磁碟建立為儲存設備後端
+* 選用：SnapDrive 使用Windows版的支援功能時、必須建立一個可讓高可用度設定中的兩個節點存取的共用位置。
++
+如SnapDrive 需安裝及建立共用位置的相關資訊、請參閱《_適用於Windows安裝指南》。
+
++
+您也可以使用儲存系統命令列介面來管理LUN。如SnapDrive 需詳細資訊、請參閱《支援Windows的支援指南：
+
+* 您必須安裝Perl `XML::LibXML` 和 `File::chdir` 指令碼運作的模組。
+* 叢集設定中只能有兩個節點。
+* 「節點和磁碟多數」仲裁類型必須用於容錯移轉叢集。
+* 您必須使用對應的FQDN來設定共用IP位址、以做為叢集全域IP位址、才能存取Unified Manager。
+* 兩個節點上Unified Manager維護使用者的密碼必須相同。
+* 您必須只使用了IPV4 IP位址。
+

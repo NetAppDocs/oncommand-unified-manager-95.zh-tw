@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-what-a-database-restore-is.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 資料庫還原是將現有Unified Manager備份檔案還原至相同或不同Unified Manager伺服器的程序。您可以從Unified Manager主控台執行還原作業。 
+---
+= 什麼是資料庫還原
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料庫還原是將現有Unified Manager備份檔案還原至相同或不同Unified Manager伺服器的程序。您可以從Unified Manager主控台執行還原作業。
+
+如果您在同一個（本機）系統上執行還原作業、而且備份檔案都儲存在本機、您可以使用預設位置執行還原命令。如果您在不同的Unified Manager系統（遠端系統）上執行還原作業、則必須先將備份檔案（或檔案）從次要儲存設備複製到本機磁碟、然後再執行還原命令。
+
+在還原過程中、您會登出Unified Manager。還原程序完成後、您可以登入系統。
+
+還原功能是針對特定版本及平台而設計。您只能在相同版本的Unified Manager上還原Unified Manager備份。Unified Manager支援下列平台案例的備份與還原：
+
+* 虛擬應用裝置至虛擬應用裝置
+* 將虛擬應用裝置移轉至Red Hat Enterprise Linux或CentOS
+* Red Hat Enterprise Linux至Red Hat Enterprise Linux或CentOS
+* Windows移轉至Windows
+
+
+如果您要將備份映像還原至新伺服器、在還原作業完成之後、您需要產生新的HTTPS安全性憑證、然後重新啟動Unified Manager伺服器。將備份映像還原至新伺服器時、如果需要、您也需要重新設定SAML驗證設定。
+
+[NOTE]
+====
+將Unified Manager升級至較新版本的軟體後、無法使用舊的備份檔案來還原映像。為了節省空間、升級Unified Manager時會自動移除所有舊的備份檔案（最新檔案除外）。
+
+====

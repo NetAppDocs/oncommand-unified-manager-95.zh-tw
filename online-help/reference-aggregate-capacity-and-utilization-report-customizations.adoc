@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-aggregate-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂報告、以顯示有關Aggregate的各種資訊。 
+---
+= Aggregate容量與使用率報告自訂
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂報告、以顯示有關Aggregate的各種資訊。

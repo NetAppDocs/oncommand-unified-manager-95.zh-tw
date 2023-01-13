@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-reorder-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「重新排序群組動作」對話方塊來變更一或多個群組動作的排名。群組動作在網格中的位置決定群組動作的排名。 
+---
+= 重新排序群組動作對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「重新排序群組動作」對話方塊來變更一或多個群組動作的排名。群組動作在網格中的位置決定群組動作的排名。
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+* *排名*
++
+指定要套用至群組中儲存物件的群組動作順序。
+
+* *名稱*
++
+指定群組動作的名稱。
+
+* *行動類型*
++
+指定您可以對群組中的儲存物件執行的動作類型。
+
+* *關聯的群組*
++
+指定定義群組動作的群組名稱。
+
+

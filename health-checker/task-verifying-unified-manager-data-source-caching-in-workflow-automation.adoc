@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-verifying-unified-manager-data-source-caching-in-workflow-automation.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Workflow Automation中檢查資料來源取得是否成功、以判斷Unified Manager資料來源快取是否正常運作。您可以將Workflow Automation與Unified Manager整合、以確保整合後仍可使用Workflow Automation功能。 
+---
+= 在Workflow Automation中驗證Unified Manager資料來源快取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Workflow Automation中檢查資料來源取得是否成功、以判斷Unified Manager資料來源快取是否正常運作。您可以將Workflow Automation與Unified Manager整合、以確保整合後仍可使用Workflow Automation功能。
+
+
+
+== 開始之前
+
+您必須指派「系統管理員」角色或「工作流程自動化」中的「架構設計師」角色、才能執行此工作。
+
+
+
+== 步驟
+
+. 從Workflow Automation UI中、選取*執行*>*資料來源*。
+. 在Unified Manager資料來源名稱上按一下滑鼠右鍵、然後選取*立即取得*。
+. 確認擷取成功無誤。
++
+為了成功整合Unified Manager的Workflow Automation、必須解決擷取錯誤。
+
+

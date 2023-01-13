@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Volume Transfer Status（歷史）報告的排程、以根據不同的排程來檢視Volume詳細資料。您可以檢視、修改或刪除現有的報告排程、以及新增報告的排程。 
+---
+= 自訂Volume Transfer Status（歷史）報告排程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂Volume Transfer Status（歷史）報告的排程、以根據不同的排程來檢視Volume詳細資料。您可以檢視、修改或刪除現有的報告排程、以及新增報告的排程。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 在「* Volume Transfer Status（Historical）* Report（* Volume Transfer Status（歷史）*報告）」頁面上、按一下「* Manage Report Schedules *（*管理報告
+. 在*管理報告排程*對話方塊中、輸入特定詳細資料、例如收件者排程名稱、電子郵件地址、報告格式、頻率及報告。
+. 選擇* Inventory（清單）*作為Report Category（報告類別）。
+. 按一下*儲存並關閉*。
++
+Volume Transfer Status（歷史）（Volume Transfer Status（歷史））報告會依照排程自動以電子郵件傳送給一或多位收件者。
+
+

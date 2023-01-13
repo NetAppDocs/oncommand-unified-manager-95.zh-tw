@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 如果發生資料遺失或資料毀損、您可以將Unified Manager還原至先前的穩定狀態、並將資料遺失降至最低。您可以將Unified Manager資料庫還原至本機或遠端的Red Hat Enterprise Linux或CentOS系統。 
+---
+= 還原Linux系統上的資料庫備份
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果發生資料遺失或資料毀損、您可以將Unified Manager還原至先前的穩定狀態、並將資料遺失降至最低。您可以將Unified Manager資料庫還原至本機或遠端的Red Hat Enterprise Linux或CentOS系統。
+
+
+
+== 開始之前
+
+* 您必須在伺服器上安裝Unified Manager。
+* 您必須擁有安裝Unified Manager的Linux主機的root使用者認證資料。
+* 您必須將Unified Manager備份檔案和資料庫儲存庫目錄的內容複製到要執行還原作業的系統。
++
+建議您將備份檔案複製到預設目錄 `/data/ocum-backup`。資料庫儲存庫檔案必須複製到 `/database-dumps-repo` 下的子目錄 `/ocum-backup` 目錄。
+
+* 備份檔案必須為 `.7z` 類型。
+
+
+
+
+== 關於這項工作
+
+還原功能是針對平台和版本而設計。您只能在相同版本的Unified Manager上還原Unified Manager備份。您可以將Linux備份檔案或虛擬應用裝置備份檔案還原至Red Hat Enterprise Linux或CentOS系統。
+
+[TIP]
+====
+如果備份資料夾名稱包含空格、您必須在雙引號中包含絕對路徑或相對路徑。
+
+====
+
+
+== 步驟
+
+. 如果您要在新伺服器上執行還原、安裝Unified Manager之後、安裝完成後、不會啟動UI或設定任何叢集、使用者或驗證設定。備份檔案會在還原程序期間填入此資訊。
+. 以root使用者身分登入安裝Unified Manager的主機。
+. 如果Unified Manager安裝在VCS設定中、請使用Veritas Operations Manager停止Unified Manager和ocieau服務。
+. 在命令提示字元中、還原備份： `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /data/ocum-backup/UM_9.4.N151113.1348_backup_rhel_02-20-2018-04-45.7z`
+
+
+
+
+
+== 完成後
+
+還原作業完成後、您可以登入Unified Manager。

@@ -1,0 +1,37 @@
+---
+permalink: health-checker/task-accessing-the-maintenance-console-using-vsphere.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果Unified Manager使用者介面無法運作、或是您需要執行使用者介面中沒有的功能、您可以存取維護主控台來重新設定虛擬應用裝置。 
+---
+= 使用vSphere VM主控台存取維護主控台
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果Unified Manager使用者介面無法運作、或是您需要執行使用者介面中沒有的功能、您可以存取維護主控台來重新設定虛擬應用裝置。
+
+
+
+== 開始之前
+
+您必須是維護使用者。必須開啟虛擬應用裝置電源、才能存取維護主控台。
+
+
+
+== 關於這項工作
+
+
+
+== 步驟
+
+. 在vSphere Client中、找出Unified Manager虛擬應用裝置。
+. 按一下*主控台*索引標籤。
+. 按一下主控台視窗內的即可登入。
+. 使用您的使用者名稱和密碼登入維護主控台。
++
+在閒置15分鐘後、維護主控台會將您登出。
+
+

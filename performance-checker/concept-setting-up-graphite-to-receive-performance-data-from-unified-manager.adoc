@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/concept-setting-up-graphite-to-receive-performance-data-from-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 石墨是一種開放式軟體工具、可用來從電腦系統收集效能資料並製作圖表。您的Graphite伺服器和軟體必須正確設定、才能從Unified Manager接收統計資料。 
+---
+= 設定Graphite從Unified Manager接收效能資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+石墨是一種開放式軟體工具、可用來從電腦系統收集效能資料並製作圖表。您的Graphite伺服器和軟體必須正確設定、才能從Unified Manager接收統計資料。
+
+根據安裝說明安裝Graphite之後、您需要進行下列變更、以支援Unified Manager的統計資料傳輸：
+
+* 在中 `/opt/graphite/conf/carbon.conf` 檔案、每分鐘可在Graphite伺服器上建立的檔案數量上限必須設為_200_ (`MAX_CREATES_PER_MINUTE = 200`）。
++
+視組態中的叢集數目和您選取要傳送的統計資料物件而定、可能需要先建立數千個新檔案。每分鐘200個檔案、可能需要15分鐘或更久的時間、才能初始建立所有的度量檔案。在建立所有唯一的度量檔案之後、此參數不再相關。
+
+* 如果您是在使用IPv6位址部署的伺服器上執行Graphite、則會在中執行line_inforer_interface的值 `/opt/graphite/conf/carbon.conf` 檔案必須從「'0.00.0.00.0.'」變更為「'':'」 (`LINE_RECEIVER_INTERFACE = ::`）
+* 在中 `/opt/graphite/conf/storage-schemas.conf` 檔案 `retentions` 參數必須用來將頻率設定為5分鐘、保留期間必須設定為與您環境相關的天數。
++
+保留期間可以是環境允許的時間、但頻率值必須設定為5分鐘、至少保留一次。在下列範例中、會使用定義Unified Manager的區段 `pattern` 參數的初始頻率設為5分鐘、保留期間設為100天：
+
++
+[NOTE]
+====
+如果預設廠商標籤從「'NetApp-Performance」變更為不同的項目、則該變更必須反映在中 `pattern` 參數。
+
+====
+
+
+[NOTE]
+====
+如果Unified Manager伺服器嘗試傳送效能資料時、Graphite伺服器無法使用、則不會傳送資料、而且收集的資料會有落差。
+
+====

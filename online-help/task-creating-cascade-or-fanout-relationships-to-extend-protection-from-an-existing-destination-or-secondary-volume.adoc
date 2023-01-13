@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-creating-cascade-or-fanout-relationships-to-extend-protection-from-an-existing-destination-or-secondary-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從來源磁碟區建立扇出、或從現有關係的目的地磁碟區建立串聯、藉此延伸現有關係的保護範圍。當您需要將資料從一個站台複製到多個站台、或是建立更多備份來提供額外的保護時、可以這麼做。 
+---
+= 建立串聯或展開關係、將保護範圍延伸到現有的保護關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從來源磁碟區建立扇出、或從現有關係的目的地磁碟區建立串聯、藉此延伸現有關係的保護範圍。當您需要將資料從一個站台複製到多個站台、或是建立更多備份來提供額外的保護時、可以這麼做。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 按一下「*保護*>*磁碟區關係*」。
+. 從「*保護/磁碟區關係*」頁面中、選取您要延伸保護的SnapMirror關係。
+. 按一下動作列上的*延伸保護*。
+. 在功能表中、根據您是從來源建立扇出關係、還是從目的地建立串聯關係、選取*來源*或*來源目的地*。
+. 視SnapVault 您建立的保護關係類型而定、選擇*搭配SnapMirror*或*搭配Sing*。
++
+此時將顯示Configure Protection（配置保護）對話框。
+
+. 填寫*組態保護*對話方塊中所述的資訊。
+

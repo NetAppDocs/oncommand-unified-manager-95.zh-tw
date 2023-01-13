@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-viewing-storage-pool-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視儲存資源池的詳細資料、以監控儲存資源池健全狀況、總快取和可用快取、以及已使用和可用的配置。 
+---
+= 檢視儲存資源池詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視儲存資源池的詳細資料、以監控儲存資源池健全狀況、總快取和可用快取、以及已使用和可用的配置。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下* Health *>* Aggregate *。
+. 按一下Aggregate名稱。
++
+隨即顯示所選Aggregate的詳細資料。
+
+. 按一下「*磁碟資訊*」索引標籤。
++
+隨即顯示詳細的磁碟資訊。
+
++
+[NOTE]
+====
+只有選取的Aggregate使用儲存資源池時、才會顯示Cache表格。
+
+====
+. 在Cache表格中、將指標移到所需儲存資源池的名稱上。
++
+儲存資源池的詳細資料隨即顯示。
+
+

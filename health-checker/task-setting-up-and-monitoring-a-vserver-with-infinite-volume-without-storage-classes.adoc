@@ -1,0 +1,66 @@
+---
+permalink: health-checker/task-setting-up-and-monitoring-a-vserver-with-infinite-volume-without-storage-classes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您應該使用OnCommand Workflow Automation VMware（WFA）和Unified Manager來設定及監控具有Infinite Volume的儲存虛擬機器（SVMs）。您應該使用WFA建立具有無限Volume的SVM、然後使用Unified Manager監控無限Volume。或者、您也可以設定Infinite Volume的資料保護。 
+---
+= 設定及監控不含儲存類別的無限Volume SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該使用OnCommand Workflow Automation VMware（WFA）和Unified Manager來設定及監控具有Infinite Volume的儲存虛擬機器（SVM）。您應該使用WFA建立具有無限Volume的SVM、然後使用Unified Manager監控無限Volume。或者、您也可以設定Infinite Volume的資料保護。
+
+
+
+== 開始之前
+
+必須符合下列要求：
+
+* 必須安裝WFA、而且必須設定資料來源。
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須在WFA中自訂適當的預先定義工作流程、以建立所需的集合體數量。
+* 您必須在WFA中將Unified Manager伺服器設定為資料來源、然後確認資料已成功快取。
+
+
+
+
+== 關於這項工作
+
+* 您只能使用Unified Manager監控資料SVM。
+* 執行此工作時、您必須在OnCommand Workflow Automation 下列兩個應用程式之間切換：NetApp（WFA）和OnCommand NetApp Unified Manager。
+* 工作提供了高層級的步驟。
++
+如需執行WFA工作的詳細資訊、請參閱_EWS_ OnCommand Workflow Automation 文件。
+
+
+
+
+
+== 步驟
+
+. image:../media/wfa-icon.gif["WFA程序圖示"] 使用Infinite Volume建立SVM、然後使用適當的工作流程建立Infinite Volume。
++
+您可以在建立Infinite Volume的同時、啟用重複資料刪除和壓縮等儲存效率技術。
+
+. image:../media/um-icon.gif["Unified Manager程序圖示"] 將內含SVM with Infinite Volume的叢集新增至Unified Manager資料庫。
++
+您可以提供叢集的IP位址或FQDN來新增叢集。
+
+. image:../media/um-icon.gif["Unified Manager程序圖示"] 根據貴組織的需求、修改SVM上Infinite Volume的臨界值。
++
+[TIP]
+====
+您應該使用預設的無限Volume臨界值設定。
+
+====
+. image:../media/um-icon.gif["Unified Manager程序圖示"] 設定通知警示和設陷、以解決任何與Infinite Volume相關的可用度和容量問題。
+. image:../media/wfa-icon.gif["WFA程序圖示"] 使用Infinite Volume建立災難恢復（DR）SVM、然後執行下列步驟來設定資料保護（DP）：
++
+.. 使用適當的工作流程建立資料保護（DP）無限Volume。
+.. 使用適當的工作流程、在來源和目的地之間設定DP鏡射關係。
+
+
+

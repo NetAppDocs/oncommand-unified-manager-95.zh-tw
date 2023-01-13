@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-reaching-maximum-disk-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「叢集庫存」報告、以顯示已達到最大磁碟限制並依增加順序排序的節點清單。 
+---
+= 自訂叢集庫存報告以顯示達到最大磁碟限制的節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「叢集庫存」報告、以顯示已達到最大磁碟限制並依增加順序排序的節點清單。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要依叢集或節點移除群組、請執行下列步驟：
++
+.. 按一下需要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 要將*磁碟數*欄移到*模型*欄旁、請執行下列步驟：
++
+.. 按一下「*磁碟數*」欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖標並選擇*列*>*重新排序列*。
+.. 在「*重新排序欄*」對話方塊中、使用*上*和*下*方向鍵、將欄移至所需的位置。
+
+
+. 若要新增新的計算欄、請執行下列步驟：
++
+.. 選取欄、然後按一下 image:../media/click-to-see-menu.gif[""]，然後選擇*列*>*新計算列*。
+.. 在「*新計算的欄*」對話方塊中、輸入 `Maximum Disk Limit` 在*欄標籤*欄位中。
+.. 從Select Category（選擇類別）列表中選擇* Comparison *（*比較*）。
+.. 從* Select Function（選擇功能）*清單中、選取* Advanced（進階）*。
+.. 在*輸入運算式*欄位中、輸入 `IF([model]="FAS3250" , 960, 0)`。
+.. 按一下「*確定*」。
+
+
+. 若要新增第二欄、請執行下列步驟：
++
+.. 選取*最大磁碟限制*欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示、然後選取*欄*>*新計算欄*。
+.. 在「*新計算的欄*」對話方塊中、輸入 `Available Volume` 在*欄標籤*欄位中。
+.. 從Select Category（選擇類別）列表中選擇* Math*。
+.. 從* Select函數*清單中、選取*差異*。
+.. 從欄1清單中、選取*最大磁碟限制*。
+.. 從列2列表中選擇* Disk Count*。
+.. 按一下「*確定*」。
+
+
+. 若要排序值、請按一下*可用Volume *欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+. 選擇*篩選器*>*頂端/底端N*。
+. 在*上/下N*對話方塊中、從*篩選*欄位中選取*上N*、然後在文字欄位中輸入值。
+. 按一下「*確定*」。
+

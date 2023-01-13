@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-performance-monitoring-of-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager可讓您監控MetroCluster 採用支援整合式組態之叢集之間的寫入處理量、以識別具有大量寫入處理量的工作負載。如果這些高效能工作負載導致本機叢集上的其他磁碟區的I/O回應時間過長、Unified Manager會觸發效能事件通知您。 
+---
+= 效能監控MetroCluster 功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager可讓您監控MetroCluster 採用支援整合式組態之叢集之間的寫入處理量、以識別具有大量寫入處理量的工作負載。如果這些高效能工作負載導致本機叢集上的其他磁碟區的I/O回應時間過長、Unified Manager會觸發效能事件通知您。
+
+當一個位在MetroCluster 某個位在某個位在某個位在某個位在某個位在某個位在某個位在某個位在某個位在某個位在某個位在某個位在某個位的叢集將其資料鏡射到其同一個位在Unified Manager會分析NVRAM、找出高寫入處理量過度使用NVRAM的工作負載、使NVRAM發生爭用。
+
+回應時間的差異超過效能臨界值的工作負載稱為_受害者_、而寫入NVRAM處理量的差異比平常高、導致爭用的工作負載稱為_bulle__。由於只有寫入要求會鏡射至合作夥伴叢集、因此Unified Manager不會分析讀取處理量。
+
+Unified Manager會將MetroCluster 以整個過程為例的叢集視為個別叢集。它不會區分合作夥伴的叢集、也不會區分每個叢集的寫入處理量。

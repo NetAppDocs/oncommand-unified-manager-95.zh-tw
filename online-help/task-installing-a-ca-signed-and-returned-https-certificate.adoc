@@ -1,0 +1,59 @@
+---
+permalink: online-help/task-installing-a-ca-signed-and-returned-https-certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在「憑證授權單位」簽署並傳回安全性憑證之後、再上傳及安裝安全性憑證。您上傳和安裝的檔案必須是現有自我簽署憑證的簽署版本。CA簽署的憑證有助於預防攔截式攻擊、並提供比自我簽署憑證更好的安全保護。 
+---
+= 安裝HTTPS安全性憑證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在「憑證授權單位」簽署並傳回安全性憑證之後、再上傳及安裝安全性憑證。您上傳和安裝的檔案必須是現有自我簽署憑證的簽署版本。CA簽署的憑證有助於預防攔截式攻擊、並提供比自我簽署憑證更好的安全保護。
+
+
+
+== 開始之前
+
+您必須完成下列動作：
+
+* 已下載「憑證簽署要求」檔案、並由「憑證授權單位」簽署
+* 已將憑證鏈結儲存為PEE格式
+* 包括鏈中的所有憑證、從Unified Manager伺服器憑證到根簽署憑證、包括任何存在的中繼憑證
+
+
+您必須OnCommand 扮演「管理員角色」。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*設定*功能表中的* HTTPS憑證*。
+. 按一下「*安裝HTTPS憑證*」。
+. 在顯示的對話方塊中、按一下*選擇檔案...*以找出要上傳的檔案。
+. 選取檔案、然後按一下「*安裝*」以安裝檔案。
+
+
+
+
+== 範例憑證鏈結
+
+下列範例顯示憑證鏈結檔案的顯示方式：
+
+[listing]
+----
+-----BEGIN CERTIFICATE-----
+<*Server certificate*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#1 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#2 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Root signing certificate*>
+-----END CERTIFICATE-----
+----

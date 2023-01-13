@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-grouped-by-time-of-occurrence.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Volume Transfer Status（歷史）（Volume Transfer Status（Volume Transfer狀態））報告、以顯示兩個日期之間發生時間所分組的Volume清單。 
+---
+= 自訂Volume Transfer Status（歷史）（Volume Transfer Status、Volume Transfer Status、歷史）報告、以檢視依發生時間分組的Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂Volume Transfer Status（歷史）（Volume Transfer Status、Volume Transfer Status、Volume Transfer Status、Volume Transfer Status（歷史））（Volume Transfer狀態、Volume Transfer狀態（歷史）））報告、以顯示兩個日期之間發生時間
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 移除依叢集分組：
++
+.. 在必須取消群組的欄中、按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 在*開始時間*欄中、按一下「*篩選*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*下拉式清單中、選取*介於*。
+. 按一下「*選取值*」、然後選擇「*日期自*」和「*日期至*值」。
+. 按一下「*確定*」。
+

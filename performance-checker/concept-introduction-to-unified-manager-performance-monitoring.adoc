@@ -1,0 +1,28 @@
+---
+permalink: performance-checker/concept-introduction-to-unified-manager-performance-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: 針對執行NetApp VMware軟體的系統、提供效能監控功能和事件根本原因分析ONTAP OnCommand 。 
+---
+= 介紹功能介紹：Unified Manager效能監控OnCommand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+針對執行NetApp VMware軟體的系統、提供效能監控功能和事件根本原因分析ONTAP OnCommand 。
+
+Unified Manager可協助您識別過度使用叢集元件的工作負載、並降低叢集上其他工作負載的效能。藉由定義效能臨界值原則、您也可以指定特定效能計數器的最大值、以便在超出臨界值時產生事件。Unified Manager會針對這些效能事件發出警示、以便您採取修正行動、並將效能恢復至正常運作層級。您可以在Unified Manager UI中檢視及分析事件。
+
+Unified Manager可監控兩種工作負載的效能：
+
+* 使用者定義的工作負載
++
+這些工作負載包含FlexVol 您FlexGroup 在叢集中建立的各個功能區和各個功能區。
+
+* 系統定義的工作負載
++
+這些工作負載包含內部系統活動。
+
+

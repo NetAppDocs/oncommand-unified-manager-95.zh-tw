@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「Volume RelationsInventory」（磁碟區關係資源清冊）報告、以檢視根據故障來源篩選的磁碟區詳細資料。您可以使用篩選器、根據排程顯示磁碟區關係詳細資料、並根據問題將磁碟區詳細資料分組。 
+---
+= Volume Relationships Inventory報告自訂項目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「Volume RelationsInventory」（磁碟區關係資源清冊）報告、以檢視根據故障來源篩選的磁碟區詳細資料。您可以使用篩選器、根據排程顯示磁碟區關係詳細資料、並根據問題將磁碟區詳細資料分組。

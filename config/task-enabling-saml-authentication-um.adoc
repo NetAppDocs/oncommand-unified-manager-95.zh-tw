@@ -1,0 +1,81 @@
+---
+permalink: config/task-enabling-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以啟用安全聲明標記語言（SAML）驗證、讓遠端使用者在存取Unified Manager Web UI之前、先由安全的身分識別供應商（IDP）驗證。 
+---
+= 啟用SAML驗證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以啟用安全聲明標記語言（SAML）驗證、讓遠端使用者在存取Unified Manager Web UI之前、先經過安全身分識別供應商（IDP）的驗證。
+
+
+
+== 開始之前
+
+* 您必須已設定遠端驗證、並驗證是否成功。
+* 您必須建立至少一個具備OnCommand 「管理員」角色的遠端使用者或遠端群組。
+* Identity Provider（IDP）必須由Unified Manager支援、且必須加以設定。
+* 您必須擁有IDP URL和中繼資料。
+* 您必須擁有IDP伺服器的存取權。
+
+
+
+
+== 關於這項工作
+
+從Unified Manager啟用SAML驗證後、使用者必須先使用Unified Manager伺服器主機資訊設定IDP、才能存取圖形化使用者介面。因此您必須準備好完成連線的兩個部分、才能開始組態程序。IDP可在設定Unified Manager之前或之後進行設定。
+
+啟用SAML驗證後、只有遠端使用者才能存取Unified Manager圖形化使用者介面。本機使用者和維護使用者將無法存取UI。此組態不會影響存取維護主控台、Unified Manager命令或ZAPI的使用者。
+
+[NOTE]
+====
+在您完成此頁面上的SAML組態之後、Unified Manager會自動重新啟動。
+
+====
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左設定功能表中的*驗證*。
+. 在「*設定/驗證*」頁面中、選取「* SAML驗證*」標籤。
+. 選取「*啟用SAML驗證*」核取方塊。
++
+隨即顯示設定IDP連線所需的欄位。
+
+. 輸入IDP URI和IDP中繼資料、以將Unified Manager伺服器連線至IDP伺服器。
++
+如果IDP伺服器可直接從Unified Manager伺服器存取、您可以在輸入IDP URI之後按一下*擷取IDP中繼資料*按鈕、自動填入IDP中繼資料欄位。
+
+. 複製Unified Manager主機中繼資料URI、或將主機中繼資料儲存至XML文字檔。
++
+您現在可以使用此資訊來設定IDP伺服器。
+
+. 按一下「 * 儲存 * 」。
++
+隨即顯示訊息方塊、確認您要完成組態並重新啟動Unified Manager。
+
+. 按一下*「Confirm and Logout*（確認並登出）」、Unified Manager即會重新啟動。
+
+
+
+
+== 結果
+
+下次授權的遠端使用者嘗試存取Unified Manager圖形介面時、他們會在IDP登入頁面中輸入其認證資料、而非在Unified Manager登入頁面中輸入認證資料。
+
+
+
+== 完成後
+
+如果尚未完成、請存取IDP並輸入Unified Manager伺服器URI和中繼資料、以完成組態。
+
+[NOTE]
+====
+使用ADFS做為身分識別供應商時、Unified Manager GUI不會遵守ADFS逾時、會繼續運作、直到Unified Manager工作階段逾時為止。在Windows、Red Hat或CentOS上部署Unified Manager時、您可以使用下列Unified Manager CLI命令來變更GUI工作階段逾時： ``um option set absolute.session.timeout=00:15:00``此命令會將Unified Manager GUI工作階段逾時設定為15分鐘。
+
+====

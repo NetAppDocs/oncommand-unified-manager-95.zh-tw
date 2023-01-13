@@ -1,0 +1,29 @@
+---
+permalink: health-checker/task-creating-a-project-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 在建立報告以匯入Unified Manager之前、您必須先使用BIRT建立專案。 
+---
+= 使用BIRT建立專案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在建立報告以匯入Unified Manager之前、您必須先使用BIRT建立專案。
+
+
+
+== 開始之前
+
+您必須已下載並解壓縮BIRT .Zip檔案。
+
+
+
+== 步驟
+
+. 在Eclipse介面中、選取*檔案*>*新增*>*專案*。
+. 展開*商業智慧與報告工具*資料夾、選取*報告專案*、然後按一下*下一步*。
+. 輸入專案名稱、然後按一下*完成*。
+

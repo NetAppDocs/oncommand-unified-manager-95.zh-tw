@@ -1,0 +1,28 @@
+---
+permalink: online-help/reference-user-not-found.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 找不到使用者
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *問題*
++
+執行驗證相關作業（例如新增、編輯、刪除或測試遠端使用者或群組）時、會顯示下列錯誤訊息： `User not found`。
+
+* *原因*
++
+如果使用者存在於AD伺服器或LDAP伺服器中、而且您已將基礎辨別名稱設定為不正確的值、就可能發生此問題。
+
+* *修正行動*
++
+.. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*設定*>*驗證*。
+.. 輸入基礎辨別名稱的適當資訊。
+.. 按一下*儲存並關閉*。
+
+
+

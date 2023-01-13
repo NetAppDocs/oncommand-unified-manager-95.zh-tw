@@ -1,0 +1,57 @@
+---
+permalink: online-help/reference-volume-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: Volume Favorite卡可讓您檢視標示為我的最愛磁碟區的容量、保護和效能詳細資料。 
+---
+= Volume最愛卡
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume Favorite卡可讓您檢視標示為我的最愛磁碟區的容量、保護和效能詳細資料。
+
+
+
+== Volume屬性
+
+Volume Favorite卡會顯示下列Volume屬性：
+
+* * Volume健全狀況狀態*
++
+表示磁碟區健全狀況狀態的圖示。可能的值包括「正常」、「警告」、「錯誤」和「重大」。
+
+* *磁碟區名稱*
++
+Volume名稱。
+
+* *容量*
++
+磁碟區可用空間的百分比、以及磁碟區滿前的預估天數。
+
+* *保護*
++
+為磁碟區設定的保護角色。可能的值包括「未受保護」、「不適用」、「受保護」及「目的地」。
+
+* *效能*
++
+Volume的效能統計資料。
+
++
+** * IOPS *
++
+過去72小時內每秒I/O作業的平均數量。
+
+** *處理量*
++
+過去72小時的平均處理量（以Mbps為單位）。
+
+** * 延遲 *
++
+作業所需的平均回應時間（毫秒）。
+
+
+
+

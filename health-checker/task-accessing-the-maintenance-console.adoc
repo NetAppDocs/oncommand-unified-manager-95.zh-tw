@@ -1,0 +1,80 @@
+---
+permalink: health-checker/task-accessing-the-maintenance-console.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果Unified Manager使用者介面未運作、或是您需要執行使用者介面中未提供的功能、您可以存取維護主控台來管理Unified Manager系統。 
+---
+= 存取維護主控台
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果Unified Manager使用者介面未運作、或是您需要執行使用者介面中未提供的功能、您可以存取維護主控台來管理Unified Manager系統。
+
+
+
+== 開始之前
+
+您必須已安裝並設定Unified Manager。
+
+
+
+== 關於這項工作
+
+在閒置15分鐘後、維護主控台會將您登出。
+
+[NOTE]
+====
+安裝在VMware上時、如果您已透過VMware主控台以維護使用者身分登入、則無法使用Secure Shell同時登入。
+
+====
+
+
+== 步驟
+
+. 請依照下列步驟存取維護主控台：
++
+|===
+| 在此作業系統上... | 請遵循下列步驟... 
+
+
+ a| 
+VMware
+ a| 
+.. 使用Secure Shell連線至Unified Manager虛擬應用裝置的IP位址或完整網域名稱。
+.. 使用您的維護使用者名稱和密碼登入維護主控台。
+
+
+
+
+ a| 
+Linux
+ a| 
+.. 使用Secure Shell連線至Unified Manager系統的IP位址或完整網域名稱。
+.. 使用維護使用者（umadmin）名稱和密碼登入系統。
+.. 輸入命令 `maintenance_console` 然後按Enter。
+
+
+
+
+ a| 
+Windows
+ a| 
+.. 以系統管理員認證登入Unified Manager系統。
+.. 以Windows系統管理員身分啟動PowerShell。
+.. 輸入命令 `maintenance_console` 然後按Enter。
++
+[NOTE]
+====
+在Microsoft Windows Server 2012上、如果收到執行原則錯誤、請輸入下列命令、然後再試一次步驟c： `PowerShell.exe -ExecutionPolicy RemoteSigned`
+
+====
+
+
+|===
++
+此時會顯示Unified Manager維護主控台功能表。
+
+

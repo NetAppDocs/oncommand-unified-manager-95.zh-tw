@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-monitoring-and-troubleshooting-data-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager可監控授權使用者存取儲存資料的可靠性、針對封鎖或阻礙存取的情況發出警示、並可讓您診斷這些情況、並指派及追蹤其解決方案。 
+---
+= 監控及疑難排解資料可用度
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager可監控授權使用者存取儲存資料的可靠性、針對封鎖或阻礙存取的情況發出警示、並可讓您診斷這些情況、並指派及追蹤其解決方案。
+
+本節中的可用度工作流程主題、說明儲存管理員如何使用Unified Manager網路UI來探索、診斷及指派解決硬體與軟體狀況、進而對資料可用度造成不良影響的範例。

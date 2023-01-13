@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-how-object-status-is-computed.html 
+sidebar: sidebar 
+keywords:  
+summary: 物件狀態是由目前處於「新」或「已確認」狀態的最嚴重事件所決定。例如、如果物件狀態為「錯誤」、則物件的其中一個事件的嚴重性類型為「錯誤」。採取修正行動後、事件狀態會移至「已解決」。 
+---
+= 物件狀態的計算方式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+物件狀態是由目前處於「新」或「已確認」狀態的最嚴重事件所決定。例如、如果物件狀態為「錯誤」、則物件的其中一個事件的嚴重性類型為「錯誤」。採取修正行動後、事件狀態會移至「已解決」。

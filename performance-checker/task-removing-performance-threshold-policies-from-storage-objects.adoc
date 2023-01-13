@@ -1,0 +1,75 @@
+---
+permalink: performance-checker/task-removing-performance-threshold-policies-from-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您不再想讓Unified Manager監控效能計數器的值時、可以從儲存物件移除使用者定義的效能臨界值原則。 
+---
+= 移除儲存物件的效能臨界值原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您不再想讓Unified Manager監控效能計數器的值時、可以從儲存物件移除使用者定義的效能臨界值原則。
+
+
+
+== 開始之前
+
+您必須OnCommand 扮演「管理員角色」。
+
+
+
+== 關於這項工作
+
+您一次只能從選取的物件移除一個原則。
+
+您可以選取清單中的多個物件、從多個儲存物件移除臨界值原則。
+
+
+
+== 步驟
+
+. 從任何儲存物件的「*詳細目錄*」頁面中、選取至少套用一個效能臨界值原則的一或多個物件。
++
+|===
+| 若要清除臨界值... | 執行此動作... 
+
+
+ a| 
+單一物件
+ a| 
+選取該物件左側的核取方塊。
+
+
+
+ a| 
+多個物件
+ a| 
+選取每個物件左側的核取方塊。
+
+
+
+ a| 
+頁面上的所有物件
+ a| 
+按一下 image:../media/select-dropdown-65-png.gif[""] 然後選取*選取此頁面上的所有物件*。
+
+
+
+ a| 
+相同類型的所有物件
+ a| 
+按一下 image:../media/select-dropdown-65-png.gif[""] 然後選取*選取所有物件*。
+
+|===
+. 按一下*清除效能臨界值原則*。
++
+隨即顯示「清除臨界值原則」頁面、其中顯示目前指派給儲存物件的臨界值原則清單。
+
+. 選取您要從物件中移除的臨界值原則、然後按一下*清除原則*。
++
+選取臨界值原則時、會顯示原則的詳細資料、以便您確認已選取適當的原則。
+
+

@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-introduction-to-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 利用VMware統一化管理程式、您可以從單一介面監控及管理您的VMware儲存系統的健全狀況與效能ONTAP OnCommand 。 
+---
+= 介紹統一化管理程式OnCommand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用VMware統一化管理程式、您可以從單一介面監控及管理您的VMware儲存系統的健全狀況與效能ONTAP OnCommand 。
+
+Unified Manager提供下列功能：
+
+* 探索、監控及通知使用ONTAP NetApp軟體安裝的系統。
+* 顯示環境容量、可用度、保護及效能健全狀況的儀表板。
+* 增強的警示、事件和臨界值基礎架構。
+* 顯示詳細的圖表、可顯示一段時間內的工作負載活動繪圖、包括IOPS（作業）、Mbps（處理量）、延遲（回應時間）、使用率、 效能容量與快取比率。
+* 識別過度使用叢集元件的工作負載、以及其效能受活動增加影響的工作負載。
+* 提供建議的修正行動、可用來解決特定事件和事件。
+* 與OnCommand Workflow Automation 支援功能整合、以執行自動化工作流程。
+

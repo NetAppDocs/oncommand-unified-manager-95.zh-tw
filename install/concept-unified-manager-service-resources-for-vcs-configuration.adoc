@@ -1,0 +1,55 @@
+---
+permalink: install/concept-unified-manager-service-resources-for-vcs-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須將Unified Manager的叢集服務資源新增至Veritas Cluster Server（VCS）。這些叢集服務資源可用於各種用途、例如監控儲存系統、排程工作、處理事件、以及監控所有其他Unified Manager服務。 
+---
+= 適用於VCS組態的Unified Manager服務資源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須將Unified Manager的叢集服務資源新增至Veritas Cluster Server（VCS）。這些叢集服務資源可用於各種用途、例如監控儲存系統、排程工作、處理事件、以及監控所有其他Unified Manager服務。
+
+下表列出所有Unified Manager服務的類別：
+
+|===
+| 類別 | 服務 
+
+
+ a| 
+儲存資源
+ a| 
+* `vol`
+* `mount`
+
+
+
+
+ a| 
+資料庫資源
+ a| 
+* `mysqld`
+
+
+
+
+ a| 
+網路資源
+ a| 
+* `nic`
+* `vip`
+
+
+
+
+ a| 
+Unified Manager資源
+ a| 
+* `ocie`
+* `ocieau`
+
+
+|===

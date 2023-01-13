@@ -1,0 +1,18 @@
+---
+permalink: performance-checker/concept-monitoring-performance-using-the-performance-explorer-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance Explorer頁面會顯示叢集中每個物件效能的詳細資訊。此頁面提供所有叢集物件效能的詳細檢視、可讓您選取及比較不同時間段內特定物件的效能資料。 
+---
+= 使用Performance Explorer頁面監控效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance Explorer頁面會顯示叢集中每個物件效能的詳細資訊。此頁面提供所有叢集物件效能的詳細檢視、可讓您選取及比較不同時間段內特定物件的效能資料。
+
+您也可以評估所有物件的整體效能、並以並排格式比較物件效能資料。
+
+如果某個物件不再由Unified Manager管理、狀態*移除*會顯示在「效能總管」頁面頂端物件名稱的右側。

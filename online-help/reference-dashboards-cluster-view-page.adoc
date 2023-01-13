@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-dashboards-cluster-view-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「儀表板/叢集檢視」頁面會顯示所管理叢集的概觀資訊。 
+---
+= 儀表板/叢集檢視頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「儀表板/叢集檢視」頁面會顯示所管理叢集的概觀資訊。
+
+單擊*管理叢集*會進入「組態/叢集資料來源」頁面。
+
+按一下叢集會顯示叢集的監控狀態、容量狀態和效能狀態的總覽資訊。
+
+叢集檢視儀表板包含兩個主要區段：受管理的叢集（左側）和叢集詳細資料（右側）。
+
+
+
+== 「管理的叢集」區段
+
+列出Unified Manager正在監控的所有叢集。清單中的每個叢集都提供下列詳細資料：
+
+* 叢集狀態圖示：狀態可能為「Critical」（嚴重）（image:../media/sev-critical-um60.png["事件嚴重性的圖示–嚴重"]）、錯誤（image:../media/sev-error-um60.png["事件嚴重性圖示–錯誤"]）、警告（image:../media/sev-warning-um60.png["事件嚴重性圖示–警告"]）或正常（image:../media/sev-normal-um60.png["事件嚴重性圖示–正常"]）。
+* IP位址或主機名稱：提供叢集的主機名稱、以及IP位址或FQDN。
+* 叢集健全狀況：提供Unified Manager所監控之叢集健全狀況的相關資訊。
++
+健全狀況狀態可以有下列其中一個值：「OK（確定）」、「OK（確定）」、「OK（正常）」、「Degraded（抑制）」、「Components...（降級）」
+
+
+
+
+
+== 叢集詳細資料區段
+
+提供所選叢集的監控狀態、容量和效能等相關資訊。
+
+* 監控狀態：顯示持續的健全狀況和效能監控狀態。
++
+監控狀態可以有下列值：「Discovering（探索）」、「Poll completed（輪詢完成）」、「Poll failed（輪詢失敗）」或「Not Available當對應的監控工作（健全狀況或效能）失敗時、監控狀態會顯示錯誤訊息。
+
+* 容量：顯示所選叢集的總儲存容量、已使用容量及可用儲存容量。
+* 效能：以IOPS（每秒輸入/輸出作業數）和所選叢集的平均處理量（每秒MB）顯示叢集的平均作業速度。
+
+
+「詳細資料」區段也提供指向OnCommand 各個叢集詳細資料頁面的導覽連結、這些頁面包含哪些應用程式：
+
+* 健全狀況連結會導覽至所選叢集的健全狀況/叢集詳細資料頁面。
+* 「效能」連結會導覽至所選叢集的「效能/叢集詳細資料」頁面。
+* System Manager連結會導覽至OnCommand 適用於《支援系統管理程式》的登入頁面、以便您管理叢集設定。
+

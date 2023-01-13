@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-bookmarking-your-favorite-help-topics-onc.html 
+sidebar: sidebar 
+keywords:  
+summary: 在「說明我的最愛」索引標籤中、您可以將常用的「說明」主題加入書籤。說明書籤可讓您快速存取最愛的主題。 
+---
+= 將您最愛的說明主題加入書籤
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在「說明我的最愛」索引標籤中、您可以將常用的「說明」主題加入書籤。說明書籤可讓您快速存取最愛的主題。
+
+
+
+== 步驟
+
+. 瀏覽至您要新增為最愛的「說明」主題。
+. 按一下「*我的最愛*」、然後按一下「*新增*」。
+

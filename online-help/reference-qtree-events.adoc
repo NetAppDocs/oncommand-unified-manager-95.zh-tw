@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-qtree-events.html 
+sidebar: sidebar 
+keywords:  
+summary: qtree事件可提供qtree容量、檔案和磁碟限制的相關資訊、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= qtree事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+qtree事件可提供qtree容量、檔案和磁碟限制的相關資訊、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：容量
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+qtree空間幾乎已滿（ocumEvtQtreeSpaceNearlyFull）
+ a| 
+風險
+ a| 
+qtree
+ a| 
+警告
+
+
+
+ a| 
+qtree空間已滿（ocumEvtQtreeSpaceFull）
+ a| 
+風險
+ a| 
+qtree
+ a| 
+錯誤
+
+
+
+ a| 
+qtree Space正常（ocumEvtQtreeSpaceHoldOk）
+ a| 
+活動
+ a| 
+qtree
+ a| 
+資訊
+
+
+
+ a| 
+已達到qtree檔案硬限制（ocumEvtQtreeFilesHardLlimitReded）
+ a| 
+事件
+ a| 
+qtree
+ a| 
+關鍵
+
+
+
+ a| 
+qtree檔案軟體限制已違反（ocumEvtQtreeFilesSoftLimitBtone）
+ a| 
+風險
+ a| 
+qtree
+ a| 
+警告
+
+
+
+ a| 
+已達到qtree空間硬限制（ocumEvtQtreeSpaceHardLlimitReded）
+ a| 
+事件
+ a| 
+qtree
+ a| 
+關鍵
+
+
+
+ a| 
+已違反qtree空間軟限制（ocumEvtQtreeSpaceSoftLimitBtone）
+ a| 
+風險
+ a| 
+qtree
+ a| 
+警告
+
+|===

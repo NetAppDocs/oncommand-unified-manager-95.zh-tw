@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-events-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立報告來監控叢集上未完成的事件。 
+---
+= 事件報告自訂
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立報告來監控叢集上未完成的事件。

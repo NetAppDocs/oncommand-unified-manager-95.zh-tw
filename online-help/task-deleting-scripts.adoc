@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-deleting-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 當指令碼不再需要或有效時、您可以從Unified Manager刪除指令碼。 
+---
+= 刪除指令碼
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當指令碼不再需要或有效時、您可以從Unified Manager刪除指令碼。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 指令碼不得與警示相關聯。
+
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左管理功能表中的*指令碼*。
+. 在「*管理/指令碼*」頁面中、選取您要刪除的指令碼、然後按一下「*刪除*」。
+. 在*警告*對話方塊中、按一下*是*確認刪除。
+

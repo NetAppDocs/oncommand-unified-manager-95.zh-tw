@@ -1,0 +1,20 @@
+---
+permalink: online-help/task-specifying-a-correlated-objects-time-range.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance Explorer頁面上的時間範圍選取器可讓您指定物件資料比較的時間範圍。指定時間範圍會精簡Performance Explorer頁面的內容、以僅顯示您指定時間範圍內的物件資料。 
+---
+= 指定關聯物件的時間範圍
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance Explorer頁面上的時間範圍選取器可讓您指定物件資料比較的時間範圍。指定時間範圍會精簡Performance Explorer頁面的內容、以僅顯示您指定時間範圍內的物件資料。
+
+
+
+== 關於這項工作
+
+精簡時間範圍可提供一種有效率的方法、讓您只顯示感興趣的效能資料。您可以選取預先定義的時間範圍、或指定自訂的時間範圍。預設時間範圍為前72小時。

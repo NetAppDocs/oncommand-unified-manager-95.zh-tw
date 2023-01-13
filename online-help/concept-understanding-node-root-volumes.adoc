@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-node-root-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Unified Manager監控節點根Volume。最佳實務做法是、節點根磁碟區應有足夠的容量、以防止節點停機。 
+---
+= 瞭解節點根磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager監控節點根Volume。最佳實務做法是、節點根磁碟區應有足夠的容量、以防止節點停機。
+
+當節點根磁碟區的已用容量超過節點根磁碟區總容量的80%時、就會產生節點根磁碟區空間即將滿的事件。您可以設定事件警示以取得通知。您可以採取適當的行動、使用OnCommand 「系統管理程式」或ONTAP 「系統資訊管理系統」CLI來防止節點停機。

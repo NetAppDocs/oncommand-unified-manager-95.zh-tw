@@ -1,0 +1,26 @@
+---
+permalink: health-checker/concept-what-functionality-the-maintenance-console-provides.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager維護主控台可讓您維護Unified Manager系統上的設定、並進行必要的變更、以避免發生問題。 
+---
+= 維護主控台提供哪些功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager維護主控台可讓您維護Unified Manager系統上的設定、並進行必要的變更、以避免發生問題。
+
+根據您安裝Unified Manager的作業系統、維護主控台提供下列功能：
+
+* 疑難排解虛擬應用裝置的任何問題、尤其是Unified Manager網路介面無法使用時
+* 升級至較新版本的Unified Manager
+* 產生支援服務組合以傳送給技術支援人員
+* 設定網路設定
+* 變更維護使用者密碼
+* 連線至外部資料供應商以傳送效能統計資料
+* 變更內部的效能資料收集
+* 從先前備份的版本還原Unified Manager資料庫和組態設定。
+

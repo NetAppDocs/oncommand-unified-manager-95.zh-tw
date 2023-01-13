@@ -1,0 +1,465 @@
+---
+permalink: online-help/reference-storage-vm-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM事件提供您有關SVM狀態的資訊、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= SVM事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM事件提供您有關SVM狀態的資訊、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+星號（*）表示已轉換為Unified Manager事件的EMS事件。
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+SVM CIFS服務中斷（ocumEvtVserverCifsServiceStatusDown）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+未設定SVM CIFS服務（不適用）
+ a| 
+活動
+ a| 
+SVM
+ a| 
+資訊
+
+
+
+ a| 
+嘗試連線不存在的CIFS共用*
+ a| 
+事件
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+CIFS NetBios名稱衝突*
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+CIFS陰影複製作業失敗*
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+許多CIFS連線*
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+超過CIFS連線上限*
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+每位使用者超過的CIFS連線數量上限*
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+SVM FC/FCoE服務中斷（ocumEvtVserverFcServiceStatusDown）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+SVM iSCSI服務中斷（ocumEvtVserverIscsiServiceStatusDown）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+SVM NFS服務中斷（ocumEvtVserverNfsServiceStatus狀態下）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+未設定SVM FC/FCoE服務（不適用）
+ a| 
+活動
+ a| 
+SVM
+ a| 
+資訊
+
+
+
+ a| 
+未設定SVM iSCSI服務（不適用）
+ a| 
+活動
+ a| 
+SVM
+ a| 
+資訊
+
+
+
+ a| 
+未設定SVM NFS服務（不適用）
+ a| 
+活動
+ a| 
+SVM
+ a| 
+資訊
+
+
+
+ a| 
+SVM已停止（ocumEvtVserverDown）
+ a| 
+風險
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+AV伺服器太忙、無法接受新的掃描要求*
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+無防毒掃描的AV伺服器連線*
+ a| 
+事件
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+未註冊任何AV伺服器*
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+無回應的AV伺服器連線*
+ a| 
+活動
+ a| 
+SVM
+ a| 
+資訊
+
+
+
+ a| 
+未獲授權的使用者嘗試使用AV伺服器*
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+AV伺服器*發現病毒
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+無法使用具有無限Volume儲存設備的SVM（ocumEvtVserverStorageNotAvailable）
+ a| 
+事件
+ a| 
+具有無限Volume的SVM
+ a| 
+關鍵
+
+
+
+ a| 
+部分可用的無限Volume儲存設備SVM（ocumEvtVserverStoragePartiallyAvailable）
+ a| 
+風險
+ a| 
+具有無限Volume的SVM
+ a| 
+錯誤
+
+
+
+ a| 
+SVM搭配Infinite Volume命名空間鏡射元件具有可用度問題（ocumEvtVserverNsMirrorAvailability HavingIssues）
+ a| 
+風險
+ a| 
+具有無限Volume的SVM
+ a| 
+警告
+
+|===
+
+
+== 影響領域：容量
+
+下列容量事件僅適用於具有無限Volume的SVM。
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+具有無限Volume空間已滿的SVM（ocumEvtVserverFull）
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+SVM搭配無限Volume空間幾乎已滿（ocumEvtVserverNearlyFull）
+ a| 
+風險
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+超過SVM的無限Volume Snapshot使用限制（ocumEvtVserverSnapshotUsageExceded）
+ a| 
+風險
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+SVM具有無限Volume命名空間已滿（ocumEvtVserverNamespaceFull）
+ a| 
+風險
+ a| 
+SVM
+ a| 
+錯誤
+
+
+
+ a| 
+SVM搭配無限Volume命名空間幾乎已滿（ocumEvtVserverNamespaceNearlyFull）
+ a| 
+風險
+ a| 
+SVM
+ a| 
+警告
+
+|===
+
+
+== 影響領域：組態
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+發現SVM（不適用）
+ a| 
+活動
+ a| 
+SVM
+ a| 
+資訊
+
+
+
+ a| 
+SVM已刪除（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+資訊
+
+
+
+ a| 
+SVM已重新命名（不適用）
+ a| 
+活動
+ a| 
+SVM
+ a| 
+資訊
+
+|===
+
+
+== 影響領域：效能
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+違反SVM IOPS臨界值（ocumSvmIopsIncident）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+違反SVM IOPS警告臨界值（ocumSvmIopsWarnings）
+ a| 
+風險
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+違反SVM Mbps臨界值（ocumSvmMbps突 發事件）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+違反SVM Mbps警告臨界值（ocumSvmMbpsWarning）
+ a| 
+風險
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+違反SVM延遲臨界值（ocumSvmLatency事件）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+關鍵
+
+
+
+ a| 
+違反SVM延遲警告臨界值（ocumSvmLatency警告）
+ a| 
+風險
+ a| 
+SVM
+ a| 
+警告
+
+|===

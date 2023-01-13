@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-verify-whether-other-volumes-in-the-qos-policy-group-have-unusually-high-activity.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢閱活動變更率最高的「服務品質（QoS）」原則群組中的工作負載、以判斷是否有多個工作負載導致此事件。您也可以查看其他工作負載是否仍超過設定的處理量限制、或是否回到預期的活動範圍內。 
+---
+= 確認QoS原則群組中的其他磁碟區是否有異常高的活動
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢閱活動變更率最高的服務品質（QoS）原則群組中的工作負載、以判斷是否有多個工作負載導致此事件。您也可以查看其他工作負載是否仍超過設定的處理量限制、或是否回到預期的活動範圍內。
+
+在「事件詳細資料」頁面的「系統診斷」區段中、您可以依活動尖峰差異來排序工作負載、以便在表格頂端顯示活動變化最大的工作負載。這些工作負載可能是活動超過設定上限的「bulies」、可能是造成事件的原因。
+
+您可以瀏覽至圖表中每個Volume工作負載的「Performance / Volume Details（效能/ Volume詳細資料）」頁面、以檢閱其IOPS活動。如果工作負載的營運活動時間非常高、則可能是事件的促成因素。您可以變更工作負載的原則群組設定、或將工作負載移至不同的原則群組。
+
+您可以使用OnCommand 下列功能來ONTAP 管理原則群組：
+
+* 建立原則群組。
+* 新增或移除原則群組中的工作負載。
+* 在原則群組之間移動工作負載。
+* 變更原則群組的處理量限制。
+

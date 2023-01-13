@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-analyzing-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager可讓您監控及分析叢集上Volume工作負載的I/O效能。您可以判斷叢集是否存在效能問題、以及儲存設備是否有問題。 
+---
+= 分析工作負載效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager可讓您監控及分析叢集上Volume工作負載的I/O效能。您可以判斷叢集是否存在效能問題、以及儲存設備是否有問題。
+
+[NOTE]
+====
+本章說明如何使用「效能/磁碟區詳細資料」頁面和「事件詳細資料」頁面來分析工作負載效能。
+
+====

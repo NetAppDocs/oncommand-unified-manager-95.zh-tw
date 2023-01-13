@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 事件可協助您識別受監控叢集中的問題。 
+---
+= 管理事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件可協助您識別受監控叢集中的問題。

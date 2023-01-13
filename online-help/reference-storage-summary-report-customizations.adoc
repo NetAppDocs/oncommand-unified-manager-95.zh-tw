@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-storage-summary-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「儲存摘要」報告、以檢視及分析HA配對中的儲存容量資訊。您可以使用篩選器、依叢集模式、最未指派LUN的容量、以及可用HA配對的容量來顯示儲存使用率、以配置新的磁碟區和LUN。 
+---
+= 儲存摘要報告自訂項目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「儲存摘要」報告、以檢視及分析HA配對中的儲存容量資訊。您可以使用篩選器、依叢集模式、最未指派LUN的容量、以及可用HA配對的容量來顯示儲存使用率、以配置新的磁碟區和LUN。

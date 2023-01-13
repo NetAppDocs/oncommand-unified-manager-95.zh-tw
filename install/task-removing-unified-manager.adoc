@@ -1,0 +1,56 @@
+---
+permalink: install/task-removing-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您需要從Red Hat Enterprise Linux或CentOS主機移除Unified Manager、您可以使用單一命令來停止及解除安裝Unified Manager。 
+---
+= 從Red Hat Enterprise Linux或CentOS主機移除Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您需要從Red Hat Enterprise Linux或CentOS主機移除Unified Manager、您可以使用單一命令來停止及解除安裝Unified Manager。
+
+
+
+== 開始之前
+
+* 您必須擁有root使用者存取權、才能存取要從中移除Unified Manager的伺服器。
+* 必須在Red Hat機器上停用增強安全的Linux（SELinux）。使用將SELinux執行時間模式變更為「允許」 `setenforce 0` 命令。
+* 移除軟體之前、必須先從Unified Manager伺服器移除所有叢集（資料來源）。
+* Unified Manager伺服器不得與外部資料供應商（例如Graphite）有作用中的連線。
++
+如果是、您必須使用Unified Manager維護主控台刪除連線。
+
+
+
+
+
+== 關於這項工作
+
+這些步驟包含使用Veritas Operations Manager設定為高可用度的系統資訊。如果您的系統未設定為高可用度、請忽略這些額外步驟。
+
+
+
+== 步驟
+
+. 以root使用者身分登入擁有您要移除Unified Manager之叢集資源的叢集節點。
+. 使用VCS Operations Manager或VCS命令停止所有Unified Manager服務。
+. 停止Unified Manager並從伺服器移除： `rpm -e netapp-ocum ocie-au ocie-server netapp-platform-base netapp-application-server ocie-serverbase`
++
+此步驟會移除所有相關的NetApp RPM套件。它不會移除必要的軟體模組、例如Java、MySQL和p7zip。
+
+. 使用VCS Operations Manager切換至其他節點。
+. 登入叢集的第二個節點。
+. 停止所有服務、然後從第二個節點移除Unified Manager： `rpm -e netapp-ocum ocie-au ocie-server netapp-platform-base netapp-application-server ocie-serverbase`
+. 防止服務群組使用VCS Operations Manager或VCS命令。
+. 如果適用、請移除支援的軟體模組、例如Java、MySQL和p7zip： `rpm -e p7zip mysql-community-client mysql-community-server mysql-community-common mysql-community-libs java-x.y`
+
+
+
+
+== 結果
+
+此作業完成後、軟體即會移除、但不會刪除MySQL資料。的所有資料 `/opt/netapp/data` 目錄會移至 `/opt/netapp/data/BACKUP` 解除安裝後的資料夾。

@@ -1,0 +1,31 @@
+---
+permalink: install/task-upgrading-openjdk-on-linux-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在安裝Unified Manager的Linux伺服器上升級至新版的Java執行時間環境（JRE\）、以取得安全性弱點的修正程式。 
+---
+= 升級Linux上的JRE
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在安裝Unified Manager的Linux伺服器上升級至較新版本的Java執行時間環境（JRE）、以取得安全性弱點的修正程式。
+
+
+
+== 開始之前
+
+您必須擁有安裝Unified Manager的Linux系統的root權限。
+
+
+
+== 步驟
+
+. 以root使用者身分登入Unified Manager主機。
+. 將適當版本的Java（64位元）下載到目標系統。
+. 停止Unified Manager服務： `service ocieau stop``service ocie stop`
+. 在系統上安裝最新的JRE。
+. 啟動Unified Manager服務： `service ocie start``service ocieau start`
+

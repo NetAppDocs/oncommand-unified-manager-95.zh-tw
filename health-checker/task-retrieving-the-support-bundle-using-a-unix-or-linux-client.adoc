@@ -1,0 +1,78 @@
+---
+permalink: health-checker/task-retrieving-the-support-bundle-using-a-unix-or-linux-client.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您是UNIX或Linux使用者、可以使用Linux用戶端伺服器上的命令列介面（CLI）、從vApp擷取支援服務組合。您可以使用scp或SFTP擷取支援服務組合。 
+---
+= 使用UNIX或Linux用戶端擷取支援服務組合
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您是UNIX或Linux使用者、可以使用Linux用戶端伺服器上的命令列介面（CLI）、從vApp擷取支援服務組合。您可以使用scp或SFTP擷取支援服務組合。
+
+
+
+== 開始之前
+
+您必須是維護使用者才能執行此工作。
+
+您必須使用維護主控台產生支援服務組合、並提供支援服務組合名稱。
+
+
+
+== 步驟
+
+. 使用Linux用戶端伺服器、透過Telnet或主控台存取CLI。
+. 存取 `/support` 目錄。
+. 使用下列命令擷取支援服務包、並將其複製到本機目錄：
++
+|===
+| 如果您使用... | 然後使用下列命令... 
+
+
+ a| 
+scp
+ a| 
+`scp <maintenance-user>@<vApp-name-or-ip>:/support/support_bundle_file_name.7z <destination-directory>`
+
+
+
+ a| 
+SFTP
+ a| 
+`sftp <maintenance-user>@<vApp-name-or-ip>:/support/support_bundle_file_name.7z <destination-directory>`
+
+|===
++
+當您使用維護主控台產生支援服務時、會提供該服務組合的名稱。
+
+. 輸入維護使用者密碼。
+
+
+
+
+== 範例
+
+下列範例使用scp擷取支援服務組合：
+
+[listing]
+----
+
+        $ scp admin@10.10.12.69:/support/support_bundle_20160216_145359.7z .
+Password: <maintenance_user_password>
+support_bundle_20160216_145359.7z   100%  119MB  11.9MB/s   00:10
+----
+下列範例使用SFTP擷取支援服務組合：
+
+[listing]
+----
+
+        $ sftp admin@10.10.12.69:/support/support_bundle_20160216_145359.7z .
+Password: <maintenance_user_password>
+Connected to 10.228.212.69.
+Fetching /support/support_bundle_20130216_145359.7z to ./support_bundle_20130216_145359.7z
+/support/support_bundle_20160216_145359.7z
+----

@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-managing-health-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以設定所有集合體、磁碟區和qtree的全域健全狀況臨界值、以追蹤任何健全狀況臨界值外洩。 
+---
+= 管理健全狀況臨界值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定所有集合體、磁碟區和qtree的全域健全狀況臨界值、以追蹤任何健全狀況臨界值外洩。

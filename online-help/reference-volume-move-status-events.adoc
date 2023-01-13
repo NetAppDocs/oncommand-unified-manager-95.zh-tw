@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-volume-move-status-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Volume Move狀態事件會告訴您Volume Move的狀態、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= Volume Move狀態事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume Move狀態事件會告訴您Volume Move的狀態、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：容量
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+Volume Move Status（Volume Move狀態）：In Progress（進行中）（不適用）
+ a| 
+活動
+ a| 
+Volume
+ a| 
+資訊
+
+
+
+ a| 
+Volume Move Status（Volume Move Status）-故障（ocumEvtVolume Move失敗）
+ a| 
+風險
+ a| 
+Volume
+ a| 
+錯誤
+
+
+
+ a| 
+Volume Move Status（Volume Move Status）：completed（Not Applicable）（已完成
+ a| 
+活動
+ a| 
+Volume
+ a| 
+資訊
+
+
+
+ a| 
+Volume Move（Volume Move）- Cutover Deferred（ocumEvtVolume MoveCutoverDeferred）
+ a| 
+風險
+ a| 
+Volume
+ a| 
+警告
+
+|===

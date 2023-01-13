@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「組態/效能臨界值」頁面來建立、編輯、複製、刪除及檢視效能臨界值原則。 
+---
+= 效能臨界值原則頁面的說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「組態/效能臨界值」頁面來建立、編輯、複製、刪除及檢視效能臨界值原則。
+
+當您按一下適當頁面上的*說明*時、會顯示下列主題。

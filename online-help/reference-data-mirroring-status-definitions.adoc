@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-data-mirroring-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 支援各種組態、可在整個站台無法使用時、提供資料鏡射功能及啟動容錯移轉的額外能力。MetroCluster在一個不支援功能的組態中、叢集之間的資料鏡射狀態MetroCluster 可以是「正常」或「鏡射無法使用」。瞭解狀態可MetroCluster 讓您有效管理您的支援功能組態。 
+---
+= 資料鏡射狀態定義
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援各種組態、可在整個站台無法使用時、提供資料鏡射功能及啟動容錯移轉的額外能力。MetroCluster在一個不支援功能的組態中、叢集之間的資料鏡射狀態MetroCluster 可以是「正常」或「鏡射無法使用」。瞭解狀態可MetroCluster 讓您有效管理您的支援功能組態。
+
+|===
+| 資料鏡射狀態 | 說明 | 顯示圖示 
+
+
+ a| 
+正常
+ a| 
+在支援不支援的組態中、叢集之間的資料鏡射MetroCluster 是正常現象。
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+無法使用鏡射
+ a| 
+由於進行切換、所以無法在採用支援功能的叢集之間進行資料鏡射MetroCluster 。例如、當合作夥伴叢集因為災難而關閉、或是因為測試目的而有計畫性的切換時。
+ a| 
+切換時發生錯誤：
+
+image::../media/metrocluster-connectivity-down.gif[停止連線MetroCluster]
+
+切換成功：
+
+image::../media/metrocluster-connectivity-failover.gif[連線容錯移轉MetroCluster]
+
+|===

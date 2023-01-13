@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/task-accessing-system-manager-from-the-um-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: 當疑難排解需要變更叢集的組態時、您可以使用System Manager圖形介面、而非ONTAP 使用效益分析命令列介面。系統管理程式隨附ONTAP 於以Web服務形式提供的功能、預設為啟用、並可透過瀏覽器存取。 
+---
+= 從OnCommand Unified Manager介面存取《系統管理程式》
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當疑難排解需要變更叢集的組態時、您可以使用System Manager圖形介面、而非ONTAP 使用效益分析命令列介面。系統管理程式隨附ONTAP 於以Web服務形式提供的功能、預設為啟用、並可透過瀏覽器存取。
+
+
+
+== 開始之前
+
+您必須使用設定叢集使用者帳戶 `admin` 角色與 `http`、 `ontapi`和 `console` 應用程式類型：
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下*儀表板*>*叢集檢視*。
+. 在*儀表板/叢集檢視*頁面中、選取您要管理的叢集。
++
+將會顯示該叢集的監控狀態、容量和效能總覽。
+
+. 單擊*系統管理器*圖標。
++
+如果叢集使用自我簽署的數位憑證、瀏覽器可能會顯示警告、指出該憑證不受信任。您可以確認繼續存取的風險、或是在叢集上安裝憑證授權單位（CA）簽署的數位憑證、以進行伺服器驗證。
+
+. 使用叢集管理員認證登入System Manager。
++
+如果使用SAML驗證來保護系統管理員使用者介面的登入、您將在身分識別供應商（IDP）登入頁面輸入認證資料、而非在系統管理員登入頁面輸入認證資料。
+
+

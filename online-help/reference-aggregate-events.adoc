@@ -1,0 +1,408 @@
+---
+permalink: online-help/reference-aggregate-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Aggregate事件可提供有關Aggregate狀態的資訊、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= Aggregate事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aggregate事件可提供有關Aggregate狀態的資訊、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+星號（*）表示已轉換為Unified Manager事件的EMS事件。
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+Aggregate離線（ocumEvtAggregateState離 線）
+ a| 
+事件
+ a| 
+Aggregate
+ a| 
+關鍵
+
+
+
+ a| 
+Aggregate失敗（ocumEvtAggregateState故障）
+ a| 
+事件
+ a| 
+Aggregate
+ a| 
+關鍵
+
+
+
+ a| 
+Aggregate受限（ocumEvtAggregateState受 限）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+Aggregate重新建構（ocumEvtAggregate RaidStateReconstructing）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+Aggregate降級（ocumEvtAggregateRaidStateDegraded）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+部分可連線的雲端層（ocumEventCloudTierPartiallyReachable）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+無法連線的雲端層（ocumEventCloudTierUnreachable）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+錯誤
+
+
+
+ a| 
+剩餘的集合體（ocumEvtMetroClusterAggregateLeftBehind）MetroCluster
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+錯誤
+
+
+
+ a| 
+降級的鏡像（ocumEvtMetroClusterAggregate MirrorDegraded）MetroCluster
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+錯誤
+
+
+
+ a| 
+物件存放區存取遭拒、無法進行Aggregate Relocation *
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+錯誤
+
+
+
+ a| 
+物件存放區存取遭拒、無法在儲存容錯移轉期間進行集合重新配置*
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+錯誤
+
+|===
+
+
+== 影響領域：容量
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+Aggregate空間幾乎已滿（ocumEvtAggregate NearlyFull）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+Aggregate空間已滿（ocumEvtAggregateFull）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+錯誤
+
+
+
+ a| 
+累積天數直到完整（ocumEvtAggregate DaysUntilFullSoon）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+錯誤
+
+
+
+ a| 
+Aggregate過度使用（ocumEvtAggregate過度使用）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+錯誤
+
+
+
+ a| 
+Aggregate近乎過度使用（ocumEvtAggregate AlmostOver提交）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+Aggregate Snapshot Reserve已滿（ocumEvtAggregate SnapReserveFull）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+Aggregate成長率異常（ocumEvtAggreggregate成長率異常）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+|===
+
+
+== 影響領域：組態
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+已探索的Aggregate（不適用）
+ a| 
+活動
+ a| 
+Aggregate
+ a| 
+資訊
+
+
+
+ a| 
+已重新命名Aggregate（不適用）
+ a| 
+活動
+ a| 
+Aggregate
+ a| 
+資訊
+
+
+
+ a| 
+已刪除Aggregate（不適用）
+ a| 
+活動
+ a| 
+節點
+ a| 
+資訊
+
+|===
+
+
+== 影響領域：效能
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+違反Aggregate IOPS臨界值（ocumAggregate Iops意外）
+ a| 
+事件
+ a| 
+Aggregate
+ a| 
+關鍵
+
+
+
+ a| 
+違反Aggregate IOPS警告臨界值（ocumAggregateIopsWarnings）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+已違反Aggregate Mbps臨界值（ocumAggregateMbps突 發事件）
+ a| 
+事件
+ a| 
+Aggregate
+ a| 
+關鍵
+
+
+
+ a| 
+已違反Aggregate Mbps警告臨界值（ocumAggregateMbpsWarning）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+已違反Aggregate延遲臨界值（ocumAggregate Latency事件）
+ a| 
+事件
+ a| 
+Aggregate
+ a| 
+關鍵
+
+
+
+ a| 
+違反Aggregate延遲警告臨界值（ocumAggregate Latency警告）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+Aggregate效能已用容量重大臨界值超出（ocumAggregatePerf電容 使用事件）
+ a| 
+事件
+ a| 
+Aggregate
+ a| 
+關鍵
+
+
+
+ a| 
+Aggregate效能已用容量已超過警告臨界值（ocumAggregatePerf電容 已用警告）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+違反Aggregate使用率臨界值（ocumAggregate Utility事件）
+ a| 
+事件
+ a| 
+Aggregate
+ a| 
+關鍵
+
+
+
+ a| 
+已違反Aggregate使用率警告臨界值（ocumAggregate公用程式警告）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+已違反Aggregate磁碟過度使用臨界值（ocumAggregateDisksOverUtilizedWarnings）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+
+
+ a| 
+已違反Aggregate動態臨界值（ocumAggregateDynamicEventWarning）
+ a| 
+風險
+ a| 
+Aggregate
+ a| 
+警告
+
+|===

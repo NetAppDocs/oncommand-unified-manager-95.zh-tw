@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-run-storage-efficiency-operations-at-less-busy-times.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以修改處理儲存效率作業的原則或排程、以便在受影響的Volume工作負載較不忙碌時執行。 
+---
+= 在較不繁忙的時間執行儲存效率作業
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以修改處理儲存效率作業的原則或排程、以便在受影響的Volume工作負載較不忙碌時執行。
+
+儲存效率作業可能會使用大量的叢集CPU資源、而且會對執行作業的磁碟區構成威脅。如果受害者磁碟區在執行儲存效率作業的同時有大量活動、則它們的延遲可能會增加並觸發事件。
+
+在「事件詳細資料」頁面上、「系統診斷」區段會依活動尖峰差異顯示QoS原則群組中的工作負載、以識別高效能工作負載。如果您看到表格頂端顯示「儲存效率」、這些作業就會對受害者工作負載產生不良的負擔。修改效率原則或排程以在這些工作負載較不忙碌時執行、即可避免儲存效率作業在叢集上造成爭用。
+
+您可以使用OnCommand NetApp系統管理程式來管理效率原則。您可以使用ONTAP 效益命令來管理效率原則和排程。

@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-lun-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用「Performance（效能）/LUN Information（LUN資訊）」頁面可檢視LUN的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。 
+---
+= 效能/LUN資訊頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用「Performance（效能）/LUN Information（LUN資訊）」頁面可檢視LUN的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。
+
+
+
+== LUN屬性
+
+* * WWW*
++
+LUN的WWN（全球名稱）。
+
+* *路徑*
++
+LUN的完整路徑、例如 `/vol/vol1/lun1`。
+
+* *對齊*
++
+指出LUN的對齊狀態。可能值：
+
++
+** 未對應
+** 一致
+** 未對齊
+** 可能未對齊
+** 不確定
+
+
+* *容量（可用/總計）*
++
+LUN上可用的總儲存容量（以GB為單位）、以及目前可用的儲存容量。
+
+* * Volume *
++
+LUN所屬的磁碟區名稱。您可以按一下名稱、在「Performance / Volume Explorer（效能/ Volume檔案總管）」頁面中顯示磁碟區詳細資料。
+
+* *儲存虛擬機器*
++
+LUN所屬的SVM名稱。您可以按一下名稱、在「Performance（效能）/SVM Explorer（SVM檔案總管）」頁面中顯示SVM詳細資料。
+
+* *節點*
++
+LUN所在節點的名稱。您可以按一下名稱、在「Performance / Node Explorer（效能/節點資源管理器）」頁面中顯示節點詳細資料。
+
+* *叢集*
++
+LUN所屬的叢集名稱。您可以按一下名稱、在「Performance / Cluster Explorer（效能/叢集資源管理器）」頁面中顯示叢集詳細資料。
+
+* *州*
++
+LUN的狀態。有效狀態可以是線上、離線、nvfail、空間錯誤和Foreign LUN錯誤。
+
+* *對應*
++
+LUN是否對應至啟動器群組（true）或非（false）。
+
+

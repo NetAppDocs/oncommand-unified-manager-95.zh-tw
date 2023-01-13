@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-analyzing-events-from-user-defined-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 從使用者定義臨界值產生的事件、表示特定儲存物件（例如集合體或磁碟區）的效能計數器已超過您在原則中定義的臨界值。這表示叢集物件發生效能問題。 
+---
+= 從使用者定義的效能臨界值分析事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+從使用者定義臨界值產生的事件、表示特定儲存物件（例如集合體或磁碟區）的效能計數器已超過您在原則中定義的臨界值。這表示叢集物件發生效能問題。
+
+您可以使用「事件詳細資料」頁面來分析效能事件、並視需要採取修正行動、將效能恢復正常。

@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-applying-filtering-to-correlated-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 篩選功能可讓您在網格中顯示較小、定義更完善的物件子集。例如、如果網格中有25個磁碟區、篩選功能可讓您只檢視處理量低於90 Mbps或延遲大於1毫秒/作業的磁碟區 
+---
+= 套用篩選以減少網格中關聯物件的清單
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+篩選功能可讓您在網格中顯示較小、定義更完善的物件子集。例如、如果網格中有25個磁碟區、篩選功能可讓您只檢視處理量低於90 Mbps或延遲大於1毫秒/作業的磁碟區

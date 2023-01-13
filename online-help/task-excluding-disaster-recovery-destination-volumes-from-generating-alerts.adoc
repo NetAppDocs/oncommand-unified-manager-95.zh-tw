@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-excluding-disaster-recovery-destination-volumes-from-generating-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 設定Volume警示時、您可以在警示對話方塊中指定字串、以識別磁碟區或磁碟區群組。不過、如果您已設定SVM的災難恢復、來源和目的地磁碟區名稱相同、因此您將會收到兩個磁碟區的警示。 
+---
+= 排除災難恢復目的地磁碟區產生警示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定Volume警示時、您可以在警示對話方塊中指定字串、以識別磁碟區或磁碟區群組。不過、如果您已設定SVM的災難恢復、來源和目的地磁碟區名稱相同、因此您將會收到兩個磁碟區的警示。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+您可以排除具有目的地SVM名稱的磁碟區、以停用災難恢復目的地磁碟區的警示。這是因為Volume事件的識別碼同時包含SVM名稱和Volume名稱、格式為「<svm_name> 'SSITE/Sfe'<volume_name> 」。
+
+以下範例說明如何在主要SVM上建立Volume「'vol1'」警示、但在SVM上不要在名稱相同的Volume上產生警示「VS1-DR」。
+
+在「新增警示」對話方塊中執行下列步驟：
+
+
+
+== 步驟
+
+. 按一下*名稱*、然後輸入警示的名稱和說明。
+. 按一下「*資源*」、然後選取「*包括*」索引標籤。
++
+.. 從下拉式清單中選取* Volume *、然後輸入 `vol1` 在「*名稱包含*」欄位中、顯示名稱包含「vol1」的磁碟區。
+.. 選取*<<All Volumes whose name contains 'vol1'>>*從*可用資源*區域、將其移至*所選資源*區域。
+
+
+. 選取*排除*索引標籤、選取* Volume *、然後輸入 `vs1-dr` 在「*名稱包含*」欄位中、然後按一下「*新增*」。
++
+這不包括在SVM上為Volume「vol1」產生警示「VS1-Dr'」。
+
+. 按一下「*事件*」、然後選取您要套用到磁碟區或磁碟區的事件。
+. 按一下「*動作*」、然後在「*警示這些使用者*」欄位中選取接收警示電子郵件的使用者名稱。
+. 設定此頁面上的任何其他選項、以發出SNMP設陷並執行指令碼、然後按一下*「Save（儲存）」*。
+

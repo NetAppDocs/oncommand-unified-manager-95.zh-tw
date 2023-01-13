@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-jobs-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 工作是一系列的工作、您可以使用Unified Manager進行監控。檢視工作及其相關工作可讓您判斷是否已成功完成。 
+---
+= 什麼是工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+工作是一系列的工作、您可以使用Unified Manager進行監控。檢視工作及其相關工作可讓您判斷是否已成功完成。
+
+當您建立SnapMirror和SnapVault 相依關係、執行任何關係作業（中斷、編輯、靜止、移除、恢復、 重新同步和反向重新同步）、執行資料還原工作、登入叢集等。
+
+當您啟動工作時、可以使用「保護/工作」頁面和「保護/工作詳細資料」頁面來監控工作及相關工作工作的進度。

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-oncommand-workflow-automation-settings-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您OnCommand Workflow Automation 可以使用「設定/工作流程自動化」頁面、在Unified Manager中設定支援功能。 
+---
+= 功能介紹：功能設定視窗和對話方塊OnCommand Workflow Automation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您OnCommand Workflow Automation 可以使用「設定/工作流程自動化」頁面、在Unified Manager中設定支援功能。

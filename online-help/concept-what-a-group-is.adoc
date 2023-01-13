@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-what-a-group-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 群組是異質儲存物件（叢集、SVM或Volume）的動態集合。您可以在Unified Manager中建立群組、輕鬆管理一組儲存物件。群組中的成員可能會有所變更、視Unified Manager在某個時間點監控的儲存物件而定。 
+---
+= 什麼是群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+群組是異質儲存物件（叢集、SVM或Volume）的動態集合。您可以在Unified Manager中建立群組、輕鬆管理一組儲存物件。群組中的成員可能會有所變更、視Unified Manager在某個時間點監控的儲存物件而定。
+
+* 每個群組都有唯一的名稱。
+* 您必須為每個群組設定至少一個群組規則。
+* 您可以將群組與多個群組規則建立關聯。
+* 每個群組可包含多種類型的儲存物件、例如叢集、SVM或Volume。
+* 儲存物件會根據建立群組規則或Unified Manager完成監控週期的時間、動態新增至群組。
+* 您可以同時對群組中的所有儲存物件套用動作、例如設定磁碟區臨界值。
+

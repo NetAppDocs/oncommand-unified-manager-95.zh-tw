@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-confirm-that-the-response-time-is-within-the-expected-range.html 
+sidebar: sidebar 
+keywords:  
+summary: 當叢集元件發生爭用時、使用它的Volume工作負載可能會縮短回應時間（延遲）。您可以檢閱爭用元件上每個受害者工作負載的延遲、以確認其實際延遲在預期範圍內。您也可以按一下磁碟區名稱來檢視磁碟區的歷史資料。 
+---
+= 確認延遲在預期範圍內
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當叢集元件發生爭用時、使用它的Volume工作負載可能會縮短回應時間（延遲）。您可以檢閱爭用元件上每個受害者工作負載的延遲、以確認其實際延遲在預期範圍內。您也可以按一下磁碟區名稱來檢視磁碟區的歷史資料。
+
+如果效能事件處於過時狀態、則事件所涉及的每位受害者的延遲時間可能已在預期範圍內恢復。

@@ -1,0 +1,33 @@
+---
+permalink: install/task-downloading-the-unified-manager-iso-image-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 升級Unified Manager之前、您必須先從NetApp 支援網站 下列網址下載Unified Manager ISO映像： 
+---
+= 下載Unified Manager ISO映像
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升級Unified Manager之前、您必須先從NetApp 支援網站 下列網址下載Unified Manager ISO映像：
+
+
+
+== 開始之前
+
+您必須擁有 NetApp 支援網站的登入認證資料。
+
+
+
+== 步驟
+
+. 登入NetApp 支援網站 到「The解決方法」、然後瀏覽至「Software Download（軟體下載）」頁面。
+. 下載並儲存 `.iso` 映像檔至vSphere Client可存取的本機目錄或網路目錄。
+. 驗證Checksum、確保軟體下載正確。
+
+
+*相關資訊*
+
+http://mysupport.netapp.com["NetApp支援"]

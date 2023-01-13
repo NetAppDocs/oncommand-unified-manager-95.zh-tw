@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以先檢視從「資料原則」索引標籤建立的規則清單、再使用「無限Volume」修改SVM的資料原則。 
+---
+= 檢視規則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以先檢視從「資料原則」索引標籤建立的規則清單、再使用「無限Volume」修改SVM的資料原則。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+* 含有具有儲存類別的無限Volume SVM的叢集必須新增至Unified Manager資料庫。
+
+
+
+
+== 關於這項工作
+
+資料原則索引標籤僅適用於具有無限Volume的SVM。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下「*健全狀況*」>「* SVMS*」。
+. 在*健全狀況/儲存虛擬機器*目錄頁面中、選取適當的SVM。
+. 按一下*資料原則*。
+
+
+
+
+== 結果
+
+隨即顯示所選SVM資料原則中的規則清單。您可以使用「依儲存類別篩選」來檢視特定儲存類別的相關規則。

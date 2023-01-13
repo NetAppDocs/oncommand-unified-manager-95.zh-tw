@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-aggregate-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用「效能/集合體資訊」頁面可檢視集合體的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。 
+---
+= 效能/集合體資訊頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用「效能/集合體資訊」頁面可檢視集合體的實體和邏輯屬性清單。這些資訊可能有助於回答效能相關問題。
+
+
+
+== Aggregate屬性
+
+* * Aggregate類型*
++
+Aggregate類型：
+
++
+** HDD
+** 混合式
++
+結合HDD和SSD、但尚未啟用Flash Pool。
+
+** 混合式（Flash Pool）
++
+結合HDD和SSD、並已啟用Flash Pool。
+
+** SSD
+** SSD（FabricPool 僅限部分）
++
+結合SSD與雲端層
+
+** VMDisk（SDS）
++
+虛擬機器內的虛擬磁碟
+
+** VMDisk（FabricPool VMware）
++
+結合虛擬磁碟與雲端層
+
+** LUN FlexArray （僅限部分）
+
+
+* *叢集*
++
+集合所屬叢集的名稱。您可以按一下名稱、在「Performance / Cluster Explorer（效能/叢集資源管理器）」頁面中顯示叢集詳細資料。
+
+* *節點*
++
+集合體磁碟所屬的節點名稱。您可以按一下名稱、在「Performance / Node Explorer（效能/節點資源管理器）」頁面中顯示節點詳細資料。
+
+* * Flash Pool *
++
+無論這是Flash Pool Aggregate：Yes或No
+
++
+Flash Pool Aggregate是混合式Aggregate、由SSD和HDD組成。
+
+* *《*》FabricPool
++
+無論這是FabricPool 一個不實的集合體：是或否
+
++
+「支援整合」是由SSD和雲端層所組成的集合體FabricPool 。
+
+* *非使用中資料報告*
++
+此Aggregate上的非作用中資料報告功能是啟用還是停用。啟用時、此Aggregate上的磁碟區會在「效能/磁碟區」目錄頁面中顯示冷資料量。
+
++
+當版本的資訊不支援非作用中的資料報告時、此欄位的值為「N/A」ONTAP 。
+
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-nfs-export-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂NFS匯出報告、以分析儲存系統上磁碟區的NFS匯出原則和規則相關資訊。例如、您可以自訂報告、以預設匯出原則來顯示具有無法存取的交會路徑和磁碟區的磁碟區。 
+---
+= NFS匯出報告自訂
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂NFS匯出報告、以分析儲存系統上磁碟區的NFS匯出原則和規則相關資訊。例如、您可以自訂報告、以預設匯出原則來顯示具有無法存取的交會路徑和磁碟區的磁碟區。

@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-deleting-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以刪除Snapshot複本以節省空間或釋出磁碟空間、也可以刪除不再需要的Snapshot複本。 
+---
+= 刪除Snapshot複本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以刪除Snapshot複本以節省空間或釋出磁碟空間、也可以刪除不再需要的Snapshot複本。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+Volume必須處於線上狀態。
+
+若要刪除忙碌或鎖定的Snapshot複本、您必須從使用該複本的應用程式中釋出Snapshot複本。
+
+
+
+== 關於這項工作
+
+* 如果FlexClone磁碟區使用的是Snapshot複本、則無法刪除父磁碟區中的基礎Snapshot複本。
++
+基礎Snapshot複本是Snapshot複本、用於建立FlexClone Volume並顯示狀態 `Busy` 和應用程式相依性 `Busy,Vclone` 在父Volume中。
+
+* 您無法刪除SnapMirror關係中使用的鎖定Snapshot複本。
++
+Snapshot複本已鎖定、下次更新時必須使用。
+
+
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下*健全狀況*>*磁碟區*。
+. 在「*健全狀況/磁碟區*」目錄頁面中、選取包含您要檢視之Snapshot複本的磁碟區。
++
+此時會顯示Snapshot複本清單。
+
+. 在「*健全狀況/磁碟區*」詳細資料頁面中、按一下「*容量*」索引標籤。
+. 在「*容量*」標籤的「*詳細資料*」窗格中、於「其他詳細資料」區段中、按一下「* Snapshot copies *」旁邊的連結。
++
+Snapshot複本數量是顯示Snapshot複本清單的連結。
+
+. 在「* Snapshot Copies *」（* Snapshot複本*）檢視中、選取您要刪除的Snapshot複本、然後按一下「* Delete selected *」（刪除選取的*）。
+

@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-event-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視Unified Manager觸發事件的詳細資料、以便採取修正行動。例如、如果健全狀況事件Volume離線、您可以按一下該事件來檢視詳細資料並執行修正動作。 
+---
+= 檢視事件詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視Unified Manager觸發事件的詳細資料、以便採取修正行動。例如、如果健全狀況事件Volume離線、您可以按一下該事件來檢視詳細資料並執行修正動作。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+事件詳細資料包括事件來源、事件原因、以及任何與事件相關的附註等資訊。
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下*事件*。
+. 在*事件*目錄頁面中、按一下您要檢視其詳細資料的事件名稱。
++
+事件詳細資料會顯示在「事件詳細資料」頁面中。
+
+

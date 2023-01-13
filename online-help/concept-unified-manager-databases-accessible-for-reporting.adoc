@@ -1,0 +1,74 @@
+---
+permalink: online-help/concept-unified-manager-databases-accessible-for-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager使用MySQL資料庫來儲存其監控叢集的資料。資料會保留在MySQL資料庫的各種架構中。 
+---
+= Unified Manager資料庫可供自訂報告使用
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager使用MySQL資料庫來儲存其監控叢集的資料。資料會保留在MySQL資料庫的各種架構中。
+
+從Unified Manager 7.3開始、我們會公開額外的架構、以便存取其他資料表資料。
+
+下列資料庫中的所有表格資料均可供使用：
+
+|===
+| 資料庫 | 說明 
+
+
+ a| 
+NetApp_mode_view
+ a| 
+關於物件的資料ONTAP 。
+
+
+
+ a| 
+NetApp_Performance
+ a| 
+叢集特定效能計數器。
+
+
+
+ a| 
+奧克姆
+ a| 
+Unified Manager應用程式資料與資訊、可支援UI篩選、排序及計算某些衍生欄位。
+
+
+
+ a| 
+ocum_report
+ a| 
+用於庫存組態和容量相關資訊的資料。
+
+
+
+ a| 
+ocum_report_BIRT
+ a| 
+與上述相同、但此資料庫是由內建的BIRT報告所使用。
+
+
+
+ a| 
+OPM
+ a| 
+效能組態設定與臨界值資訊。
+
+
+
+ a| 
+scalemonitor
+ a| 
+Unified Manager應用程式健全狀況與效能問題的相關資料。
+
+|===
+報告使用者（具有報告架構角色的資料庫使用者）能夠存取這些表格中的資料。此使用者可直接從Unified Manager資料庫、以唯讀方式存取報告和其他資料庫檢視。請注意、此使用者無權存取任何包含使用者資料或叢集認證資訊的資料表。
+
+請參閱 http://www.netapp.com/us/media/tr-4565.pdf["Unified Manager報告技術報告"] （TR-4565）以取得更多詳細資料。

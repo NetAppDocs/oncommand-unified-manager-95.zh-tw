@@ -1,0 +1,77 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「資料庫備份設定」對話方塊來指定備份路徑和保留計數、並啟用所選備份執行個體的備份排程。 
+---
+= 資料庫備份設定對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「資料庫備份設定」對話方塊來指定備份路徑和保留計數、並啟用所選備份執行個體的備份排程。
+
+您可以變更下列資料庫備份設定：
+
+* *路徑*
++
+指定儲存備份檔案的位置路徑。下表指定不同作業系統的備份路徑格式和預設位置：
+
++
+|===
+| 主機作業系統 | 備份路徑格式 
+
+
+ a| 
+虛擬應用裝置
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux或CentOS
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+`C:\ProgramData\NetApp\OnCommandAppData\ocum\backup\`
+
+|===
+* *保留計數*
++
+指定Unified Manager保留的最大備份數。預設值為十。
+
+* *啟用頻率排程*
++
+此選項可讓您指定排程備份的時間、您可以選擇每日或每週。
+
+* * 每日 *
++
+以時間指定每日備份排程。
+
+* * 每週 *
++
+指定每週備份排程的日期和時間。
+
+
+
+
+
+== 命令按鈕
+
+* *儲存並關閉*
++
+儲存備份檔案並關閉對話方塊。Unified Manager會以下列格式儲存備份檔案： `um_um_version_backup_os_timestamp.7z`。
+
+* *取消*
++
+關閉「資料庫備份設定」對話方塊、而不儲存變更。
+
+

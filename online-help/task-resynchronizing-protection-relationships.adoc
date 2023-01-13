@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-resynchronizing-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從「保護/磁碟區關係」頁面重新同步關係、以便從停用來源磁碟區的事件中恢復、或是當您想要將目前來源變更為不同的磁碟區時恢復關係。 
+---
+= 從「Protection / Volume Relations/Volume Relations/」頁面重新同步保護關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從「保護/磁碟區關係」頁面重新同步關係、以便從停用來源磁碟區的事件中恢復、或是當您想要將目前來源變更為不同的磁碟區時恢復關係。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須設定Workflow Automation。
+
+
+
+
+== 步驟
+
+. 在「*保護/磁碟區關係*」頁面中、選取一個或多個具有靜止關係的磁碟區、然後在工具列中按一下「*重新同步*」。
++
+此時會顯示重新同步對話方塊。
+
+. 在*重新同步選項*索引標籤中、選取傳輸優先順序和最大傳輸率。
+. 按一下「*來源Snapshot Copies *」；然後在「* Snapshot Copy*」欄中、按一下「* Default *」。
++
+此時將顯示Select來源Snapshot Copy（選擇來源Snapshot複製）對話框。
+
+. 如果您想要指定現有的Snapshot複本、而非傳輸預設的Snapshot複本、請按一下*現有的Snapshot Copy*、然後從清單中選取Snapshot複本。
+. 按一下*提交*。
++
+您將返回「重新同步」對話方塊。
+
+. 如果您選取多個來源進行重新同步、請針對您要指定現有Snapshot複本的下一個來源、按一下*預設*。
+. 按一下「*提交*」開始重新同步工作。
++
+重新同步工作隨即開始、您會返回「Protection / Volume Relations/Volume Relations/」（保護/磁碟區關係）頁面、頁面頂端會顯示工作連結。
+
+. 按一下「*保護/磁碟區關係*」頁面上的「*檢視工作*」、即可追蹤每個重新同步工作的狀態。
++
+畫面會顯示篩選後的工作清單。
+
+. 按一下瀏覽器上的*上一頁*箭頭、即可返回*保護/磁碟區關係*頁面。
++
+當所有工作任務成功完成時、即會完成重新同步作業。
+
+

@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-view-aggregates-reaching-full-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Aggregate Capacity and utilization報告、以根據增加的Aggregate容量使用率順序來顯示已排序的Aggregate。這可讓您檢視達到完整容量的集合體。 
+---
+= 自訂Aggregate容量與使用率報告、以檢視達到完整容量的集合體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂Aggregate Capacity and utilization報告、以根據增加的Aggregate容量使用率順序來顯示已排序的Aggregate。這可讓您檢視達到完整容量的集合體。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要移除依叢集和HA配對進行的分組、請執行下列步驟：
++
+.. 按一下需要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組選項*。
+
+
+. 若要排序達到完整容量的集合體、請按一下「*天至完整*」欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+. 選擇*篩選器*>*頂端/底端N*。
+. 在*上/下N*對話方塊中、從*篩選*欄位中選取*下N*、然後在文字欄位中輸入值。
+. 按一下「*確定*」。
+

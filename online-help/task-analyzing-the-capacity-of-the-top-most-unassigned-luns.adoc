@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-analyzing-the-capacity-of-the-top-most-unassigned-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「儲存摘要」報告來分析叢集的儲存使用率、以便找到具有最大未配置容量的LUN。 
+---
+= 自訂「儲存摘要」報告、以分析具有最大未配置LUN容量的叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「儲存摘要」報告來分析叢集的儲存使用率、以便找到具有最大未配置容量的LUN。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要移除依叢集分組、請執行下列步驟：
++
+.. 按一下需要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 若要排序具有最大未配置LUN容量的HA配對、請按一下*未分配LUN容量（TB）*欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+. 選擇*篩選器*>*頂端/底端N*。
+. 在*上/下N*對話方塊中、從*篩選*欄位中選取*上N*、然後在文字欄位中輸入值。
+. 按一下「*確定*」。
+

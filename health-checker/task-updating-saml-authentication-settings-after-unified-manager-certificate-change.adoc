@@ -1,0 +1,65 @@
+---
+permalink: health-checker/task-updating-saml-authentication-settings-after-unified-manager-certificate-change.html 
+sidebar: sidebar 
+keywords:  
+summary: 若對安裝在Unified Manager伺服器上的HTTPS安全性憑證進行任何變更、都必須更新SAML驗證組態設定。如果您重新命名主機系統、指派主機系統的新IP位址、或手動變更系統的安全性憑證、則會更新憑證。 
+---
+= 在Unified Manager安全性憑證變更之後更新SAML驗證設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若對安裝在Unified Manager伺服器上的HTTPS安全性憑證進行任何變更、都必須更新SAML驗證組態設定。如果您重新命名主機系統、指派主機系統的新IP位址、或手動變更系統的安全性憑證、則會更新憑證。
+
+
+
+== 關於這項工作
+
+變更安全性憑證並重新啟動Unified Manager伺服器之後、SAML驗證將無法運作、使用者將無法存取Unified Manager圖形介面。您必須更新IDP伺服器和Unified Manager伺服器上的SAML驗證設定、才能重新啟用使用者介面的存取。
+
+
+
+== 步驟
+
+. 登入維護主控台。
+. 在*主功能表*中、輸入*停用SAML驗證*選項的編號。
++
+畫面會顯示訊息、確認您要停用SAML驗證並重新啟動Unified Manager。
+
+. 使用更新的FQDN或IP位址啟動Unified Manager使用者介面、將更新的伺服器憑證接受到瀏覽器、然後使用維護使用者認證登入。
+. 在「*設定/驗證*」頁面中、選取「* SAML驗證*」索引標籤、然後設定IDP連線。
+. 複製Unified Manager主機中繼資料URI、或將主機中繼資料儲存至XML文字檔。
+. 按一下「 * 儲存 * 」。
++
+隨即顯示訊息方塊、確認您要完成組態並重新啟動Unified Manager。
+
+. 按一下*「Confirm and Logout*（確認並登出）」、Unified Manager即會重新啟動。
+. 存取您的IDP伺服器、然後輸入Unified Manager伺服器URI和中繼資料以完成組態。
++
+|===
+| 身分識別供應商 | 組態步驟 
+
+
+ a| 
+ADFS
+ a| 
+.. 刪除ADFS管理GUI中現有的信賴關係人信任項目。
+.. 使用新增信賴關係人信任項目 `saml_sp_metadata.xml` 更新的Unified Manager伺服器。
+.. 定義Unified Manager剖析此信賴方信任項目的ADFS SAML回應所需的三種宣告規則。
+.. 重新啟動ADFS Windows服務。
+
+
+
+
+ a| 
+Shibboleth
+ a| 
+.. 將Unified Manager伺服器的新FQDN更新至 `attribute-filter.xml` 和 `relying-party.xml` 檔案：
+.. 重新啟動Apache TOMCAT Web伺服器、並等待連接埠8005上線。
+
+
+|===
+. 登入Unified Manager、並確認SAML驗證可在您的IDP中正常運作。
+

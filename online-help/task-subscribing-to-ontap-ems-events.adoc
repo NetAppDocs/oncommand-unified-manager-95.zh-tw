@@ -1,0 +1,68 @@
+---
+permalink: online-help/task-subscribing-to-ontap-ems-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以訂閱以接收由安裝ONTAP 了VMware軟體的系統所產生的事件管理系統（EMS）事件。系統會自動將一部分EMS事件報告給Unified Manager、但只有在您訂閱了這些事件之後、才會報告其他EMS事件。 
+---
+= 訂閱ONTAP E不到EMS活動
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以訂閱以接收由安裝ONTAP 了此軟體的系統所產生的事件管理系統（EMS）事件。系統會自動將一部分EMS事件報告給Unified Manager、但只有在您訂閱了這些事件之後、才會報告其他EMS事件。
+
+
+
+== 開始之前
+
+請勿訂閱已自動新增至Unified Manager的EMS事件、因為這可能會在收到兩個事件以處理同一個問題時造成混淆。
+
+
+
+== 關於這項工作
+
+您可以訂閱任何數量的EMS事件。您訂閱的所有事件都會經過驗證、而且只有已驗證的事件會套用至您在Unified Manager中監控的叢集。_SUR9 EMS Event Catalog_提供指定版本之32個軟體的所有EMS訊息詳細資訊。ONTAP ONTAP請從ONTAP 「VMware產品文件」頁面找到適當版本的_EMS事件目錄_、以取得適用事件的清單。
+
+https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["產品庫ONTAP"]
+
+您可以針對ONTAP 訂閱的各項E不到EMS事件設定警示、也可以建立自訂指令碼、以便針對這些事件執行。
+
+[NOTE]
+====
+如果您未收到ONTAP 您訂閱的EseEms事件、則叢集的DNS組態可能會發生問題、導致叢集無法到達Unified Manager伺服器。若要解決此問題、叢集管理員必須修正叢集的DNS組態、然後重新啟動Unified Manager。如此將會將擱置的EMS事件排清到Unified Manager伺服器。
+
+====
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下*組態*>*管理事件*。
+. 在*組態/管理事件*頁面中、按一下*訂閱EMS事件*按鈕。
+. 在*訂閱EMS events *（緊急醫療服務事件*）對話方塊中、輸入ONTAP 您要訂閱的「還原緊急醫療服務」事件名稱。
++
+若要檢視您可以訂閱的EMS事件名稱、ONTAP 您可以從叢集Shell使用 `event route show` 命令（ONTAP 在版本號不低於版本9之前）或 `event catalog show` 命令（ONTAP 更新版本、僅限功能更新版本）。如需識別個別EMS事件的詳細指示、請參閱知識庫答案1072320。
+
++
+https://kb.netapp.com/app/answers/answer_view/a_id/1072320["KB 10722320 -如何在ONTAP Unified Manager中設定不含EsEMS的事件訂閱"]
+
+. 按一下「 * 新增 * 」。
++
+EMS事件會新增至訂閱的EMS事件清單、但「適用於叢集」欄會針對您新增的EMS事件、將狀態顯示為「'Unknown'（未知）」。
+
+. 按一下*「Save and Close"（儲存並關閉）*、將EMS事件訂閱登錄至叢集。
+. 再按一下*訂閱EMS事件*。
++
+您所新增之EMS事件的「適用的叢集」欄會顯示「是」狀態。
+
++
+如果狀態不是「Yes（是）」、請檢查ONTAP 是否拼寫了Eqing事件名稱。如果輸入的名稱不正確、您必須移除不正確的事件、然後重新新增事件。
+
+
+
+
+
+== 完成後
+
+當發生「事件」事件時、事件會顯示在「事件」頁面上。ONTAP您可以選取事件、在「事件詳細資料」頁面中檢視有關EMS事件的詳細資料。您也可以管理事件的配置碼、或為事件建立警示。

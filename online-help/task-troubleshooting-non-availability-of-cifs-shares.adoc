@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-troubleshooting-non-availability-of-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果服務這些共用的儲存物件無法使用、您可能無法存取CIFS共用。您應該檢閱可用度事件、例如Volume離線、Junction Path離線、或SVM CIFS Server當這些物件無法使用時所產生的SVM CIFS伺服器當機。 
+---
+= 疑難排解CIFS共用的存取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果服務這些共用的儲存物件無法使用、您可能無法存取CIFS共用。您應該檢閱可用度事件、例如Volume離線、Junction Path離線、或SVM CIFS Server當這些物件無法使用時所產生的SVM CIFS伺服器當機。
+
+
+
+== 開始之前
+
+您必須具備儲存管理員角色、才能執行此工作。
+
+
+
+== 關於這項工作
+
+如果您已設定適當的警示、系統會透過警示電子郵件通知您有關連可用度事件的資訊。
+
+
+
+== 步驟
+
+. 在*儀表板/總覽*頁面中、按一下適當的離線事件。
++
+例如、如果您收到Volume離線事件、請按一下 *`Volume_name` Volume離線*事件、位於「可用度」面板的「未解決的事件與風險」區域。
+
+. 在*事件*詳細資料頁面中、按一下 *`Volume_name`*在*來源*欄位中。
+. 在「*健全狀況/磁碟區*」詳細資料頁面中、按一下「*相關裝置*」窗格中與CIFS共用對應的編號。
+. 在「*健全狀況/儲存虛擬機器*」詳細資料頁面中、按一下「* CIFS Shares *」索引標籤。
++
+您可以檢視受影響的CIFS共用數量。
+
+
+
+
+
+== 完成後
+
+您必須使用OnCommand 無法解決的問題、例如使用「系統管理程式」ONTAP 或「系統資訊管理系統」CLI。

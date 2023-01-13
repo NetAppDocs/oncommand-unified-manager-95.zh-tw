@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-page-descriptions-for-object-landing-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「效能總管」頁面來檢視每個可用儲存物件的詳細效能資訊、例如叢集、集合體、磁碟區等。這些頁面可讓您評估所有物件的整體效能、並以並排格式比較物件效能資料。 
+---
+= Performance Explorer頁面說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「效能總管」頁面來檢視每個可用儲存物件的詳細效能資訊、例如叢集、集合體、磁碟區等。這些頁面可讓您評估所有物件的整體效能、並以並排格式比較物件效能資料。

@@ -1,0 +1,43 @@
+---
+permalink: online-help/concept-move-logical-interfaces.html 
+sidebar: sidebar 
+keywords:  
+summary: 將邏輯介面（lifs）移至較不忙碌的連接埠、有助於改善負載平衡、協助維護作業和效能調校、並減少間接存取。 
+---
+= 移動邏輯介面（LIF）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將邏輯介面（LIF）移至較不忙碌的連接埠、有助於改善負載平衡、協助維護作業和效能調校、並減少間接存取。
+
+間接存取可降低系統效率。當Volume工作負載使用不同的節點進行網路處理和資料處理時、就會發生這種情況。為了減少間接存取、您可以重新排列生命期、這需要移動生命期、以便使用相同的節點進行網路處理和資料處理。您可以設定負載平衡、讓ONTAP VMware自動將忙碌的LIF移至不同的連接埠、或手動移動LIF。
+
+|===
+| *效益* 
+
+
+ a| 
+* 改善負載平衡。
+* 減少間接存取。
+
+
+
+
+ a| 
+*考量事項*
+
+
+
+ a| 
+[NOTE]
+====
+移動連線至CIFS共用的LIF時、存取CIFS共用的用戶端會中斷連線。任何對CIFS共用區的讀取或寫入要求都會中斷。
+
+====
+|===
+您可以使用ONTAP VMware指令來設定負載平衡。如需詳細資訊、請參閱ONTAP 《關於網路的資訊》文件。
+
+您可以使用OnCommand 「系統管理程式」和ONTAP 「Sof CLI」命令手動搬移生命。

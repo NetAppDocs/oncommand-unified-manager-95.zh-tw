@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-using-the-unified-manager-help.html 
+sidebar: sidebar 
+keywords:  
+summary: 「說明」包含OnCommand 有關《支援中心》中所有功能的資訊。您可以使用目錄、索引或搜尋工具來尋找功能及使用方法的相關資訊。 
+---
+= 使用Unified Manager說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「說明」包含OnCommand 有關《支援中心》中所有功能的資訊。您可以使用目錄、索引或搜尋工具來尋找功能及使用方法的相關資訊。
+
+
+
+== 關於這項工作
+
+您可從每個索引標籤和Unified Manager使用者介面的功能表列取得說明。
+
+「說明」中的搜尋工具不適用於部分字詞。
+
+
+
+== 選擇
+
+* 若要深入瞭解特定欄位或參數、請按一下 image:../media/helpicon-um60.gif["上下文相關說明的圖示"]。
+* 若要檢視所有說明內容、請按一下*image:../media/helpicon-um60.gif["上下文相關說明的圖示"]功能表列中的*>*說明/說明文件*。
++
+您可以在導覽窗格中展開目錄的任何部分、以找到更詳細的資訊。
+
+* 若要搜尋說明內容、請按一下導覽窗格中的*搜尋*索引標籤、輸入您要尋找的字詞或字詞系列、然後按一下*搜尋！*
+* 若要列印「說明」主題、請按一下印表機圖示。
+

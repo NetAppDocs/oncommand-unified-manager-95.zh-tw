@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-counter-charts-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 「計數器圖表」提供「縮放檢視」、可讓您在指定的期間內放大效能詳細資料。如此一來、您就能以更精細的方式查看效能詳細資料和事件、這在疑難排解效能問題時非常實用。 
+---
+= 計數器圖表縮放檢視
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「計數器圖表」提供「縮放檢視」、可讓您在指定的期間內放大效能詳細資料。如此一來、您就能以更精細的方式查看效能詳細資料和事件、這在疑難排解效能問題時非常實用。
+
+在「縮放檢視」中顯示時、部分明細圖表會提供比圖表不在「縮放檢視」中時所顯示的資訊更多資訊。例如、IOPS、IOPS/TB和Mbps明細圖表「縮放檢視」頁面會顯示已設定ONTAP 為不景的Volume和LUN的QoS原則值。
+
+[NOTE]
+====
+對於系統定義的效能臨界值原則、只有「節點資源過度使用」和「違反QoS處理量限制」原則可從*原則*清單取得。其他系統定義的臨界值原則目前無法使用。
+
+====

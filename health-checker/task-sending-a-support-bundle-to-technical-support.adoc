@@ -1,0 +1,22 @@
+---
+permalink: health-checker/task-sending-a-support-bundle-to-technical-support.html 
+sidebar: sidebar 
+keywords:  
+summary: 此工作流程說明如何使用Unified Manager維護主控台、產生、擷取支援服務組合、並將其傳送給技術支援。當您遇到的問題需要更詳細的診斷和疑難排解、而非AutoSupport 透過消息所提供的問題、您應該寄送支援服務包。 
+---
+= 傳送Unified Manager支援套件給技術支援人員
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流程說明如何使用Unified Manager維護主控台、產生、擷取支援服務組合、並將其傳送給技術支援。當您遇到的問題需要更詳細的診斷和疑難排解、而非AutoSupport 透過消息所提供的問題、您應該寄送支援服務包。
+
+
+
+== 關於這項工作
+
+如需維護主控台與支援服務組合的詳細資訊、請參閱 xref:task-using-the-maintenance-console.adoc[使用維護主控台]。
+
+Unified Manager一次儲存兩個產生的支援服務組合。

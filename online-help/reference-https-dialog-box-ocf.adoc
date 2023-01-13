@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-https-dialog-box-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 「HTTPS憑證」頁面可讓您檢視目前的安全性憑證、下載憑證簽署要求、產生新的HTTPS憑證、或安裝新的HTTPS憑證。 
+---
+= HTTPS憑證頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「HTTPS憑證」頁面可讓您檢視目前的安全性憑證、下載憑證簽署要求、產生新的HTTPS憑證、或安裝新的HTTPS憑證。
+
+如果您尚未產生新的HTTPS憑證、則此頁面上顯示的憑證是安裝期間所產生的憑證。
+
+
+
+== 命令按鈕
+
+命令按鈕可讓您執行下列作業：
+
+* *下載HTTPS憑證簽署要求*
++
+下載目前安裝之HTTPS憑證的認證要求。您的瀏覽器會提示您儲存 `<hostname>.csr` 檔案、以便您將檔案提供給憑證授權單位進行簽署。
+
+* *安裝HTTPS憑證*
++
+可讓您在「憑證授權單位」簽署並傳回安全性憑證之後、再上傳及安裝安全性憑證。重新啟動管理伺服器後、新的憑證即會生效。
+
+* *重新產生HTTPS憑證*
++
+可讓您產生HTTPS憑證、取代目前的安全性憑證。重新啟動Unified Manager之後、新的憑證即會生效。
+
+

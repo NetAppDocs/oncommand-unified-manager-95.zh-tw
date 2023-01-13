@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-sending-an-on-demand-autosupport-message.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將Unified Manager系統資訊傳送給技術支援部門、以協助疑難排解問題。此消息包含有關Unified Manager伺服器的診斷系統資訊和詳細資料AutoSupport 。 
+---
+= 傳送隨需AutoSupport 的功能性訊息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將Unified Manager系統資訊傳送給技術支援部門、以協助疑難排解問題。此消息包含有關Unified Manager伺服器的診斷系統資訊和詳細資料AutoSupport 。
+
+
+
+== 開始之前
+
+您必須以維護使用者的身分登入。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按AutoSupport 一下*設定*功能表中的*
+. 請執行下列其中一項或兩項動作：
++
+|===
+| 如果您想要傳送AutoSupport 此資訊給... | 執行此動作... 
+
+
+ a| 
+技術支援
+ a| 
+選取*傳送至技術支援*核取方塊。
+
+
+
+ a| 
+特定電子郵件收件者
+ a| 
+選取*傳送至電子郵件收件者*核取方塊、然後輸入收件者的電子郵件地址。
+
+|===
+. 如有必要、請定義HTTP Proxy伺服器的名稱、連接埠及驗證資訊、然後按一下*「Save（儲存）」*。
+. 按一下「*產生AutoSupport 並傳送S針對 性*」。
+

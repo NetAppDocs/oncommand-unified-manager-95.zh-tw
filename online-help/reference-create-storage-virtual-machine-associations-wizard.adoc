@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-create-storage-virtual-machine-associations-wizard.html 
+sidebar: sidebar 
+keywords:  
+summary: 「Create Storage Virtual Machine Associations」（建立儲存虛擬機器關聯）精靈可讓您建立來源與目的地儲存虛擬機器（SVMs）的關聯、以便用於SnapMirror與SnapVault EView保護關係。 
+---
+= 建立儲存虛擬機器關聯精靈
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Create Storage Virtual Machine Associations」（建立儲存虛擬機器關聯）精靈可讓您建立來源與目的地儲存虛擬機器（SVM）的關聯、以便用於SnapMirror與SnapVault VMware保護關係。
+
+
+
+== 選取來源SVM
+
+「選取來源儲存虛擬機器」面板可讓您在SVM關聯中選取來源或主要SVM。
+
+* *任何*
++
+可讓您在任一SVM來源與一或多個目的地或次要SVM之間建立關聯。這表示目前需要保護的所有現有SVM、以及未來建立的任何SVM、都會與指定的目的地SVM相關聯。例如、您可能希望不同位置的多個不同來源的應用程式、在同一個位置備份到一個或多個目的地SVM。
+
+* *單一*
++
+可讓您將特定來源SVM與一或多個目的地SVM建立關聯。例如、如果您要提供儲存服務給許多資料必須彼此分開的用戶端、請選擇此選項、將特定SVM來源關聯至僅指派給該用戶端的特定SVM目的地。
+
+* *無（外部）*
++
+可讓您在來源SVM與目的地SVM的外部彈性Volume之間建立關聯。
+
++
+** 儲存虛擬機器
++
+列出可用來源SVM的名稱
+
+** 叢集
++
+列出每個SVM所在的叢集
+
+
+
+* *允許這類關係*
++
+可讓您選取關聯的關聯類型：
+
++
+** SnapMirror
++
+將SnapMirror關係指定為關聯類型。選取此選項可從選取的來源複寫資料到選取的目的地。
+
+** SnapVault
++
+指定SnapVault 關聯類型為「不相關性」。選取此選項可從選取的主要位置備份到選取的次要位置。
+
+
+
+
+
+
+
+== 選取「保護目的地」
+
+「建立儲存虛擬機器關聯」精靈的「選取保護目的地」面板可讓您選取要複製或複寫資料的位置。每個叢集只能在一個目的地SVM上建立關聯。
+
+
+
+== 命令按鈕
+
+命令按鈕可讓您執行下列工作：
+
+* *下一步*
++
+將您移至精靈的下一頁。
+
+* *返回*
++
+返回精靈的上一頁。
+
+* *完成*
++
+套用您的選擇並建立關聯。
+
+* *取消*
++
+捨棄選取項目並關閉「建立儲存虛擬機器關聯」精靈。
+
+

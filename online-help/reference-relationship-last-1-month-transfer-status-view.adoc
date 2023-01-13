@@ -1,0 +1,71 @@
+---
+permalink: online-help/reference-relationship-last-1-month-transfer-status-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 「Protection（保護）/ Volume Transfer Status（Volume Transfer Status）（保護/ Volume傳輸狀態）」（歷史）頁面可讓您分析一段時間內的Volume傳輸趨勢。此頁面也會顯示磁碟區傳輸是否成功或失敗。 
+---
+= 保護/ Volume傳輸狀態（歷史）頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Protection / Volume Transfer Status（Historical）（保護/ Volume傳輸狀態（歷史））」頁面可讓您分析一段時間內的Volume傳輸趨勢。此頁面也會顯示磁碟區傳輸是否成功或失敗。
+
+使用*匯出*按鈕、將所有受監控磁碟區的詳細資料匯出為以逗號分隔的值 (`.csv`）檔案。
+
+[NOTE]
+====
+此頁面僅顯示非同步關係中磁碟區的資訊、不會顯示同步關係中的磁碟區。
+
+====
+* *來源叢集*
++
+顯示來源叢集名稱。
+
+* *來源SVM*
++
+顯示儲存虛擬機器（SVM）名稱。
+
+* *來源Volume *
++
+顯示來源Volume名稱。
+
+* *目的地叢集*
++
+顯示目的地叢集名稱。
+
+* *目的地SVM*
++
+顯示目的地SVM名稱。
+
+* *目的地Volume *
++
+顯示目的地Volume名稱。
+
+* *操作結果*
++
+顯示Volume傳輸是否成功。
+
+* *傳輸開始時間*
++
+顯示磁碟區傳輸開始時間。
+
+* *傳輸結束時間*
++
+顯示Volume傳輸結束時間。
+
+* *傳輸持續時間*
++
+顯示完成Volume傳輸所需的時間（以小時為單位）。
+
+* *傳輸大小*
++
+顯示傳輸磁碟區的大小（以MB為單位）。
+
+* *作業類型*
++
+顯示磁碟區傳輸類型。
+
+

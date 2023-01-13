@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-lun-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「Performance（效能）/LUN Explorer（LUN資源管理器）」頁面提供叢集內所有LUN效能的詳細總覽。 
+---
+= 「Performance /LUN Explorer」頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Performance（效能）/LUN Explorer（LUN資源管理器）」頁面提供叢集內所有LUN效能的詳細總覽。
+
+「Performance /LUN Explorer（效能/LUN瀏覽器）」頁面可讓您追蹤及比較特定期間內的LUN效能、協助您疑難排解及微調LUN效能。
+
+使用「檢視與比較」功能、您可以將此LUN的效能與下列項目進行比較：
+
+* 位於相同磁碟區的其他LUN
+* LUN所在的磁碟區
+
+
+圖表中的統計資料會在每個收集期間之後更新、預設為每5分鐘更新一次。選取元中的「檢視統計資料」提供選項、可顯示前一小時的平均統計資料。此功能可讓您檢視支援NetApp「效能保證」方案的延遲圖表。
+
+「Performance / LUN Explorer（效能/LUN瀏覽器）」頁面可讓您：
+
+* 檢視臨界值相關問題及其詳細資料
+* 追蹤並比較LUN效能資料
+* 調查並疑難排解臨界值相關問題
+* 調查並疑難排解效能問題
+

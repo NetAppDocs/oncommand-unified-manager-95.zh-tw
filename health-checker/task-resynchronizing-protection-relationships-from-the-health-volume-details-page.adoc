@@ -1,0 +1,59 @@
+---
+permalink: health-checker/task-resynchronizing-protection-relationships-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以重新同步發生SnapVault 中斷的SnapMirror或SnapMirror關係上的資料、然後將目的地設定為讀取/寫入、以便來源上的資料與目的地上的資料相符。當來源磁碟區上所需的通用Snapshot複本遭刪除、導致SnapMirror或SnapVault 更新失敗時、您也可以重新同步。 
+---
+= 從「Health（健全狀況）/ Volume（磁碟區）」詳細資料頁面重新同步保護關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以重新同步發生SnapVault 中斷的SnapMirror或SnapMirror關係上的資料、然後將目的地設定為讀取/寫入、以便來源上的資料與目的地上的資料相符。當來源磁碟區上所需的通用Snapshot複本遭刪除、導致SnapMirror或SnapVault 更新失敗時、您也可以重新同步。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須設定OnCommand Workflow Automation 好「不可用」。
+
+
+
+
+== 步驟
+
+. 在「*健全狀況/磁碟區*」詳細資料頁面的「*保護*」索引標籤中、找出您要重新同步的保護關係、然後在該關係上按一下滑鼠右鍵。
+. 從功能表中選取*重新同步*。
++
+或者、從*動作*功能表中、選取*關係*>*重新同步*、以重新同步您目前正在檢視其詳細資料的關係。
+
++
+此時會顯示重新同步對話方塊。
+
+. 在*重新同步選項*索引標籤中、選取傳輸優先順序和最大傳輸率。
+. 按一下「*來源Snapshot Copies *」；然後在「* Snapshot Copy*」欄中、按一下「* Default *」。
++
+此時將顯示Select來源Snapshot Copy（選擇來源Snapshot複製）對話框。
+
+. 如果您想要指定現有的Snapshot複本、而非傳輸預設的Snapshot複本、請按一下*現有的Snapshot Copy*、然後從清單中選取Snapshot複本。
+. 按一下*提交*。
++
+您將返回「重新同步」對話方塊。
+
+. 如果您選取多個來源進行重新同步、請針對您要指定現有Snapshot複本的下一個來源、按一下*預設*。
+. 按一下「*提交*」開始重新同步工作。
++
+重新同步工作隨即開始、您會返回「Health（健全狀況）/ Volume（磁碟區）」詳細資料頁面、頁面頂端會顯示工作連結。
+
+. 按一下*健全狀況/磁碟區*詳細資料頁面上的*檢視工作*、即可追蹤每個重新同步工作的狀態。
++
+畫面會顯示篩選後的工作清單。
+
+. 按一下瀏覽器上的返回箭頭、返回*健全狀況/ Volume *詳細資料頁面。
++
+當所有工作任務成功完成時、重新同步工作即告完成。
+
+

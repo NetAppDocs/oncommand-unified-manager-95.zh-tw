@@ -1,0 +1,18 @@
+---
+permalink: install/concept-overview-of-the-installation-sequence-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 安裝工作流程會說明您在使用Unified Manager之前必須執行的工作。 
+---
+= 安裝順序總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝工作流程會說明您在使用Unified Manager之前必須執行的工作。
+
+本安裝指南的各章將說明下列工作流程中所顯示的每個項目。
+
+image::../media/overall-um-install-flow.gif[整體um安裝流程]

@@ -1,0 +1,16 @@
+---
+permalink: config/concept-managing-saml-authentication-settings-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 設定遠端驗證設定之後、您可以啟用安全聲明標記語言（SAML）驗證、讓遠端使用者先由安全的身分識別供應商（IDP）驗證、然後才能存取Unified Manager Web UI。 
+---
+= 管理SAML驗證設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定遠端驗證設定之後、您可以啟用安全聲明標記語言（SAML）驗證、讓遠端使用者先經過安全身分識別供應商（IDP）的驗證、才能存取Unified Manager Web UI。
+
+請注意、啟用SAML驗證後、只有遠端使用者才能存取Unified Manager圖形化使用者介面。本機使用者和維護使用者將無法存取UI。此組態不會影響存取維護主控台的使用者。

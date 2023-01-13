@@ -1,0 +1,24 @@
+---
+permalink: performance-checker/concept-understanding-the-root-object.html 
+sidebar: sidebar 
+keywords:  
+summary: 根物件是進行其他物件比較的基準線。這可讓您檢視及比較其他物件與根物件之間的資料、並提供效能資料分析、協助您疑難排解及改善物件效能。 
+---
+= 瞭解根物件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根物件是進行其他物件比較的基準線。這可讓您檢視及比較其他物件與根物件之間的資料、並提供效能資料分析、協助您疑難排解及改善物件效能。
+
+根物件名稱會顯示在比較窗格的頂端。其他物件會顯示在根物件下方。雖然您可以新增至比較窗格的其他物件數目沒有限制、但只允許一個根物件。根物件的資料會自動顯示在「計數器圖表」窗格的圖表中。
+
+您無法變更根物件、它一律設定為您正在檢視的物件頁面。例如、如果您開啟Volume1的Volume Performance Explorer頁面、則Volume1是根物件、無法變更。如果您要比較不同的根物件、則必須按一下物件的連結、然後開啟其登陸頁面。
+
+[NOTE]
+====
+只有根物件才會顯示事件和臨界值。
+
+====

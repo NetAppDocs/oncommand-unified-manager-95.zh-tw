@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-creating-an-email-notification-format-for-user-and-user-group-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 當發生配額相關問題（軟體上限已超出或硬限制已達）時、您可以為傳送給使用者或使用者群組的電子郵件建立通知格式。 
+---
+= 建立使用者和使用者群組配額的電子郵件通知格式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以針對發生配額相關問題（軟體上限已超出或硬限制已達）時、傳送給使用者或使用者群組的電子郵件、建立通知格式。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左設定功能表中的*配額電子郵件*。
+. 在*設定*選項頁面中、按一下*通知格式*、然後在*寄件者*、*主旨*和*電子郵件詳細資料*欄位中輸入或修改詳細資料。
+. 按一下*預覽*預覽電子郵件通知。
+. 按一下「*關閉*」以關閉預覽視窗。
+. 如有需要、請修改電子郵件通知的內容。
+. 按一下*儲存並關閉*。
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-dashboard-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用儀表板頁面快速瀏覽正在監控的物件。 
+---
+= 儀表板視窗說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用儀表板頁面快速瀏覽正在監控的物件。

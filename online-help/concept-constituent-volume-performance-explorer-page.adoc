@@ -1,0 +1,38 @@
+---
+permalink: online-help/concept-constituent-volume-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「效能/組成Volume Explorer」頁面提供所選FlexGroup 項目的詳細效能資訊。 
+---
+= 效能/組成Volume Explorer頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「效能/組成Volume Explorer」頁面提供所選FlexGroup 項目的詳細效能資訊。
+
+「效能/組成磁碟區總管」頁面可讓您在特定時間段內追蹤及比較組成效能、協助疑難排解及微調FlexGroup 一個故障、使其能夠有效地執行某個故障、並使其組成磁碟區的效能更為出色。
+
+使用「檢視與比較」功能、您可以將此組成磁碟區的效能與以下項目進行比較：
+
+* 此組成磁碟區所在的集合體
+* 此組成磁碟區所在的SVM
+* 組成Volume所屬的部分Volume FlexGroup
+* 位於相同集合體上的其他磁碟區
+
+
+「效能/組成磁碟區總管」頁面可讓您：
+
+* 檢視臨界值相關問題及其詳細資料
+* 追蹤並比較組成效能資料
+* 調查並疑難排解臨界值相關問題
+* 調查並疑難排解效能問題
+
+
+[NOTE]
+====
+對於資料保護（DP）磁碟區、只會顯示使用者產生流量的計數器值。當叢集安裝ONTAP 8.3之前版本的支援功能時、不會顯示計數器值。
+
+====

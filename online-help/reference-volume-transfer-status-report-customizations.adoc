@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-status-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Volume Transfer Status（歷史）報告、以在特定時間間隔檢視及分析Volume Transfers的相關資訊。您可以使用篩選器來檢視兩個日期之間的Volume傳輸詳細資料。 
+---
+= Volume Transfer Status（歷史）報告自訂項目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂Volume Transfer Status（歷史）（Volume Transfer Status、Volume Transfer Status、Volume Transfer狀態、歷史）報告、以特定時間間隔檢視及分析Volume Transfers的相關資訊。您可以使用篩選器來檢視兩個日期之間的Volume傳輸詳細資料。

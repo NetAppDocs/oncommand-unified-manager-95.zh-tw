@@ -1,0 +1,22 @@
+---
+permalink: health-checker/reference-support-and-diagnostics-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: 「支援與診斷」功能表可讓您產生支援服務組合。 
+---
+= 支援與診斷功能表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「支援與診斷」功能表可讓您產生支援服務組合。
+
+可使用下列功能表選項：
+
+* *產生支援產品組合*
++
+可讓您在診斷使用者的主目錄中建立7-Zip檔案、其中包含完整的診斷資訊。此檔案包含AutoSupport 由下列項目所產生的資訊：消息資訊、Unified Manager資料庫的內容、Unified Manager伺服器內部的詳細資料、AutoSupport 以及非經常包含在消息中的詳細層級記錄。
+
+

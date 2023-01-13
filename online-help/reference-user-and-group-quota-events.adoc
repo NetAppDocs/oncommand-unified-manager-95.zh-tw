@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-user-and-group-quota-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用者和群組配額事件可提供使用者和使用者群組配額容量的相關資訊、以及檔案和磁碟限制、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 使用者和群組配額事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用者和群組配額事件可提供使用者和使用者群組配額容量的相關資訊、以及檔案和磁碟限制、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：容量
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+違反使用者或群組配額磁碟空間軟限制（ocumEvtUserOrGroupQuotaDisk空間軟限制已達）
+ a| 
+風險
+ a| 
+使用者或群組配額
+ a| 
+警告
+
+
+
+ a| 
+已達到使用者或群組配額磁碟空間硬限制（ocumEvtUserOrGroupQuotaDiskSpaceHardLIMitReded）
+ a| 
+事件
+ a| 
+使用者或群組配額
+ a| 
+關鍵
+
+
+
+ a| 
+違反使用者或群組配額檔案數軟體限制（ocumEvtUserOrGroupQuotaFileCountSoftLimitBtached）
+ a| 
+風險
+ a| 
+使用者或群組配額
+ a| 
+警告
+
+
+
+ a| 
+已達到使用者或群組配額檔案數硬限制（ocumEvtUserOrGroupQuotaFileCountHardLIMitReded）
+ a| 
+事件
+ a| 
+使用者或群組配額
+ a| 
+關鍵
+
+|===

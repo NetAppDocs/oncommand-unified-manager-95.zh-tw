@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-managing-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用指令碼、在Unified Manager中自動修改或更新多個儲存物件。指令碼與警示相關聯。當事件觸發警示時、即會執行指令碼。您可以上傳自訂指令碼、並在產生警示時測試其執行。 
+---
+= 管理指令碼
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用指令碼、在Unified Manager中自動修改或更新多個儲存物件。指令碼與警示相關聯。當事件觸發警示時、即會執行指令碼。您可以上傳自訂指令碼、並在產生警示時測試其執行。

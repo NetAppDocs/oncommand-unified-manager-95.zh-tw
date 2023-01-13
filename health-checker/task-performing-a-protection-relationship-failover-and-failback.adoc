@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-performing-a-protection-relationship-failover-and-failback.html 
+sidebar: sidebar 
+keywords:  
+summary: 當保護關係中的來源磁碟區因為硬體故障或災難而停用時、您可以使用Unified Manager中的保護關係功能、讓保護目的地能夠讀取/寫入、並容錯移轉至該磁碟區、直到來源再次上線為止； 然後、您可以在原始來源可供提供資料時、容錯回復至原始來源。 
+---
+= 執行保護關係容錯移轉和容錯回復
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當保護關係中的來源磁碟區因為硬體故障或災難而停用時、您可以使用Unified Manager中的保護關係功能、讓保護目的地能夠讀取/寫入、並容錯移轉至該磁碟區、直到來源再次上線為止； 然後、您可以在原始來源可供提供資料時、容錯回復至原始來源。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須設定OnCommand Workflow Automation 好「不穩定」才能執行此作業。
+
+
+
+
+== 步驟
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[打破SnapMirror關係]。
++
+您必須中斷關係、才能將目的地從資料保護磁碟區轉換為讀寫磁碟區、以及反轉關係。
+
+. xref:task-reversing-protection-relationships-from-the-health-volume-details-page.adoc[扭轉保護關係]。
++
+當原始來源磁碟區再次可用時、您可能會決定還原來源磁碟區、以重新建立原始保護關係。在還原來源之前、您必須先將來源與寫入先前目的地的資料進行同步處理。您可以使用反轉重新同步作業來建立新的保護關係、方法是反轉原始關係的角色、並將來源磁碟區與前一個目的地同步。系統會針對新的關係建立新的基礎Snapshot複本。
+
++
+相反的關係看起來類似於串聯關係：
+
++
+image::../media/um-toplogy-reverse-resync.gif[UM TOplogy反轉重新同步]
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[打破反轉的SnapMirror關係]。
++
+當原始來源磁碟區重新同步並可再次提供資料時、請使用中斷作業來中斷反向關係。
+
+. xref:task-removing-a-protection-relationship-from-the-health-volume-details-page.adoc[移除關係]。
++
+當不再需要反向關係時、您應該先移除該關係、再重新建立原始關係。
+
+. xref:task-resynchronizing-protection-relationships-from-the-health-volume-details-page.adoc[重新同步關係]。
++
+使用重新同步作業、將資料從來源同步至目的地、並重新建立原始關係。
+
+

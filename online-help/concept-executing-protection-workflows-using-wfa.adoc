@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-executing-protection-workflows-using-wfa.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將OnCommand Workflow Automation 支援功能與Unified Manager整合、以執行儲存類別的工作流程、並使用沒有儲存類別的Infinite Volume監控SVM。 
+---
+= 使用OnCommand Workflow Automation 功能執行保護工作流程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將OnCommand Workflow Automation 支援功能與Unified Manager整合、以執行儲存類別的工作流程、並使用沒有儲存類別的Infinite Volume監控SVM。

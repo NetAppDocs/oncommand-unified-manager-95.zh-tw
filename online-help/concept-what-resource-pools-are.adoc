@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-what-resource-pools-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 資源池是一組集合體、由儲存管理員使用Unified Manager建立、以提供資源給合作夥伴應用程式以進行備份管理。 
+---
+= 什麼是資源集區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資源池是一組集合體、由儲存管理員使用Unified Manager建立、以提供資源給合作夥伴應用程式以進行備份管理。
+
+您可以根據效能、成本、實體位置或可用度等屬性來集合資源。透過將相關資源分組到資源池中、您可以將資源池視為單一單位來進行監控和資源配置。如此可簡化這些資源的管理、並讓儲存設備的使用更靈活、更有效率。
+
+在二線儲存資源配置期間、Unified Manager會使用下列準則來判斷資源池中最適合用於保護的集合體：
+
+* Aggregate是一個資料Aggregate（而非根Aggregate）、而且位於線上。
+* Aggregate位於目的地叢集節點、ONTAP 其更新版本與來源叢集主要版本相同或更高。
+* 該Aggregate擁有資源池中所有集合體的最大可用空間。
+* 在配置目的地Volume之後、集合體空間會在針對集合（全域或本機臨界值、以適用者為準）所定義的近乎完整且近乎過度使用的臨界值內。
+* 目的地節點上的不完整資料量不得FlexVol 超過平台限制。
+

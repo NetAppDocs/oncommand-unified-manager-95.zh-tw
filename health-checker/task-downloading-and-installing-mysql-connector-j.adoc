@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task-downloading-and-installing-mysql-connector-j.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須在特定位置下載並安裝MySQL Connector/J驅動程式。您可以使用這些驅動程式來建立資料來源、將報告連接至Unified Manager。 
+---
+= 下載並安裝MySQL Connector/J
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須在特定位置下載並安裝MySQL Connector/J驅動程式。您可以使用這些驅動程式來建立資料來源、將報告連接至Unified Manager。
+
+
+
+== 關於這項工作
+
+您必須使用MySQL Connector/J 5.1版或更新版本。
+
+
+
+== 步驟
+
+. 下載MySQL Connector/J驅動程式、網址為 `dev.mysql.com`。
+. 安裝 `.jar` 並記下其位置以供日後參考。
++
+例如、安裝 `.jar` 檔案位置 `C:\Program Files\MySQL\MySQL Connector J\mysql-connector-java-5.1.32-bin.jar`。
+
+

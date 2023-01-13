@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Performance Explorer計數器圖表來檢視及比較所選儲存物件的效能資料。這些圖表可協助您瞭解效能趨勢、並隔離及解決效能問題。 
+---
+= 計數器圖表說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Performance Explorer計數器圖表來檢視及比較所選儲存物件的效能資料。這些圖表可協助您瞭解效能趨勢、並隔離及解決效能問題。

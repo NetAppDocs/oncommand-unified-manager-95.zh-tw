@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-management-station-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Management Station事件可提供安裝Unified Manager之伺服器狀態的相關資訊、讓您監控是否有潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= Management Station事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Management Station事件可提供安裝Unified Manager之伺服器狀態的相關資訊、讓您監控是否有潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：組態
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+Unified Manager伺服器磁碟空間幾乎已滿（ocumEvtUnifiedManagerDiskSpaceNearlyFull）
+ a| 
+風險
+ a| 
+管理站
+ a| 
+警告
+
+
+
+ a| 
+Unified Manager伺服器磁碟空間已滿（ocumEvtUnifiedManagerDiskSpaceFull）
+ a| 
+事件
+ a| 
+管理站
+ a| 
+關鍵
+
+
+
+ a| 
+Unified Manager伺服器記憶體不足（ocumEvtUnifiedManagerMemory低）
+ a| 
+風險
+ a| 
+管理站
+ a| 
+警告
+
+
+
+ a| 
+Unified Manager伺服器幾乎記憶體不足（ocumEvtUnifiedManagerMemoryAlmostOut）
+ a| 
+事件
+ a| 
+管理站
+ a| 
+關鍵
+
+|===
+
+
+== 影響領域：效能
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+效能資料分析受到影響（ocumEvtUnifiedManagerDataMisingAnalyze）
+ a| 
+風險
+ a| 
+管理站
+ a| 
+警告
+
+
+
+ a| 
+效能資料收集受到影響（ocumEvtUnifiedManagerDataMsiringCollection）
+ a| 
+事件
+ a| 
+管理站
+ a| 
+關鍵
+
+|===
+[NOTE]
+====
+這兩個效能事件僅適用於Unified Manager 7.2。如果其中任一事件處於「New」（新增）狀態、然後您升級至較新版本的Unified Manager軟體、則不會自動清除事件。您需要手動將事件移至「已解決」狀態。
+
+====

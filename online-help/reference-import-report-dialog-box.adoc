@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-import-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「匯入報告」對話方塊、從.rptdesign檔案匯入報告。 
+---
+= 匯入報告對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用匯入報告對話方塊從匯入報告 `.rptdesign` 檔案：
+
+
+
+== 屬性
+
+您可以指定報告檔案名稱、報告名稱及報告說明、以匯入報告。
+
+* *選擇報告檔案*
++
+可讓您選取 `.rptdesign` 您要匯入的檔案。
+
++
+[NOTE]
+====
+在Google Chrome中 `fakepath` 的 `.rptdesign` 隨即顯示檔案。在Mozilla Firefox中、只有 `.rptdesign` 隨即顯示檔案名稱。在Internet Explorer中、的完整路徑 `.rptdesign` 隨即顯示檔案。
+
+====
+* *名稱*
++
+顯示報告名稱。此欄位預設為空白。您可以輸入匯入報告的名稱。
+
+* *說明*
++
+指定匯入報告的說明。說明不得超過150個字元。
+
+* *選擇具有報告架構角色*的資料庫使用者
++
+如果您要從Storage Automation Store匯入報告、請選取或建立資料庫使用者。
+
+
+
+
+
+== 命令按鈕
+
+命令按鈕可讓您執行下列工作：
+
+* *匯入*
++
+驗證選取的項目 `.rptdesign` 檔案、然後匯入報告。
+
+* *取消*
++
+取消匯入作業、然後關閉「匯入報告」對話方塊。
+
+

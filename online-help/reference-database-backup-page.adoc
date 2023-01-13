@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-database-backup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「管理/資料庫備份」頁面會顯示Unified Manager所建立的備份清單、並提供備份名稱、大小、建立時間和排程的相關資訊。 
+---
+= 管理/資料庫備份頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「管理/資料庫備份」頁面會顯示Unified Manager所建立的備份清單、並提供備份名稱、大小、建立時間和排程的相關資訊。
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 命令按鈕
+
+* *行動*
++
+顯示「資料庫備份設定」對話方塊、可讓您指定備份路徑、保留計數和備份排程。
+
+
+
+
+
+== 清單檢視
+
+清單檢視會以表格格式顯示Unified Manager所建立備份的相關資訊。您可以使用欄篩選來自訂顯示的資料。
+
+* *名稱*
++
+顯示所選備份的名稱。
+
+* *大小*
++
+顯示所選備份的大小。
+
+* *建立時間*
++
+顯示所選備份的建立日期和時間。
+
+* *排程*
++
+顯示備份作業的狀態。也會指出是否為排程備份。
+
+

@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-resynchronize-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 「重新同步」對話方塊可讓您重新同步先前SnapVault 中斷的SnapMirror或SnapMirror關係資料、然後將目的地建立為讀寫磁碟區。當來源磁碟區上所需的通用Snapshot複本遭刪除、導致SnapMirror或SnapVault 更新失敗時、您也可以重新同步。 
+---
+= 重新同步對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「重新同步」對話方塊可讓您重新同步先前SnapVault 中斷的SnapMirror或SnapMirror關係資料、然後將目的地建立為讀寫磁碟區。當來源磁碟區上所需的通用Snapshot複本遭刪除、導致SnapMirror或SnapVault 更新失敗時、您也可以重新同步。
+
+
+
+== 重新同步選項索引標籤
+
+「重新同步選項」索引標籤可讓您針對重新同步的保護關係、設定傳輸優先順序和最大傳輸率。
+
+* *傳輸優先順序*
++
+執行傳輸的優先順序。您可以選取「正常」或「低」。與指定一般傳輸優先順序的原則之間的關係、會在具有指定低傳輸優先順序原則的原則之前執行。
+
+* *最大傳輸率*
++
+指定透過網路在叢集之間傳輸資料的最大速率。選取此選項時、網路頻寬會限制為您指定的值。您可以輸入數值、然後選取每秒KB數（KB）、每秒MB數（Mbps）、每秒GB數（Gbps）或Tbps。如果您選擇不使用最大傳輸率、則關聯之間的基礎傳輸不受限制。但是、如果您執行ONTAP 的是Sing 8.2、而且主要叢集和次要叢集相同、則此設定會停用。
+
+
+
+
+
+== 來源Snapshot複本索引標籤
+
+「來源Snapshot複本」標籤會顯示用於基礎傳輸之來源Snapshot複本的下列資訊：
+
+* *來源Volume *
++
+顯示對應來源Volume的名稱。
+
+* *目的地Volume *
++
+顯示所選目的地磁碟區的名稱。
+
+* *來源類型*
++
+顯示磁碟區類型：讀取/寫入或資料保護。
+
+* * Snapshot複製*
++
+顯示用於資料傳輸的Snapshot複本。按一下Snapshot複本值會顯示Select來源Snapshot Copy（選取來源Snapshot複本）對話方塊、您可在其中選取特定的Snapshot複本以進行傳輸、視您的保護關係類型和執行的作業而定。
+
+
+
+
+
+== 命令按鈕
+
+* *提交*
++
+開始重新同步程序、然後關閉「重新同步」對話方塊。
+
+* *取消*
++
+取消您的選擇並關閉重新同步對話方塊。
+
+

@@ -1,0 +1,137 @@
+---
+permalink: health-checker/task-identifying-the-problem-and-performing-corrective-actions-for-a-failed-protection-job.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢閱「事件詳細資料」頁面上「原因」欄位中的工作失敗錯誤訊息、並判斷該工作是否因為Snapshot複本錯誤而失敗。接著前往「Health（健全狀況）/ Volume（Volume）」詳細資料頁面、以收集更多資訊。 
+---
+= 找出問題、並針對故障的保護工作執行修正行動
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢閱「事件詳細資料」頁面上「原因」欄位中的工作失敗錯誤訊息、並判斷該工作是否因為Snapshot複本錯誤而失敗。接著前往「Health（健全狀況）/ Volume（Volume）」詳細資料頁面、以收集更多資訊。
+
+
+
+== 開始之前
+
+您必須OnCommand 扮演「管理員角色」。
+
+
+
+== 關於這項工作
+
+「事件詳細資料」頁面的「原因」欄位中所提供的錯誤訊息、包含下列關於失敗工作的文字：
+
+[listing]
+----
+Protection Job Failed. Reason: (Transfer operation for
+relationship 'cluster2_src_svm:cluster2_src_vol2->cluster3_dst_svm:
+managed_svc2_vol3' ended unsuccessfully. Last error reported by
+Data ONTAP: Failed to create Snapshot copy 0426cluster2_src_vol2snap
+on volume cluster2_src_svm:cluster2_src_vol2. (CSM: An operation
+failed due to an ONC RPC failure.).)
+*Job Details*
+----
+此訊息提供下列資訊：
+
+* 備份或鏡射工作未成功完成。
++
+工作涉及來源Volume之間的保護關係 `cluster2_src_vol2` 在虛擬伺服器上 `cluster2_src_svm` 以及目的地Volume `managed_svc2_vol3` 在名稱為的虛擬伺服器上 `cluster3_dst_svm`。
+
+* 的Snapshot複製工作失敗 `0426cluster2_src_vol2snap` 在來源Volume上 `cluster2_src_svm:/cluster2_src_vol2`。
+
+
+在此案例中、您可以識別工作失敗的原因和可能的修正行動。不過、若要解決故障、您必須存取System Manager網路UI或ONTAP 是使用CLI命令。
+
+
+
+== 步驟
+
+. 您可以檢閱錯誤訊息、判斷來源磁碟區上的Snapshot複本工作是否失敗、表示來源磁碟區可能有問題。
++
+或者、您可以按一下錯誤訊息結尾的*工作詳細資料*連結、但在此案例中、您選擇不這麼做。
+
+. 您決定要嘗試解決該事件、因此您可以執行下列動作：
++
+.. 按一下「*指派給*」按鈕、然後從功能表中選取「*我*」。
+.. 按一下「* Acknowledge *（確認*）」按鈕、如此一來、如果事件已設定警示、您就不會繼續收到重複警示通知。
+.. 或者、您也可以新增事件的相關附註。
+
+
+. 按一下「*摘要*」窗格中的*來源*欄位、即可查看來源Volume的詳細資料。
++
+「*來源*」欄位包含來源物件的名稱：在這種情況下、是排程Snapshot複本工作的磁碟區。
+
++
+「健全狀況/ Volume」詳細資料頁面即會顯示 `cluster2_src_vol2`，顯示Protection（保護）選項卡的內容。
+
+. 查看保護拓撲圖、您會看到與拓撲中第一個磁碟區相關的錯誤圖示、這是SnapMirror關係的來源磁碟區。
++
+您也會在來源Volume圖示中看到橫條、指出為該Volume設定的警告和錯誤臨界值。
+
++
+image::../media/um-topology-cascade-job-failure.gif[工作失敗串聯拓撲]
+
+. 您可以將游標放在錯誤圖示上、以查看顯示臨界值設定的快顯對話方塊、並查看該磁碟區已超過錯誤臨界值、表示容量問題。
+. 按一下*容量*索引標籤。
++
+Volume的容量資訊 `cluster2_src_vol2` 顯示。
+
+. 在「*容量*」窗格中、您會看到長條圖中有一個錯誤圖示、再次指出Volume容量已超過為Volume設定的臨界值層級。
+. 在容量圖表下方、您會看到Volume自動擴充已停用、而且已設定Volume空間保證。
++
+您可以決定啟用自動擴充、但在此案例中、您決定在決定如何解決容量問題之前、先進一步調查。
+
+. 向下捲動至*事件*清單、即可看到保護工作失敗、磁碟區天數直到滿、以及磁碟區空間已滿事件的產生。
+. 在「*事件*」清單中、您可以按一下「* Volume Space Full*」（* Volume Space完整*）事件以取得更多資訊、因為您已決定此事件與您的容量問題最相關。
++
+「事件詳細資料」頁面會顯示來源磁碟區的Volume Space Full（磁碟區空間已滿）事件。
+
+. 在* Summary（摘要）*區域中、您會閱讀事件的原因欄位： `The full threshold set at 90% is breached. 45.38 MB (95.54%) of 47.50 MB is used.`
+. 在* Summary（摘要）*區域下方、您會看到建議的修正動作。
++
+[TIP]
+====
+建議的修正動作僅會針對某些事件顯示、因此您不會針對所有類型的事件看到此區域。
+
+====
++
+您可以按一下可用來解決Volume Space完整事件的建議動作清單：
+
++
+** 在此Volume上啟用自動擴充。
+** 調整Volume大小。
+** 在此磁碟區上啟用並執行重複資料刪除。
+** 在此Volume上啟用並執行壓縮。
+
+
+. 您決定在磁碟區上啟用自動擴充、但若要這麼做、您必須決定父集合體上的可用空間、以及目前的磁碟區成長率：
++
+.. 查看父Aggregate、 `cluster2_src_aggr1`（在*相關設備*窗格中）。
++
+[TIP]
+====
+您可以按一下Aggregate的名稱、以取得有關Aggregate的進一步詳細資料。
+
+====
++
+您決定集合體是否有足夠的空間來啟用Volume自動擴充。
+
+.. 在頁面頂端、查看指出重大事件的圖示、然後檢閱圖示下方的文字。
++
+您決定「營業日至全日：不到一天|每日成長率：5.4%」。
+
+
+
+. 前往System Manager或存取ONTAP 支援的CLI `volume autogrow` 選項。
++
+[TIP]
+====
+請記下磁碟區和Aggregate的名稱、以便在啟用自動擴充時使用。
+
+====
+. 解決容量問題後、請返回Unified Manager**事件*詳細資料頁面、並將事件標示為已解決。
+

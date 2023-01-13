@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-remove-inactive-volumes-and-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: 當將Aggregate可用空間識別為問題時、您可以搜尋未使用的磁碟區和LUN、然後從Aggregate中刪除它們。這有助於減輕磁碟空間不足的問題。 
+---
+= 移除非作用中的磁碟區和LUN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當將Aggregate可用空間識別為問題時、您可以搜尋未使用的磁碟區和LUN、然後從Aggregate中刪除它們。這有助於減輕磁碟空間不足的問題。
+
+如果Aggregate上的效能事件是由磁碟空間不足所造成、您可以透過幾種方法來判斷不再使用哪些磁碟區和LUN。
+
+若要識別未使用的磁碟區：
+
+* 在「事件詳細資料」頁面上、「*受影響的物件數*」欄位會提供一個連結、顯示受影響的磁碟區清單。
++
+按一下連結、即可在「Performance / Volumes（效能/磁碟區）」頁面上顯示磁碟區。您可以從這裡依* IOPS *排序受影響的磁碟區、查看哪些磁碟區尚未啟用。
+
+
+
+若要識別未使用的LUN：
+
+. 在「事件詳細資料」頁面中、記下事件發生的集合體名稱。
+. 在左導覽窗格中、按一下*效能*>* LUN*。
+. 按一下*篩選*、從左下拉式功能表中選取* Aggregate *、在文字欄位中輸入Aggregate的名稱、然後按一下*套用篩選*。
+. 依* IOPS *排序所產生的受影響LUN清單、以檢視未啟用的LUN。
+
+
+識別完未使用的磁碟區和LUN之後、您可以使用OnCommand 「系統管理員」或ONTAP 「系統資訊」命令來刪除這些物件。

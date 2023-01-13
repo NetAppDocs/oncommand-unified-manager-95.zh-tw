@@ -1,0 +1,67 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-a-flashcard-offline.html 
+sidebar: sidebar 
+keywords:  
+summary: 檢閱「Flash Card離線事件詳細資料」頁面的「原因」欄位中的說明之後、您可以搜尋其他有助於解決此情況的資訊。 
+---
+= 針對Flash卡離線執行修正行動
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+檢閱「Flash Card離線事件詳細資料」頁面的「原因」欄位中的說明之後、您可以搜尋其他有助於解決此情況的資訊。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+在此範例案例中、「事件詳細資料」頁面上提供的事件摘要包含下列離線Flash卡條件資訊：
+
+[listing]
+----
+Severity: Critical
+State: New
+Impact Level: Incident
+Impact Area: Availability
+Source: alpha-node
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: Flash cards at slot numbers 3 are offline.
+Alert Settings:
+----
+事件資訊表示安裝在叢集節點「'alpha-node'」插槽3中的Flash卡已離線。
+
+此資訊會將Flash卡離線狀態本地化為特定叢集節點上的特定插槽、但不建議Flash卡離線的原因。
+
+
+
+== 步驟
+
+. 若要取得進一步的詳細資料、以協助您診斷快閃卡離線狀況、您可以按一下事件來源的名稱。
++
+在此範例中、事件的來源為「'alpha-node'叢集節點。按一下該節點名稱、即可在「Health / Cluster」（健全狀況/叢集）詳細資料頁面的「節點」索引標籤上顯示受影響叢集的HA詳細資料。顯示的HA詳細資料會顯示該節點所屬HA配對的相關資訊。
+
++
+在此範例中、相關資訊位於HA詳細資料的「事件」摘要表中。下表指定快閃卡離線事件、事件產生時間、以及再次指定此事件產生來源的叢集節點。
+
+. 使用ONTAP ECLI或OnCommand ENetApp System Manager、存取受影響叢集的事件管理器系統（EMS）記錄。
++
+在此範例中、您可以使用事件名稱、事件時間和事件來源來尋找此事件的EMS報告。事件的EMS報告會詳細說明事件、並經常建議修正事件所指出的條件。
+
+
+
+
+
+== 完成後
+
+診斷問題後、請聯絡適當的管理員或操作員、完成必要的手動步驟、讓Flash卡恢復上線。

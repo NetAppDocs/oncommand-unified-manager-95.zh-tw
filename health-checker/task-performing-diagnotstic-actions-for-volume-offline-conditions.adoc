@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-performing-diagnotstic-actions-for-volume-offline-conditions.html 
+sidebar: sidebar 
+keywords:  
+summary: 在瀏覽至報告為離線的Volume的「Health / Volume」（健全狀況/ Volume）詳細資料頁面之後、您可以搜尋其他有助於診斷Volume離線狀況的資訊。 
+---
+= 針對Volume離線狀況執行診斷動作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在瀏覽至報告為離線的Volume的「Health / Volume」（健全狀況/ Volume）詳細資料頁面之後、您可以搜尋其他有助於診斷Volume離線狀況的資訊。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+如果回報為離線的磁碟區並非刻意離線、則該磁碟區可能會因為數種原因而離線。
+
+從離線Volume的健全狀況/ Volume詳細資料頁面開始、您可以瀏覽至其他頁面和窗格、以確認或消除可能的原因：
+
+
+
+== 選擇
+
+* 按一下「*健全狀況/磁碟區*詳細資料」頁面連結、以判斷磁碟區是否因為主機節點當機、而且儲存設備容錯移轉至HA配對合作夥伴也失敗而離線。
++
+請參閱 xref:task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.adoc[判斷磁碟區離線狀況是否是由當機節點所造成]。
+
+* 按一下「*健全狀況/磁碟區*詳細資料」頁面連結、以判斷該磁碟區是否離線、且其主機儲存虛擬機器（SVM）是否因為裝載該SVM根磁碟區的節點關閉而停止。
++
+請參閱 xref:task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.adoc[判斷磁碟區是否離線、以及SVM是否因為節點當機而停止]。
+
+* 按一下*健全狀況/磁碟區*詳細資料頁面連結、以判斷磁碟區是否因為主機Aggregate中的磁碟毀損而離線。
++
+請參閱 xref:task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.adoc[判斷磁碟區是否因為集合體中的磁碟毀損而離線]。
+
+

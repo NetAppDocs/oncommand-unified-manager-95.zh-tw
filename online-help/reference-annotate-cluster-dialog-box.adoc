@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 「附註叢集」對話方塊可讓您手動為儲存物件加上附註。您可以選取單一叢集或多個叢集、然後從現有的註釋清單中、以特定的值配對進行註釋。 
+---
+= 「批註叢集」對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「附註叢集」對話方塊可讓您手動為儲存物件加上附註。您可以選取單一叢集或多個叢集、然後從現有的註釋清單中、以特定的值配對進行註釋。
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+* *註釋=值配對*
++
+可讓您選取所選叢集所需的註釋。
+
+* *適用*
++
+將選取的註釋套用至叢集。
+
+* *取消*
++
+關閉「Annotate Cluster」對話方塊、而不儲存變更。
+
+

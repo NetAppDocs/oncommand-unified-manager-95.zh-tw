@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-incident-events-assigned-to-the-admin.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂事件報告、以顯示指派給管理員的事件事件、並依影響層級和管理員名稱進行篩選。 
+---
+= 自訂事件報告以顯示指派給管理員的事件事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂事件報告、以顯示指派給管理員的事件事件、並依影響層級和管理員名稱進行篩選。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要篩選事件、請按一下「*影響層級*」欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*清單中、選取*等於*。
+. 按一下*選取值*、然後選取*事件*。
+. 按一下「*確定*」。
+. 若要將這些事件指派給管理員、請按一下「*指派給*」欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*下拉式清單中、選取*等於*。
+. 按一下*選取值*、然後選取*管理名稱*。
+. 按一下「*確定*」。
+

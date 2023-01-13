@@ -1,0 +1,272 @@
+---
+permalink: online-help/reference-supported-unified-manager-cli-commands.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 身為儲存管理員、您可以使用CLI命令對儲存物件執行查詢、例如叢集、集合體、磁碟區、 qtree和LUN。您可以使用CLI命令來查詢Unified Manager內部資料庫和ONTAP 還原資料庫。您也可以在作業開始或結束時執行的指令碼中使用CLI命令、或在觸發警示時執行。 
+---
+= 支援的Unified Manager CLI命令
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+身為儲存管理員、您可以使用CLI命令對儲存物件執行查詢、例如叢集、集合體、磁碟區、 qtree和LUN。您可以使用CLI命令來查詢Unified Manager內部資料庫和ONTAP 還原資料庫。您也可以在作業開始或結束時執行的指令碼中使用CLI命令、或在觸發警示時執行。
+
+所有命令都必須在前面加上命令 `um cli login` 以及驗證所需的有效使用者名稱和密碼。
+
+|===
+| CLI命令 | 說明 | 輸出 
+
+
+ a| 
+`um run cmd [ -t <timeout> ] <cluster> <command>`
+ a| 
+在一或多個主機上執行命令的最簡單方法。主要用於警示指令碼、以取得ONTAP 或執行有關的操作。選用的timeout引數可設定命令在用戶端上完成的最大時間限制（以秒為單位）。預設值為0（永遠等待）。
+ a| 
+從來源：來源：ONTAP
+
+
+
+ a| 
+`um run query <sql command>`
+ a| 
+執行SQL查詢。只允許從資料庫讀取查詢。不支援任何更新、插入或刪除作業。
+ a| 
+結果會以表格形式顯示。如果傳回空白集、或是有任何語法錯誤或錯誤要求、就會顯示適當的錯誤訊息。
+
+
+
+ a| 
+`um datasource add -u <username> -P <password> [ -t <protocol> ] [ -p <port> ] <hostname-or-ip>`
+ a| 
+將資料來源新增至託管儲存系統清單。資料來源說明如何連線至儲存系統。新增資料來源時、必須指定選項-u（使用者名稱）和-P（密碼）。選項-t（傳輸協定）指定用於與叢集通訊的傳輸協定（http或https）。如果未指定傳輸協定、則會嘗試使用選項-p（連接埠）來指定用於與叢集通訊的連接埠。如果未指定連接埠、則會嘗試使用適當傳輸協定的預設值。此命令只能由儲存設備管理員執行。
+ a| 
+提示使用者接受憑證並列印對應的訊息。
+
+
+
+ a| 
+`um datasource list [ <datasource-id>]`
+ a| 
+顯示託管儲存系統的資料來源。
+ a| 
+以表格格式顯示下列值： `ID Address Port, Protocol Acquisition Status, Analysis Status, Communication status, Acquisition Message, and Analysis Message`。
+
+
+
+ a| 
+`um datasource modify [ -h <hostname-or-ip> ] [ -u <username> ] [ -P <password> ] [ -t <protocol> ] [ -p <port> ] <datasource-id>`
+ a| 
+修改一或多個資料來源選項。只能由儲存設備管理員執行。
+ a| 
+顯示對應的訊息。
+
+
+
+ a| 
+`um datasource remove <datasource-id>`
+ a| 
+從Unified Manager移除資料來源。
+ a| 
+顯示對應的訊息。
+
+
+
+ a| 
+`um option list [ <option> .. ]`
+ a| 
+列出選項。
+ a| 
+以表格格式顯示下列值： `Name, Value, Default Value, and Requires Restart.`
+
+
+
+ a| 
+`+um option set <option-name>=<option-value> [ <option-name>=<option-value> ... ]+`
+ a| 
+設定一或多個選項。此命令只能由儲存設備管理員執行。
+ a| 
+顯示對應的訊息。
+
+
+
+ a| 
+`um version`
+ a| 
+顯示Unified Manager軟體版本。
+ a| 
+`Version ("7.0")`
+
+
+
+ a| 
+`um lun list [-q] [ -ObjectType <object-id>]`
+ a| 
+在篩選指定物件之後、列出LUN。-q適用於所有不顯示標頭的命令。ObjectType可以是LUN、qtree、叢集、Volume、配額、SVM：例如： `um lun list -cluster 1`
+
+在此範例中、「-cluster」為ObjectType、「1」為ObjectID。命令會列出叢集內ID為1的所有LUN。
+ a| 
+以表格格式顯示下列值： `ID and LUN path`。
+
+
+
+ a| 
+`um svm list [-q] [ -ObjectType <object-id>]`
+ a| 
+在篩選指定物件之後、列出SVM。ObjectType可以是LUN、qtree、叢集、Volume、配額、SVM：例如： `um svm list -cluster 1`
+
+在此範例中、「-cluster」為ObjectType、「1」為ObjectID。此命令會列出叢集內ID為1的所有SVM。
+ a| 
+以表格格式顯示下列值： `Name and Cluster ID`。
+
+
+
+ a| 
+`um qtree list [-q] [ -ObjectType <object-id>]`
+ a| 
+在篩選指定物件之後、列出qtree。-q適用於所有不顯示標頭的命令。ObjectType可以是LUN、qtree、叢集、Volume、配額、SVM：例如： `um qtree list -cluster 1`
+
+在此範例中、「-cluster」為ObjectType、「1」為ObjectID。命令會列出叢集內ID為1的所有qtree。
+ a| 
+以表格格式顯示下列值： `Qtree ID and Qtree Name`。
+
+
+
+ a| 
+`um disk list [-q] [-ObjectType <object-id>]`
+ a| 
+在篩選指定物件之後、列出磁碟。ObjectType可以是磁碟、aggr、節點、叢集。例如： `um disk list -cluster 1`
+
+在此範例中、「-cluster」為ObjectType、「1」為ObjectID。命令會列出叢集內ID為1的所有磁碟。
+ a| 
+以表格格式顯示下列值 `ObjectType and object-id.`
+
+
+
+ a| 
+`um cluster list [-q] [-ObjectType <object-id>]`
+ a| 
+在篩選指定物件之後、列出叢集。ObjectType可以是磁碟、aggr、節點、叢集、LUN、qtree、Volume、配額、SVM。例如：``um cluster list -aggr 1``
+
+在此範例中、「-aggr」為ObjectType、「1」為ObjectID。命令會列出ID為1的集合體所屬的叢集。
+ a| 
+以表格格式顯示下列值： `Name, Full Name, Serial Number, Datasource Id, Last Refresh Time, and Resource Key.`
+
+
+
+ a| 
+`um cluster node list [-q] [-ObjectType <object-id>]`
+ a| 
+在篩選指定物件之後、列出叢集節點。ObjectType可以是磁碟、aggr、節點、叢集。例如： `um cluster node list -cluster 1`
+
+在此範例中、「-cluster」為ObjectType、「1」為ObjectID。命令會列出叢集內ID為1的所有節點。
+ a| 
+以表格格式顯示下列值 `Name and Cluster ID.`
+
+
+
+ a| 
+`um volume list [-q] [-ObjectType <object-id>]`
+ a| 
+在篩選指定物件之後、列出磁碟區。ObjectType可以是LUN、qtree、叢集、Volume、配額、SVM、Aggregate。例如： `um volume list -cluster 1`
+
+在此範例中、「-cluster」為ObjectType、「1」為ObjectID。命令會列出叢集內ID為1的所有磁碟區。
+ a| 
+以表格格式顯示下列值 `Volume ID and Volume Name.`
+
+
+
+ a| 
+`um quota user list [-q] [-ObjectType <object-id>]`
+ a| 
+列出篩選指定物件後的配額使用者。ObjectType可以是qtree、叢集、Volume、配額、SVM。例如： `um quota user list -cluster 1`
+
+在此範例中、「-cluster」為ObjectType、「1」為ObjectID。此命令會列出叢集內ID為1的所有配額使用者。
+ a| 
+以表格格式顯示下列值 `ID, Name, SID and Email.`
+
+
+
+ a| 
+`um aggr list [-q] [-ObjectType <object-id>]`
+ a| 
+在篩選指定物件之後、列出集合體。ObjectType可以是磁碟、aggr、節點、叢集、Volume。例如： `um aggr list -cluster 1`
+
+在此範例中、「-cluster」為ObjectType、「1」為ObjectID。命令會列出叢集內ID為1的所有集合體。
+ a| 
+以表格格式顯示下列值 `Aggr ID, and Aggr Name.`
+
+
+
+ a| 
+`um event ack <event-ids>`
+ a| 
+確認一或多個事件。
+ a| 
+顯示對應的訊息。
+
+
+
+ a| 
+`um event resolve <event-ids>`
+ a| 
+解決一或多個事件。
+ a| 
+顯示對應的訊息。
+
+
+
+ a| 
+`um event assign -u <username> <event-id>`
+ a| 
+將事件指派給使用者。
+ a| 
+顯示對應的訊息。
+
+
+
+ a| 
+`um event list [ -s <source> ] [ -S <event-state-filter-list>.. ] [ <event-id> .. ]`
+ a| 
+列出系統或使用者所產生的事件。根據來源、狀態和ID篩選事件。
+ a| 
+以表格格式顯示下列值 `Source, Source type, Name, Severity, State, User and Timestamp.`
+
+
+
+ a| 
+`um cli login -u <username> [-p <password>`
+ a| 
+登入CLI。工作階段會在登入後三小時後過期、之後使用者必須重新登入。
+ a| 
+顯示對應的訊息。
+
+
+
+ a| 
+`um cli logout`
+ a| 
+登出CLI。
+ a| 
+顯示對應的訊息。
+
+
+
+ a| 
+`um backup restore -f <backup_file_path_and_name>`
+ a| 
+使用.7z檔案還原資料庫備份。
+ a| 
+顯示對應的訊息。
+
+
+
+ a| 
+`um help`
+ a| 
+顯示所有第一層子命令。
+ a| 
+顯示所有第一層子命令。
+
+|===

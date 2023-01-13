@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-report-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用這些選項來排程、共用、管理、儲存及匯入報告。 
+---
+= 報告視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用這些選項來排程、共用、管理、儲存及匯入報告。

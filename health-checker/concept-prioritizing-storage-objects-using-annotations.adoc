@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-prioritizing-storage-objects-using-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立並套用附註規則至儲存物件、以便根據套用的附註類型及其優先順序來識別及篩選這些物件。 
+---
+= 使用註釋來排定儲存物件事件的優先順序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立並套用附註規則至儲存物件、以便根據套用的附註類型及其優先順序來識別及篩選這些物件。

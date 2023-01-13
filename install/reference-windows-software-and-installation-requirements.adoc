@@ -1,0 +1,91 @@
+---
+permalink: install/reference-windows-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要在Windows上成功安裝Unified Manager、您必須確保安裝Unified Manager的系統符合軟體需求。 
+---
+= Windows軟體與安裝需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+若要在Windows上成功安裝Unified Manager、您必須確保安裝Unified Manager的系統符合軟體需求。
+
+
+
+== 作業系統軟體
+
+Unified Manager只能在64位元英文版Windows作業系統上執行。您可以在下列Windows平台上安裝Unified Manager：
+
+* Microsoft Windows Server 2012 Standard與Datacenter Edition
+* Microsoft Windows Server 2012 R2 Standard與Datacenter Edition
+* Microsoft Windows Server 2016標準版與資料中心版
+
+
+[NOTE]
+====
+在Windows Server 2012 R2上、目標系統上必須安裝Windows更新KB2919355、否則安裝將會失敗。
+
+====
+請注意、Windows Server 2008並不支援、因為它是在舊版中。請參閱互通性對照表、以取得所支援Windows版本的完整且最新清單。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+伺服器應專供執行Unified Manager；伺服器上不應安裝其他應用程式。
+
+需要下列協力廠商套件：
+
+* Microsoft Visual C&#43；&#43；2015可轉散發套件14.0.24212版
+* Microsoft Visual C&#43;&#43;適用於Visual Studio 2013的可轉散發套件12.0.40660版
+* 5.7系列的MySQL Community Edition 5.7.23版或更新版本
+* OpenJDK11版
+* p7zip版本18.01或更新版本
+
+
+如果未安裝這些協力廠商套件、Unified Manager會在安裝過程中安裝這些套件。
+
+[NOTE]
+====
+從Unified Manager 9.5開始、Unified Manager安裝套件中就會提供OpenJDK、並會自動安裝。不支援從Unified Manager 9.5開始使用Oracle Java。
+
+====
+如果預先安裝MySQL、您必須確保：
+
+* 使用預設連接埠。
+* 未安裝範例資料庫。
+* 服務名稱為「Mysql"。
+
+
+[NOTE]
+====
+如果您打算在Unified Manager執行之後升級任何第三方軟體、則必須先關閉Unified Manager。第三方軟體安裝完成後、您可以重新啟動Unified Manager。
+
+====
+
+
+== 安裝需求
+
+* 必須安裝Microsoft .NET 4.5.2或更新版本。
+* 您必須為保留2 GB的磁碟空間 `temp` 解壓縮安裝檔案的目錄。
+* 您必須在Windows磁碟機中保留2 GB的磁碟空間、才能快取Unified Manager MSI檔案。
+* 您要安裝Unified Manager的Microsoft Windows Server必須設定完整網域名稱（FQDN）、才能執行此作業 `ping` 對主機名稱和FQDN的回應成功。
+* 您必須停用Microsoft IIS全球網頁發佈服務、並確保連接埠80和443是免費的。
+* 您必須確定在安裝期間停用「Windows Installer RDS相容性」的遠端桌面工作階段主機設定。
+* udp連接埠514必須為可用、不得用於任何其他服務。
+
+
+[NOTE]
+====
+Unified Manager安裝程式會在Windows Defender中設定下列排除項目：
+
+* Unified Manager資料目錄（僅限Windows Server 2016）
+* Unified Manager安裝目錄
+* MySQL資料目錄
+
+
+如果您的伺服器安裝了不同的防毒掃描程式、您必須手動設定這些排除項目。
+
+====

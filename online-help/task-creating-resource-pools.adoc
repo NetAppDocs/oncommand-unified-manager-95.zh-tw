@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-creating-resource-pools.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「建立資源池」對話方塊、將Aggregate分組以供資源配置之用。 
+---
+= 建立資源池
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「建立資源池」對話方塊、將Aggregate分組以供資源配置之用。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+資源集區可以包含來自不同叢集的集合體、但同一個集合體不能屬於不同的資源集區。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下* Protection（保護）***資源池*。
+. 在「*保護/資源池*」頁面中、按一下「*建立*」。
+. 請遵循「*建立資源池*」對話方塊中的指示、提供名稱與說明、並將Aggregate新增為您要建立的資源池成員。
+

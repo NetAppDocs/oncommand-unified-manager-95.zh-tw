@@ -1,0 +1,89 @@
+---
+permalink: online-help/task-adding-space-to-the-data-directory-of-the-unified-manager-red-hat-enterprise-linux-host.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您在最初設定Linux主機並安裝Unified Manager時、將磁碟空間不足分配給/opt/NetApp/data目錄以支援Unified Manager、則可在安裝後增加磁碟空間、方法是在/opp/NetApp/data目錄中增加磁碟空間。 
+---
+= 將空間新增至Linux主機的資料目錄
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您為分配的磁碟空間不足 `/opt/netapp/data` 目錄若要支援Unified Manager、當您最初設定Linux主機、然後安裝Unified Manager時、您可以在安裝後增加磁碟空間、方法是增加上的磁碟空間 `/opt/netapp/data` 目錄。
+
+
+
+== 開始之前
+
+您必須擁有root使用者存取權、才能存取安裝Unified Manager的Red Hat Enterprise Linux或CentOS Linux機器。
+
+
+
+== 關於這項工作
+
+建議您先備份Unified Manager資料庫、再增加資料目錄的大小。
+
+
+
+== 步驟
+
+. 以root使用者身分登入您要新增磁碟空間的Linux機器。
+. 依照下列順序停止Unified Manager服務及相關的MySQL軟體：
+. 建立暫用備份資料夾（例如 `/backup-data`）、並有足夠的磁碟空間來容納目前的資料 `/opt/netapp/data` 目錄。
+. 複製現有的內容和權限組態 `/opt/netapp/data` 目錄至備份資料目錄： `cp -rp /opt/netapp/data/* /backup-data`
+. 如果已啟用SE Linux：
++
+.. 取得現有資料夾的SE Linux類型 `/opt/netapp/data` 資料夾：
++
+`se_type= ls -Z /opt/netapp/data | awk '{print $4}'| awk -F: '{print $3}'| head -1`
+
++
+系統會傳回類似下列的確認訊息：
+
++
+[listing]
+----
+echo $se_type
+mysqld_db_t
+----
+.. 執行 `chcon` 設定備份目錄的SE Linux類型命令： `chcon -R --type=mysqld_db_t /backup-data`
+
+
+. 移除的內容 `/opt/netapp/data` 目錄：
++
+.. `cd /opt/netapp/data`
+.. `rm -rf *`
+
+
+. 擴充的大小 `/opt/netapp/data` 透過LVM命令或新增額外的磁碟、將目錄至少設為750 GB。
++
+[NOTE]
+====
+安裝 `/opt/netapp/data` 不支援NFS匯出或CIFS共用上的目錄。
+
+====
+. 確認 `/opt/netapp/data` 目錄擁有者（mySQL）和群組（root）沒有改變： `ls -ltr / | grep opt/netapp/data`
++
+系統會傳回類似下列的確認訊息：
+
++
+[listing]
+----
+drwxr-xr-x.  17 mysql root  4096 Aug 28 13:08 data
+----
+. 如果已啟用SE Linux、請確認的內容 `/opt/netapp/data` 目錄仍設定為mysqld_db_t: `touch /opt/netapp/data/abc``ls -Z /opt/netapp/data/abc`
++
+系統會傳回類似下列的確認訊息：
+
++
+[listing]
+----
+-rw-r--r--. root root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/data/abc
+----
+. 從複製內容 `backup-data`、返回擴充的 `/opt/netapp/data` 目錄： `cp -rp /backup-data/* /opt/netapp/data/`
+. 啟動MySQL服務： `service mysqld start`
+. MySQL服務啟動後、請依下列順序啟動ocie和ocieau服務： `service ocie start``service ocieau start`
+. 所有服務啟動後、請刪除備份資料夾 `/backup-data`： `rm -rf /backup-data`
+

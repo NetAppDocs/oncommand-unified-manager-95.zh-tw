@@ -1,0 +1,72 @@
+---
+permalink: online-help/concept-understanding-events-from-adaptive-qos-policies-that-have-a-defined-block-size.html 
+sidebar: sidebar 
+keywords:  
+summary: 調適性QoS原則群組會根據磁碟區大小自動調整處理量上限或樓層、並在磁碟區大小變更時維持IOPS與TB的比率。從推出支援功能的支援功能支援功能9.5開始ONTAP 、您可以在QoS原則中指定區塊大小、以便同時有效地套用Mbps臨界值。 
+---
+= 瞭解自適性QoS原則中具有定義區塊大小的事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+調適性QoS原則群組會根據磁碟區大小自動調整處理量上限或樓層、並在磁碟區大小變更時維持IOPS與TB的比率。從推出支援功能的支援功能支援功能9.5開始ONTAP 、您可以在QoS原則中指定區塊大小、以便同時有效地套用Mbps臨界值。
+
+在調適性QoS原則中指派IOPS臨界值、只會限制每個工作負載所執行的作業數量。視產生工作負載的用戶端所設定的區塊大小而定、部分IOPS會包含更多資料、因此會對處理作業的節點造成更大的負擔。
+
+工作負載的Mbps值是使用下列公式產生：
+
+[listing]
+----
+MBps = (IOPS * Block Size) / 1000
+----
+如果工作負載平均為3、000 IOPS、且用戶端的區塊大小設為32 KB、則此工作負載的有效Mbps為96。如果相同的工作負載平均為3、000 IOPS、且用戶端的區塊大小設為48 KB、則此工作負載的有效Mbps為144。當區塊大小變大時、您可以看到節點處理的資料增加50%。
+
+讓我們來看看下列已定義區塊大小的調適性QoS原則、以及根據用戶端上設定的區塊大小來觸發事件的方式。
+
+建立原則、並將尖峰處理量設定為2、500 IOPS / TB、區塊大小為32KB。如此一來、對於使用1 TB容量的磁碟區、將Mbps臨界值有效設定為80 Mbps（2500 IOPS * 32KB）/ 1000）。請注意、當處理量值低於定義的臨界值10%時、Unified Manager會產生警告事件。在下列情況下產生事件：
+
+|===
+| 已用容量 | 當處理量超過此數量...時、就會產生事件。 
+
+
+| IOPS | Mbps 
+
+
+ a| 
+1 TB
+ a| 
+2、250 IOPS
+
+
+
+ a| 
+72 Mbps
+ a| 
+2 TB
+
+
+
+ a| 
+4、500 IOPS
+ a| 
+144 Mbps
+
+
+
+ a| 
+5 TB
+ a| 
+11,250 IOPS
+
+|===
+如果磁碟區使用2TB的可用空間、IOPS為4、000、而用戶端的QoS區塊大小設為32KB、則Mbps處理量為128 Mbps（（4、000 IOPS * 32 KB）/ 1000）。在此案例中不會產生任何事件、因為對於使用2 TB空間的磁碟區、4000 IOPS和128 Mbps都低於臨界值。
+
+如果磁碟區使用2TB的可用空間、而IOPS為4、000、而用戶端的QoS區塊大小設為64KB、則Mbps處理量為256 Mbps（（4、000 IOPS * 64 KB）/ 1000）。在此情況下、4、000 IOPS不會產生事件、但256 Mbps的Mbps值高於144 Mbps的臨界值、因此會產生事件。
+
+因此、當事件是根據包含區塊大小的調適性QoS原則違反Mbps而觸發時、「事件詳細資料」頁面的「系統診斷」區段會顯示Mbps圖表。如果事件是根據調適性QoS原則的IOPS外洩而觸發、則「系統診斷」區段會顯示IOPS圖表。如果IOPS和Mbps發生資料外洩、您將會收到兩個事件。
+
+如需調整QoS設定的詳細資訊、請參閱《_ ONTAP 效能監控電源指南_》。
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["《效能監控電源指南》（英文）ONTAP"]

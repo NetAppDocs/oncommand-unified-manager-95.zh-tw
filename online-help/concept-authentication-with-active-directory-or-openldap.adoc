@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-authentication-with-active-directory-or-openldap.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在管理伺服器上啟用遠端驗證、並將管理伺服器設定為與驗證伺服器通訊、以便驗證伺服器內的使用者能夠存取您可以在管理伺服器上啟用遠端驗證、並設定管理伺服器與驗證伺服器通訊驗證伺服器內的使用者可以存取Unified Manager。 
+---
+= 使用Active Directory或OpenLDAP驗證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在管理伺服器上啟用遠端驗證、並將管理伺服器設定為與驗證伺服器通訊、以便驗證伺服器內的使用者能夠存取您可以在管理伺服器上啟用遠端驗證、並設定管理伺服器與驗證伺服器通訊驗證伺服器內的使用者可以存取Unified Manager。
+
+您可以使用下列其中一項預先定義的驗證服務、或是指定您自己的驗證服務：
+
+* Microsoft Active Directory
++
+[NOTE]
+====
+您無法使用Microsoft輕量型目錄服務。
+
+====
+* OpenLDAP
+
+
+您可以選取所需的驗證服務、並新增適當的驗證伺服器、讓驗證伺服器中的遠端使用者能夠存取Unified Manager。遠端使用者或群組的認證資料由驗證伺服器維護。管理伺服器使用輕量型目錄存取傳輸協定（LDAP）來驗證已設定驗證伺服器內的遠端使用者。
+
+對於在Unified Manager中建立的本機使用者、管理伺服器會維護自己的使用者名稱和密碼資料庫。管理伺服器會執行驗證、不會使用Active Directory或OpenLDAP進行驗證。

@@ -1,0 +1,104 @@
+---
+permalink: install/task-upgrading-the-unified-manager-virtual-appliance-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從Unified Manager 7.3或9.4版升級至Unified Manager 9.5。 
+---
+= 升級Unified Manager虛擬應用裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從Unified Manager 7.3或9.4版升級至Unified Manager 9.5。
+
+
+
+== 開始之前
+
+* 您必須已下載 `.iso` 檔案來自NetApp 支援網站 於此。
+* 您要升級Unified Manager的系統必須符合系統和軟體需求。
++
+xref:concept-requirements-for-installing-unified-manager.adoc[虛擬化基礎架構需求]
+
++
+xref:reference-vmware-software-and-installation-requirements.adoc[VMware軟體與安裝需求]
+
+* 對於vSphere 6.5使用者、您必須安裝VMware遠端主控台（VMRC）。
+* 您必須具備下列資訊：
++
+** NetApp 支援網站的登入認證資料
+** 存取VMware vCenter Server和vSphere Web Client（vSphere 6.5版）或vSphere Client（vSphere 5.5或6.0版）的認證資料
+** Unified Manager維護使用者的認證資料
+
+
+
+
+
+
+== 關於這項工作
+
+在升級過程中、Unified Manager無法使用。升級Unified Manager之前、您應該先完成所有執行中的作業。
+
+如果您已配對Workflow Automation和Unified Manager、則必須手動更新Workflow Automation中的主機名稱。
+
+
+
+== 步驟
+
+. 在vSphere Client中、按一下*首頁*>*詳細目錄*>*虛擬機器與範本*。
+. 選取安裝Unified Manager虛擬應用裝置的虛擬機器（VM）。
+. 如果Unified Manager VM正在執行、請瀏覽至* Summary *>* Commands-*>*關機Guest *。
+. 建立Unified Manager VM的備份複本（例如快照或複製）、以建立應用程式一致的備份。
+. 從vSphere Client啟動Unified Manager VM。
+. 選取Unified Manager升級映像：
++
+|===
+| 如果您使用... | 然後執行此動作... 
+
+
+ a| 
+vSphere 5.5或6.0
+ a| 
+.. 按一下「* CD/DVD Drive*」圖示、然後選取「* Connect to ISO image on local disk*」（*連線到本機磁碟上的ISO映像*）。
+.. 選取 `OnCommandUnifiedManager-9.5-virtual-update.iso` 檔案、然後按一下*「Open*（開啟*）」。
+
+
+
+
+ a| 
+vSphere 6.5
+ a| 
+.. 啟動VMware遠端主控台。
+.. 按一下「* cdrom*」圖示、然後選取「*連線至磁碟映像檔（.iso*）」。
+.. 選取 `OnCommandUnifiedManager-9.5-virtual-update.iso` 檔案、然後按一下*「Open*（開啟*）」。
+
+
+|===
+. 按一下*主控台*索引標籤。
+. 登入Unified Manager維護主控台。
+. 在*主功能表*中、選取*升級*。
++
+系統會顯示一則訊息、指出Unified Manager在升級程序期間無法使用、並會在完成後繼續使用。
+
+. 類型 `y` 以繼續。
++
+此時會顯示警告、提醒您備份虛擬應用裝置所在的虛擬機器。
+
+. 類型 `y` 以繼續。
++
+升級程序和重新啟動Unified Manager服務可能需要數分鐘的時間才能完成。
+
+. 按任意鍵繼續。
++
+系統會自動將您登出維護主控台。
+
+. 登入維護主控台、然後驗證Unified Manager的版本。
+
+
+
+
+== 完成後
+
+您可以登入Web UI、以使用升級版的Unified Manager。請注意、您必須等待探索程序完成、才能在UI中執行任何工作。

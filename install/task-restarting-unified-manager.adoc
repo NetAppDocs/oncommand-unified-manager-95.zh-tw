@@ -1,0 +1,35 @@
+---
+permalink: install/task-restarting-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 變更組態之後、您可能必須重新啟動Unified Manager。 
+---
+= 在Red Hat Enterprise Linux或CentOS中重新啟動Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+變更組態之後、您可能必須重新啟動Unified Manager。
+
+
+
+== 開始之前
+
+您必須擁有root使用者存取權、才能存取安裝Unified Manager的Red Hat Enterprise Linux或CentOS伺服器。
+
+
+
+== 步驟
+
+. 以root使用者身分登入您要重新啟動Unified Manager服務的伺服器。
+. 依照下列順序停止Unified Manager服務及相關的MySQL軟體：
++
+安裝在高可用度設定中時、請使用VCS Operations Manager或VCS命令來停止Unified Manager服務。
+
+. 依照下列順序啟動Unified Manager：
++
+安裝在高可用度設定中時、請使用VCS Operations Manager或VCS命令來啟動Unified Manager服務。
+
+

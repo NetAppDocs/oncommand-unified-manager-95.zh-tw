@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-managing-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Unified Manager伺服器上的LDAP或Active Directory來啟用驗證、並將其設定為與伺服器搭配使用、以驗證遠端使用者。 
+---
+= 管理驗證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager伺服器上的LDAP或Active Directory來啟用驗證、並將其設定為與伺服器搭配使用、以驗證遠端使用者。
+
+此外、您也可以啟用SAML驗證、讓遠端使用者在登入Unified Manager Web UI之前、先透過安全的身分識別供應商（IDP）進行驗證。

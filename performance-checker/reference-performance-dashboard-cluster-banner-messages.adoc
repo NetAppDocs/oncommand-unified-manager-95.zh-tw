@@ -1,0 +1,38 @@
+---
+permalink: performance-checker/reference-performance-dashboard-cluster-banner-messages.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager可能會在效能儀表板上顯示叢集橫幅訊息、提醒您特定叢集的狀態問題。 
+---
+= 效能儀表板叢集橫幅訊息與說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager可能會在效能儀表板上顯示叢集橫幅訊息、提醒您特定叢集的狀態問題。
+
+|===
+| 橫幅訊息 | 說明 | 解決方案 
+
+
+ a| 
+`No performance data is being collected from cluster cluster_name. Restart Unified Manager to correct this issue.`
+ a| 
+Unified Manager集合服務已停止、而且不會從任何叢集收集效能資料。
+ a| 
+重新啟動Unified Manager以修正此問題。如果這無法解決問題、請聯絡技術支援部門。
+
+
+
+ a| 
+`More than x hour(s) of historical data is being collected from cluster cluster_name. Current data collections will start after all historical data is collected.`
+ a| 
+目前正在執行資料持續性收集週期、以擷取即時叢集效能收集週期以外的效能資料。
+ a| 
+無需採取任何行動。在資料持續性收集週期完成之後、將會收集目前的效能資料。
+
+新增叢集或Unified Manager因故無法收集目前效能資料時、會執行資料持續性收集週期。
+
+|===

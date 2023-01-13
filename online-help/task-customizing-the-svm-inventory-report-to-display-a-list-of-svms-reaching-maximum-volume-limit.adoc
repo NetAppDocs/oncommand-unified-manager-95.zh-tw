@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-svms-reaching-maximum-volume-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂SVM Inventory（SVM資源清冊）報告、以遞增順序排序磁碟區、以顯示已達到最大Volume限制的SVM清單。 
+---
+= 自訂SVM庫存報告、以顯示已達到最大Volume限制的SVM清單
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂SVM Inventory（SVM資源清冊）報告、以遞增順序排序磁碟區、以顯示已達到最大Volume限制的SVM清單。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要依叢集移除群組、請執行下列步驟：
++
+.. 在需要取消群組的欄內按一下。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 若要篩選不具有無限允許磁碟區的SVM、請按一下*最大允許磁碟區*欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 在*資料類型*欄位中、選取*字串*、然後按一下*確定*。
+. 從*條件*下拉式清單中、選取*不等於*。
+. 按一下*選取值*、然後選取*無限*。
+. 若要新增新的計算欄、請執行下列步驟：
++
+.. 選取欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示、然後選取*欄*>*新計算欄*。
+.. 在「*新計算的欄*」對話方塊中、輸入 `Available Volume` 在*欄標籤*欄位中。
+.. 從Select Category（選擇類別）列表中選擇* Math*。
+.. 從*選取功能*下拉式清單中、選取*進階*。
+.. 在*輸入運算式*欄位中、輸入 `[maximumVolumes]-[volumeCount]`。
+.. 按一下「*確定*」。
+
+
+. 若要依遞增順序排序SVM、請按一下*可用Volume *欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+. 選擇*篩選器*>*頂端/底端N*。
+. 在*上/下N*對話方塊中、從*篩選*欄位中選取*下N*、然後在文字欄位中輸入值。
+. 按一下「*確定*」。
+

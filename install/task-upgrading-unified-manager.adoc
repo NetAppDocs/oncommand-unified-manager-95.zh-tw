@@ -1,0 +1,118 @@
+---
+permalink: install/task-upgrading-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Red Hat平台上下載並執行安裝檔案、將Unified Manager 7.3或9.4版升級至Unified Manager 9.5。 
+---
+= 升級Red Hat Enterprise Linux或CentOS上的Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Red Hat平台上下載並執行安裝檔案、將Unified Manager 7.3或9.4版升級至Unified Manager 9.5。
+
+
+
+== 開始之前
+
+* 您要升級Unified Manager的系統必須符合系統和軟體需求。
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[硬體系統需求]
+
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Red Hat與CentOS軟體與安裝需求]
+
+* 從Unified Manager 9.4開始、不再支援Red Hat Enterprise Linux 6.x。如果您使用RHEL 6、則必須先將RHEL執行個體升級至7.x版、再升級至Unified Manager 9.5。
+* 從Unified Manager 9.5開始、不再支援Oracle Java。在升級至Unified Manager 9.5之前、必須先安裝正確版本的OpenJDK。
+* 您必須訂閱Red Hat Enterprise Linux訂閱管理程式。
+* 為了避免資料遺失、您必須先建立Unified Manager資料庫的備份、以防升級期間發生問題。也建議您從移除備份檔案 `/opt/netapp/data` 目錄至外部位置。
+* 您應該已經完成所有執行中的作業、因為Unified Manager在升級過程中無法使用。
+
+
+
+
+== 關於這項工作
+
+[NOTE]
+====
+這些步驟包含使用Veritas Operations Manager設定為高可用度的系統資訊。如果您的系統未設定為高可用度、請忽略這些額外步驟。
+
+====
+
+
+== 步驟
+
+. 登入目標Red Hat Enterprise Linux或CentOS伺服器。
+. 將Unified Manager產品組合下載至伺服器。
++
+xref:task-downloading-unified-manager.adoc[下載適用於Red Hat或CentOS的Unified Manager]
+
+. 瀏覽至目標目錄並展開Unified Manager套裝組合： `unzip OnCommandUnifiedManager-rhel7-9.5.zip`
++
+Unified Manager所需的RPM模組會解壓縮至目標目錄。
+
+. 確認所列模組是否存在： `ls *.rpm`
++
+列出下列RPM模組：
+
++
+** `ocie-au-<version>.x86_64.rpm`
+** `ocie-server-<version>.x86_64.rpm`
+** `ocie-serverbase-<version>.x86_64.rpm`
+** `netapp-application-server-<version>.x86_64.rpm`
+** `netapp-platform-base-<version>.x86_64.rpm`
+** `netapp-ocum-<version>.x86_64.rpm`
+
+
+. 若系統未連線至網際網路、或未使用RHEL儲存庫、請執行下列步驟以判斷是否遺漏任何必要的套件、然後下載這些套件：
++
+.. 檢視可用和不可用套件的清單： `yum install *.rpm --assumeno`
++
+「正在安裝：」區段中的項目是目前目錄中可用的套件、而「正在安裝相依套件：」區段中的項目是您系統上遺失的套件。
+
+.. 在另一個可存取網際網路的系統上下載遺失的套件： `yum install package_name --downloadonly --downloaddir=.`
++
+[NOTE]
+====
+由於Red Hat Enterprise Linux系統並未一律啟用外掛程式「yum外掛程式-downloadonly」、因此您可能需要啟用下載套件的功能、而不需安裝： `yum install yum-plugin-downloadonly`
+
+====
+.. 將遺失的套件從網際網路連線的系統複製到安裝系統。
+
+
+. 如果Unified Manager設定為高可用度、則使用Veritas Operations Manager、請停止第一個節點上的所有Unified Manager服務。
+. 使用下列指令碼升級Unified Manager： `upgrade.sh`
++
+此指令碼會自動執行RPM模組、並升級必要的支援軟體及其上執行的Unified Manager模組。此外、升級指令碼會檢查是否有任何系統組態設定、或是任何安裝的軟體會與Unified Manager升級衝突。如果指令碼發現任何問題、您必須在升級Unified Manager之前修正問題。
+
++
+[NOTE]
+====
+請勿嘗試使用替代命令（例如 `+rpm -Uvh ...+`）。若要成功升級、所有Unified Manager檔案及相關檔案都必須依照特定順序升級至指令碼自動執行及設定的特定目錄結構。
+
+====
+. 若要進行高可用度安裝、請使用Veritas Operations Manager停止第二個節點上的所有Unified Manager服務。
+. 對於高可用度安裝、請在高可用度設定中、將服務群組切換至第二個節點、並在第二個節點上升級Unified Manager。
+. 升級完成後、捲動回訊息、直到看到訊息顯示Unified Manager Web UI的IP位址或URL、維護使用者名稱（umadmin）和預設密碼。
++
+此訊息類似於下列內容：
+
++
+[listing]
+----
+OnCommand Unified Manager upgraded successfully.
+Use a web browser and one of the following URLs to access the OnCommand Unified Manager GUI:
+
+https://default_ip_address/    (if using IPv4)
+https://[default_ip_address]/  (if using IPv6)
+https://fully_qualified_domain_name/
+----
+
+
+
+
+== 完成後
+
+在支援的網頁瀏覽器中輸入指定的IP位址或URL、以啟動Unified Manager網路UI、然後使用您先前設定的相同維護使用者名稱（umadmin）和密碼登入。

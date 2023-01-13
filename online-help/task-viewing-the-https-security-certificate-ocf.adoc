@@ -1,0 +1,42 @@
+---
+permalink: online-help/task-viewing-the-https-security-certificate-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將HTTPS憑證詳細資料與瀏覽器中擷取的憑證進行比較、以確保瀏覽器與Unified Manager的加密連線不會被攔截。 
+---
+= 檢視HTTPS安全性憑證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將HTTPS憑證詳細資料與瀏覽器中擷取的憑證進行比較、以確保瀏覽器與Unified Manager的加密連線不會被攔截。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+檢視憑證可讓您驗證重新產生之憑證的內容、或檢視可用來存取Unified Manager的替代URL名稱。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*設定*功能表中的* HTTPS憑證*。
++
+HTTPS憑證會顯示在頁面頂端
+
+
+
+
+
+== 完成後
+
+如果您需要檢視安全性憑證的詳細資訊、而非HTTPS憑證頁面所顯示的詳細資訊、您可以在瀏覽器中檢視連線憑證。

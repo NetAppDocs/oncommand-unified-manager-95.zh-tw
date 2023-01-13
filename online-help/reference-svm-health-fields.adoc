@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-svm-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM Inventory報告可讓您分析SVM Volume組態限制和整體健全狀況、以瞭解未來儲存可用度的風險。 
+---
+= SVM庫存報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM Inventory報告可讓您分析SVM Volume組態限制和整體健全狀況、以瞭解未來儲存可用度的風險。
+
+
+
+== SVM庫存報告表格檢視
+
+* *叢集*
++
+顯示包含SVM的叢集名稱。
+
+* *儲存虛擬機器*
++
+顯示SVM的名稱。
+
+* *州*
++
+顯示SVM的目前管理狀態。狀態可以是執行中、停止、啟動、停止、未對應、正在初始化或刪除。
+
+* * Volume count*
++
+顯示SVM所包含的磁碟區數目。
+
+* *允許的最大磁碟區*
++
+顯示可在SVM上設定的最大允許磁碟區數。
+
+* *根磁碟區*
++
+顯示SVM的根Volume名稱。
+
+* *允許的傳輸協定*
++
+顯示可在SVM上設定的傳輸協定類型。
+
+* * DNS網域*
++
+顯示DNS網域名稱。
+
+* * NIS網域*
++
+顯示網路資訊服務（NIS）網域名稱。當網路資訊服務（NIS）伺服器已停用或未設定時、此欄為空白。
+
+* * LDAP已啟用*
++
+顯示是否已啟用LDAP傳輸協定。
+
+* *名稱服務交換器*
++
+顯示從主機收集的資訊類型。可能的值包括檔案、LDAP或NIS。
+
+

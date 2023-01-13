@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-setup-authentication-page-um-7-3.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「設定/驗證」頁面來設定Unified Manager、以驗證嘗試登入Unified Manager Web UI的遠端使用者。 
+---
+= 設定/驗證頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「設定/驗證」頁面來設定Unified Manager、以驗證嘗試登入Unified Manager Web UI的遠端使用者。
+
+使用「遠端驗證」頁面、您可以設定Unified Manager與驗證伺服器通訊、以驗證遠端使用者。
+
+使用「SAML驗證」頁面、您可以設定Unified Manager與安全的身分識別供應商（IDP）通訊、以驗證遠端使用者。

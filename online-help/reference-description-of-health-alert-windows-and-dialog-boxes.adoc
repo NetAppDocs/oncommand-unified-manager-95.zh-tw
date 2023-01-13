@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-alert-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您應該使用「新增警示」對話方塊來設定警示、以接收有關事件的通知。您也可以從「組態/警示」頁面檢視警示清單。 
+---
+= 警示視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該使用「新增警示」對話方塊來設定警示、以接收有關事件的通知。您也可以從「組態/警示」頁面檢視警示清單。

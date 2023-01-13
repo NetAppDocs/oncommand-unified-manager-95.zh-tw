@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-resolving-a-protection-job-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: 此工作流程為您提供一個範例、說明如何從Unified Manager儀表板識別及解決保護工作故障。 
+---
+= 解決保護工作故障
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流程為您提供一個範例、說明如何從Unified Manager儀表板識別及解決保護工作故障。
+
+
+
+== 開始之前
+
+由於此工作流程中的某些工作需要您使用OnCommand 「管理員」角色登入、因此您必須熟悉使用各種功能所需的角色、如所述 xref:reference-unified-manager-roles-and-capabilities.adoc[Unified Manager使用者角色與功能]。
+
+
+
+== 關於這項工作
+
+在此案例中、您可以存取「儀表板/總覽」頁面、查看保護工作是否有任何問題。在「保護事件」區域中、您會注意到有「工作終止」事件、在磁碟區上顯示「保護工作失敗」錯誤。請調查此錯誤、以判斷可能的原因和可能的解決方法。
+
+
+
+== 步驟
+
+. 在「儀表板*未解決的事件與風險*」區域的「*保護事件*」面板中、按一下*保護工作失敗*事件。
++
+[TIP]
+====
+事件的連結文字會以格式寫入 `object_name:/object_name - Error Name`、例如 `cluster2_src_svm:/cluster2_src_vol2 - Protection Job Failed`。
+
+====
++
+隨即顯示故障保護工作的「事件詳細資料」頁面。
+
+. 檢閱* Summary（摘要）*區域「Cause（原因）」欄位中的錯誤訊息、以判斷問題並評估可能的修正行動。
++
+請參閱 xref:task-identifying-the-problem-and-performing-corrective-actions-for-a-failed-protection-job.adoc[找出問題、並針對故障的保護工作執行修正行動]。
+
+

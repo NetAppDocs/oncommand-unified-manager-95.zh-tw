@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-quotas-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用健全狀況/儲存虛擬機器詳細目錄頁面中的使用者與群組配額索引標籤中的適當選項、設定發生配額相關問題時傳送的電子郵件通知格式、以及設定規則、根據使用者配額來指定電子郵件地址。 
+---
+= 配額對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用健全狀況/儲存虛擬機器詳細目錄頁面中的使用者與群組配額索引標籤中的適當選項、設定發生配額相關問題時傳送的電子郵件通知格式、以及設定規則、根據使用者配額來指定電子郵件地址。

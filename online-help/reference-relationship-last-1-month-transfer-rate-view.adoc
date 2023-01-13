@@ -1,0 +1,35 @@
+---
+permalink: online-help/reference-relationship-last-1-month-transfer-rate-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 「Protection / Volume Transfer Rate（歷史）（保護/ Volume傳輸率）」頁面可讓您分析每日傳輸的資料Volume量。本頁也提供每日Volume傳輸的詳細資料、以及完成傳輸作業所需的時間。 
+---
+= 保護/ Volume傳輸率（歷史）頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Protection / Volume Transfer Rate（歷史）（保護/ Volume傳輸率（歷史））」頁面可讓您分析每日傳輸的資料Volume量。本頁也提供每日Volume傳輸的詳細資料、以及完成傳輸作業所需的時間。
+
+使用*匯出*按鈕、將所有受監控磁碟區的詳細資料匯出為以逗號分隔的值 (`.csv`）檔案。
+
+[NOTE]
+====
+此頁面僅顯示非同步關係中磁碟區的資訊、不會顯示同步關係中的磁碟區。
+
+====
+* *傳輸總大小*
++
+以GB為單位顯示磁碟區傳輸的總大小。
+
+* *天*
++
+顯示初始化Volume傳輸的日期。
+
+* *結束時間*
++
+顯示磁碟區傳輸結束時間及日期。
+
+

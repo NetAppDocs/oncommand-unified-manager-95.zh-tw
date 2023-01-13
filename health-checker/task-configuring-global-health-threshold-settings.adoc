@@ -1,0 +1,44 @@
+---
+permalink: health-checker/task-configuring-global-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以設定容量、成長、Snapshot保留、配額和inode的全域健全狀況臨界值條件、有效監控您的Aggregate、Volume和qtree大小。您也可以編輯設定、以產生超過延遲臨界值的事件。 
+---
+= 設定全域健全狀況臨界值設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定容量、成長、Snapshot保留、配額和inode的全域健全狀況臨界值條件、有效監控您的Aggregate、Volume和qtree大小。您也可以編輯設定、以產生超過延遲臨界值的事件。
+
+
+
+== 關於這項工作
+
+全域健全狀況臨界值設定會套用至與其相關聯的所有物件、例如集合體、磁碟區等。超過臨界值時、會產生事件、如果已設定警示、則會傳送警示通知。臨界值預設值會設定為建議值、但您可以修改這些值、以便每隔一段時間產生事件、以符合您的特定需求。當臨界值變更時、會在下一個監控週期產生或淘汰事件。
+
+您可以從「組態/健全狀況臨界值」頁面存取全域健全狀況臨界值設定。您也可以從詳細目錄頁面或該物件的詳細資料頁面、修改個別物件的臨界值設定。
+
+
+
+== 選擇
+
+* xref:task-configuring-global-aggregate-health-threshold-values.adoc[設定全域Aggregate健全狀況臨界值]
++
+您可以為所有集合體設定容量、成長和Snapshot複本的健全狀況臨界值設定、以追蹤任何臨界值外洩。
+
+* xref:task-configuring-global-volume-health-threshold-values.adoc[設定全域Volume健全狀況臨界值]
++
+您可以編輯容量、Snapshot複本、qtree配額、Volume成長、覆寫保留空間、 所有磁碟區的和inode、以追蹤任何臨界值外洩。
+
+* xref:task-configuring-global-qtree-health-threshold-values.adoc[設定全域qtree健全狀況臨界值]
++
+您可以編輯所有qtree容量的健全狀況臨界值設定、以追蹤任何臨界值違規。
+
+* xref:task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.adoc[編輯未受管理保護關係的延遲健全狀況臨界值設定]
++
+您可以增加或減少警告或錯誤延遲時間百分比、以便以更適合您需求的時間間隔產生事件。
+
+

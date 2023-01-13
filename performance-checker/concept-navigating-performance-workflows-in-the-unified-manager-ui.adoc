@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/concept-navigating-performance-workflows-in-the-unified-manager-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager介面提供許多頁面、可用於收集及顯示效能資訊。您可以使用左側導覽面板來瀏覽GUI中的頁面、並使用頁面上的索引標籤和連結來檢視和設定資訊。 
+---
+= 在Unified Manager GUI中瀏覽效能工作流程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager介面提供許多頁面、可用於收集及顯示效能資訊。您可以使用左側導覽面板來瀏覽GUI中的頁面、並使用頁面上的索引標籤和連結來檢視和設定資訊。
+
+您可以使用下列所有頁面來監控及疑難排解叢集效能資訊：
+
+* 儀表板頁面
+* 儲存物件資源清冊頁面
+* 儲存物件登陸頁面（包括效能瀏覽器）
+* 組態與設定頁面
+* 活動頁面
+
+
+[NOTE]
+====
+Unified Manager中的頁面可能會顯示大量資訊。若要查看所有可用資訊、請務必捲動至頁面底部。
+
+====

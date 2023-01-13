@@ -1,0 +1,129 @@
+---
+permalink: install/task-deploying-the-unified-manager-virtual-appliance-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在NetApp 支援網站 從下列網址下載.ova檔案後、再部署Unified Manager虛擬應用裝置：您必須使用vSphere Web Client（適用於vSphere 6.5版）或vSphere Client（適用於vSphere 5.5或6.0版）、才能在ESXi伺服器上部署虛擬應用裝置。部署虛擬應用裝置時、會建立虛擬機器。 
+---
+= 部署Unified Manager虛擬應用裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在下載之後部署Unified Manager虛擬應用裝置 `.ova` 檔案來自NetApp 支援網站 於此。您必須使用vSphere Web Client（適用於vSphere 6.5版）或vSphere Client（適用於vSphere 5.5或6.0版）、才能在ESXi伺服器上部署虛擬應用裝置。部署虛擬應用裝置時、會建立虛擬機器。
+
+
+
+== 開始之前
+
+您必須已檢閱系統需求。如果需要變更以符合系統需求、則必須先實作變更、再部署Unified Manager虛擬應用裝置。
+
+xref:concept-requirements-for-installing-unified-manager.adoc[虛擬化基礎架構需求]
+
+xref:reference-vmware-software-and-installation-requirements.adoc[VMware軟體與安裝需求]
+
+如果使用DHCP、您必須確定DHCP伺服器可用、而且DHCP和虛擬機器（VM）網路卡組態正確。DHCP預設為設定。
+
+如果您使用靜態網路組態、則必須確保IP位址不會在同一個子網路中重複、而且已設定適當的DNS伺服器項目。
+
+在部署虛擬應用裝置之前、您必須具備下列資訊：
+
+* 存取VMware vCenter Server和vSphere Web Client（vSphere 6.5版）或vSphere Client（vSphere 5.5或6.0版）的認證資料
+* 部署Unified Manager虛擬應用裝置的ESXi伺服器IP位址
+* 資料中心的詳細資料、例如儲存空間的可用度
+* 如果您不使用DHCP、您必須擁有要連線的網路裝置的IPV4或IPv6位址：
++
+** 主機的完整網域名稱（FQDN）
+** 主機的IP位址
+** 網路遮罩
+** 預設閘道的IP位址
+** 主要和次要DNS位址
+** 搜尋網域
+
+
+* VMware Tools的CD-ROM或ISO映像
+
+
+
+
+== 關於這項工作
+
+VMware Tools不包含在中 `.ova` 檔案：您必須個別安裝VMware Tools。
+
+部署虛擬應用裝置時、會產生唯一的自我簽署憑證、以供HTTPS存取。存取Unified Manager Web UI時、您可能會看到有關不受信任憑證的瀏覽器警告。
+
+支援適用於Unified Manager虛擬應用裝置的VMware High Availability。
+
+
+
+== 步驟
+
+. 在vSphere Client中、按一下*檔案*>*部署OVF範本*。
+. 完成*部署OVF範本*精靈、以部署Unified Manager虛擬應用裝置。
++
+在「網路組態」頁面上：
+
++
+** 使用DHCP和IPV4定址時、請將所有欄位保留空白。
+** 核取「啟用自動IPv6位址」方塊、並在使用DHCP和IPv6位址時、將所有其他欄位保留空白。
+** 如果您想要使用靜態網路組態、可以填寫此頁面上的欄位、並在部署期間套用這些設定。您必須確保IP位址是部署在其上的主機唯一的、而且尚未使用、而且具有有效的DNS項目。
+
+
+. 將Unified Manager虛擬應用裝置部署到ESXi伺服器之後、請以滑鼠右鍵按一下VM、然後選取* Power On*來開啟VM。
++
+如果開機作業因為資源不足而失敗、您必須新增資源、然後重試安裝。
+
+. 按一下*主控台*索引標籤。
++
+初始開機程序需要幾分鐘才能完成。
+
+. 依照提示在VM上安裝VMware Tools。
++
+使用vSphere Web Client搭配vSphere 6.5時、您需要手動掛載VMware Tools ISO映像。從VM中選擇*編輯設定*>*虛擬硬體*>* CD/DVD磁碟機x*>*資料存放區ISO檔案*、然後按一下*瀏覽*以選取檔案 `linux.iso` 作為掛載映像。
+
+. 若要設定您的時區、請依照VM *主控台*視窗中的提示輸入地理區域和城市或地區。
++
+顯示的所有日期資訊都會使用為Unified Manager設定的時區、無論受管裝置上的時區設定為何。比較時間戳記時、請務必注意此點。如果您的儲存系統和管理伺服器設定為使用相同的NTP伺服器、則即使兩者的顯示方式不同、它們也會即時參照相同的時間。例如、如果您使用使用與管理伺服器不同的時區所設定的裝置來建立Snapshot複本、則時間戳記中所反映的時間就是管理伺服器時間。
+
+. 如果沒有可用的DHCP服務、或靜態網路組態的詳細資料中有錯誤、請選取下列其中一個選項：
++
+|===
+| 如果您使用... | 然後執行此動作... 
+
+
+ a| 
+DHCP
+ a| 
+選擇*重試Dhcp*。如果您打算使用DHCP、則應確保其設定正確。
+
+如果您使用啟用DHCP的網路、則會自動將FQDN和DNS伺服器項目提供給虛擬應用裝置。如果DHCP未正確設定DNS、系統OnCommand 會自動指派主機名稱「'還原」、並與安全性憑證建立關聯。如果您尚未設定啟用DHCP的網路、則必須手動輸入網路組態資訊。
+
+
+
+ a| 
+靜態網路組態
+ a| 
+.. 選擇*輸入靜態網路組態的詳細資料*。
++
+完成組態程序需要幾分鐘的時間。
+
+.. 確認您輸入的值、然後選取* Y*。
+
+
+|===
+. 在提示下輸入維護使用者名稱、然後按一下* Enter *。
++
+維護使用者名稱必須以a到z的字母開頭、然後是-、a到z或0到9的任意組合。
+
+. 在提示下輸入密碼、然後按一下* Enter *。
++
+VM主控台會顯示Unified Manager Web UI的URL。
+
+
+
+
+
+== 完成後
+
+您可以存取Web UI來執行Unified Manager的初始設定、如《_ OnCommand 》《Unified Manager系統組態指南》中所述。

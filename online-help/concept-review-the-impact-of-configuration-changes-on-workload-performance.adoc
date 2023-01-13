@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-review-the-impact-of-configuration-changes-on-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 叢集上的組態變更（例如故障磁碟、HA容錯移轉或移動磁碟區）可能會對磁碟區效能造成負面影響、並導致延遲增加。 
+---
+= 檢閱組態變更對工作負載效能的影響
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+叢集上的組態變更（例如故障磁碟、HA容錯移轉或移動磁碟區）可能會對磁碟區效能造成負面影響、並導致延遲增加。
+
+在Unified Manager中、您可以檢閱「效能/磁碟區詳細資料」頁面、查看最近的組態變更發生時間、並將其與作業和延遲（回應時間）進行比較、以查看所選磁碟區工作負載的活動是否有所變更。
+
+Unified Manager的效能頁面只能偵測有限數量的變更事件。健全狀況頁面會針對組態變更所造成的其他事件提供警示。您可以在Unified Manager中搜尋磁碟區、以查看事件記錄。

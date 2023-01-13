@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-network-interface-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用「效能/ LIF資訊」頁面可檢視LIF的已設定屬性清單。這些資訊可能有助於回答效能相關問題。 
+---
+= 效能/LIF資訊頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用「效能/ LIF資訊」頁面可檢視LIF的已設定屬性清單。這些資訊可能有助於回答效能相關問題。
+
+
+
+== LIF屬性
+
+* * IP位址*
++
+指派給LIF的IPV4或IPv6位址。可以將多個IP位址指派給LIF。
+
+* *角色*
++
+角色決定LIF支援的流量類型。
+
++
+LIF可以具有下列其中一項角色：
+
++
+** 資料
+** 叢集
+** 節點管理
+** 叢集間
+
+
+* *容錯移轉群組*
++
+指派給LIF的容錯移轉群組名稱。
+
++
+此欄位僅適用於網路LIF、不適用於SAN（FC/iSCSI）和NVMe LIF。
+
+* *容錯移轉原則*
++
+指派給LIF的容錯移轉原則名稱。
+
++
+此欄位僅適用於網路LIF、不適用於SAN（FC/iSCSI）和NVMe LIF。
+
+* *主連接埠*
++
+已定義為此介面主連接埠的節點和連接埠名稱。您可以按一下名稱、在「Performance / Port Explorer（效能/連接埠總管）」頁面中顯示連接埠詳細資料。
+
+* *目前連接埠*
++
+介面目前裝載的節點和連接埠名稱。您可以按一下名稱、在「Performance / Port Explorer（效能/連接埠總管）」頁面中顯示連接埠詳細資料。
+
+

@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-file-soft-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Qtree容量與使用率報告、以顯示已超出檔案軟體限制的qtree。您可以依使用的檔案、檔案硬限制和檔案軟限制來篩選和排序。 
+---
+= 自訂Qtree容量與使用率報告、以顯示已超出檔案軟體限制的qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂Qtree容量與使用率報告、以顯示已超出檔案軟體限制的qtree。您可以依使用的檔案、檔案硬限制和檔案軟限制來篩選和排序。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要移除SVM、叢集或Volume的分組、請執行下列步驟：
++
+.. 按一下需要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 若要篩選沒有無限制檔案硬限制的qtree、請按一下「*檔案硬限制*」欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
++
+.. 從*條件*下拉式清單中、選取*不等於*。
+.. 按一下*選取值*、然後選取*無限*。
+.. 按一下「*確定*」。
+
+
+. 若要篩選沒有無限制檔案軟體限制的qtree、請按一下*檔案軟體限制*欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
++
+.. 從*條件*下拉式清單中、選取*不等於*。
+.. 按一下*選取值*、然後選取*無限*。
+.. 按一下「*確定*」。
+
+
+. 若要新增超出檔案軟體限制的qtree欄、請執行下列步驟：
++
+.. 按一下「*檔案軟體限制*」欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示、然後選取*欄*>*新計算欄*
+.. 在「*新計算的欄*」對話方塊中、輸入 `Breached File Soft Limit Capacity` 在*欄標籤*欄位中。
+.. 從Select Category（選擇類別）列表中選擇* Text*。
+.. 從*選取功能*下拉式清單中、選取*進階*。
+.. 在*輸入運算式*欄位中、輸入 `IF(([qtreeFileUsedPercent]*[fileLimit]/100 > [softFileLimit]), "Yes", "No")`。
+.. 按一下「*確定*」。
+
+
+. 若要篩選已超出軟體檔案限制的qtree、請按一下「*違反檔案軟體限制容量*」欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
++
+.. 從*條件*下拉式清單中、選取*等於*。
+.. 按一下*選取值*並選取*是*。
+.. 按一下「*確定*」。
+
+
+

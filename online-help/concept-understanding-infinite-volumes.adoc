@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: Infinite Volume是一種邏輯儲存單元、可用來提供具有單一命名空間和單一掛載點的大型可擴充資料容器。瞭解Infinite Volumes的一些基本概念、有助於利用Infinite Volume監控及管理SVM。 
+---
+= 瞭解無限磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Infinite Volume是一種邏輯儲存單元、可用來提供具有單一命名空間和單一掛載點的大型可擴充資料容器。瞭解Infinite Volumes的一些基本概念、有助於利用Infinite Volume監控及管理SVM。

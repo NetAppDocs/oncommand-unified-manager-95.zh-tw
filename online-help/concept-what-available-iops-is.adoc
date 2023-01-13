@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-what-available-iops-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 可用的IOPS計數器可識別在資源達到上限之前、可新增至節點或集合體的其餘IOPS數。節點可提供的IOPS總計取決於節點的實體特性、例如CPU數量、CPU速度和RAM容量。集合體可提供的IOPS總計取決於磁碟的實體內容、例如SATA、SAS或SSD磁碟。 
+---
+= 什麼是可用的IOPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+可用的IOPS計數器可識別在資源達到上限之前、可新增至節點或集合體的其餘IOPS數。節點可以提供的IOPS總計取決於節點的實體特性、例如CPU數量、CPU速度和RAM容量。集合體可提供的IOPS總計取決於磁碟的實體內容、例如SATA、SAS或SSD磁碟。
+
+雖然效能可用容量計數器提供仍可用資源的百分比、但可用的IOPS計數器會告訴您可以在達到最大效能容量之前、將確切的IOPS（工作負載）新增至資源。
+
+例如、如果您使用一對FAS2520和FAS8060儲存系統、可用效能值30%就表示您擁有一些可用的效能容量。不過、這項價值並無法清楚顯示可部署到這些節點的工作負載數量。可用的IOPS計數器可能顯示FAS8060上有500個可用IOPS、但FAS2520上只有100個可用IOPS。
+
+[NOTE]
+====
+只有在叢集中的節點安裝ONTAP 有支援更新版本的軟體時、才能使用可用的IOPS資料。
+
+====
+下圖顯示節點的延遲與IOPS曲線樣本。
+
+image::../media/available-iops.gif[可用的IOPS]
+
+資源可提供的最大IOPS數是當使用效能容量計數器達到100%（最佳點）時的IOPS數目。作業點可識別節點目前以100K IOPS運作、延遲為1.0毫秒/作業根據從節點擷取的統計資料、Unified Manager會判斷節點的IOPS上限為160K、這表示可用或可用的IOPS為60K。因此、您可以將更多工作負載新增至此節點、以便更有效率地使用系統。
+
+[NOTE]
+====
+當資源中的使用者活動量最小時、可用的IOPS值會根據每個CPU核心約4、500 IOPS的一般工作負載來計算。這是因為Unified Manager缺乏資料、無法準確估計所服務工作負載的特性。
+
+====

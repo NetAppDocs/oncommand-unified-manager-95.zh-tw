@@ -1,0 +1,37 @@
+---
+permalink: health-checker/task-removing-a-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以移除保護關係、以永久刪除所選來源與目的地之間的現有關係：例如、當您想要使用不同目的地建立關係時。此作業會移除所有中繼資料、無法復原。 
+---
+= 從「Health（健全狀況）/ Volume（磁碟區）」詳細資料頁面移除保護關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以移除保護關係、以永久刪除所選來源與目的地之間的現有關係：例如、當您想要使用不同目的地建立關係時。此作業會移除所有中繼資料、無法復原。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須設定Workflow Automation。
+
+
+
+
+== 步驟
+
+. 在「*健全狀況/磁碟區*詳細資料」頁面的「*保護*」索引標籤中、從拓撲中選取您要移除的SnapMirror關係。
+. 在目的地名稱上按一下滑鼠右鍵、然後從功能表中選取「*移除*」。
++
+此時會顯示「移除關係」對話方塊。
+
+. 按一下*繼續*以移除關係。
++
+關係會從「健全狀況/ Volume詳細資料」頁面移除。
+
+

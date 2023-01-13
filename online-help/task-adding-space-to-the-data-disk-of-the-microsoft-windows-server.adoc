@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-adding-space-to-the-data-disk-of-the-microsoft-windows-server.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您需要增加Unified Manager資料庫的磁碟空間量、可以將容量新增至安裝Unified Manager的邏輯磁碟機。 
+---
+= 為Microsoft Windows伺服器的邏輯磁碟機增加空間
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您需要增加Unified Manager資料庫的磁碟空間量、可以將容量新增至安裝Unified Manager的邏輯磁碟機。
+
+
+
+== 開始之前
+
+您必須擁有Windows系統管理員權限。
+
+
+
+== 關於這項工作
+
+建議您在新增磁碟空間之前先備份Unified Manager資料庫。
+
+
+
+== 步驟
+
+. 以系統管理員身分登入您要新增磁碟空間的Windows伺服器。
+. 依照您要用來新增更多空間的方法所對應的步驟進行：
++
+|===
+| 選項 | 說明 
+
+
+ a| 
+在實體伺服器上、新增容量至安裝Unified Manager伺服器的邏輯磁碟機。
+ a| 
+請依照Microsoft主題中的步驟進行：
+
+https://technet.microsoft.com/en-us/library/cc771473(v=ws.11).aspx["擴充基本Volume"]
+
+
+
+ a| 
+在實體伺服器上、新增硬碟機。
+ a| 
+請依照Microsoft主題中的步驟進行：
+
+https://msdn.microsoft.com/en-us/library/dd163551.aspx["新增硬碟機"]
+
+
+
+ a| 
+在虛擬機器上、增加磁碟分割區的大小。
+ a| 
+請遵循VMware主題中的步驟：
+
+https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1004071["增加磁碟分割區的大小"]
+
+|===
+

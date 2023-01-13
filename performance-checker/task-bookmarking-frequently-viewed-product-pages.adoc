@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/task-bookmarking-frequently-viewed-product-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從Unified Manager UI將經常存取的產品頁面加入書籤。這可讓您快速返回這些頁面。稍後檢視頁面時、會顯示最新的資料。 
+---
+= 將經常檢視的產品頁面加入書籤
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從Unified Manager UI將經常存取的產品頁面加入書籤。這可讓您快速返回這些頁面。稍後檢視頁面時、會顯示最新的資料。
+
+
+
+== 關於這項工作
+
+您也可以將連結（URL）複製到目前的產品頁面、以便將其貼到電子郵件或其他應用程式中、以便與其他人分享。
+
+
+
+== 步驟
+
+. 使用在瀏覽器中建立頁面書籤所需的任何步驟來建立書籤。
++
+頁面連結會儲存頁面詳細資料、但您可能想要自訂書籤文字以識別頁面：例如「'Unified Manager | Node：node-01'」或「'Unified Manager |使用者定義的臨界值事件：IOPS volume1'」。
+
+

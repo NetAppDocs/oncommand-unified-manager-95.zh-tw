@@ -1,0 +1,46 @@
+---
+permalink: config/task-configuring-event-notification-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以設定Unified Manager在事件產生或事件指派給使用者時傳送警示通知。您可以設定用於傳送警示的SMTP伺服器、也可以設定各種通知機制、例如、警示通知可作為電子郵件或SNMP設陷傳送。 
+---
+= 設定事件通知設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定Unified Manager在事件產生或事件指派給使用者時傳送警示通知。您可以設定用於傳送警示的SMTP伺服器、並設定各種通知機制、例如、警示通知可以以電子郵件或SNMP設陷傳送。
+
+
+
+== 開始之前
+
+您必須具備下列資訊：
+
+* 傳送警示通知的電子郵件地址
++
+電子郵件地址會出現在「已傳送警示通知」的「寄件者」欄位中。如果由於任何原因而無法傳送電子郵件、此電子郵件地址也會作為無法傳送郵件的收件者。
+
+* 用於存取伺服器的SMTP伺服器主機名稱、以及使用者名稱和密碼
+* SNMP版本、設陷目的地主機IP位址、傳出設陷連接埠和社群、以設定SNMP設陷
+
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下左設定功能表中的*通知*。
+. 在*設定/通知*頁面中、設定適當的設定、然後按一下*儲存*。
++
+* 附註： *
+
++
+** 如果寄件者地址預先填入「OnCommand@localhost.com」地址、您應該將其變更為實際有效的電子郵件地址、以確保所有電子郵件通知都能順利傳送。
+** 如果無法解析SMTP伺服器的主機名稱、您可以指定SMTP伺服器的IP位址（IPv4或IPv6）、而非主機名稱。
+
+
+

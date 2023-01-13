@@ -1,0 +1,84 @@
+---
+permalink: online-help/task-viewing-workload-qos-minimum-and-maximum-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Performance Explorer圖表中檢視Volume或LUN上ONTAP定義的服務品質（QoS）原則設定。處理量上限設定可限制競爭工作負載對系統資源的影響。處理量下限設定可確保關鍵工作負載符合最低處理量目標、無論競爭工作負載的需求為何。 
+---
+= 檢視工作負載QoS的最小和最大設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Performance Explorer圖表中檢視Volume或LUN上ONTAP定義的服務品質（QoS）原則設定。處理量上限設定可限制競爭工作負載對系統資源的影響。處理量下限設定可確保關鍵工作負載符合最低處理量目標、無論競爭工作負載的需求為何。
+
+
+
+== 關於這項工作
+
+QoS處理量「最小」和「最大」IOPS和Mbps設定只有在ONTAP 進行了還原設定時、才會顯示在計數器圖表中。處理量下限設定僅適用於執行ONTAP 不含更新版本的系統、僅AFF 適用於某些作業系統、目前只能針對IOPS進行設定。
+
+自ONTAP 推出的Adaptive QoS原則以不含IOPS的功能為起點、以IOPS/TB來表示、而非以IOPS來表示。這些原則會根據每個工作負載的磁碟區大小、自動調整QoS原則值、因此隨著磁碟區大小變更、IOPS與TB的比率也會維持不變。您只能將調適性QoS原則群組套用至磁碟區。QoS術語「預期」和「尖峰」用於調適性QoS原則、而非最小和最大。
+
+當工作負載處理量在前一小時的每個效能收集期間超過定義的QoS最大原則設定時、Unified Manager會針對QoS原則外洩事件產生警告事件。在每個收集期間、工作負載處理量可能只會在短時間內超過QoS臨界值、但Unified Manager會在圖表上顯示收集期間的「平均」處理量。因此、您可能會看到QoS事件、但工作負載的處理量可能未超過圖表中所示的原則臨界值。
+
+
+
+== 步驟
+
+. 在所選磁碟區或LUN的「*效能檔案總管*」頁面中、執行下列動作以檢視QoS上限和樓層設定：
++
+|===
+| 如果您想要... | 執行此動作... 
+
+
+ a| 
+檢視IOPS上限（QoS上限）
+ a| 
+在「IOPS總計」或「明細」圖表中、按一下「*縮放檢視*」。
+
+
+
+ a| 
+檢視Mbps上限（QoS上限）
+ a| 
+在「MBps總計」或「明細」圖表中、按一下「*縮放檢視*」。
+
+
+
+ a| 
+檢視IOPS最低（QoS最低）
+ a| 
+在「IOPS總計」或「明細」圖表中、按一下「*縮放檢視*」。
+
+
+
+ a| 
+檢視IOPS/TB上限（QoS尖峰）
+ a| 
+若為磁碟區、請在IOPS/TB圖表中按一下「*縮放檢視*」。
+
+
+
+ a| 
+檢視IOPS/TB樓層（預期QoS）
+ a| 
+若為磁碟區、請在IOPS/TB圖表中按一下「*縮放檢視*」。
+
+|===
++
+虛線的橫線表示ONTAP 在功能表中設定的最大或最小處理量值。您也可以檢視QoS值的變更實作時間。
+
+. 若要檢視與QoS設定相比的特定IOPS和Mbps值、請將游標移至圖表區、以查看快顯視窗。
+
+
+
+
+== 完成後
+
+如果您注意到某些磁碟區或LUN的IOPS或Mbps非常高、並在強調系統資源、您可以使用System Manager或ONTAP the S還原CLI來調整QoS設定、使這些工作負載不會影響其他工作負載的效能。
+
+如需調整QoS設定的詳細資訊、請參閱《_ ONTAP 效能監控電源指南_》。
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["《效能監控電源指南》（英文）ONTAP"]

@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-disk-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 磁碟事件可提供磁碟狀態的相關資訊、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 磁碟事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+磁碟事件可提供磁碟狀態的相關資訊、以便您監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+Flash磁碟-備用區塊幾乎耗盡（ocumEvtClusterFlashDiskFewerSpareBlockError）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+錯誤
+
+
+
+ a| 
+Flash磁碟-無備用區塊（ocumEvtClusterFlashDiskNoSpareBlockCritical）
+ a| 
+事件
+ a| 
+叢集
+ a| 
+關鍵
+
+
+
+ a| 
+部分未指派的磁碟（ocumEvtClusterUnassignedDisksome）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+部分故障磁碟（ocumEvtDisksome故障）
+ a| 
+事件
+ a| 
+叢集
+ a| 
+關鍵
+
+|===

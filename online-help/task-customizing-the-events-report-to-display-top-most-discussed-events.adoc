@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-top-most-discussed-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂事件報告、以顯示最常討論的事件。 
+---
+= 自訂事件報告以顯示討論最多的事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂事件報告、以顯示最常討論的事件。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要排序討論最多的事件、請按一下* Notes*（備註*）欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+. 選擇*篩選器*>*頂端/底端N*。
+. 在*上/下N*對話方塊中、從*篩選*欄位中選取*上N*、然後在文字欄位中輸入值。
+. 按一下「*確定*」。
+

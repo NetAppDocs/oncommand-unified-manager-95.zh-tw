@@ -1,0 +1,72 @@
+---
+permalink: online-help/reference-setup-workflow-automation-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 「設定/工作流程自動化」頁面可讓您設定要與OnCommand Workflow Automation Unified Manager整合的設定。您也可以新增、修改或刪除設定。 
+---
+= 「設定/工作流程自動化」頁面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「設定/工作流程自動化」頁面可讓您設定要與OnCommand Workflow Automation Unified Manager整合的設定。您也可以新增、修改或刪除設定。
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== Unified Manager資料庫使用者
+
+此區域可讓您輸入將Unified Manager與Workflow Automation配對所需的資料庫使用者認證：
+
+* *名稱*
++
+可讓您指定資料庫使用者的使用者名稱、以用於存取Unified Manager資料庫中的資料。根據預設、不會選取任何資料庫使用者。您可以從下拉式清單中選取資料庫使用者。
+
+* *密碼*
++
+可讓您為指定的使用者名稱指定密碼。
+
+
+
+
+
+== 身分證明OnCommand Workflow Automation
+
+此區域可讓您輸入與Unified Manager配對所需的Workflow Automation帳戶認證：
+
+* *主機名稱或IP位址*
++
+指定Workflow Automation主機伺服器的名稱或IP位址、用於與Unified Manager配對。
+
+* *連接埠*
++
+顯示Workflow Automation主機伺服器所需的連接埠號碼、即443。
+
+* *使用者名稱*
++
+可讓您指定可用來登入Workflow Automation的使用者名稱。
+
+* *密碼*
++
+可讓您為指定的使用者名稱指定密碼。
+
+
+
+
+
+== 命令按鈕
+
+命令按鈕可讓您移除、儲存或取消設定選項：
+
+* *移除設定*
++
+從Unified Manager移除Workflow Automation設定。
+
+* *儲存*
++
+儲存所選選項的組態設定。
+
+

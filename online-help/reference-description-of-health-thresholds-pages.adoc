@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-thresholds-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用適當的「組態/健全狀況臨界值」頁面來設定Aggregate和Volume的全域健全狀況臨界值、以及設定未受管理保護關係的全域延遲警告和錯誤臨界值。 
+---
+= 健全狀況臨界值頁面說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用適當的「組態/健全狀況臨界值」頁面來設定Aggregate和Volume的全域健全狀況臨界值、以及設定未受管理保護關係的全域延遲警告和錯誤臨界值。

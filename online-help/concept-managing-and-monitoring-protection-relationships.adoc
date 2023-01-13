@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-managing-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: 利用NetApp統一化管理程式、您可以建立保護關係、監控及疑難排解託管叢集上的SnapMirror和SnapMirror關係、以及在資料遭到覆寫或遺失時還原資料SnapVault OnCommand 。 
+---
+= 管理及監控保護關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用NetApp統一化管理程式、您可以建立保護關係、監控及疑難排解託管叢集上的SnapMirror和SnapMirror關係、以及在資料遭到覆寫或遺失時還原資料SnapVault OnCommand 。
+
+SnapMirror作業有兩種複寫類型：
+
+* 非同步
++
+從主要磁碟區複寫到次要磁碟區的作業排程決定。
+
+* 同步
++
+複寫會同時在主要和次要磁碟區上執行。
+
+
+
+您最多可同時執行10個保護工作、而不會影響效能。當您同時執行11至30個工作時、可能會遇到效能影響。不建議同時執行超過30個工作。

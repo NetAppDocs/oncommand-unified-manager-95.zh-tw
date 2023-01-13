@@ -1,0 +1,25 @@
+---
+permalink: health-checker/concept-maintenance-console-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: 維護主控台包含不同的功能表、可讓您維護及管理Unified Manager伺服器的特殊功能和組態設定。 
+---
+= 維護主控台功能表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+維護主控台包含不同的功能表、可讓您維護及管理Unified Manager伺服器的特殊功能和組態設定。
+
+根據您安裝Unified Manager的作業系統、維護主控台包含下列功能表：
+
+* 升級Unified Manager（僅限VMware）
+* 網路組態（僅限VMware）
+* 系統組態（僅限VMware）
+* 支援/診斷
+* 重設伺服器憑證
+* 外部資料提供者
+* 效能輪詢時間間隔組態
+

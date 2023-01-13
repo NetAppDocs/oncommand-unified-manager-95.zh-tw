@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-editing-resource-pools.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您想要變更資源池名稱和說明時、可以編輯現有的資源池。 
+---
+= 編輯資源池
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您想要變更資源池名稱和說明時、可以編輯現有的資源池。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+只有在選取一個資源池時、才會啟用*編輯*按鈕。如果選取多個資源池、則*編輯*按鈕會停用。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下* Protection（保護）***資源池*。
+. 從清單中選取一個資源池。
+. 按一下 * 編輯 * 。
++
+此時會顯示Edit Resource Pool（編輯資源池）窗口。
+
+. 視需要編輯資源池名稱和說明。
+. 按一下「 * 儲存 * 」。
++
+新名稱和說明會顯示在資源池清單中。
+
+

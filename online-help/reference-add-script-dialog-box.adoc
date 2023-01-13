@@ -1,0 +1,26 @@
+---
+permalink: online-help/reference-add-script-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 「新增指令碼」對話方塊可讓您將指令碼新增至Unified Manager。您可以使用指令碼來設定警示、以自動解析為儲存物件產生的事件。 
+---
+= 新增指令碼對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「新增指令碼」對話方塊可讓您將指令碼新增至Unified Manager。您可以使用指令碼來設定警示、以自動解析為儲存物件產生的事件。
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+* *選取指令碼檔案*
++
+可讓您選取警示的指令碼。
+
+* *說明*
++
+可讓您指定指令碼的說明。
+
+

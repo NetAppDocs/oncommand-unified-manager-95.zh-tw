@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以利用無限Volume監控儲存虛擬機器（SVMs）的容量和可用度。您可以建立規則和資料原則、以Infinite Volume管理儲存虛擬機器（SVM）中的內容放置。 
+---
+= 管理及監控無限磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Infinite Volume監控儲存虛擬機器（SVM）的容量和可用度。您可以建立規則和資料原則、以Infinite Volume管理儲存虛擬機器（SVM）中的內容放置。

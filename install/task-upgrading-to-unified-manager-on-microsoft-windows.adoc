@@ -1,0 +1,106 @@
+---
+permalink: install/task-upgrading-to-unified-manager-on-microsoft-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Windows平台下載並執行安裝檔案、將Unified Manager 7.3或9.4升級至Unified Manager 9.5。 
+---
+= 升級Windows上的Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Windows平台下載並執行安裝檔案、將Unified Manager 7.3或9.4升級至Unified Manager 9.5。
+
+
+
+== 開始之前
+
+* 您要升級Unified Manager的系統必須符合系統和軟體需求。
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[硬體系統需求]
+
++
+xref:reference-windows-software-and-installation-requirements.adoc[Windows軟體與安裝需求]
+
++
+[NOTE]
+====
+從Unified Manager 9.5開始、Unified Manager安裝套件中就會提供OpenJDK、並會自動安裝。不支援從Unified Manager 9.5開始使用Oracle Java。
+
+====
++
+[NOTE]
+====
+從Unified Manager 9.4開始、需要Microsoft .NET 4.5.2或更新版本。開始升級之前、請先確定已安裝正確版本的.NET。
+
+====
+* 您必須擁有Windows系統管理員權限。
+* 您必須擁有有效的認證資料，才能登入 NetApp 支援網站。
+* 為了避免資料遺失、您必須先建立Unified Manager機器的備份、以防升級期間發生問題。
+* 您必須有足夠的磁碟空間才能執行升級。
++
+安裝磁碟機上的可用空間必須大於資料目錄的大小2.5 GB。如果可用空間不足、升級將會停止並顯示錯誤訊息、指出要新增的空間量。
+
+
+
+
+
+== 關於這項工作
+
+在升級過程中、Unified Manager無法使用。升級Unified Manager之前、您應該先完成所有執行中的作業。
+
+如果Unified Manager與OnCommand Workflow Automation 某個實例搭配使用、而且兩種產品都有新版本的軟體、則您必須中斷這兩種產品的連線、然後在執行升級後設定新的Workflow Automation連線。如果您只要升級至其中一項產品、則應在升級後登入Workflow Automation、並確認它仍從Unified Manager取得資料。
+
+
+
+== 步驟
+
+. 登入NetApp 支援網站 到這個功能、找到「Download（下載）」頁面、以便在Windows平台上安裝Unified Manager。
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["NetApp下載：軟體"]
+
+. 將Unified Manager Windows安裝檔案下載至Windows系統的目標目錄。
+. 如果Unified Manager設定為高可用度、請使用Microsoft Cluster Server停止第一個節點上的所有Unified Manager服務、然後從啟動MySQL服務 `services.msc`。
+. 按一下滑鼠右鍵並執行Unified Manager安裝程式執行檔 `(.exe)` 以系統管理員身分建立檔案。
++
+Unified Manager會提示您下列訊息：
+
++
+[listing]
+----
+This setup will perform an upgrade of ‘OnCommand Unified Manager’. Do you want to continue?
+----
+. 按一下「*是*」、然後按一下「*下一步*」。
+. 輸入安裝期間設定的MySQL根密碼、然後按一下*下一步*。
+. 升級成功後、如果系統設定為高可用度、請從容錯移轉叢集管理程式啟動所有Unified Manager服務、然後執行其餘的工作。
+. 從命令提示字元執行 `ha_setup.pl` 指令碼來設定容錯移轉叢集中的新服務、以及共用位置中的檔案。
++
+`C:\Program Files\NetApp\ocum\bin> perl .\ha_setup.pl --upgrade --first -t mscs -g kjaggrp -i "New IP Address1" -n scs8003.englab.company.com -k "Cluster Disk 2" -f E:\ -u user -p userpass`
+
+. 使用Microsoft叢集伺服器、在第一個節點中停止所有Unified Manager服務（ocie、ocieau和MySQL）。
+. 從啟動第二個節點上的MySQL服務 `services.msc`。
+. 在高可用度設定中、將服務群組切換至第二個節點。
+. 在第二個節點上升級Unified Manager。
+. 在命令提示字元中輸入 `Y` 若要繼續、或輸入任何其他字元以中止。
++
+Unified Manager服務的升級與重新啟動程序可能需要數分鐘才能完成。
+
+. 使用Microsoft Cluster Server在兩個節點上啟動所有Unified Manager服務。
+. 從命令提示字元執行 `ha_setup.pl` 使用指令碼 `--upgrade` 選項。
++
+`perl ha_setup.pl --upgrade --join -t mscs -f E:\`
+
+. 登入Unified Manager Web UI、然後驗證版本編號。
+
+
+
+
+== 完成後
+
+[NOTE]
+====
+若要執行Unified Manager的無聲升級、請執行下列命令： `OnCommandUnifiedManager-9.5.exe /s /v"MYSQL_PASSWORD=netapp21! /qn /l*v C:\install.log`
+
+====

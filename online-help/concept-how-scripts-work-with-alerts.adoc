@@ -1,0 +1,47 @@
+---
+permalink: online-help/concept-how-scripts-work-with-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將警示與指令碼建立關聯、以便在Unified Manager中針對事件發出警示時執行指令碼。您可以使用指令碼來解決儲存物件的問題、或識別產生事件的儲存物件。 
+---
+= 指令碼如何使用警示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將警示與指令碼建立關聯、以便在Unified Manager中針對事件發出警示時執行指令碼。您可以使用指令碼來解決儲存物件的問題、或識別產生事件的儲存物件。
+
+在Unified Manager中為事件產生警示時、系統會傳送警示電子郵件給指定的收件者。如果已將警示與指令碼建立關聯、則會執行指令碼。您可以從警示電子郵件取得傳遞至指令碼的引數詳細資料。
+
+指令碼會使用下列引數來執行：
+
+* -`eventID`
+* -`eventName`
+* -`eventSeverity`
+* -`eventSourceID`
+* -`eventSourceName`
+* -`eventSourceType`
+* -`eventState`
+* -`eventArgs`
+
+
+您可以使用指令碼中的引數、收集相關的事件資訊或修改儲存物件。
+
+
+
+== 從指令碼取得引數的範例
+
+[listing]
+----
+print "$ARGV[0] : $ARGV[1]\n"
+print "$ARGV[7] : $ARGV[8]\n"
+----
+產生警示時、會執行此指令碼、並顯示下列輸出：
+
+[listing]
+----
+-eventID : 290
+-eventSourceID : 4138
+----

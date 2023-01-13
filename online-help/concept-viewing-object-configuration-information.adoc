@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-viewing-object-configuration-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 物件資訊頁面位於每個物件的登陸頁面、顯示每個儲存物件的非效能組態屬性值。部分屬性為實體組態設定、而其他屬性則可能影響物件的效能。 
+---
+= 檢視物件組態資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+物件資訊頁面位於每個物件的登陸頁面、顯示每個儲存物件的非效能組態屬性值。部分屬性為實體組態設定、而其他屬性則可能影響物件的效能。
+
+例如、瞭解可用於集合體或節點的空間量是很有用的。知道特定連接埠的速度設定、有助於診斷效能問題。

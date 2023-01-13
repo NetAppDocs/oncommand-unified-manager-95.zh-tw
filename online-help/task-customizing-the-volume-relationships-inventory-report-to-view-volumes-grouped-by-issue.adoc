@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-grouped-by-issue.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「Volume Relationships Inventory」（磁碟區關係資源清冊）報告、以根據磁碟區關係健全狀況狀態來檢視已分組的磁碟區。 
+---
+= 自訂Volume RelationsInventory（磁碟區關係詳細目錄）報告以檢視依問題分組的磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「Volume Relationships Inventory」（磁碟區關係資源清冊）報告、以根據磁碟區關係健全狀況狀態來檢視已分組的磁碟區。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要根據磁碟區關係健全狀況狀態來篩選磁碟區、請選取「*關係健全狀況*」欄、然後按一下 image:../media/click-to-filter.gif[""] 圖示。
+. 在「*篩選*」對話方塊中、按一下「*選取值*」、然後從下拉式清單中選取所需的值。
++
+隨即顯示所選值的Volume詳細資料。
+
+

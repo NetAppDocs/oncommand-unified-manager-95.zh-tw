@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 配額提供一種方法來限制或追蹤使用者、群組或qtree所使用的磁碟空間和檔案數目。您可以使用/etc/quot配額 檔案來指定配額。配額會套用至特定的Volume或qtree。 
+---
+= 關於配額
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配額提供一種方法來限制或追蹤使用者、群組或qtree所使用的磁碟空間和檔案數目。您可以使用指定配額 `/etc/quotas` 檔案：配額會套用至特定的Volume或qtree。

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-cluster-object-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從各自的儲存物件頁面檢視所有叢集和叢集物件。您也可以從對應的儲存物件詳細資料頁面檢視詳細資料。 
+---
+= 叢集物件視窗和對話方塊說明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從各自的儲存物件頁面檢視所有叢集和叢集物件。您也可以從對應的儲存物件詳細資料頁面檢視詳細資料。

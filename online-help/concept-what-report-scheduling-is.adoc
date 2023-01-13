@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-report-scheduling-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用排程選項、排程在特定日期和時間產生報告。根據排程、報告會自動以電子郵件傳送給一或多位收件者。 
+---
+= 什麼是報告排程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用*排程*選項、排程在特定日期和時間產生報告。根據排程、報告會自動以電子郵件傳送給一或多位收件者。
+
+透過排程報告、您可以將手動產生和傳送報告的工作減至最低。您可以確保儲存設備的目前狀態會由Unified Manager未另行通知的系統管理員、以指定的時間間隔進行監控。

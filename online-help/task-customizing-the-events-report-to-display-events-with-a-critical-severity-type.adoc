@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-with-a-critical-severity-type.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂「事件」報告、以根據事件嚴重性類型及最長時間未解決的事件來顯示篩選的事件。 
+---
+= 自訂事件報告以顯示嚴重性為關鍵的事件類型
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂「事件」報告、以根據事件嚴重性類型及最長時間未解決的事件來顯示篩選的事件。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要篩選嚴重性等級為「嚴重」的事件、請按一下「*狀態*」欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*清單中、選取*等於*。
+. 按一下*選取值*並選取*臨界*。
+. 按一下「*確定*」。
+. 若要排序最長時間內未解決的事件、請按一下*天未解決*欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+. 選擇*篩選器*>*頂端/底端N*。
+. 在*上/下N*對話方塊中、從*篩選*欄位中選取*上N*、然後在文字欄位中輸入值。
+. 按一下「*確定*」。
+

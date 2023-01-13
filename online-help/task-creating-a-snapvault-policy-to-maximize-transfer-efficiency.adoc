@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立新SnapVault 的「不確定性」原則、以設定SnapVault 進行「不確定性」傳輸的優先順序。您可以使用原則、在保護關係中、將從一線傳輸到二線傳輸的效率最大化。 
+---
+= 建立SnapVault 一套可將傳輸效率最大化的功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立新SnapVault 的「不確定性」原則、以設定SnapVault 進行「不確定性」傳輸的優先順序。您可以使用原則、在保護關係中、將從一線傳輸到二線傳輸的效率最大化。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須設定Workflow Automation。
+* 您必須已在「設定保護」對話方塊中完成「目的地資訊」區域。
+
+
+
+
+== 步驟
+
+. 在「*組態保護*」對話方塊的「* SnapVault S還原*」索引標籤中、按一下「*關係設定*」區域中的「*建立原則*」連結。
++
+畫面會顯示「此功能」索引標籤。SnapVault
+
+. 在*原則名稱*欄位中、輸入您要為原則指定的名稱。
+. 在*傳輸優先順序*欄位中、選取您要指派給原則的傳輸優先順序。
+. 在* Comment*（註釋*）字段中，輸入策略的註釋。
+. 在*複寫標籤*區域中、視需要新增或編輯複寫標籤。
+. 按一下「 * 建立 * 」。
++
+新原則會顯示在「建立原則」下拉式清單中。
+
+

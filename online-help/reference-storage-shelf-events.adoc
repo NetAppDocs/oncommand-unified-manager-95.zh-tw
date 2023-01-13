@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-storage-shelf-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 儲存櫃事件會告訴您儲存櫃是否異常、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 儲存櫃事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儲存櫃事件會告訴您儲存櫃是否異常、以便監控潛在問題。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+電壓範圍異常（ocumEvtShelfVoltageAbnormal）
+ a| 
+風險
+ a| 
+儲存櫃
+ a| 
+警告
+
+
+
+ a| 
+異常電流範圍（ocumEvtShelfCurrentAbnormal）
+ a| 
+風險
+ a| 
+儲存櫃
+ a| 
+警告
+
+
+
+ a| 
+異常溫度（ocumEvtShelfTemperatureAbnormal）
+ a| 
+風險
+ a| 
+儲存櫃
+ a| 
+警告
+
+|===

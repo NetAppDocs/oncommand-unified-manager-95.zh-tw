@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-the-svm-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從「Health / Storage Virtual Machines」（健全狀況/儲存虛擬機器）庫存頁面、監控儲存虛擬機器（SVMs）的庫存。您可以使用「健全狀況/儲存虛擬機器」詳細資料頁面來檢視所監控之SVM的詳細資訊。 
+---
+= 檢視SVM清單和詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從「Health / Storage Virtual Machines」（健全狀況/儲存虛擬機器）庫存頁面、監控儲存虛擬機器（SVM）的庫存。您可以使用「健全狀況/儲存虛擬機器」詳細資料頁面來檢視所監控之SVM的詳細資訊。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+您可以檢視SVM詳細資料、例如SVM的容量、效率和組態。您也可以檢視相關裝置的相關資訊、以及該SVM的相關警示。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下「*健全狀況*」>「* SVMS*」。
+. 請選擇下列其中一種方式來檢視SVM詳細資料：
++
+** 若要檢視最小詳細資料、請將游標放在SVM名稱上。
+** 若要檢視完整詳細資料、請按一下SVM名稱。
++
+您也可以按一下「最小詳細資料」對話方塊中的「*檢視詳細資料*」來檢視完整詳細資料。
+
+
+
+. 按一下「最小詳細資料」對話方塊中的「*檢視相關*」、即可檢視與SVM相關的物件。
+

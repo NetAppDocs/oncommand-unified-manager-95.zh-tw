@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-viewing-the-constituents-of-an-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「健全狀況/磁碟區」目錄頁面來檢視「無限Volume」中的成員清單。您可以檢視詳細資料、例如組成州、含有Infinite Volume的SVM、其中包含組成要素、組成要素的交會路徑、包含組成要素的Aggregate、以及組成要素的可用、已用及總資料容量。 
+---
+= 檢視無限Volume的組成要素
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「健全狀況/磁碟區」目錄頁面來檢視「無限Volume」中的成員清單。您可以檢視詳細資料、例如組成州、含有Infinite Volume的SVM、其中包含組成要素、組成要素的交會路徑、包含組成要素的Aggregate、以及組成要素的可用、已用及總資料容量。
+
+
+
+== 開始之前
+
+必須符合下列要求：
+
+* 您必須OnCommand 具備「操作員」、「資訊管理員」或「儲存管理員」角色。
+* 包含SVM with Infinite Volume的叢集必須新增至Unified Manager資料庫。
+
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下「*健全狀況*」>「* SVMS*」。
+. 按一下具有無限Volume的SVM名稱。
+. 在*健全狀況/儲存虛擬機器*詳細資料頁面中、按一下右*相關裝置*窗格中的*磁碟區*。
++
+成員清單會顯示在「健全狀況/磁碟區」目錄頁面中。
+
+

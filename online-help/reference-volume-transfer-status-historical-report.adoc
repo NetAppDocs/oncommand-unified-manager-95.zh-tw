@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-volume-transfer-status-historical-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Volume Transfer Status（歷史）報告可讓您分析一段時間內的Volume傳輸趨勢。您可以設定報告、以檢視特定時間間隔的Volume傳輸狀態。報告也會顯示磁碟區傳輸是否成功或失敗。 
+---
+= Volume Transfer Status（歷史）報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume Transfer Status（歷史）（Volume Transfer Status（歷史））報告可讓您分析一段時間內的Volume傳輸趨勢。您可以設定報告、以檢視特定時間間隔的Volume傳輸狀態。報告也會顯示磁碟區傳輸是否成功或失敗。
+
+Volume Transfer Status（歷史）（Volume Transfer Status（歷史））報告會以兩種格式顯示：
+
+* Volume Transfer狀態折線圖
+* Volume Transfer Status（歷史）報告表格檢視
+
+
+
+
+== Volume Transfer狀態折線圖
+
+折線圖會根據日期繪製傳輸計數、以顯示Volume傳輸詳細資料。您也可以檢視特定的Volume傳輸是否成功或失敗。
+
+
+
+== Volume Transfer Status（Volume Transfer狀態）表格檢視
+
+* *來源叢集名稱*
++
+顯示來源叢集名稱。
+
+* *來源SVM*
++
+顯示儲存虛擬機器（SVM）名稱。
+
+* *來源Volume名稱*
++
+顯示來源Volume名稱。
+
+* *目的地叢集名稱*
++
+顯示目的地叢集名稱。
+
+* *目的地SVM*
++
+顯示目的地SVM名稱。
+
+* *目的地Volume名稱*
++
+顯示目的地Volume名稱。
+
+* *操作結果*
++
+顯示Volume傳輸是否成功。
+
+* *開始時間*
++
+顯示磁碟區傳輸開始時間。
+
+* *結束時間*
++
+顯示Volume傳輸結束時間。
+
+* *傳輸持續時間（時：分：秒）*
++
+顯示完成Volume傳輸所需的時間（以小時為單位）。
+
+* *傳輸大小（MB）*
++
+顯示傳輸磁碟區的大小（以MB為單位）。
+
+* *作業類型*
++
+顯示磁碟區傳輸類型。
+
+

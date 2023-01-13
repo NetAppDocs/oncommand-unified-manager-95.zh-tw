@@ -1,0 +1,68 @@
+---
+permalink: health-checker/task-managing-your-infinite-volume-with-storage-classes-and-data-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立具有所需儲存類別數量的Infinite Volume、設定每個儲存類別的臨界值、建立規則和資料原則、以決定寫入Infinite Volume的資料放置位置、設定資料保護、以及選擇性地設定通知警示、有效管理Infinite Volume。 
+---
+= 利用儲存類別和資料原則來管理Infinite Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立具有所需儲存類別數量的Infinite Volume、設定每個儲存類別的臨界值、建立規則和資料原則、以決定寫入Infinite Volume的資料放置位置、設定資料保護、以及選擇性地設定通知警示、有效管理Infinite Volume。
+
+
+
+== 開始之前
+
+* 必須安裝WFA（WFA）OnCommand Workflow Automation 。
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須在WFA中自訂適當的預先定義工作流程、以建立所需的集合體數量。
+* 您必須在WFA中自訂適當的預先定義工作流程、以建立所需數量的儲存類別。
+* 您必須在WFA中將Unified Manager伺服器設定為資料來源、然後確認資料已成功快取。
+
+
+
+
+== 關於這項工作
+
+執行此工作時、您必須在OnCommand Workflow Automation 下列兩個應用程式之間切換：NetApp（WFA）和OnCommand NetApp Unified Manager。
+
+工作提供了高層級的步驟。如需執行WFA工作的詳細資訊、請參閱_EWS_ OnCommand Workflow Automation 文件。
+
+image::../media/cr-workflow-oc-6-0.gif[使用具有儲存類別的Infinite Volume管理Vserver的工作流程]
+
+
+
+== 步驟
+
+. image:../media/wfa-icon.gif["WFA程序圖示"] 自訂預先定義的工作流程、以定義所需的儲存類別。
+. image:../media/wfa-icon.gif["WFA程序圖示"] 使用適當的工作流程、以所需數量的儲存類別建立具有Infinite Volume的SVM。
+. image:../media/um-icon.gif["Unified Manager程序圖示"] 將內含SVM with Infinite Volume的叢集新增至Unified Manager資料庫。
++
+您可以提供叢集的IP位址或FQDN來新增叢集。
+
+. image:../media/um-icon.gif["Unified Manager程序圖示"] xref:task-editing-storage-class-threshold-settings.adoc[根據貴組織的需求、修改每個儲存類別的臨界值]。
++
+您應該使用預設的儲存類別臨界值設定、有效監控儲存類別空間。
+
+. image:../media/um-icon.gif["Unified Manager程序圖示"] xref:task-adding-alerts.adoc[設定通知警示和設陷、以解決任何與Infinite Volume相關的可用度和容量問題]。
+. image:../media/um-icon.gif["Unified Manager程序圖示"] xref:task-creating-rules.adoc[在資料原則中設定規則、然後啟動對資料原則所做的所有變更]
++
+資料原則中的規則會決定寫入無限Volume的內容放置位置。
+
++
+[NOTE]
+====
+資料原則中的規則只會影響寫入無限Volume的新資料、不會影響無限Volume中的現有資料。
+
+====
+. image:../media/wfa-icon.gif["WFA程序圖示"] 使用Infinite Volume建立災難恢復（DR）SVM、然後執行下列步驟來設定資料保護（DP）：
++
+.. 使用適當的工作流程建立資料保護（DP）無限Volume。
+.. 使用適當的工作流程、在來源和目的地之間設定DP鏡射關係。
+
+
+

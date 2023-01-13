@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-understanding-more-about-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 瞭解註釋的概念有助於管理環境中與儲存物件相關的事件。 
+---
+= 深入瞭解附註
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解註釋的概念有助於管理環境中與儲存物件相關的事件。

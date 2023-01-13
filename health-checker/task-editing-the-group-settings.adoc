@@ -1,0 +1,36 @@
+---
+permalink: health-checker/task-editing-the-group-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以編輯在Unified Manager中建立的群組名稱和說明。 
+---
+= 編輯群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以編輯在Unified Manager中建立的群組名稱和說明。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+當您編輯群組以更新名稱時、必須指定唯一名稱；您無法使用現有的群組名稱。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*管理*>*群組*。
+. 在*群組*索引標籤中、選取您要編輯的群組、然後按一下*編輯*。
+. 在*編輯群組*對話方塊中、變更群組的名稱、說明或兩者。
+. 按一下「 * 儲存 * 」。
+

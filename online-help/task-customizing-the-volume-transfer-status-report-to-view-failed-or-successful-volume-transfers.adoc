@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-failed-or-successful-volume-transfers.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Volume Transfer Status（歷史）報告、以檢視失敗或成功的Volume Transfers詳細資料。 
+---
+= 自訂Volume Transfer Status（歷史）（Volume Transfer Status（歷史））報告、以檢視失敗或成功的Volume Transfers（Volume傳輸）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂Volume Transfer Status（歷史）（Volume Transfer Status（歷史））報告、以檢視失敗或成功的Volume Transfers詳細資料。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 移除依叢集分組：
++
+.. 選取您要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 若要根據故障或成功程度來排序磁碟區傳輸、請按一下「*運作結果*」欄、然後按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+. 選取*篩選*。
+. 在*篩選器*對話方塊中、按一下*選取值*、然後選取*成功*或*失敗*。
+

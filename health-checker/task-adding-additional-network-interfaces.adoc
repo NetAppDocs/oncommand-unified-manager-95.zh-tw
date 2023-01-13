@@ -1,0 +1,59 @@
+---
+permalink: health-checker/task-adding-additional-network-interfaces.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果需要分隔網路流量、您可以新增網路介面。 
+---
+= 新增網路介面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果需要分隔網路流量、您可以新增網路介面。
+
+
+
+== 開始之前
+
+您必須使用vSphere將網路介面新增至虛擬應用裝置。
+
+虛擬應用裝置必須開啟電源。
+
+
+
+== 關於這項工作
+
+[NOTE]
+====
+如果Unified Manager安裝在Red Hat Enterprise Linux或Microsoft Windows上、則無法執行此作業。
+
+====
+
+
+== 步驟
+
+. 在vSphere主控台*主功能表*中、選取*系統組態*>*重新開機作業系統*。
++
+重新開機後、維護主控台即可偵測新增的網路介面。
+
+. 存取維護主控台。
+. 選擇*網路組態*>*啟用網路介面*。
+. 選擇新的網路介面、然後按* Enter *。
++
+選擇* eth1*並按* Enter *。
+
+. 鍵入* y*以啟用網路介面。
+. 輸入網路設定。
++
+如果使用靜態介面或未偵測到DHCP、系統會提示您輸入網路設定。
+
++
+輸入網路設定之後、您會自動返回*網路組態*功能表。
+
+. 選擇*提交變更*。
++
+您必須提交變更以新增網路介面。
+
+

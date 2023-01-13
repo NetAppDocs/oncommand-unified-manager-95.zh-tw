@@ -1,0 +1,24 @@
+---
+permalink: online-help/concept-what-storage-efficiency-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 儲存效率可讓您以最低成本儲存最大量的資料、並可因應快速的資料成長、同時減少耗用的空間。NetApp的儲存效率策略是以儲存虛擬化和統一化儲存設備的內建基礎為基礎、這些基礎是由核心ONTAP 的作業系統提供、以及Write Anywhere File Layout（WAFL 更新版本）檔案系統提供。 
+---
+= 什麼是儲存效率
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儲存效率可讓您以最低成本儲存最大量的資料、並可因應快速的資料成長、同時減少耗用的空間。NetApp的儲存效率策略是以儲存虛擬化和統一化儲存設備的內建基礎為基礎、這些基礎是由核心ONTAP 的作業系統提供、以及Write Anywhere File Layout WAFL （簡稱「Write Anywhere File Layout」、簡稱「Write-Anywhere File Layout」、簡稱「Write-Anywhere File Layout」（簡稱
+
+儲存效率包括使用精簡配置、Snapshot複本、重複資料刪除、資料壓縮、FlexClone、 精簡複寫功能：SnapVault 包含支援SnapMirror和Volume SnapMirror、RAID-DP、Flash Cache、Flash Pool Aggregate和FabricPool的Aggregate、有助於提高儲存使用率並降低儲存成本。
+
+統一化儲存架構可讓您在單一平台上有效整合儲存區域網路（SAN）、網路附加儲存設備（NAS）和次要儲存設備。
+
+高密度磁碟機、例如在Flash Pool Aggregate內組態的序列進階技術附加（SATA）磁碟機、或是採用Flash Cache和RAID-DP技術、可提高效率、而不會影響效能和恢復能力。
+
+啟用FabricPool的Aggregate包括所有SSD Aggregate做為效能層、以及您指定為雲端層的物件存放區。設定FabricPool 功能可協助您根據資料是否經常存取、來管理應儲存的儲存層（本機效能層或雲端層）資料。
+
+精簡配置、Snapshot複製、重複資料刪除、資料壓縮、SnapVault 使用支援SnapMirror和Volume SnapMirror的精簡複寫、以及FlexClone等技術、都能提供更好的節約效益。您可以個別或一起使用這些技術、以達到最大儲存效率。

@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-edit-vserver-with-infinite-volume-thresholds-dialog-box-iv.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「Edit SVM with Infinite Volume臨界值」對話方塊、根據組織的需求、修改每個具有Infinite Volume的SVM的預設臨界值。預設臨界值表示在觸發事件之前、SVM上必須達到的活動層級。 
+---
+= 使用「無限Volume臨界值」對話方塊編輯SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Edit SVM with Infinite Volume臨界值」對話方塊、根據組織的需求、修改每個SVM with Infinite Volume的預設臨界值。預設臨界值表示在觸發事件之前、SVM上必須達到的活動層級。
+
+
+
+== 容量
+
+「容量」區域可讓您設定具有無限Volume的所選SVM容量臨界值條件：
+
+* *空間幾乎已滿*
++
+指定「無限磁碟區SVM」被視為幾乎已滿的百分比。它也會在無限Volume中顯示對應的空間（單位為GB、MB或TB）。例如、如果您的「無限Volume」大小為10 GB、而「空間即將滿」臨界值為80%、則會顯示下列資訊：（8 GB的10 GB）。
+
++
+您也可以使用滑桿來設定臨界值。
+
+* *空間已滿*
++
+指定「無限磁碟區SVM」被視為「已滿」的百分比。它也會在無限Volume中顯示對應的空間（單位為GB、MB或TB）。例如、如果您的「無限Volume」大小為10 GB、且「空間已滿」臨界值為90%、則會顯示下列資訊：（9 GB為10 GB）。
+
++
+您也可以使用滑桿來設定臨界值。
+
+* * Snapshot使用限制*
++
+指定無限Volume中保留給Snapshot複本的空間限制（以百分比表示）。
+
+
+
+
+
+== 命令按鈕
+
+命令按鈕可讓您執行下列工作：
+
+* *還原為全域預設值*
++
+可讓您將臨界值設定還原為目前在全域層級設定的值。
+
+* *儲存*
++
+儲存所有臨界值設定。
+
+* *儲存並關閉*
++
+儲存所有臨界值設定、然後關閉「Edit SVM with Infinite Volume臨界值」對話方塊。
+
+* *取消*
++
+忽略臨界值設定的任何變更、並關閉「Edit SVM with Infinite Volume臨界值」對話方塊。
+
+

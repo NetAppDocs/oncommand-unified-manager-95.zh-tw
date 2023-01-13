@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-groups-of-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以建立儲存物件群組、來管理環境中的儲存物件。這些儲存物件必須符合與群組相關的群組規則。 
+---
+= 管理儲存物件群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立儲存物件群組、來管理環境中的儲存物件。這些儲存物件必須符合與群組相關的群組規則。

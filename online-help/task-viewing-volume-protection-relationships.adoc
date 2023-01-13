@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-viewing-volume-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: 從「Protection / Volume Relations/Volume Relations/」（保護/磁碟區關係）頁面、您可以檢視現有Volume SnapMirror和SnapVault 彼此之間的關係狀態。您也可以檢查保護關係的詳細資料、包括傳輸和延遲狀態、來源和目的地詳細資料、排程和原則資訊等。 
+---
+= 檢視Volume保護關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+從「Protection / Volume Relations/Volume Relations/」（保護/磁碟區關係）頁面、您可以檢視現有Volume SnapMirror和SnapVault 彼此之間的關係狀態。您也可以檢查保護關係的詳細資料、包括傳輸和延遲狀態、來源和目的地詳細資料、排程和原則資訊等。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+您也可以從此頁面啟動關係命令。
+
+
+
+== 步驟
+
+. 在左側導覽窗格中、按一下* Protection（保護）** Volume Relationationationation*。
++
+隨即顯示「Protection / Volume Relationships」（保護/ Volume關係）頁
+
+. 請選擇下列其中一種方式來檢視Volume保護詳細資料：
++
+** 若要檢視所有磁碟區關係的目前資訊、請保留在預設的*所有磁碟區關係*頁面上。
+** 若要檢視一段時間內Volume傳輸趨勢的詳細資訊、請在「View（檢視）」功能表中選取「* Volume Transfer Status（Historical）*（* Volume Transfer Status（歷史）*）」。
+** 若要檢視每日Volume傳輸活動的詳細資訊、請在「View（檢視）」功能表中選取* Volume Transfer Rate（歷史）*。
+
+
++
+[NOTE]
+====
+Volume傳輸檢視僅顯示非同步關係中磁碟區的資訊、不會顯示同步關係中的磁碟區。
+
+====
+

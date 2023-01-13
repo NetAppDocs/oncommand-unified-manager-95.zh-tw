@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-annotations-for-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Unified Manager中建立附註、以便為儲存物件加上附註。附註可讓您輕鬆識別關鍵資源、並採取適當行動；例如、將關鍵資源新增至群組、指派群組動作、或建立附註資源的報告。 
+---
+= 管理儲存物件的註釋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Unified Manager中建立附註、以便為儲存物件加上附註。附註可讓您輕鬆識別關鍵資源、並採取適當行動；例如、將關鍵資源新增至群組、指派群組動作、或建立附註資源的報告。

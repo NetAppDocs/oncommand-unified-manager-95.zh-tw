@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在不再需要群組動作時、從Unified Manager刪除群組動作。 
+---
+= 刪除群組動作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在不再需要群組動作時、從Unified Manager刪除群組動作。
+
+
+
+== 開始之前
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+
+
+== 關於這項工作
+
+當您刪除磁碟區健全狀況臨界值的群組動作時、會將全域臨界值套用至該群組中的儲存物件。儲存物件上設定的任何物件層級健全狀況臨界值均不受影響。
+
+
+
+== 步驟
+
+. 在工具列中、按一下*image:../media/clusterpage-settings-icon.gif[""]*、然後按一下*管理*>*群組*。
+. 在*群組動作*索引標籤中、選取您要刪除的群組動作、然後按一下*刪除*。
+. 在*警告*對話方塊中、按一下*是*確認刪除。
+

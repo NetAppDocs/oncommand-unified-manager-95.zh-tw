@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-default-export-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂NFS匯出報告、以顯示具有預設匯出原則的磁碟區清單。 
+---
+= 自訂NFS匯出報告、以顯示具有預設匯出原則的磁碟區清單
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂NFS匯出報告、以顯示具有預設匯出原則的磁碟區清單。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要依叢集或磁碟區移除群組、請執行下列步驟：
++
+.. 按一下需要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 若要使用預設匯出原則篩選磁碟區、請按一下*匯出原則*欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*清單中、選取*等於*。
+. 按一下*選取值*、然後選取*預設*。
+. 按一下「*確定*」。
+

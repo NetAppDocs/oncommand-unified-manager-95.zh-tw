@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-selecting-performance-thresholds-in-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 在Counter圖表縮放檢視中套用臨界值、可提供效能臨界值事件發生的詳細檢視。如此一來、您就能套用或移除臨界值、並立即檢視結果、這有助於決定疑難排解是否應為下一步。 
+---
+= 在Counter圖表縮放檢視中選取效能臨界值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在Counter圖表縮放檢視中套用臨界值、可提供效能臨界值事件發生的詳細檢視。如此一來、您就能套用或移除臨界值、並立即檢視結果、這有助於決定疑難排解是否應為下一步。
+
+
+
+== 關於這項工作
+
+在「Counter圖表縮放檢視」中選取臨界值、即可檢視效能臨界值事件的精確資料。您可以套用任何出現在Counter圖表縮放檢視* Policies *區域下的臨界值。
+
+在Counter圖表縮放檢視中、一次只能將一個原則套用至物件。
+
+
+
+== 步驟
+
+. 選取或取消選取 image:../media/eye-icon.gif[""] 這與原則有關。
++
+選取的臨界值會套用至「Counter圖表縮放檢視」。臨界臨界值會顯示為紅色線；警告臨界值會顯示為黃色線。
+
+

@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-understanding-performance-events-and-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 效能事件是指Unified Manager在發生預先定義的情況或效能計數器值超過臨界值時自動產生的通知。事件可協助您識別受監控叢集的效能問題。 
+---
+= 瞭解效能事件和警示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+效能事件是指Unified Manager在發生預先定義的情況或效能計數器值超過臨界值時自動產生的通知。事件可協助您識別受監控叢集的效能問題。
+
+您可以設定警示、在發生特定嚴重性類別的效能事件時自動傳送電子郵件通知。

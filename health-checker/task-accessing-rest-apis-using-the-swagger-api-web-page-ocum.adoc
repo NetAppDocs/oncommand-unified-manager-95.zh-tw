@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-accessing-rest-apis-using-the-swagger-api-web-page-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: REST API會透過Swagger網頁公開。您可以存取Swagger網頁以顯示Unified Manager REST API文件、以及手動發出API呼叫。 
+---
+= 使用Swagger API網頁存取REST API
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+REST API會透過Swagger網頁公開。您可以存取Swagger網頁以顯示Unified Manager REST API文件、以及手動發出API呼叫。
+
+
+
+== 開始之前
+
+* 您必須具備下列任一角色：營運者、儲存管理員或OnCommand 管理員。
+* 您必須知道Unified Manager伺服器的IP位址或完整網域名稱、以便在其中執行REST API。
+
+
+
+
+== 關於這項工作
+
+Swagger網頁中的每個REST API都提供一個範例、協助說明可用來傳回您有興趣檢閱之資訊的物件和屬性。
+
+
+
+== 步驟
+
+. 存取Unified Manager REST API。
++
+|===
+| 選項 | 說明 
+
+
+ a| 
+從Unified Manager Web UI：
+ a| 
+在功能表列中、按一下「*說明*」按鈕、然後選取「* API說明文件*」。
+
+
+
+ a| 
+從瀏覽器視窗：
+ a| 
+使用Unified Manager伺服器IP位址或FQDN、輸入URL以格式存取REST API頁面 `https://<Unified_Manager_IP_address_or_name>/apidocs/`。例如、 `+https://10.10.10.10/apidocs/+`
+
+|===
++
+隨即顯示API資源類型或類別清單。
+
+. 按一下API資源類型、以該資源類型顯示API。
+

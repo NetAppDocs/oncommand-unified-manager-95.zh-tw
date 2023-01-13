@@ -1,0 +1,54 @@
+---
+permalink: performance-checker/task-changing-the-performance-statistics-collection-interval.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 效能統計資料的預設收集時間間隔為5分鐘。如果發現大型叢集的集合未在預設時間內完成、您可以將此時間間隔變更為10或15分鐘。此設定會影響此Unified Manager執行個體所監控之所有叢集的統計資料集合。 
+---
+= 變更效能統計資料收集時間間隔
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+效能統計資料的預設收集時間間隔為5分鐘。如果發現大型叢集的集合未在預設時間內完成、您可以將此時間間隔變更為10或15分鐘。此設定會影響此Unified Manager執行個體所監控之所有叢集的統計資料集合。
+
+
+
+== 開始之前
+
+您必須擁有授權使用者ID和密碼、才能登入Unified Manager伺服器的維護主控台。
+
+
+
+== 關於這項工作
+
+橫幅訊息會指出效能統計資料收集未準時完成的問題 `Unable to consistently collect from cluster <cluster_name>` 或 `Data collection is taking too long on cluster <cluster_name>`。
+
+由於收集統計資料的問題、您只能在必要時變更收集時間間隔。請勿因任何其他原因而變更此設定。
+
+[NOTE]
+====
+將此值從預設設定變更為5分鐘、可能會影響Unified Manager報告的效能事件數目和頻率。例如、系統定義的效能臨界值會在原則超過30分鐘時觸發事件。使用5分鐘的集合時、必須針對六個連續的集合超過原則。對於15分鐘的收集、只能在兩個收集期間內超過原則。
+
+====
+「叢集資料來源」頁面底部的訊息會指出目前的統計資料收集時間間隔。
+
+
+
+== 步驟
+
+. 以SSH作為維護使用者登入Unified Manager主機。
++
+此時會顯示Unified Manager維護主控台提示。
+
+. 輸入標有*效能輪詢時間間隔組態*的功能表選項編號、然後按Enter。
+. 如果出現提示、請再次輸入維護使用者密碼。
+. 輸入您要設定的新輪詢時間間隔的數字、然後按Enter。
+
+
+
+
+== 完成後
+
+如果您將Unified Manager收集時間間隔變更為10或15分鐘、且目前連線至外部資料供應商（例如Graphite）、則必須變更資料供應商傳輸時間間隔、使其等於或大於Unified Manager收集時間間隔。

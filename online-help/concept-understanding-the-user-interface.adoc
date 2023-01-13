@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-the-user-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager使用者介面主要包含儀表板、可讓您快速檢視所監控的物件。使用者介面也提供檢視所有叢集物件的存取權。 
+---
+= 瞭解使用者介面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager使用者介面主要包含儀表板、可讓您快速檢視所監控的物件。使用者介面也提供檢視所有叢集物件的存取權。
+
+您可以選取偏好的檢視、並視需要使用動作按鈕。您的螢幕組態會儲存在工作區中、以便在啟動Unified Manager時、可以使用您所需的所有功能。不過、當您從一個檢視瀏覽到另一個檢視、然後再瀏覽回來時、檢視可能會不同。

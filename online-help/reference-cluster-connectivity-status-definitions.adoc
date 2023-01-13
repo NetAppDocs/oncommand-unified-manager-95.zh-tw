@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-cluster-connectivity-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 叢集之間的連線MetroCluster 能力可為下列狀態之一：Optimal（最佳）、Impacted（受影響）或Down（關閉）。瞭解連線狀態可MetroCluster 讓您有效管理您的支援功能組態。 
+---
+= 叢集連線狀態定義
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+叢集之間的連線MetroCluster 能力可為下列狀態之一：Optimal（最佳）、Impacted（受影響）或Down（關閉）。瞭解連線狀態可MetroCluster 讓您有效管理您的支援功能組態。
+
+|===
+| 連線狀態 | 說明 | 顯示圖示 
+
+
+ a| 
+最佳化
+ a| 
+在不中斷連線MetroCluster 的情況下、叢集之間的連線功能是正常的。
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+受影響
+ a| 
+一或多個錯誤會影響容錯移轉可用度的狀態、但是MetroCluster 、在這個組態中、兩個叢集仍在運作中。例如、當ISL連結中斷、叢集間IP連結中斷或無法連線到合作夥伴叢集時。
+ a| 
+image:../media/metrocluster-connectivity-impacted.gif[""]
+
+
+
+ a| 
+關機
+ a| 
+由於一個或兩個叢集都當機、或叢集處於容錯移轉模式、所以在支援支援支援的情況下、叢集之間的連線MetroCluster 功能會中斷。例如、當合作夥伴叢集因為災難而關閉、或是因為測試目的而有計畫性的切換時。
+ a| 
+切換時發生錯誤：
+
+image::../media/metrocluster-connectivity-down.gif[停止連線MetroCluster]
+
+切換成功：
+
+image::../media/metrocluster-connectivity-failover.gif[連線容錯移轉MetroCluster]
+
+|===

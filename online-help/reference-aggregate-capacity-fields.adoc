@@ -1,0 +1,166 @@
+---
+permalink: online-help/reference-aggregate-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Aggregate Capacity and utilization報告可讓您檢視叢集中Aggregate的容量和使用率資訊。此資訊可讓您瞭解可能的容量風險、並檢視已設定、已使用及未使用的Aggregate容量。 
+---
+= Aggregate Capacity and利用率報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aggregate Capacity and utilization報告可讓您檢視叢集中Aggregate的容量和使用率資訊。此資訊可讓您瞭解可能的容量風險、並檢視已設定、已使用及未使用的Aggregate容量。
+
+
+
+== Aggregate Capacity and利用率報告表格檢視
+
+* *叢集*
++
+顯示叢集名稱。
+
+* * HA配對*
++
+顯示透過形成兩個節點所獲得的HA配對值。
+
+* * Aggregate *
++
+顯示Aggregate名稱。
+
+* *總資料容量（GB）*
++
+顯示總資料容量（已使用及可用）。
+
+* *已用資料容量（GB）*
++
+顯示已使用的資料容量。
+
+* *已用資料%*
++
+以百分比顯示已使用的資料容量。
+
+* *可用資料容量（GB）*
++
+顯示可用的資料容量。
+
+* *可用資料%*
++
+以百分比顯示可用的資料容量。
+
+* *每日成長率%*
++
+顯示每24小時在磁碟區內發生的成長率。
+
+* *天滿*
++
+顯示總計達到完整容量之前的預估剩餘天數。
+
+* *空間已滿臨界值*
++
+顯示集合體已滿的百分比。
+
+* *空間接近完整臨界值*
++
+顯示集合體幾乎已滿的百分比。
+
+* *成長率臨界值*
++
+指定在系統產生Aggregate成長率異常事件之前、將Aggregate的成長率視為正常。
+
+* *成長率敏感度臨界值*
++
+指定套用至Volume成長率標準差的因素。如果成長率超過計入的標準差、就會產生Volume成長率異常事件。
+
+* *直到完整臨界值的天數*
++
+指定集合體達到完整容量之前的剩餘天數。
+
+* * Snapshot保留總容量（GB）*
++
+顯示集合體的快照保留總容量。
+
+* * Snapshot保留已用容量（GB）*
++
+顯示快照保留區中的快照複本所使用的空間量。
+
+* * Snapshot保留已使用%*
++
+以百分比顯示Snapshot複本從Snapshot保留區使用的空間量。
+
+* * Snapshot保留可用容量（GB）*
++
+顯示Snapshot複本的可用空間量。
+
+* * Snapshot保留可用%*
++
+以百分比顯示Snapshot複本的可用空間量。
+
+* * Snapshot複本保留完整臨界值*
++
+指定集合體已耗用其保留給Snapshot複本的所有空間的百分比。
+
+* *過度使用容量%*
++
+以百分比顯示集合體過度使用量。
+
+* *過度使用臨界值%*
++
+顯示集合體過度委派的百分比。
+
+* *近乎過度使用臨界值%*
++
+顯示集合體幾乎過度委派的百分比。
+
+* *類型*
++
+顯示Aggregate類型：
+
++
+** HDD
+** 混合式
++
+結合HDD和SSD、但尚未啟用Flash Pool。
+
+** 混合式（Flash Pool）
++
+結合HDD和SSD、並已啟用Flash Pool。
+
+** SSD
+** SSD（FabricPool 僅限部分）
++
+結合SSD與雲端層
+
+** VMDisk（SDS）
++
+虛擬機器內的虛擬磁碟
+
+** VMDisk（FabricPool VMware）
++
+結合虛擬磁碟與雲端層
+
+** LUN（FlexArray 鏡像）對於標準磁碟和SSD磁碟、當受監控的儲存系統執行ONTAP 早於8.3的版本時、此欄位為空白。
+
+
+* * RAID類型*
++
+顯示RAID組態類型。
+
+* * Aggregate狀態*
++
+顯示Aggregate的目前狀態。
+
+* *《類型*》SnapLock
++
+指出集合體是SnapLock 指不屬於SnapLock或非SnapLock Aggregate。
+
+* *使用的雲端層空間（GB）*
++
+顯示目前在雲端層中使用的資料容量。
+
+* *雲端層*
++
+顯示由ONTAP 現象所建立的雲端層名稱。
+
+

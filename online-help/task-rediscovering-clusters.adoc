@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-rediscovering-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從「組態/叢集資料來源」頁面手動重新探索叢集、以取得有關叢集健全狀況、監控狀態和效能狀態的最新資訊。 
+---
+= 重新探索叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從「組態/叢集資料來源」頁面手動重新探索叢集、以取得有關叢集健全狀況、監控狀態和效能狀態的最新資訊。
+
+
+
+== 關於這項工作
+
+您可以在想要更新叢集時手動重新探索叢集、例如在空間不足時增加集合體的大小、而且想要Unified Manager探索所做的變更。
+
+當Unified Manager與OnCommand Workflow Automation NetApp（WFA）配對時、配對會觸發重新取得WFA快取的資料。
+
+
+
+== 步驟
+
+. 在左導覽窗格中、按一下*組態*>*叢集資料來源*。
+. 在「*組態/叢集資料來源*」頁面上、按一下「*重新探索*」。
++
+Unified Manager會重新探索選取的叢集、並顯示最新的健全狀況和效能狀態。
+
++
+[NOTE]
+====
+您可以從「儀表板/叢集檢視」頁面的右窗格取得叢集的監控狀態。
+
+====
+

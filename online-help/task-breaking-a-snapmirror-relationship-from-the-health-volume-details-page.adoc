@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從「健全狀況/磁碟區詳細資料」頁面中斷保護關係、並在SnapMirror關係中停止來源與目的地磁碟區之間的資料傳輸。當您想要移轉資料、進行災難恢復或進行應用程式測試時、可能會中斷關係。目的地Volume會變更為讀寫磁碟區。您無法打破SnapVault 彼此之間的不合作關係。 
+---
+= 從「健全狀況/磁碟區」詳細資料頁面中斷SnapMirror關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從「健全狀況/磁碟區詳細資料」頁面中斷保護關係、並在SnapMirror關係中停止來源與目的地磁碟區之間的資料傳輸。當您想要移轉資料、進行災難恢復或進行應用程式測試時、可能會中斷關係。目的地Volume會變更為讀寫磁碟區。您無法打破SnapVault 彼此之間的不合作關係。
+
+
+
+== 開始之前
+
+* 您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+* 您必須設定Workflow Automation。
+
+
+
+
+== 步驟
+
+. 在「*健全狀況/磁碟區*詳細資料」頁面的「*保護*」索引標籤中、從拓撲中選取您要中斷的SnapMirror關係。
+. 在目的地上按一下滑鼠右鍵、然後從功能表中選取*中斷*。
++
+隨即顯示「中斷關係」對話方塊。
+
+. 按一下*繼續*以中斷關係。
+. 在拓撲中、確認關係已中斷。
+

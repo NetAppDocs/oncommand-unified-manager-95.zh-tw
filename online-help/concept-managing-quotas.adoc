@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用使用者和群組配額來限制磁碟空間量、或是使用者或使用者群組可以使用的檔案數量。您可以檢視使用者和使用者群組配額資訊、例如磁碟和檔案使用量、以及在磁碟上設定的各種限制。 
+---
+= 管理配額
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用使用者和群組配額來限制磁碟空間量、或是使用者或使用者群組可以使用的檔案數量。您可以檢視使用者和使用者群組配額資訊、例如磁碟和檔案使用量、以及在磁碟上設定的各種限制。

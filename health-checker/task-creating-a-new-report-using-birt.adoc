@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-creating-a-new-report-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用商業智慧與報告工具（BIRT）的Eclipse外掛程式來建立新報告。如果Unified Manager中的現有報告不符合您環境的需求、您可能會想要建立新的報告。 
+---
+= 使用BIRT建立新報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用商業智慧與報告工具（BIRT）的Eclipse外掛程式來建立新報告。如果Unified Manager中的現有報告不符合您環境的需求、您可能會想要建立新的報告。
+
+
+
+== 開始之前
+
+您必須已下載並擷取BIRT。
+
+您必須使用BIRT建立專案。
+
+
+
+== 步驟
+
+. 從BIRT介面中、選取*檔案*>*新增*>*報告*。
+. 在「*新報告*」對話方塊中、選取專案資料夾、該資料夾應與先前建立的專案資料夾相同。
++
+如果您選取不同的專案資料夾、則無法在Unified Manager中使用報告作業。
+
+. 輸入報告檔案名稱、然後按一下*「下一步*」。
+. 選取報告類型、然後按一下「*完成*」。
+

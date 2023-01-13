@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-svm-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 「註釋SVM」對話方塊可讓您手動註釋儲存物件。您可以選取單一SVM或多個SVM、然後從現有的註釋清單中、以特定的值配對進行註釋。 
+---
+= 註解SVM對話方塊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「註釋SVM」對話方塊可讓您手動註釋儲存物件。您可以選取單一SVM或多個SVM、然後從現有的註釋清單中、以特定的值配對進行註釋。
+
+您必須OnCommand 具備「管理員」或「儲存管理員」角色。
+
+* *註釋=值配對*
++
+可讓您選取所選SVM所需的註釋。
+
+* *適用*
++
+將選取的註釋套用至SVM。
+
+* *取消*
++
+關閉「註解SVM」對話方塊、而不儲存您的變更。
+
+

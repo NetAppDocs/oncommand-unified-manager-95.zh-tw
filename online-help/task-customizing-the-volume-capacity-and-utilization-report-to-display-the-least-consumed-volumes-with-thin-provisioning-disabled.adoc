@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-the-least-consumed-volumes-with-thin-provisioning-disabled.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自訂Volume容量與使用率報告、根據磁碟區使用量來顯示磁碟區。 
+---
+= 自訂Volume容量與使用率報告、以顯示停用精簡配置的最少使用量磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自訂Volume容量與使用率報告、根據磁碟區使用量來顯示磁碟區。
+
+
+
+== 關於這項工作
+
+您也可以移至「報告」頁面、然後按一下「執行報告」*以取得適當的報告來執行此工作。
+
+
+
+== 步驟
+
+. 若要移除SVM、叢集或Volume的分組、請執行下列步驟：
++
+.. 按一下需要取消群組的欄。
+.. 按一下 image:../media/click-to-see-menu.gif[""] 圖示。
+.. 選擇*群組*>*刪除內部群組*。
+
+
+. 若要根據使用百分比來排序磁碟區、請按一下「*已使用資料%*」欄、然後按一下 image:../media/sort-asc.gif[""] 圖示。
+. 若要篩選停用精簡配置的磁碟區、請按一下*精簡配置*欄、然後按一下「*篩選器*」對話方塊 image:../media/click-to-filter.gif[""] 圖示。
+. 從*條件*清單中、選取*等於*。
+. 按一下*選取值*、然後選取*否*。
+. 按一下「*確定*」。
+

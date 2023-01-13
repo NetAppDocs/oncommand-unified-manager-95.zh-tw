@@ -1,0 +1,34 @@
+---
+permalink: config/task-accessing-oncommand-unified-manager-web-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: 安裝Unified Manager之後、您可以存取Web UI來設定Unified Manager、以便開始監控ONTAP 您的VMware系統。 
+---
+= 存取Unified Manager Web UI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝Unified Manager之後、您可以存取Web UI來設定Unified Manager、以便開始監控ONTAP 您的VMware系統。
+
+
+
+== 開始之前
+
+* 如果這是您第一次存取Web UI、則必須以維護使用者（或Linux安裝的umadmin使用者）的身分登入。
+* 如果您打算允許使用者使用簡短名稱存取Unified Manager、而非使用完整網域名稱（FQDN）或IP位址、則網路組態必須將此簡短名稱解析為有效的FQDN。
+* 如果伺服器使用自我簽署的數位憑證、瀏覽器可能會顯示警告、指出該憑證不受信任。您可以確認繼續存取的風險、或是安裝憑證授權單位（CA）簽署的數位憑證來進行伺服器驗證。
+
+
+
+
+== 步驟
+
+. 使用安裝結束時顯示的URL、從瀏覽器啟動Unified Manager Web UI。URL是Unified Manager伺服器的IP位址或完整網域名稱（FQDN）。
++
+連結格式如下：HTTPS：//`URL`。
+
+. 使用您的維護使用者認證登入Unified Manager Web UI。
+

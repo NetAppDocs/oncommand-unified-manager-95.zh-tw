@@ -1,0 +1,422 @@
+---
+permalink: online-help/reference-cluster-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 叢集事件提供有關叢集狀態的資訊、可讓您監控叢集是否有潛在問題。這些事件會依影響區域分組、包括事件名稱、陷阱名稱、影響層級、來源類型和嚴重性。 
+---
+= 叢集事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+叢集事件提供有關叢集狀態的資訊、可讓您監控叢集是否有潛在問題。這些事件會依影響區域分組、包括事件名稱、陷阱名稱、影響層級、來源類型和嚴重性。
+
+
+
+== 影響領域：可用度
+
+星號（*）表示已轉換為Unified Manager事件的EMS事件。
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+叢集缺乏備用磁碟（ocumEvtDisksNoSpare）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+叢集無法連線（ocumEvtClusterUnreachable）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+錯誤
+
+
+
+ a| 
+叢集監控失敗（ocumEvtClusterMonitoring監控失敗）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+叢集FabricPool 不受授權容量限制（ocumEvtExternalCapacityTierSpaceFull）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+NVMe寬限期開始時間*（nvmfGracePeriodStart）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+NVMe寬限期有效*（nvmfGracePeriodActive）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+NVMe寬限期已過期*（nvmfGracePeriodExpired）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+物件維護視窗已啟動（物件維護視窗已啟動）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+關鍵
+
+
+
+ a| 
+物件維護視窗已結束（物件維護視窗已編碼）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+資訊
+
+
+
+ a| 
+支援的備用磁碟（ocumEvtSpareDiskLeftBehind）MetroCluster
+ a| 
+風險
+ a| 
+叢集
+ a| 
+錯誤
+
+
+
+ a| 
+停用自動非計畫性切換（ocumEvtMccAutomaticUnplannedSwitchOverDisabled）MetroCluster
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+|===
+
+
+== 影響領域：容量
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+叢集雲端層規劃（叢集CloudTierPlanningWarnings）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+幾乎已滿* FabricPool
+ a| 
+風險
+ a| 
+叢集
+ a| 
+錯誤
+
+|===
+
+
+== 影響領域：組態
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+新增節點（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+資訊
+
+
+
+ a| 
+節點已移除（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+資訊
+
+
+
+ a| 
+已移除叢集（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+資訊
+
+
+
+ a| 
+叢集新增失敗（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+錯誤
+
+
+
+ a| 
+叢集名稱已變更（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+資訊
+
+
+
+ a| 
+收到緊急EMS（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+關鍵
+
+
+
+ a| 
+收到關鍵EMS（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+關鍵
+
+
+
+ a| 
+收到警示EMS（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+錯誤
+
+
+
+ a| 
+收到EMS錯誤（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+收到EMS警告（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+偵錯EMS已收到（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+收到EMS通知（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+收到資訊性EMS（不適用）
+ a| 
+活動
+ a| 
+叢集
+ a| 
+警告
+
+|===
+將EMS事件分為三個Unified Manager事件嚴重性等級。ONTAP
+
+|===
+| Unified Manager事件嚴重性層級 | 不支援緊急服務事件嚴重性等級ONTAP 
+
+
+ a| 
+關鍵
+ a| 
+緊急狀況
+
+關鍵
+
+
+
+ a| 
+錯誤
+ a| 
+警示
+
+
+
+ a| 
+警告
+ a| 
+錯誤
+
+警告
+
+偵錯
+
+注意
+
+資訊
+
+|===
+
+
+== 影響領域：效能
+
+|===
+| 事件名稱（陷阱名稱） | 影響層級 | 來源類型 | 嚴重性 
+
+
+ a| 
+叢集IOPS臨界臨界值已違反（ocumClusterIopsIncident）
+ a| 
+事件
+ a| 
+叢集
+ a| 
+關鍵
+
+
+
+ a| 
+叢集IOPS警告臨界值已超出（ocumClusterIopsWarnings）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+叢集Mbps臨界臨界值已超出（ocumClusterMbps突 發事件）
+ a| 
+事件
+ a| 
+叢集
+ a| 
+關鍵
+
+
+
+ a| 
+叢集Mbps違反警告臨界值（ocumClusterMbpsWarning）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+
+
+ a| 
+叢集動態臨界值已超出（ocumClusterDynamicEventWarnings[叢集動態臨界值]）
+ a| 
+風險
+ a| 
+叢集
+ a| 
+警告
+
+|===

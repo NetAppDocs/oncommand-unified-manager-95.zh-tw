@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-a-um-maintenance-window-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以定義Unified Manager維護時間範圍、以便在排程叢集維護且不想收到大量不想要的通知時、在特定時間範圍內隱藏事件和警示。 
+---
+= 什麼是Unified Manager維護所需時間
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以定義Unified Manager維護時間範圍、以便在排程叢集維護且不想收到大量不想要的通知時、在特定時間範圍內隱藏事件和警示。
+
+當維護時段開始時、「物件維護時段已開始」事件會張貼至「事件」目錄頁面。此事件會在維護期間結束時自動淘汰。
+
+在維護期間、與該叢集上所有物件相關的事件仍會產生、但不會出現在任何UI頁面中、也不會針對這些事件傳送警示或其他類型的通知。不過、您可以選取「事件」詳細目錄頁面上的其中一個「檢視」選項、以檢視在維護期間為所有儲存物件所產生的事件。
+
+您可以排程未來要啟動的維護時間、變更排程維護時間範圍的開始和結束時間、也可以取消排程維護時間範圍。
