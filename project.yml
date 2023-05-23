@@ -19,7 +19,7 @@ settings:
   - name: Unified Manager
     url: "/active-iq-unified-manager-97"
     version-number: '9.7'
-  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr
+  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: 統一化管理程式9.5文件OnCommand
