@@ -1,6 +1,7 @@
 ---
 settings:
   name: OnCommand Unified Manager 9.5
+  downlevel: true
   internal:
     pdf_enabled: true
   prod:

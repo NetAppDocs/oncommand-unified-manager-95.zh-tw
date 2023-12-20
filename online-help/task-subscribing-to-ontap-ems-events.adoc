@@ -45,7 +45,7 @@ https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=6
 若要檢視您可以訂閱的EMS事件名稱、ONTAP 您可以從叢集Shell使用 `event route show` 命令（ONTAP 在版本號不低於版本9之前）或 `event catalog show` 命令（ONTAP 更新版本、僅限功能更新版本）。如需識別個別EMS事件的詳細指示、請參閱知識庫答案1072320。
 
 +
-https://kb.netapp.com/app/answers/answer_view/a_id/1072320["KB 10722320 -如何在ONTAP Unified Manager中設定不含EsEMS的事件訂閱"]
+https://kb.netapp.com/mgmt/AIQUM/How_to_configure_and_receive_alerts_from_ONTAP_EMS_Event_Subscription_in_Active_IQ_Unified_Manager["如何設定ONTAP 及接收Active IQ Unified Manager 來自於《關於在本》中訂閱的《關於EEMS事件的警示》"^]
 
 . 按一下「 * 新增 * 」。
 +

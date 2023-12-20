@@ -6992,8 +6992,6 @@
   <block id="b05ec43ca7407c06122c42ea4b25632e" category="paragraph">從Unified Manager移除Workflow Automation設定。</block>
   <block id="6999aa5ef7f71f7f00e64118e8275e74" category="paragraph">儲存所選選項的組態設定。</block>
   <block id="93f88d6c3be8dc08239feb316ead84f9" category="paragraph">若要檢視您可以訂閱的EMS事件名稱、ONTAP 您可以從叢集Shell使用<block ref="600519f6c6d0b7df8b905133fe79eb47" prefix=" " category="inline-code"></block> 命令（ONTAP 在版本號不低於版本9之前）或<block ref="83c19f62b32dae15ee31be017a321335" prefix=" " category="inline-code"></block> 命令（ONTAP 更新版本、僅限功能更新版本）。如需識別個別EMS事件的詳細指示、請參閱知識庫答案1072320。</block>
-  <block id="b7ea02fe1dbdcd1a4d97e075ed656e5d" category="inline-link">KB 10722320 -如何在ONTAP Unified Manager中設定不含EsEMS的事件訂閱</block>
-  <block id="31217e322cc07a0593ddf09e0d4549b2" category="paragraph"><block ref="31217e322cc07a0593ddf09e0d4549b2" category="inline-link-rx"></block></block>
   <block id="d6b2a5eaec6d581c428382bf1fa65994" category="summary">您可以自訂「叢集庫存」報告、以顯示已達到最大磁碟限制並依增加順序排序的節點清單。</block>
   <block id="e9cf43d6c7ec24f85386c110100fce90" category="doc">自訂叢集庫存報告以顯示達到最大磁碟限制的節點</block>
   <block id="cbed002dcbc960710aebe81be97aab0d" category="list-text">若要依叢集或節點移除群組、請執行下列步驟：</block>
@@ -12161,7 +12159,6 @@
   <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Unified Manager影片</block>
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Unified Manager部落格</block>
   <block id="7c59cc884d6b9ef97e305e34cc436310" category="sidebar">最新版Unified Manager的文件</block>
-  <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
   <block id="09d454f0bf432593d99fbfd84c9f9293" category="sidebar">執行組態和管理工作</block>
   <block id="280e472487f2e1876889ef516ea66c22" category="sidebar">在NFS或CIFS共用區上掛載 <code>/opp/netapp</code> 或 <code>/opp/NetApp/data</code> 的SELinux需求</block>
   <block id="89376735b2b1322b2aeff45eff7abf01" category="sidebar">在Windows上執行Unified Manager無人值守安裝</block>
@@ -12216,4 +12213,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">如何設定ONTAP 及接收Active IQ Unified Manager 來自於《關於在本》中訂閱的《關於EEMS事件的警示》</block>
+  <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
 </blocks>
