@@ -512,7 +512,6 @@
   <block id="cf84f1efc2b94e2be0cfb3168fbb6f79" category="list-text">在Database Connection（資料庫連線）精靈中、輸入MySQL根密碼。</block>
   <block id="57e365413f6a91c23a8885041e991e3d" category="list-text">依照其餘的提示完成安裝。</block>
   <block id="1f7fcc341d4eca6cda713029ed9f55ea" category="list-text">在安裝結束時按一下「*完成*」、即會顯示Unified Manager Web UI。</block>
-  <block id="b1d05b1498f934fd9fdb5242af6b4ee6" category="summary">適用於NetApp Unified Manager的文件OnCommand</block>
   <block id="a26233650deb6cb0bb9c28069615b351" category="doc">統一化管理程式文件OnCommand</block>
   <block id="38e6765f489199cbac8d654040013a22" category="doc">Linux安裝的快速入門指示</block>
   <block id="d6eda01f5a2148c2383c259caccbdf81" category="list-text">作業系統：Red Hat Enterprise Linux或CentOS 64位元版本7.x架構、使用作業系統安裝程式的「軟體選擇」選項中的「伺服器搭配GUI」基礎環境進行安裝</block>
@@ -12215,4 +12214,5 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">如何設定ONTAP 及接收Active IQ Unified Manager 來自於《關於在本》中訂閱的《關於EEMS事件的警示》</block>
   <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
+  <block id="31787eb1cdcbc7b2acf891b9fa7f133e" category="sidebar">利用VMware統一化管理程式、您可以從單一介面監控及管理您的VMware儲存系統的健全狀況與效能ONTAP OnCommand 。此文件庫包含 9.5 版的資訊。</block>
 </blocks>

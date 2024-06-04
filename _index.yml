@@ -1,0 +1,43 @@
+---
+indexpage:
+  title: 統一化管理程式文件OnCommand
+  summary: 利用VMware統一化管理程式、您可以從單一介面監控及管理您的VMware儲存系統的健全狀況與效能ONTAP OnCommand 。此文件庫包含
+    9.5 版的資訊。
+  keywords: oncommand unified manager, release notes, 95
+  lead: 利用VMware統一化管理程式、您可以從單一介面監控及管理您的VMware儲存系統的健全狀況與效能ONTAP OnCommand 。此文件庫包含 9.5
+    版的資訊。
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 版本資訊
+      url: "/release-notes.html"
+    - title: VMware vSphere的快速入門安裝
+      url: qsg-vapp.html
+    - title: Linux快速入門安裝
+      url: qsg-linux.html
+    - title: Windows快速入門安裝
+      url: qsg-windows.html
+  - title: 安裝Configure Unified Manager
+    links:
+    - title: 在VMware vSphere系統上安裝升級
+      url: install/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html
+    - title: 在Linux系統上安裝升級
+      url: install/concept-install-upgrade-and-remove-unified-manager-software.html
+    - title: 在Windows系統上安裝升級
+      url: install/concept-installing-upgrading-and-removing-unified-manager-software.html
+    - title: 設定Unified Manager
+      url: config/concept-configuring-unified-manager.html
+  - title: 效能監控
+    links:
+    - title: 效能臨界值
+      url: performance-checker/concept-managing-performance-thresholds.html
+    - title: 叢集效能
+      url: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html
+  - title: 更多資源
+    links:
+    - title: Unified Manager影片
+      url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7mp3jFSg0IJgo3oeDQRY-Gl
+    - title: Unified Manager部落格
+      url: https://www.netapp.com/blog/#q=active%20iq%20unified%20manager&t=Blogs&sort=%40publish-date-mktg%20descending&layout=card&f:@facet-language-mktg=[English]
+    - title: 最新版Unified Manager的文件
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/index.html
