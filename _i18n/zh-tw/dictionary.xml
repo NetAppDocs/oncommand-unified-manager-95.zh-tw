@@ -1030,7 +1030,6 @@
   <block id="713d9eb7bae81414a341cd2b9ad04f0e" category="paragraph">Unified Manager可安裝在記憶體量較少的系統上、但建議的12 GB RAM可確保有足夠的記憶體可供使用、以達到最佳效能、並可讓系統隨組態的成長而容納更多叢集和儲存物件。您不得在部署Unified Manager的VM上設定任何記憶體限制、也不得啟用任何妨礙軟體使用系統上已配置記憶體的功能（例如佔用）。</block>
   <block id="1ba321baad6e31e95cddb86bd159a0ab" category="paragraph">此外、統一化管理程式的單一執行個體在安裝Unified Manager的第二個執行個體之前、可以監控的節點數量也有限制。如需詳細資料、請參閱最佳實務做法指南_。</block>
   <block id="9650789293045a87cc14a47729b5ebfc" category="inline-link">技術報告4621：Unified Manager最佳實務做法指南</block>
-  <block id="badef135127b32313f0e0eebe283472f" category="paragraph"><block ref="badef135127b32313f0e0eebe283472f" category="inline-link-rx"></block></block>
   <block id="ccd350b03208f21a01e8434aa29bf22c" category="paragraph">記憶體頁面交換會對系統和管理應用程式的效能造成負面影響。競用因整體主機使用率而無法使用的CPU資源、可能會降低效能。</block>
   <block id="4019b02afc32a61e39e48a05d352cdf9" category="section-title">專用使用需求</block>
   <block id="f8a1acaf90775fd387de63d0c7d02a5a" category="paragraph">您安裝Unified Manager的實體或虛擬系統必須專供Unified Manager使用、不得與其他應用程式共用。其他應用程式可能會耗用系統資源、並大幅降低Unified Manager的效能。</block>
@@ -6555,7 +6554,6 @@
   <block id="11e8e4f244f4ff642a8c627e453e7ac8" category="paragraph">您可以使用OnCommand 「支援系統管理程式」或ONTAP 「支援功能」命令來查看是否已安裝或啟用Flash Cache、如果尚未啟用、也可以啟用Flash Cache。下列命令會指出是否已在特定節點上啟用Flash Cache：<block ref="48de88639c7fbb304293e385f1577ff8" prefix=" " category="inline-code"></block></block>
   <block id="4226c3da2a5d50e1c8abfdfbf9bd3780" category="paragraph">如需Flash Cache及其使用需求的詳細資訊、請參閱下列技術報告：</block>
   <block id="4d594fa378085e019a42ca73e740986c" category="inline-link">技術報告3832：Flash Cache最佳實務做法指南</block>
-  <block id="e9f146d71f531c29c1d0c53c51f7c325" category="paragraph"><block ref="e9f146d71f531c29c1d0c53c51f7c325" category="inline-link-rx"></block></block>
   <block id="ed46215834ece9df6f6e928ec99fb8b8" category="summary">您可以新增現有的叢集、以便監控叢集、並取得其健全狀況、容量、組態和效能的相關資訊。</block>
   <block id="0130853463bbe8886a65910adc3f54b2" category="doc">新增叢集對話方塊</block>
   <block id="67417a585c57d841c0ff1ea84e382fcd" category="paragraph">您可以指定下列值來新增叢集：</block>
@@ -7651,7 +7649,6 @@
   <block id="f804ed2945f8b8f58e9c8ebf45b6d70a" category="paragraph">Unified Manager應用程式健全狀況與效能問題的相關資料。</block>
   <block id="030a4fbaf40ce64a3de26a58a2349f3b" category="paragraph">報告使用者（具有報告架構角色的資料庫使用者）能夠存取這些表格中的資料。此使用者可直接從Unified Manager資料庫、以唯讀方式存取報告和其他資料庫檢視。請注意、此使用者無權存取任何包含使用者資料或叢集認證資訊的資料表。</block>
   <block id="43c57f8ab49b52141a07a60ab8386a94" category="inline-link">Unified Manager報告技術報告</block>
-  <block id="ef284f778ff870c90bd04052fa19e3d6" category="paragraph">請參閱<block ref="204d4ee1ca42e994250ea354be144e73" category="inline-link-rx"></block> （TR-4565）以取得更多詳細資料。</block>
   <block id="d5115a56160e45240d2698485e7e3777" category="summary">瞭解事件的概念有助於有效管理叢集和叢集物件、並適當定義警示。</block>
   <block id="71d8a1201a22de215395582e8721d30e" category="doc">深入瞭解事件</block>
   <block id="65326e6b22fde34c92c7ea8237cc8412" category="summary">SVM儲存類別事件可讓您取得儲存類別狀態的相關資訊、以便監控潛在問題。SVM儲存類別僅存在於具有Infinite Volume的SVM中。事件會依影響區域分組、包括事件和陷阱名稱、影響層級、來源類型和嚴重性。</block>
@@ -11885,7 +11882,6 @@
   <block id="7c48a0120101491ea5a781058b5716de" category="doc">新增磁碟並執行Aggregate配置重建</block>
   <block id="fdf3b7352c190d213c24db064ec3a78e" category="paragraph">當您在「事件詳細資料」頁面上收到系統定義的臨界值事件時、事件說明文字會列出發生問題的彙總名稱。您可以新增磁碟並在此集合體上重建資料。</block>
   <block id="c993772a65e087ac68acfde3645c3287" category="inline-link">技術報告3838：儲存子系統組態指南</block>
-  <block id="0379ced083df169219dc62cc5068b75c" category="paragraph"><block ref="0379ced083df169219dc62cc5068b75c" category="inline-link-rx"></block></block>
   <block id="877f5e27a442690f512bdd4fa77d8cb6" category="summary">您可以使用Unified Manager來檢查叢集及其元件的運作健全狀況MetroCluster 、並採用一套功能性設定。如果叢集涉及Unified Manager偵測到的效能事件、健全狀況狀態可協助您判斷是否有硬體或軟體問題導致事件發生。</block>
   <block id="5e9e3cac8906fbac9ab062f3f912efc9" category="doc">檢查MetroCluster 叢集的健全狀況、以進行整體配置</block>
   <block id="1e86f8bde1a87a2deac3175345884436" category="list-text">您必須分析MetroCluster 一項效能事件以進行不完整的組態設定、並取得相關叢集的名稱。</block>
@@ -11967,7 +11963,6 @@
   <block id="4a62775f3719d6969e4b9d4bd0578ca6" category="paragraph">儲存選取的效率設定、並在您按一下「組態保護」對話方塊中的「*套用*」時套用。</block>
   <block id="cfc05fb84db9c30b38a419540c16db12" category="paragraph">捨棄您的選擇並關閉「進階目的地設定」對話方塊。</block>
   <block id="ae66a56126cf2726904ab28390ff838b" category="inline-link">NetApp技術報告3966：NetApp資料壓縮與重複資料刪除部署與實作指南（叢集Data ONTAP 式）</block>
-  <block id="df4f489fd8783506ee2d692048efa87d" category="paragraph"><block ref="df4f489fd8783506ee2d692048efa87d" category="inline-link-rx"></block></block>
   <block id="f3a8d1f0654a5e8b0761614bebc1ad16" category="summary">支援各種組態、可在整個站台無法使用時、提供資料鏡射功能及啟動容錯移轉的額外能力。MetroCluster在一個不支援功能的組態中、叢集之間的資料鏡射狀態MetroCluster 可以是「正常」或「鏡射無法使用」。瞭解狀態可MetroCluster 讓您有效管理您的支援功能組態。</block>
   <block id="baf5d44e1d7facdf126425b9dacabd71" category="doc">資料鏡射狀態定義</block>
   <block id="f4eb4da5d6840b7010c0afd8cb3a5816" category="cell">資料鏡射狀態</block>
@@ -12215,4 +12210,9 @@
   <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">如何設定ONTAP 及接收Active IQ Unified Manager 來自於《關於在本》中訂閱的《關於EEMS事件的警示》</block>
   <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
   <block id="31787eb1cdcbc7b2acf891b9fa7f133e" category="sidebar">利用VMware統一化管理程式、您可以從單一介面監控及管理您的VMware儲存系統的健全狀況與效能ONTAP OnCommand 。此文件庫包含 9.5 版的資訊。</block>
+  <block id="ee26087a8b7ec790988603a3298c45f3" category="paragraph"><block ref="ee26087a8b7ec790988603a3298c45f3" category="inline-link-rx"></block></block>
+  <block id="06c70b026e4d10bfcd7be2ebfa770d1c" category="paragraph"><block ref="06c70b026e4d10bfcd7be2ebfa770d1c" category="inline-link-rx"></block></block>
+  <block id="a87e9b78df20679676eb71ecb2dadaf4" category="paragraph">如需詳細資訊、請參閱<block ref="7a573ad874e1456bf6b4f96b852006f2" category="inline-link-rx"></block> （ TR-4565 ）。</block>
+  <block id="ec41073735b02d172b0bc1ee60ea5ec9" category="paragraph"><block ref="ec41073735b02d172b0bc1ee60ea5ec9" category="inline-link-rx"></block></block>
+  <block id="796f4a9be8e525f7e4d64c24bac529c9" category="paragraph"><block ref="796f4a9be8e525f7e4d64c24bac529c9" category="inline-link-rx"></block></block>
 </blocks>

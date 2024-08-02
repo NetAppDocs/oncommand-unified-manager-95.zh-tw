@@ -88,4 +88,4 @@ summary: 您可以使用「進階次要設定」對話方塊、在次要磁碟�
 
 *相關資訊*
 
-http://www.netapp.com/us/media/tr-3966.pdf["NetApp技術報告3966：NetApp資料壓縮與重複資料刪除部署與實作指南（叢集Data ONTAP 式）"]
+https://www.netapp.com/pdf.html?item=/media/19753-tr-3966.pdf["NetApp技術報告3966：NetApp資料壓縮與重複資料刪除部署與實作指南（叢集Data ONTAP 式）"^]

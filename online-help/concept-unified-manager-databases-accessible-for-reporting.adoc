@@ -71,4 +71,4 @@ Unified Manager應用程式健全狀況與效能問題的相關資料。
 |===
 報告使用者（具有報告架構角色的資料庫使用者）能夠存取這些表格中的資料。此使用者可直接從Unified Manager資料庫、以唯讀方式存取報告和其他資料庫檢視。請注意、此使用者無權存取任何包含使用者資料或叢集認證資訊的資料表。
 
-請參閱 http://www.netapp.com/us/media/tr-4565.pdf["Unified Manager報告技術報告"] （TR-4565）以取得更多詳細資料。
+如需詳細資訊、請參閱 https://www.netapp.com/pdf.html?item=/media/16308-tr-4565pdf.pdf["Unified Manager報告技術報告"^] （ TR-4565 ）。

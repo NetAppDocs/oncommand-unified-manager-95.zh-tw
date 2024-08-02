@@ -74,7 +74,7 @@ Unified Manager可安裝在記憶體量較少的系統上、但建議的12 GB RA
 
 此外、統一化管理程式的單一執行個體在安裝Unified Manager的第二個執行個體之前、可以監控的節點數量也有限制。如需詳細資料、請參閱最佳實務做法指南_。
 
-http://www.netapp.com/us/media/tr-4621.pdf["技術報告4621：Unified Manager最佳實務做法指南"]
+https://www.netapp.com/pdf.html?item=/media/13504-tr4621pdf.pdf["技術報告4621：Unified Manager最佳實務做法指南"^]
 
 記憶體頁面交換會對系統和管理應用程式的效能造成負面影響。競用因整體主機使用率而無法使用的CPU資源、可能會降低效能。
 

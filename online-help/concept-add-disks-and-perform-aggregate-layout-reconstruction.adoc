@@ -17,4 +17,4 @@ summary: 您可以將磁碟新增至Aggregate、以增加儲存容量和該Aggre
 
 您新增至集合體的磁碟必須已存在於叢集中。如果叢集沒有可用的額外磁碟、您可能需要聯絡管理員或購買更多磁碟。您可以使用OnCommand 「效益分析系統管理程式」或ONTAP 「效益分析」命令、將磁碟新增至集合體。
 
-http://www.netapp.com/us/media/tr-3838.pdf["技術報告3838：儲存子系統組態指南"]
+https://www.netapp.com/pdf.html?item=/media/19675-tr-3838.pdf["技術報告3838：儲存子系統組態指南"^]

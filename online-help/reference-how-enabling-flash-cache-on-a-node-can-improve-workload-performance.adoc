@@ -21,4 +21,4 @@ Flash Cache模組或效能加速模組PCIe型記憶體模組、可發揮智慧�
 
 如需Flash Cache及其使用需求的詳細資訊、請參閱下列技術報告：
 
-http://www.netapp.com/us/media/tr-3832.pdf["技術報告3832：Flash Cache最佳實務做法指南"]
+https://www.netapp.com/pdf.html?item=/media/19754-tr-3832.pdf["技術報告3832：Flash Cache最佳實務做法指南"^]
